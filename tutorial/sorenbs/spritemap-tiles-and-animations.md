@@ -1,6 +1,6 @@
 ﻿---
 layout: tutorial
-title: Tiles, spritemap and animations
+title: "Tiles, spritemap and animations"
 ---
 
 Take a look at our sprite sheet:

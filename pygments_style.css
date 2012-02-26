@@ -5,7 +5,8 @@
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px; 
 	border-radius: 5px; 
-	word-wrap: break-word; 
+	word-wrap: break-word;
+	padding: 10px;
 }
 .highlight pre { margin: 0; } 
 .highlight .c { color: #999999; font-style: italic } /* Comment */
