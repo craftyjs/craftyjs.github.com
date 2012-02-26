@@ -128,7 +128,7 @@ In the next article we will build a bombDropper component. this last bit of the 
 {% highlight javascript %}
             .onHit("fire", function() {
                 this.destroy();
-				// Subtract life and play scream sound :-)
+  			// Subtract life and play scream sound :-)
             });
         return this;
     }
