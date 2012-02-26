@@ -14,29 +14,31 @@ The game and articles is a work in progress. You can download the latest sources
 
 Now create the html file that will host the game:
 
-
-    <!DOCTYPE html>
-    <head>
-        <script type="text/javascript" src="crafty.js"></script>
-        <script type="text/javascript" src="game.js"></script>
-        <title>My Crafty Game</title>
-        <style>
-        body, html { margin:0; padding: 0; overflow:hidden; font-family:Arial; font-size:20px }
-        #cr-stage { border:2px solid black; margin:5px auto; color:white }
-        </style>
-    </head>
-    <body>
-    </body>
-    </html>
+{% highlight html %}
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="crafty.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+    <title>My Crafty Game</title>
+    <style>
+    body, html { margin:0; padding: 0; overflow:hidden; font-family:Arial; font-size:20px }
+    #cr-stage { border:2px solid black; margin:5px auto; color:white }
+    </style>
+</head>
+<body>
+</body>
+</html>
+{% endhighlight %}
 
 The game skeleton is pretty simple:
 
-    
-    window.onload = function () {
-        //start crafty
-        Crafty.init(400, 336);
-        //Crafty.canvas.init();
-    };
+{% highlight javascript %}    
+window.onload = function () {
+    //start crafty
+    Crafty.init(400, 336);
+    //Crafty.canvas.init();
+};
+{% endhighlight %}
 
 If you are familiar with javascript you will recognize this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
 Crafty.init(with, height) is where Crafty does it's initialization stuff that is needed before the game can run.
