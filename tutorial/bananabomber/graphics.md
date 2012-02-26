@@ -116,4 +116,4 @@ The normal equality operator == does type coercion before checking for equality.
 
 The first one is sort of okay, but the rest will come and bite you some day. That is why the father of javascript, Douglas Crockford recommends using the strict equality operator, === that will never say values of different types are equal.
 
-In the next article we will add movement, collision detection and animation to our unit: [Keyboard input and binding to events](movement-bind-events-keyboard-controls)
+In the next article we will add movement, collision detection and animation to our unit: [Keyboard input and binding to events](input-and-events)

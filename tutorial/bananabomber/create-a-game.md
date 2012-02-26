@@ -99,4 +99,4 @@ Crafty provides a system very similar to what is known as mixins, multiple inher
 So what we did in the loading scene to get the background is we created an entity with the components 2D, DOM and Text. 2D provides functionality around positioning in 2d space(x, y, etc.). DOM provides functionality that will automatically draw the entity to the screen using dom elements, and Text... i think you guessed it. These components are defined in the crafty.js file and you can go have a look if you are curious, but we will get back to how these components are created in a later article.
 
 
-Next up is world generation in the article [Tiles, spritemap and animations](spritemap-tiles-and-animations)
+Next up is world generation in the article [Tiles, spritemap and animations](graphics)
