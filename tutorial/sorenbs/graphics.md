@@ -11,7 +11,7 @@ As our game is tile based, all the graphic elements have the same size: 16x16 pi
 
 To be able to work with these sprites in Crafty we must cut them out of the sheet and give them names:
 
-{% endhighlight %}
+{% highlight javascript %}
 //turn the sprite map into usable components
 Crafty.sprite(16, "sprite.png", {
     grass1: [0, 0],
@@ -30,13 +30,13 @@ Crafty.sprite(16, "sprite.png", {
 
 The tile size is specified once, so we can reference the tiles by row and column. This is convenient, but if you are working with sprites of different size you can specify the exact size like this:
 
-{% endhighlight %}
+{% highlight javascript %}
 name: [x, y, width, height]
 {% endhighlight %}
 
 I will step through the generateWorld method little by little as it shows several new concepts. The general idea is that we will divide the map into 16x16 pixel areas and for each decide what background and elements to put on it:
 
-{% endhighlight %}
+{% highlight javascript %}
 //method to generate the map
 function generateWorld() {
     //loop through all tiles
@@ -53,7 +53,7 @@ First we create some grass background. We use the 2D and DOM components to give 
 
 To provide a closed playing field for the game we add some bushes around the edges, much the same way as the grass:
 
-{% endhighlight %}
+{% highlight javascript %}
 //create a fence of bushes
 if(i === 0 || i === 24 || j === 0 || j === 20)
     Crafty.e("2D, DOM, solid, bush" + Crafty.randRange(1, 2))
@@ -62,7 +62,7 @@ if(i === 0 || i === 24 || j === 0 || j === 20)
 
 Let's get some more interesting stuff on the stage. Like flowers dancing in the wind scattered over the map...
  
-{% endhighlight %}
+{% highlight javascript %}
 //generate some nice flowers within the boundaries of the outer bushes
 if (i > 0 && i < 24 && j > 0 && j < 20
         && Crafty.randRange(0, 50) > 30
@@ -86,7 +86,7 @@ explodable and solid are tagging components. That is they don't have an implemen
 
 We will finish this article by adding a grid of bushes in true bomberman style:
 
-{% endhighlight %}
+{% highlight javascript %}
             //grid of bushes
             if((i % 2 === 0) && (j % 2 === 0)) {
                 Crafty.e("2D, DOM, solid, bush1")
@@ -106,7 +106,7 @@ Note: % is the modulo operator. It simply divides the left operand with the righ
 If you wonder why i use === instead of just == here is an explanation.
 The normal equality operator == does type coercion before checking for equality. This means that all the following expressions return true
 
-{% endhighlight %}
+{% highlight javascript %}
 ('5' == 5)
 (0 == '')
 (0 == false)
