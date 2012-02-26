@@ -32,7 +32,7 @@ Now create the html file that will host the game:
 
 The game skeleton is pretty simple:
 
-{% highlight javascript %}    
+{% highlight javascript %}
 window.onload = function () {
     //start crafty
     Crafty.init(400, 336);
