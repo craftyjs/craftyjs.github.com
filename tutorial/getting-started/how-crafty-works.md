@@ -27,6 +27,8 @@ Explain events, entities, sprites etc.
 
 
 <iframe width="600" height="300" src="/tutorial/games/pong/pong.html">
+	This is an iframe. sorry.
+</iframe>
 
 {% highlight javascript %}
 Crafty.init(600, 300);
@@ -76,8 +78,3 @@ Crafty.e("RightPoints, DOM, 2D, Text")
 	.text("0 Points");
 {% endhighlight %}
 
-
-
-
-
-Running game and code (~20 lines)
