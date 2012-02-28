@@ -3,7 +3,6 @@
 	<script type="text/javascript" src="http://craftyjs.com/release/0.4.5/crafty-min.js"></script>
 	<style>
 		body, html { margin:0; padding: 0; overflow:hidden; font-family:Arial; font-size:20px }
-		#cr-stage { border:2px solid black; margin:5px auto; color:white }
 	</style>
 </head>
 <body>
@@ -25,7 +24,9 @@
 		//Ball
 		Crafty.e("2D, DOM, Color, Collision")
 			.color('rgb(0,0,255)')
-			.attr({ x: 300, y: 150, w: 10, h: 10, dX: Crafty.math.randomInt(2, 5), dY: Crafty.math.randomInt(2, 5) })
+			.attr({ x: 300, y: 150, w: 10, h: 10, 
+					dX: Crafty.math.randomInt(2, 5), 
+					dY: Crafty.math.randomInt(2, 5) })
 			.bind('EnterFrame', function () {
 				//hit floor or roof
 				if (this.y <= 0 || this.y >= 290)
@@ -33,11 +34,13 @@
 
 				if (this.x > 600) {
 					this.x = 300;
-					Crafty("LeftPoints").each(function () { this.text(++this.points + " Points") });
+					Crafty("LeftPoints").each(function () { 
+						this.text(++this.points + " Points") });
 				}
 				if (this.x < 10) {
 					this.x = 300;
-					Crafty("RightPoints").each(function () { this.text(++this.points + " Points") });
+					Crafty("RightPoints").each(function () { 
+						this.text(++this.points + " Points") });
 				}
 
 				this.x += this.dX;

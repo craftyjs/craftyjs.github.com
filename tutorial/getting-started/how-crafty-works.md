@@ -26,9 +26,8 @@ Other goodies:
 Explain events, entities, sprites etc.
 
 
-<iframe width="600" height="300" src="/tutorial/games/pong/pong.html">
-	This is an iframe. sorry.
-</iframe>
+
+A simple game of pong
 
 {% highlight javascript %}
 Crafty.init(600, 300);
@@ -47,7 +46,9 @@ Crafty.e("Paddle, 2D, DOM, Color, Multiway")
 //Ball
 Crafty.e("2D, DOM, Color, Collision")
 	.color('rgb(0,0,255)')
-	.attr({ x: 300, y: 150, w: 10, h: 10, dX: Crafty.math.randomInt(2, 5), dY: Crafty.math.randomInt(2, 5) })
+	.attr({ x: 300, y: 150, w: 10, h: 10, 
+			dX: Crafty.math.randomInt(2, 5), 
+			dY: Crafty.math.randomInt(2, 5) })
 	.bind('EnterFrame', function () {
 		//hit floor or roof
 		if (this.y <= 0 || this.y >= 290)
@@ -55,11 +56,13 @@ Crafty.e("2D, DOM, Color, Collision")
 
 		if (this.x > 600) {
 			this.x = 300;
-			Crafty("LeftPoints").each(function () { this.text(++this.points + " Points") });
+			Crafty("LeftPoints").each(function () { 
+				this.text(++this.points + " Points") });
 		}
 		if (this.x < 10) {
 			this.x = 300;
-			Crafty("RightPoints").each(function () { this.text(++this.points + " Points") });
+			Crafty("RightPoints").each(function () { 
+				this.text(++this.points + " Points") });
 		}
 
 		this.x += this.dX;
@@ -78,3 +81,8 @@ Crafty.e("RightPoints, DOM, 2D, Text")
 	.text("0 Points");
 {% endhighlight %}
 
+And the result
+
+<iframe width="600" height="300" src="/tutorial/games/pong/pong.html">
+	This is an iframe. sorry.
+</iframe>
