@@ -18,19 +18,16 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 ## Entities & Components
 
 * What and Why
-*
 * Simple Game
 
 ## Events
 
 * What and Why
-*
 * Simple Game
 
 ## Collision
 
 * What and Why
-*
 * Simple Game
 
 ## Input
@@ -43,12 +40,10 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 
 * Sprite Animation
 * Tween
-*
 
 ## Viewport
 
 * What and Why
-*
 * Simple Game
 
 ## Development Techniques
