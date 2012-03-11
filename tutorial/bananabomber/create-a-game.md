@@ -41,13 +41,13 @@ window.onload = function () {
 {% endhighlight %}
 
 If you are familiar with javascript you will recognize this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
-Crafty.init(with, height) is where Crafty does it's initialization stuff that is needed before the game can run.
-We are going to create a tile-based game so the with and height is set to multiples of 16 which is the size of the tiles.
+Crafty.init(width, height) is where Crafty does it's initialization stuff that is needed before the game can run.
+We are going to create a tile-based game so the width and height is set to multiples of 16, which is the size of the tiles.
 
 There are two ways of getting images onto the screen: 
 
 * Using a canvas element that is like a big square of screen estate that you get to draw pixels on or 
-* using normal dom elements that you can manipulate using css and javascript but is drawn to the screen by the browser. 
+* using normal DOM elements that you can manipulate using css and javascript but is drawn to the screen by the browser. 
 
 It turns out that the DOM method is fastest in most cases, but if you want to use canvas you need to call Crafty.canvas.init() first. As you will see later Crafty abstracts away most differences between DOM and canvas, so it is a matter of changing a single variable if you decide to change later.
 
@@ -92,11 +92,11 @@ The first thing to do in the game scene is to populate the world with background
 
 ## Components
 
-In programming it is quite usual to use an approach called Object Oriented Programming, OOP where code is organised in hierarchies of classes that can inherit functionality from ancestors while providing new functionality itself. Flash adopted this approach with AS3 released some years ago. This way of organizing code has some problems though and hence Crafty takes a different approach.
+In programming it is quite usual to use an approach called Object-Oriented Programming, or OOP, where code is organised in hierarchies of classes that can inherit functionality from ancestors while providing new functionality itself. Flash adopted this approach with AS3 released some years ago. This way of organizing code has some problems though and hence Crafty takes a different approach.
 
 Crafty provides a system very similar to what is known as mixins, multiple inheritance or traits depending on the specific language. An easy way to think about this is that an entity (like say the player or an enemy) is composed of many reusable components that enhance the entity with some new functionality. One way to add components to an entity is to call Crafty.e(string) which will create a new entity with the functionality provided by the comma-separated list of components specified in the string parameter. 
 
-So what we did in the loading scene to get the background is we created an entity with the components 2D, DOM and Text. 2D provides functionality around positioning in 2d space(x, y, etc.). DOM provides functionality that will automatically draw the entity to the screen using dom elements, and Text... i think you guessed it. These components are defined in the crafty.js file and you can go have a look if you are curious, but we will get back to how these components are created in a later article.
+So what we did in the loading scene to get the background is we created an entity with the components 2D, DOM and Text. 2D provides functionality around positioning in 2d space(x, y, etc.). DOM provides functionality that will automatically draw the entity to the screen using dom elements, and Text... I think you guessed it. These components are defined in the crafty.js file and you can go have a look if you are curious, but we will get back to how these components are created in a later article.
 
 
 Next up is world generation in the article [Tiles, spritemap and animations](graphics)
