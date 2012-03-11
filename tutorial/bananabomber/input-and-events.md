@@ -3,7 +3,7 @@ layout: tutorial
 title: "Keyboard input and binding to events"
 ---
 
-Events is how components in Crafty talk to each other. In this article we will bind to events from Craftys Keyboard component to make it possible for a player to control the main character.
+Events are how components in Crafty talk to each other. In this article we will bind to events from Craftys Keyboard component to make it possible for a player to control the main character.
 
 The following code will create the player entity. The Ape component provides collision handling and some nice walking animations. We shall create this component in a moment. The LeftControls component will handle keyboard input and BombDropper will give out hero the ability to throw bombs. You may recall from the last article that we defined a sprite component called player:
 
