@@ -95,7 +95,7 @@ We use this to change the animation accordingly. You bind to an event by providi
 })
 {% endhighlight %}
 
-## Collision detection
+## Collision Detection
 
 The next part of the Ape component deals with collision detection to prevent the user from walking through solid tiles. You might recall that when generating the world we marked bushes and flowers with a fictive component called solid.
 
@@ -136,7 +136,7 @@ In the next article we will build a bombDropper component. this last bit of the 
 {% endhighlight %}
 
 
-Let's put two players on the map by extendign the main scene a bit:
+Let's put two players on the map by extending the main scene a bit:
 
 {% highlight javascript %}
 Crafty.scene("main", function () {
