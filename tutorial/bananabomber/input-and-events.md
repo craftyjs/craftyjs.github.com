@@ -3,7 +3,7 @@ layout: tutorial
 title: "Keyboard input and binding to events"
 ---
 
-Events is how components in Crafty talk to each other. In this article we will bind to events from Craftys Keyboard component to make it possible for a player to control the main character.
+Events are how components in Crafty talk to each other. In this article we will bind to events from Craftys Keyboard component to make it possible for a player to control the main character.
 
 The following code will create the player entity. The Ape component provides collision handling and some nice walking animations. We shall create this component in a moment. The LeftControls component will handle keyboard input and BombDropper will give out hero the ability to throw bombs. You may recall from the last article that we defined a sprite component called player:
 
@@ -95,7 +95,7 @@ We use this to change the animation accordingly. You bind to an event by providi
 })
 {% endhighlight %}
 
-## Collision detection
+## Collision Detection
 
 The next part of the Ape component deals with collision detection to prevent the user from walking through solid tiles. You might recall that when generating the world we marked bushes and flowers with a fictive component called solid.
 
@@ -136,7 +136,7 @@ In the next article we will build a bombDropper component. this last bit of the 
 {% endhighlight %}
 
 
-Let's put two players on the map by extendign the main scene a bit:
+Let's put two players on the map by extending the main scene a bit:
 
 {% highlight javascript %}
 Crafty.scene("main", function () {
