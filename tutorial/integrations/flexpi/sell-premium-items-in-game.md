@@ -5,29 +5,29 @@ title: Sell premium items in game - Flexpi integration
 
 # Sell premium items in game
 
-* Skonfiguruj FlexPayment dla PayPal w panelu aplikacji
-* Zainicjuj obsługę FlexPayment
+* Configure FlexPayment for PayPal in dashboard
+* Initiate support for FlexPayment
 {% highlight javascript %}
-    // we have "userId" from FlexSocial integration.
-    flex.payment.init(function(){}, userId);
+// we have "userId" from FlexSocial integration.
+flex.payment.init(function(){}, userId);
 {% endhighlight %}
 
-* Dodaj przedmiot premium do koszyka sprzedającego:
+* Add the premium item into a users cart:
 {% highlight javascript %}
 flex.payment.cart.add('super item', 5.99, 1, function(item){
-    // do something with just added item
+	// do something with added item
 });
 {% endhighlight %}
 
-* Wygeneruj formularz płatności i pozwól użytkownikowi kupić przedmiot
+* Generate payment form, and let your user buy something
 {% highlight javascript %}
 flex.payment.paypal.createFormView('my-div-id', 'Pay with PayPal');
 {% endhighlight %}
 
-* Pobierz status transakcji i przekaż przedmiot dla gracza.
+* Get the transaction status and give him an item.
 {% highlight javascript %}
 var cartId = flex.payment.cart.getId;
 flex.payment.transactions.get(cartId, function(transaction){
-    // give super item for User.
+	// give user an item
 })
 {% endhighlight %}

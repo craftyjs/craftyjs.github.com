@@ -1,16 +1,16 @@
 ---
 layout: tutorial
-title: Login user with social - Flexpi integration
+title: Log in a user with social - Flexpi integration
 ---
 
 # Login user with social
 
-* Skonfiguruj FlexSocial dla Facebook
-* W miejscu w którym chcesz dokonać zalogowania użytkonika dodaj:
+* Configure FlexSocial for facebook 
+* Place the following code in the place where you want log in a user:
 
 {% highlight javascript %}
 flex.social.facebook.login(function(res){
-    flex.social.facebook.getUser(function(userData){            
+    flex.social.facebook.getUser(function(userData){ 
         console.log(userData);
     });
 });
@@ -22,10 +22,10 @@ For example:
 entity
     .bind('Click', function(e){
         flex.social.facebook.login(function(res){
-		    flex.social.facebook.getUser(function(userData){            
-		        console.log(userData);
-		        var userId = userData.id;
-		    });
-		});
+            flex.social.facebook.getUser(function(userData){ 
+                console.log(userData);
+                var userId = userData.id;
+            });
+        });
     }
 {% endhighlight %}
