@@ -9,9 +9,9 @@ title: Custom data logging - Flexpi integration
 * Place the following code in the place where you want login variable:
 
 {% highlight javascript %}
-	flex.stats('your defined app key', 'your value to log', function(res){
-		// response with status and status message
-	});
+flex.stats('your defined app key', 'your value to log', function(res){
+	// response with status and status message
+});
 {% endhighlight %}
 
 For example:
