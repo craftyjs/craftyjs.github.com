@@ -1,5 +1,5 @@
 ---
-layout: tutorials
+layout: tutorial
 title: Resources for javascript games
 ---
 
@@ -34,6 +34,8 @@ title: Resources for javascript games
 [Playtomic](http://playtomic.com/api/html5) leader boeards, analytics online storage
 
 [PlayerIO](http://playerio.com) multiplayer, payments, online storage [Flash-only]
+
+[Flexpi](http://flexpi.com) log custom data, social integrations, payment integrations, badges management
 
 ## Art and sound
 
