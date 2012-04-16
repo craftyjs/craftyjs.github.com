@@ -57,6 +57,15 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 
 ## Modules
 
+## Flexpi integration
+
+* introduction
+* instalation
+* custom data logging
+* login user with social or browserid
+* sell premium items in game
+* add badge for user
+
 # Old Tutorial Site
 
 The old tutorial page is available at http://craftyjs.com/tutorials.php
