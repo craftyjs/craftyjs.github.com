@@ -10,7 +10,7 @@ title: Log in a user with social - Flexpi integration
 
 {% highlight javascript %}
 flex.social.facebook.login(function(res){
-    flex.social.facebook.getUser(function(userData){ 
+flex.social.facebook.getUser(function(userData){ 
         console.log(userData);
     });
 });
