@@ -28,8 +28,7 @@ proposed structure tree:
 ---- libs	 -> Other libraries files
 -------- backbone
 -------- jquery
---------
-modernizr
+-------- modernizr
 -------- require-jquery
 -------- underscore
 ---- baseEntity.js -> Base entity
@@ -39,4 +38,4 @@ modernizr
 -- index.html -> Game wrapper
 ``` 
 
-You can find here (adres) a sample project that use CraftyBoilerplate.
+You can find here (https://github.com/ahilles107/CraftyBoilerplate) a sample project that use CraftyBoilerplate.
