@@ -17,7 +17,7 @@ To clean up the code and files, in this case we need to use backbone.js as wrapp
 
 proposed structure tree:
 
-{% highlight %}
+{% highlight html %}
 -- src
 ---- components -> Crafty components files
 ---- entities -> Files with entities
