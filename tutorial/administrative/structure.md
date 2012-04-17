@@ -17,7 +17,7 @@ To clean up the code and files, in this case we need to use backbone.js as wrapp
 
 proposed structure tree:
 
-```
+{% highlight %}
 -- src
 ---- components -> Crafty components files
 ---- entities -> Files with entities
@@ -39,6 +39,6 @@ proposed structure tree:
 -- web
 ---- images
 -- index.html -> Game wrapper
-``` 
+{% endhighlight %} 
 
 You can find here (https://github.com/ahilles107/CraftyBoilerplate) a sample project that use CraftyBoilerplate.
