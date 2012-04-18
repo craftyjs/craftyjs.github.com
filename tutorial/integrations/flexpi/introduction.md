@@ -5,7 +5,7 @@ title: Introduction - Flexpi integration
 
 # Introduction
 
-Flexpi is a set of tools (services platform) for HTML5 games developers.
+Flexpi [http://flexpi.com](http://flexpi.com) is a set of tools (services platform) for HTML5 games developers.
 
 Flexpi currently consists of four services:
 
@@ -40,4 +40,4 @@ Each application has got "App id" - identification number.
     });
 {% endhighlight %}
 
-Thats all - your app is now connected with flexpi.com
+Thats all - your app is now connected with http://flexpi.com
