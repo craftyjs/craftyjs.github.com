@@ -82,7 +82,7 @@ if (i > 0 && i < 24 && j > 0 && j < 20
 The flower component adds the flower sprite to the entity. The Animate component adds *surprise, surprise* animation capabilities to the flower. This is used by calling the animate() function on the entity. The first call creates an animation called wind that starts in column 0, row 1 (just as the flower sprite itself) and spans 3 columns. To learn about how to setup more advanced animations have a look in the documentation. 
 The second call starts the animation, specifying that it should last 80 frames and play forever (replace -1 with a positive int to specify a number of times the animation should repeat before stopping).
 
-explodable and solid are tagging components. That is they don't have an implementation and are simply used to mark an entity of a given kind. This works very well with Craftys collision functionality that can detect collision with entities that have a given component. We will have a look at that in a later article.
+explodable and solid are tagging components. That is they don't have an implementation and are simply used to mark an entity of a given kind. This works very well with Crafty's collision functionality that can detect collision with entities that have a given component. We will have a look at that in a later article.
 
 We will finish this article by adding a grid of bushes in true bomberman style:
 

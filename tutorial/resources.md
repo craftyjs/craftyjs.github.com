@@ -31,7 +31,7 @@ title: Resources for javascript games
 
 [tapjs](http://tapjs.com) hosting platform, online storage, leaderboards
 
-[Playtomic](http://playtomic.com/api/html5) leader boeards, analytics online storage
+[Playtomic](http://playtomic.com/api/html5) leader boards, analytics online storage
 
 [PlayerIO](http://playerio.com) multiplayer, payments, online storage [Flash-only]
 
@@ -69,7 +69,7 @@ title: Resources for javascript games
 
 [Open Web Gaming Special conference](http://lanyrd.com/2010/gameonlondon/schedule/)
 
-[Paul Bakaus on javescript game engines in general and demo of the Aves engine](http://www.youtube.com/watch?v=_RRnyChxijA)
+[Paul Bakaus on javacript game engines in general and demo of the Aves engine](http://www.youtube.com/watch?v=_RRnyChxijA)
 
 [Paul Bakaus again](http://jsconfeu.blip.tv/file/4244325/)
 
@@ -85,7 +85,7 @@ title: Resources for javascript games
 
 [@pbakaus](http://twitter.com/#!/pbakaus) creator of Aves engine
 
-[@robhawkes](http://twitter.com/#!/robhawkes) at Mozilla. Spaeking and writing.
+[@robhawkes](http://twitter.com/#!/robhawkes) at Mozilla. Speaking and writing.
 
 [@craftyjs](http://twitter.com/#!/craftyjs) the Crafty engine
 

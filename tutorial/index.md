@@ -51,7 +51,7 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 * Editors
 * Debugging
 * Testing On Mobile
-* Coffescript
+* CoffeeScript
 
 ## Mobile
 
@@ -60,7 +60,7 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 ## Flexpi integration
 
 * introduction
-* instalation
+* installation
 * custom data logging
 * login user with social or browserid
 * sell premium items in game
