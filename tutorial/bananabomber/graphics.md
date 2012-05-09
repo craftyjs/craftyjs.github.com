@@ -44,7 +44,7 @@ function generateWorld() {
         for (var j = 0; j < 21; j++) {
 
             //place grass on all tiles
-            grassType = Crafty.randRange(1, 4);
+            grassType = Crafty.math.randomInt(1, 4);
             Crafty.e("2D, DOM, grass" + grassType)
                 .attr({ x: i * 16, y: j * 16, z:1 });
 {% endhighlight %}
@@ -56,7 +56,7 @@ To provide a closed playing field for the game we add some bushes around the edg
 {% highlight javascript %}
 //create a fence of bushes
 if(i === 0 || i === 24 || j === 0 || j === 20)
-    Crafty.e("2D, DOM, solid, bush" + Crafty.randRange(1, 2))
+    Crafty.e("2D, DOM, solid, bush" + Crafty.math.randomInt(1, 2))
     .attr({ x: i * 16, y: j * 16, z: 2 });
 {% endhighlight %}
 
@@ -65,7 +65,7 @@ Let's get some more interesting stuff on the stage. Like flowers dancing in the 
 {% highlight javascript %}
 //generate some nice flowers within the boundaries of the outer bushes
 if (i > 0 && i < 24 && j > 0 && j < 20
-        && Crafty.randRange(0, 50) > 30
+        && Crafty.math.randomInt(0, 50) > 30
         && !(i === 1 && j >= 16)
         && !(i === 23 && j <= 4)) {
     var f = Crafty.e("2D, DOM, flower, solid, SpriteAnimation, explodable")
