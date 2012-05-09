@@ -1,6 +1,6 @@
 ---
 layout: cookbook
-title: What we need
+title: Crafty Cookbook
 ---
 
 Welcome to the Crafty Cookbook - a collection of code snippets and ideas for solving common problems.

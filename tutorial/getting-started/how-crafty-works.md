@@ -82,6 +82,14 @@ Crafty.e("RightPoints, DOM, 2D, Text")
 
 And the result
 
-<iframe width="600" height="300" src="/tutorial/games/pong/pong.html">
+<iframe id="gameframe" width="600" height="300" src="/tutorial/games/pong/pong.html">
 	This is an iframe. sorry.
 </iframe>
+
+<script type="text/javascript">
+	//Prevent the game from scrolling main page
+    if (frames['gameframe']!=undefined)
+      frames['gameframe'].focus(); // Works in all browser, except Firefox
+    else
+      document.getElementById('gameframe').focus();  // Works in Firefox
+</script>
