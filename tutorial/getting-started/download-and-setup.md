@@ -13,7 +13,22 @@ You can get crafty in several ways:
 
 # Setup
 
-You don't need setup anything - just include crafty to your app:
+Getting started is as simple as adding a script tag to your html page. The following is a simple skeleton:
+
 {% highlight html %}
-<script type="text/javascript" src="http://cdn.craftycomponents.com/crafty-release.js"></script>
+<!DOCTYPE html>
+<head>	
+	<script type="text/javascript" src="http://cdn.craftycomponents.com/crafty-release.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		Crafty.init(400, 400);
+
+		// YOUR GAME CODE
+
+	</script>
+</body>
+</html>
+
+
 {% endhighlight %}

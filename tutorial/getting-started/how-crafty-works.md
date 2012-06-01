@@ -21,12 +21,43 @@ Other Goodies:
 * Community modules - A constantly growing collection of user-generated code you can use.
 * Pure JavaScript - No magic. Works in all major browsers and can be combined with your favorite js library.
 
-# What does a Crafty game consist of
+# What does a Crafty game look like
 
-Explain events, entities, sprites etc.
+Entities are the basic building blocks in Crafty. Everything in your game that needs to interact with the world is an entity. A player entity could look like this:
 
+{% highlight javascript %}
+Crafty.e("2D, DOM, Twoway").twoway(3);
+{% endhighlight %}
 
-A simple game of pong
+This creates an entity that is positioned in the 2D world, is drawn to the stage using DOM elements and can be moved left and right using the arrow keys at a speed of 3 pixls pr frame.
+If this seems a little magic to you it is because I haven't introduced you to components yet.
+
+A component is a reusable piece of functionality that can be added to one or more entities. You can add components when the entity is created, as we did above, or at any later point. Components can even add more components to its host entity.
+The following component moves its entity to a random place on the stage:
+
+{% highlight javascript %}
+Crafty.c("RandomPosition", {
+	init: function() {
+		this.attr({ x: Crafty.math.randomInt(50,350), y: Crafty.math.randomInt(50,350) });
+	}
+});
+
+var myEnt = Crafty.e("2D, DOM, Twoway, RandomPosition, Color").twoway(3).color("red").attr({w: 50, h: 50});
+{% endhighlight %}
+
+I also changed the size of the entity and gave it a color so you can see it. You now have a fully runnable game - go ahead and add it to the skeleton from <a href='/tutorial/getting-started/download-and-setup'>Download and setup</a> to see for yourself!
+
+Entities can react to events that occur in the game. Crafty provides a suite of build in events such as EnterFrame, Pause, SceneChange. Moving an entity one pixel to the left each frame is achieved by binding a function to the EnterFrame event
+
+{% highlight javascript %}
+myEnt.bind("EnterFrame", function() {
+	this.x--;
+})
+{% endhighlight %}
+
+# A simple game of pong
+
+With these simple building blocks you can create a game of two player pong complete with paddles and scoreboard in some 50 lines of javascript!
 
 {% highlight javascript %}
 Crafty.init(600, 300);
