@@ -13,7 +13,7 @@ To be able to work with these sprites in Crafty we must cut them out of the shee
 
 {% highlight javascript %}
 //turn the sprite map into usable components
-Crafty.sprite(16, "sprite.png", {
+Crafty.sprite(16, "bananabomber-sprites.png", {
     grass1: [0, 0],
     grass2: [1, 0],
     grass3: [2, 0],
