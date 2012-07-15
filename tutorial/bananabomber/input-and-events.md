@@ -99,7 +99,7 @@ We use this to change the animation accordingly. You bind to an event by providi
 
 The next part of the Ape component deals with collision detection to prevent the user from walking through solid tiles. You might recall that when generating the world we marked bushes and flowers with a fictive component called solid.
 
-Craftys collision detection works on the level of components. You specify the name of a component, and whenever the entity collides with an entity with that component your callback is called.
+Crafty's collision detection works on the level of components. You specify the name of a component, and whenever the entity collides with an entity with that component your callback is called.
 
 {% highlight javascript %}
 .onHit("solid", function () {

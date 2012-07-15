@@ -3,7 +3,7 @@ layout: tutorial
 title: A Better Way to Structure your Game
 ---
 
-Explain why it is better to use components to structure a game than classes and enheritance. Has-a vs is-a
+Explain why it is better to use components to structure a game than classes and inheritance. Has-a vs is-a
 
 how is it used. Add, remove, requires
 
