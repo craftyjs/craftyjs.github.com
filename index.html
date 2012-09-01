@@ -6,8 +6,8 @@ title: Crafty Game Engine
 <div id="grid">
 <div class="box">
 
-<button style="width:240px; margin-top: 50px;" class="download" id="download"><h2>Download v0.4.9</h2></button> 
-
+<button style="width:240px; cursor: pointer;" class="download" id="download"><h2>Download</h2></button> 
+	<p>Crafty is actively developed and has a monthly release cycle. See <a href="https://github.com/craftyjs/Crafty/wiki/Release-Notes">release notes.</a></p>
 </div>
 
 <div class="box browser">
@@ -88,8 +88,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#download").click(function() {
-			var url = ($("#minified").attr("checked") === true) ? "?c" : "";
-			window.location = "download.php"+url;
+			window.location = "http://craftycomponents.com/components/single/8/crafty";
 		});
 		$("#modal").click(function() {
 			$("#modal-window iframe").attr("src", "");
