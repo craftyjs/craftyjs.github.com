@@ -1,0 +1,565 @@
+<h2>Building an RPG in JavaScript with Crafty</h2>
+<em>by Louis Stowasser</em>
+
+<p><em>
+The day has come where JavaScript games are possible and not only possible but simple. 
+This article will show you how easy it is to create games in JavaScript using the canvas 
+tag and even basic divs with the help of a new game engine called Crafty.
+</em></p>
+
+<hr />
+<h2>Tutorial Details</h2>
+
+<ul>
+	<li><b>Program</b>: Crafty</li>
+	<li><b>Version</b>: 0.3</li>
+	<li><b>Difficulty:</b> Medium</li>
+	<li><b>Estimated Completion Time:</b> 15mins</li>
+</ul>
+
+
+<p>
+The game we will be creating in this tutorial is the basics of an RPG. 
+This way you will be able to add more and more features once you learn the basics of Crafty. 
+<a href="http://craftyjs.com/demos/tutorial" target="_blank">View the demo</a>.
+</p>
+
+<p>
+Before we get started there are some key concepts to learn which may differ to what you are used to. Crafty uses something
+called an Entity Component system. Entities are your game objects (players, enemies, walls, balls) and Components are objects
+or a set of functions and properties that can be applied to any entity which will inherit the functionality. If you are used to 
+Object Oriented programming, this is similar to one level of multiple inheritence. This is useful in game development because
+it avoids long chains of inheritence and messy polymorphism.
+</p>
+
+<p>Crafty uses syntax similar to jQuery by having a selector engine to select entities by their components.</p>
+
+<p>
+<pre name="code" class="js">
+Crafty(&quot;mycomponent&quot;)
+Crafty("hello 2D component")
+Crafty("hello, 2D, component")
+</pre></p>
+
+<p>
+The first selector will return all entities that has the component &quot;mycomponent&quot;. The second will return all entities
+that has &quot;hello&quot; and &quot;2D&quot; and &quot;component&quot; whereas the last will return all entities that has at least
+one of those components.
+</p>
+
+<p>
+If you are a bit confused, fear not, first hand experience will make it click. So let's dive in!
+</p>
+
+<hr />
+<h2> <span>Step 1</span> Supplies</h2>
+<p>
+First of all we need some sprites. I made some 16x16 sprites in Photoshop for the grass, flowers, 
+bushes and the player's animation.
+</p>
+
+<div class="tutorial_image">
+<img src="sprite.png" />
+</div>
+
+<p>
+We need to setup our Crafty game. The skeleton of a Crafty game is an HTML file with a script tag pointing to the Crafty JS file and
+another script tag for the game logic (in this example, <code>game.js</code>). I added
+a few basic styles to place the stage in the center of the screen and give it a black border.
+</p>
+
+<p>
+<pre name="code" class="js">
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot;
+        &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+&lt;head&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;http://craftyjs.com/release/0.3/crafty.js&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;game.js&quot;>&lt;/script&gt;
+  &lt;title>My Crafty Game&lt;/title&gt;
+  &lt;style&gt;
+    body, html { margin:0; padding: 0; overflow:hidden; font-family:Arial; font-size:20px }
+    #cr-stage { border:2px solid black; margin:5px auto; color:white }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+
+<p>
+The skeleton code of a Crafty game is quite simple.
+</p>
+
+<p>
+<pre name="code" class="js">
+window.onload = function() {
+  //start crafty
+  Crafty.init(50, 400, 320);
+  Crafty.canvas();
+};
+</pre>
+</p>
+
+<p>
+When the window object is loaded initialize Crafty with an FPS (frames per second) of 50, a width and height of 400 and 320 respectively, and
+create a canvas element. The reason for these dimensions is so 25 16x16 tiles can fit horizontally and 20 vertically.
+</p>
+
+<p><em>Note: <code>Crafty.canvas()</code> is required for any canvas drawing. It can be left out if all drawing is done with DOM.</em></p>
+
+<p>
+Now we have the basics of a Crafty game! Every game you create with Crafty will have generally the same skeleton code so feel free to use this
+as a template. Next up is setting up scenes.
+</p>
+
+<hr />
+<h2> <span>Step 2</span> Scenes</h2>
+<p>
+Scenes in Crafty are a quick way to organise game objects and easily change between screens or levels. 
+In our RPG we want a loading scene and the main scene which will be the game.
+</p>
+
+<p>
+<pre name="code" class="js">
+window.onload = function() {
+  // Start crafty
+  Crafty.init(50, 400, 320);
+  Crafty.canvas();
+
+  // The loading screen that will display while our assets load
+  Crafty.scene(&quot;loading&quot;, function() {
+    // Load takes an array of assets and a callback when complete
+    Crafty.load([&quot;sprite.png&quot;], function() {
+      Crafty.scene(&quot;main&quot;); //when everything is loaded, run the main scene
+    });
+    
+    // Black background with some loading text
+    Crafty.background(&quot;#000&quot;);
+    Crafty.e(&quot;2D, DOM, text&quot;).attr({w: 100, h: 20, x: 150, y: 120})
+      .text(&quot;Loading&quot;)
+      .css({&quot;text-align&quot;: &quot;center&quot;});
+  });
+  
+  // Automatically play the loading scene
+  Crafty.scene(&quot;loading&quot;);
+};
+</pre>
+</p>
+
+<p>
+Woah, where did all that code come from? First we declare the <code>loading</code> scene and tell it what to display when it is played then run it straight away.
+<code>Crafty.scene()</code> is used to declare a scene as well as play it. In the loading scene we preload some assets, set the background to black and
+add some loading text. <code>Crafty.load()</code> is used to preload assets such as sounds or images and once completed, call a function. In our game we want
+to play the main scene as soon as the assets are loaded.
+</p>
+
+<p><em>Note: If you need an entity to persist through changing scenes, simply add a component called <code>persist</code>.</em></p>
+
+<hr />
+<h2> <span>Step 3</span> Sprites</h2>
+<p>
+Remember that sprite map from earlier? It's time to use that in the game and get some visuals here. Crafty has an inbuilt method to 
+splice sprite maps into individual components that can be applied to any 2D entity.
+</p>
+
+<p>
+<pre name="code" class="js">
+window.onload = function() {
+  // Start crafty
+  Crafty.init(50, 400, 320);
+  Crafty.canvas();
+
+  // Turn the sprite map into usable components
+  Crafty.sprite(16, &quot;sprite.png&quot;, {
+    grass1: [0,0],
+    grass2: [1,0],
+    grass3: [2,0],
+    grass4: [3,0],
+    flower: [0,1],
+    bush1:  [0,2],
+    bush2:  [1,2],
+    player: [0,3]
+  });
+
+  // The loading screen that will display while our assets load
+  Crafty.scene(&quot;loading&quot;, function() {
+    // Load takes an array of assets and a callback when complete
+    Crafty.load([&quot;sprite.png&quot;], function() {
+      Crafty.scene(&quot;main&quot;); //when everything is loaded, run the main scene
+    });
+    
+    // Black background with some loading text
+    Crafty.background(&quot;#000&quot;);
+    Crafty.e(&quot;2D, DOM, text&quot;).attr({w: 100, h: 20, x: 150, y: 120})
+      .text(&quot;Loading&quot;)
+      .css({&quot;text-align&quot;: &quot;center&quot;});
+  });
+  
+  // Automatically play the loading scene
+  Crafty.scene(&quot;loading&quot;);
+};
+</pre>
+</p>
+
+<p>The first argument is the tile size (in our case is 16 pixels by 16 pixels). This defaults to 1 if left out. The next argument
+is the path to the sprite map. Finally the last argument is an object where the key is the label and the value is an array for where
+the particular sprite is located in the image. The values are multiplied by 16 so you need only give the amount of tiles from the top left. If
+a sprite takes up a width or height greater than one tile, simple add it to the array following this format.</p>
+
+<p><code>[x, y, w, h]</code></p>
+
+<p>
+You may notice that not all of the sprites in the sprite map have been labelled. This is because the sprites form an animation which
+we will add later.
+</p>
+
+<p>
+<pre name="code" class="js">
+window.onload = function() {
+  // Start crafty
+  Crafty.init(50, 400, 320);
+  Crafty.canvas();
+
+  // Turn the sprite map into usable components
+  Crafty.sprite(16, &quot;sprite.png&quot;, {
+    grass1: [0,0],
+    grass2: [1,0],
+    grass3: [2,0],
+    grass4: [3,0],
+    flower: [0,1],
+    bush1:  [0,2],
+    bush2:  [1,2],
+    player: [0,3]
+  });
+
+  // Method to randomy generate the map
+  function generateWorld() {
+    // Generate the grass along the x-axis
+    for (var i = 0; i &lt; 25; i++) {
+      // Generate the grass along the y-axis
+      for (var j = 0; j &lt; 20; j++) {
+        grassType = Crafty.randRange(1, 4);
+        Crafty.e(&quot;2D, canvas, grass&quot; + grassType)
+          .attr({x: i * 16, y: j * 16});
+
+        // 1/50 chance of drawing a flower and only within the bushes
+        if (i &gt; 0 && i &lt; 24 && j &gt; 0 && j &lt; 19 && Crafty.randRange(0, 50) &gt; 49) {
+          Crafty.e(&quot;2D, DOM, flower, animate&quot;)
+            .attr({x: i * 16, y: j * 16})
+            .animate(&quot;wind&quot;, 0, 1, 3)
+            .bind(&quot;enterframe&quot;, function() {
+              if (!this.isPlaying())
+                this.animate(&quot;wind&quot;, 80);
+            });
+        }
+      }
+    }
+
+    // Create the bushes along the x-axis which will form the boundaries
+    for (var i = 0; i &lt; 25; i++) {
+      Crafty.e(&quot;2D, canvas, wall_top, bush&quot;+Crafty.randRange(1,2))
+        .attr({x: i * 16, y: 0, z: 2});
+      Crafty.e(&quot;2D, canvas, wall_bottom, bush&quot;+Crafty.randRange(1,2))
+        .attr({x: i * 16, y: 304, z: 2});
+    }
+
+    // Create the bushes along the y-axis
+    // We need to start one more and one less to not overlap the previous bushes
+    for (var i = 1; i &lt; 19; i++) {
+      Crafty.e(&quot;2D, canvas, wall_left, bush&quot; + Crafty.randRange(1,2))
+        .attr({x: 0, y: i * 16, z: 2});
+      Crafty.e(&quot;2D, canvas, wall_right, bush&quot; + Crafty.randRange(1,2))
+        .attr({x: 384, y: i * 16, z: 2});
+    }
+  }
+
+  // The loading screen that will display while our assets load
+  Crafty.scene(&quot;loading&quot;, function() {
+    // Load takes an array of assets and a callback when complete
+    Crafty.load([&quot;sprite.png&quot;], function() {
+      Crafty.scene(&quot;main&quot;); //when everything is loaded, run the main scene
+    });
+
+    // Black background with some loading text
+    Crafty.background(&quot;#000&quot;);
+    Crafty.e(&quot;2D, DOM, text&quot;).attr({w: 100, h: 20, x: 150, y: 120})
+      .text(&quot;Loading&quot;)
+      .css({&quot;text-align&quot;: &quot;center&quot;});
+  });
+
+  // Automatically play the loading scene
+  Crafty.scene(&quot;loading&quot;);
+};
+</pre>
+</p>
+
+<p><code>generateWorld()</code> is a function that will create entities to fill up the stage. This is the first time we have created 
+an entity so I will go over that first. The function to create an entity is simple Crafty.e(). That's it. You can also pass
+a string of components to add which will just call the <code>.addComponent()</code> method. Have a look at the following lines of code:</p>
+
+<p>
+<pre name="code" class="js">
+grassType = Crafty.randRange(1, 4);
+Crafty.e(&quot;2D, canvas, grass&quot; + grassType)
+  .attr({x: i * 16, y: j * 16});
+</pre>
+</p>
+
+<p>When we spliced the sprite map, we had four types of grass components/labels: <code>grass1</code>, <code>grass2</code>, <code>grass3</code> and <code>grass4</code>. Using a little helper method,
+<code>Crafty.randRange()</code>, we generate a random number between 1 and 4 to decide which grass tile to use and apply it to the entity. 
+You will notice we are also adding some odd looking components: 2D and canvas. 2D is a very important component which gives the entity and <code>x</code> and <code>y</code>
+position, width and height (called <code>.w</code> and <code>.h</code>), rotation, alpha and some basic rectangle calculations. The other component, canvas, tells Crafty
+how to draw the entity and with this component obviously on the canvas element. You can just as easy use the DOM component and it will instead
+draw it as a &lt;DIV&gt;.
+</p>
+
+<p><em>Tip: DOM is usually always faster than canvas and if you notice sluggish performance in a canvas entity, try using DOM. It will
+look and act no different.</em></p>
+
+<p>
+The rest of the method generates a boundary around the stage so the player can't walk off. This uses the bush sprite. You will also notice
+that these boundary entities have a component either wall_left, wall_right, wall_up or wall_down. The only purpose they serve is as a label.
+There is no functionality inherited.
+</p>
+
+<hr />
+<h2> <span>Step 4</span> Entities</h2>
+<p>Let's create the player entity already. The source code is getting quite large so I will just show the code from the main scene.
+
+<p>
+<pre name="code" class="js">
+Crafty.scene(&quot;main&quot;, function() {
+  generateWorld();
+
+  // Create our player entity with some premade components
+  var player = Crafty.e(&quot;2D, DOM, player, controls, animate, collision&quot;)
+    .attr({x: 160, y: 144, z: 1})
+    .animate(&quot;walk_left&quot;, 6, 3, 8)
+    .animate(&quot;walk_right&quot;, 9, 3, 11)
+    .animate(&quot;walk_up&quot;, 3, 3, 5)
+    .animate(&quot;walk_down&quot;, 0, 3, 2);
+});
+</pre>
+</p>
+
+<p>We call the <code>generateWorld()</code> function from earlier and create a player entity with some premade components: animate, controls and collision.
+Animate is a component to create animations for sprites. Similar to <code>Crafty.scene()</code>, you add an animation and play it with the same method
+with different arguments. The first argument is the name of the animation, the <code>x</code> position in the sprite map, y position in the sprite map and then
+the <code>x</code> position of the last frame in the sprite map (assuming the sprites all have the same <code>y</code>. If they don't pass an array of arrays similar to the <code>Crafty.sprite()</code>
+method).</p>
+
+<p>The controls component transforms keyboard input into Crafty events. Use <code>.bind()</code> to listen to an event. The events triggered in the controls
+component is <code>keyup</code> and <code>keydown</code>. The collision component is a very basic method of calling a function if an entity intersects another entity with
+a specific component (this is where the labels come in handy such as <code>wall_left</code>, <code>wall_right</code>, etc etc).</p>
+
+<p><em>Note: The <code>.attr()</code> method is used to modify properties of the entity. In this case we position the player in the middle of the screen.</em></p>
+
+<hr />
+<h2> <span>Step 5</span> Components</h2>
+
+<p>
+It's about time we really utilise the Entity Component system and create our first component. The component we need right now is something
+to control movement. There already exists two components for movement (twoway and fourway) but we want finer control and don't want
+diagonal movement.
+</p>
+
+<p>To create a component use the function <code>Crafty.c()</code>, where the first argument is the name of the component and the second is an object
+with properties and functions. To have a function execute as soon as it is added to an entity, create a function called <code>init</code>. If you need
+more information before initialising, best practice is to create a function with the same name as the component (commonly known as a constructor).</p>
+
+<p>
+<pre name="code" class="js">
+Crafty.scene(&quot;main&quot;, function() {
+  generateWorld();
+  Crafty.c('CustomControls', {
+    __move: {left: false, right: false, up: false, down: false},    
+    _speed: 3,
+
+    CustomControls: function(speed) {
+      if (speed) this._speed = speed;
+      var move = this.__move;
+
+      this.bind('enterframe', function() {
+        // Move the player in a direction depending on the booleans
+        // Only move the player in one direction at a time (up/down/left/right)
+        if (move.right) this.x += this._speed; 
+        else if (move.left) this.x -= this._speed; 
+        else if (move.up) this.y -= this._speed;
+        else if (move.down) this.y += this._speed;
+      }).bind('keydown', function(e) {
+        // Default movement booleans to false
+        move.right = move.left = move.down = move.up = false;
+
+        // If keys are down, set the direction
+        if (e.keyCode === Crafty.keys.RA) move.right = true;
+        if (e.keyCode === Crafty.keys.LA) move.left = true;
+        if (e.keyCode === Crafty.keys.UA) move.up = true;
+        if (e.keyCode === Crafty.keys.DA) move.down = true;
+
+        this.preventTypeaheadFind(e);
+      }).bind('keyup', function(e) {
+        // If key is released, stop moving
+        if (e.keyCode === Crafty.keys.RA) move.right = false;
+        if (e.keyCode === Crafty.keys.LA) move.left = false;
+        if (e.keyCode === Crafty.keys.UA) move.up = false;
+        if (e.keyCode === Crafty.keys.DA) move.down = false;
+
+        this.preventTypeaheadFind(e);
+      });
+
+      return this;
+    }
+  });
+
+  // Create our player entity with some premade components
+  var player = Crafty.e(&quot;2D, DOM, player, controls, CustomControls, animate, collision&quot;)
+    .attr({x: 160, y: 144, z: 1})
+    .CustomControls(1)
+    .animate(&quot;walk_left&quot;, 6, 3, 8)
+    .animate(&quot;walk_right&quot;, 9, 3, 11)
+    .animate(&quot;walk_up&quot;, 3, 3, 5)
+    .animate(&quot;walk_down&quot;, 0, 3, 2);
+});
+</pre>
+</p>
+
+<p>Our component has two properties: <code>__move</code> and <code>_speed</code>. The first is an object of booleans used to indicate which direction 
+the player should be moving. The second is how many pixels the character should move by or speed. We then just have one 
+function, the constructor. We could easily just use an init method here and assume a speed of 3, but we want a speed of 1 
+so a constructor is needed to indicate that.</p>
+
+<p>We use the <code>.bind()</code> method a fair bit in this component. The <code>enterframe</code> event is called on every frame (depending 
+on the FPS) so when the callback is triggered, it will move the player in a direction depending on which direction 
+is true and by the amount/speed we previously decided.</p>
+
+<p>The other two events, <code>keydown</code> and <code>keyup</code>, simply check which key has been pressed (derived from the event object 
+passed as an argument) and then set the movement boolean. There is a reason why we don’t simply move the player 
+as soon as the key is down. The <code>keydown</code> event will trigger once then have a short pause before calling it over 
+and over until a key is up. We don’t want that pause so we use the <code>enterframe</code> event to continuously move the player. 
+The <code>keyup</code> callback does the same as <code>keydown</code> but in reverse, sets the movement booleans to false if the key has 
+been released.</p>
+
+<p>You will also notice our player entity has our new component in the component list as well as calling the constructor. 
+Our player should be able to move now.</p>
+
+<p><em>Note: Using an underscore before property or function names is the convention we're using to convey that it is private.</em></p>
+
+<hr />
+<h2> <span>Step 6</span> Animation</h2>
+
+<p>Now that the player can move, we want to play the animation we setup earlier</p>
+
+<p>
+<pre name="code" class="js">
+// Create our player entity with some premade components
+var player = Crafty.e(&quot;2D, DOM, player, controls, CustomControls, animate, collision&quot;)
+  .attr({x: 160, y: 144, z: 1})
+  .CustomControls(1)
+  .animate(&quot;walk_left&quot;, 6, 3, 8)
+  .animate(&quot;walk_right&quot;, 9, 3, 11)
+  .animate(&quot;walk_up&quot;, 3, 3, 5)
+  .animate(&quot;walk_down&quot;, 0, 3, 2)
+  .bind(&quot;enterframe&quot;, function(e) {
+    if (this.__move.left) {
+      if (!this.isPlaying(&quot;walk_left&quot;))
+        this.stop().animate(&quot;walk_left&quot;, 10);
+    }
+    if (this.__move.right) {
+      if (!this.isPlaying(&quot;walk_right&quot;))
+        this.stop().animate(&quot;walk_right&quot;, 10);
+    }
+    if (this.__move.up) {
+      if (!this.isPlaying(&quot;walk_up&quot;))
+        this.stop().animate(&quot;walk_up&quot;, 10);
+    }
+    if (this.__move.down) {
+      if (!this.isPlaying(&quot;walk_down&quot;))
+        this.stop().animate(&quot;walk_down&quot;, 10);
+    }
+  }).bind(&quot;keyup&quot;, function(e) {
+    this.stop();
+  });
+</pre>
+</p>
+
+<p>On the <code>enterframe</code> event we want to know the direction the player is moving (using the movement booleans created in our component) 
+and play the appropriate animation. We don't want to play it if it is already playing however, so we use the <code>.isPlaying()</code> function. 
+If it isn’t playing, stop whatever animation is playing with the <code>.stop()</code> function and play the correct one. Playing an 
+animation is a matter of calling <code>.animate()</code> with the name of the animation and a duration in frames. Because we only have 
+3 frames for the animation, we want it to be fairly quick. We also want to stop any animation if a key is up.</p>
+
+<hr />
+<h2> <span>Step 7</span> Collision</h2>
+
+<p>Crafty provides collision detection between any two convex polygons. A collision exists when two entities intersect 
+each other. We use the pre-made collision component to detect collisions with the boundary so the player 
+can't leave the stage.</p>
+
+<div class="tutorial_image"><img src="shape.png"/></div>
+
+<p>
+<pre name="code" class="js">
+// Create our player entity with some premade components
+var player = Crafty.e(&quot;2D, DOM, player, controls, CustomControls, animate, collision&quot;)
+  .attr({x: 160, y: 144, z: 1})
+  .CustomControls(1)
+  .animate(&quot;walk_left&quot;, 6, 3, 8)
+  .animate(&quot;walk_right&quot;, 9, 3, 11)
+  .animate(&quot;walk_up&quot;, 3, 3, 5)
+  .animate(&quot;walk_down&quot;, 0, 3, 2)
+  .bind(&quot;enterframe&quot;, function(e) {
+    if (this.__move.left) {
+      if (!this.isPlaying(&quot;walk_left&quot;))
+        this.stop().animate(&quot;walk_left&quot;, 10);
+    }
+    if (this.__move.right) {
+      if (!this.isPlaying(&quot;walk_right&quot;))
+        this.stop().animate(&quot;walk_right&quot;, 10);
+    }
+    if (this.__move.up) {
+      if (!this.isPlaying(&quot;walk_up&quot;))
+        this.stop().animate(&quot;walk_up&quot;, 10);
+    }
+    if (this.__move.down) {
+      if (!this.isPlaying(&quot;walk_down&quot;))
+        this.stop().animate(&quot;walk_down&quot;, 10);
+    }
+  }).bind(&quot;keyup&quot;, function(e) {
+    this.stop();
+  }).collision()
+  .onhit(&quot;wall_left&quot;, function() {
+    this.x += this._speed;
+    this.stop();
+  }).onhit(&quot;wall_right&quot;, function() {
+    this.x -= this._speed;
+    this.stop();
+  }).onhit(&quot;wall_bottom&quot;, function() {
+    this.y -= this._speed;
+    this.stop();
+  }).onhit(&quot;wall_top&quot;, function() {
+    this.y += this._speed;
+    this.stop();
+  });
+</pre>
+</p>
+
+<p>
+Remember those labels we put on the bushes earlier? Now is when they become useful. The function <code>.collision()</code> is the constructor and accepts
+a polygon object (see <a href="http://craftyjs.com/api/polygon-5/index.html" target="_blank">Crafty.polygon</a>) or if empty will create one
+based on the entities <code>x</code>, <code>y</code>, <code>w</code> and <code>h</code> values.</p>
+
+<p><code>.onhit()</code> takes two arguments, the first being
+the component to look for collisions and the second being the function called if a collision occurs. If the player collides with any entity
+with the component <code>wall_left</code>, we need to move the player away from the wall at the same speed it is moving towards it. We need to do
+this for all other walls so depending on the direction, move the player in the opposite direction at the same speed. I also added the <code>.stop()</code>
+function so that it doesn't keep animating when it isn't moving.
+</p>
+
+<hr />
+<h2> <span>Step 8</span> Final Code</h2>
+<p>Putting together everything we learnt, we should have the following <a href="http://craftyjs.com/demos/tutorial/game.js" target="_blank">code in game.js</a></p>
+
+<p>Now you should have the basics of an RPG. If you need any support using Crafty 
+there are <a href="http://craftyjs.com/forums">forums</a> and <a href="http://craftyjs.com/api/">documentation</a>.</p>
