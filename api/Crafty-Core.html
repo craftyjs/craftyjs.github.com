@@ -9,10 +9,10 @@
 <body>
 <div id="header">
 	<div id="inner">
-	<a href="http://craftyjs.com"><img id="logo" src="../images/logo.png" alt="Crafty - JavaScript Game Engine" /></a>
+	<a href="http://craftyengine.com"><img id="logo" src="../images/logo.png" alt="Crafty - JavaScript Game Engine" /></a>
 	<ul>
-		<li><a href="/tutorial/">Getting Started</a></li>
-		<li><a href="/api/">Documentation</a></li>
+		<li><a href="http://craftyengine.com/tutorial/">Getting Started</a></li>
+		<li><a href="api/">Documentation</a></li>
 		<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
 		<li><a href="http://craftycomponents.com/">Modules</a></li>
 		<li class="emph"><a href="http://craftycomponents.com/components/single/8/crafty">Download</a></li>
@@ -89,22 +89,33 @@ this.addComponent("2D", "Canvas");
 </code></pre>
 </div><div class='doc-block' id='-toggleComponent'><a href='#doc-nav' class='doc-top'>Back to top</a><h2>.toggleComponent</h2>
 
-<p><code>public this. toggleComponent(String componentID,String componentToggle)</code></p>
+<p><code>public this .toggleComponent(String ComponentList)</code></p>
 
 <dl>
-<dt>componentID</dt>
-<dd>Component ID to add or remove.</dd>
-
-<dt>componentToggle</dt>
-<dd>Component ID to replace instead of remove</dd>
+<dt>ComponentList</dt>
+<dd>A string of components to add or remove separated by a comma <code>,</code></dd>
 </dl>
 
-<p>Add or Remove Components</p>
+<p><code>public this .toggleComponent(String Component1[, .., String componentN])</code></p>
+
+<dl>
+<dt>Component#</dt>
+<dd>Component ID to add or remove.</dd>
+</dl>
+
+<p>Add or Remove Components from an entity.</p>
 
 <h3>Example</h3>
 
 <pre><code>var e = Crafty.e("2D,DOM,Test");
-e.toggleComponent("Test,Test2"); //Remove Test add Test2 and vice versa
+e.toggleComponent("Test,Test2"); //Remove Test, add Test2
+e.toggleComponent("Test,Test2"); //Add Test, remove Test2
+</code></pre>
+
+<pre><code>var e = Crafty.e("2D,DOM,Test");
+e.toggleComponent("Test","Test2"); //Remove Test, add Test2
+e.toggleComponent("Test","Test2"); //Add Test, remove Test2
+e.toggleComponent("Test");         //Remove Test
 </code></pre>
 </div><div class='doc-block' id='-requires'><a href='#doc-nav' class='doc-top'>Back to top</a><h2>.requires</h2>
 
@@ -139,6 +150,13 @@ have the component, it will add it.</p>
 <p>Removes a component from an entity. A soft remove (the default) will only
 refrain <code>.has()</code> from returning true. Hard will remove all
 associated properties and methods.</p>
+
+<h3>Example</h3>
+
+<pre><code>var e = Crafty.e("2D,DOM,Test");
+e.removeComponent("Test");        //Soft remove Test component
+e.removeComponent("Test", false); //Hard remove Test component
+</code></pre>
 </div><div class='doc-block' id='-has'><a href='#doc-nav' class='doc-top'>Back to top</a><h2>.has</h2>
 
 <p><code>public Boolean .has(String component)</code></p>
@@ -343,22 +361,50 @@ after the property has been set</em></p>
 <div class="clearer"></div>
 <div id="footer">
 
-<div id="contact">
-	<a href="http://twitter.com/craftyjs"><img src="../images/twitter.png"/> @craftyjs</a>
-	<a href="http://webchat.freenode.net"><img src="../images/comment.png"/> #crafty@freenode.net</a>
-	<a href="http://groups.google.com/group/craftyjs"><img src="../images/google.png"/> google groups</a>
-	<a href="mailto:hello@craftyjs.com"><img src="../images/email.png"/> hello@craftyjs.com</a>
-	<a href="https://github.com/craftyjs/Crafty"><img src="../images/github.png"/> github</a>
-</div>
+  <div id="contact">
+    <a href="http://twitter.com/craftyjs">
+      <img src="/images/twitter.png" />
+      @craftyjs
+    </a>
+    <a href="http://webchat.freenode.net">
+      <img src="/images/comment.png" />
+      #crafty@freenode.net
+    </a>
+    <a href="https://groups.google.com/forum/#!forum/craftyjs">
+      <img src="/images/google.png" />
+      google groups
+    </a>
+    <a href="mailto:louis@craftyjs.com">
+      <img src="/images/email.png" />
+      louis@craftyjs.com
+    </a>
+    <a href="https://github.com/craftyjs/Crafty">
+      <img src="/images/github.png" />
+      github
+    </a>
+  </div>
+  <ul>
+    <li>
+      <a href="/api/">Documentation</a>
+    </li>
+    <li>
+      <a href="http://craftycomponents.com/">Modules</a>
+    </li>
+    <li>
+      <a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a>
+    </li>
+    <li>
+      <a href="/tutorial/">Tutorial</a>
+    </li>
+    <li>
+      <a href="http://craftycomponents.com/components/single/8/crafty">Download</a>
+    </li>
+  </ul>
+  <p>
+    &copy; Crafty 2010. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
+    license.
+  </p>
 
-<ul>
-	<li><a href="/api/">Documentation</a></li>
-	<li><a href="http://craftycomponents.com/">Modules</a></li>
-	<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
-	<li><a href="/tutorial/">Getting Started</a></li>
-</ul>
-<p>&copy; Crafty 2010. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or 
-<a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a> license.</p>
 </div>
 </body>
 </html>
