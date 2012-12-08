@@ -46,7 +46,7 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 * What and Why
 * Simple Game
 
-## Development Techniques
+## Development techniques
 
 * Editors
 * Debugging
