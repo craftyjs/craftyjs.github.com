@@ -5,14 +5,18 @@ title: Creating your first Crafty game
 
 So - let's get going!
 
-First you need to grab the latest release of the [crafty](http://www.craftyjs.com) engine. At the moment this is 0.5.0. It happens that new versions introduces breaking changes. Ask in the [forum](https://groups.google.com/forum/#!forum/craftyjs) if you run into problems. 
+First you need to [grab the latest release of the Crafty library](http://craftyjs.com/tutorial/getting-started/download-and-setup).  
+You should probably bookmark the [Crafty forum at GoogleGroups](https://groups.google.com/forum/#!forum/craftyjs) for when run into problems.  Of course,
+an amazing programmer like you might never run into a problem.   Also, make sure you have a handy HTML5 compliant browser such as [Chrome](https://chrome.google.com).
+Programming for Crafty is programming, so you should know some JavaScript and some HTML and have a decent editor.   
 
-Put the crafty.js file in your working directory.
-We will be working on an uncompressed version to make it easier to dig in and see what is going on. When the game is ready to be released we can replace it with a minified version that is much smaller.
+Put the *crafty.js* file in your working directory.  Be sure to use the uncompressed version of the library so that you can see what is going on.  You will use the
+minified version only when releasing the games and want the game's webpage to be smaller and faster to download.  You can grab the
+latest copy of the completed game from the [Banana Bomber GitHub repository] (https://github.com/sorenbs/bananabomber/blob/master/game.js) or
+type in the examples as you go.  It depends on how you learn quickest.
 
-The game and articles is a work in progress. You can download the latest sources for the game from [github](https://github.com/sorenbs/bananabomber/blob/master/game.js)
-
-Now create the html file that will host the game:
+Your game will be in three parts:  an HTML file named *BananaBomber.html* to hosT the game, the *crafty.js* library you put in your working directory, and a *game.js* file that you will write.
+Start by creating the html file.  You might name it *BananaBomber.html* though some just name it *g.html* because that is easier to type. 
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -30,31 +34,35 @@ Now create the html file that will host the game:
 </html>
 {% endhighlight %}
 
-The game skeleton is pretty simple:
+So far, the HTML file is simple:  it loads two javascript libraries, sets the style to clip items that overflow a div (the overflow:hidden), and has an empty body.
+
+Now start writing *game.js* using a basic game skeleton:
 
 {% highlight javascript %}
 window.onload = function () {
     //start crafty
     Crafty.init(400, 336);
-    //Crafty.canvas.init();
+    // Crafty.canvas.init();
+    // Uncomment the canvas line if using HTML Canvas instead 
 };
 {% endhighlight %}
 
-If you are familiar with javascript you will recognize this way of declaring a function that will get executed when the browser is done loading the page. In that way Crafty is no different from any other javascript you would write.
+You probably recognize the javascript construct for declaring a function that will get executed when the browser is done loading the page. 
 Crafty.init(width, height) is where Crafty does it's initialization stuff that is needed before the game can run.
-We are going to create a tile-based game so the width and height is set to multiples of 16, which is the size of the tiles.
+You are writing a tile-based game using 16x16 tiles so the width and height are set to multiples of 16.
 
-There are two ways of getting images onto the screen: 
+You get your choice of two ways of getting images onto the screen:
 
-* Using a canvas element that is like a big square of screen estate that you get to draw pixels on or 
+* Using an HTML canvas element that is like a big square of screen estate that you get to draw pixels on, or 
 * using normal DOM elements that you can manipulate using css and javascript but is drawn to the screen by the browser. 
 
-It turns out that the DOM method is fastest in most cases, but if you want to use canvas you need to call Crafty.canvas.init() first. As you will see later Crafty abstracts away most differences between DOM and canvas, so it is a matter of changing a single variable if you decide to change later.
+It turns out that the DOM method is fastest in most cases.  All you need do is call Crafty.canvas.init() first if you want to use the canvas option; Crafty abstracts away most differences between the DOM and canvas.
 
 ## Scenes
 
-To organize different parts of the game Crafty has a notion of scenes. Each level of a game would fit nicely in a scene as would the menu, high score lists etc. 
-For our simple game we will just have a loading scene and a game scene:
+Crafty has a notion of scenes to organize different parts of the game.  A complicated game might have a different sceen for each
+level of the game, each cut scene, the start menu, high score list, and achievements page.   For your simple game, you 
+will just have a loading scene and a game scene in *game.js*:
 
 {% highlight javascript %}
 //the loading screen that will display while our assets load
