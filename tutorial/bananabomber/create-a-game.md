@@ -5,18 +5,17 @@ title: Creating your first Crafty game
 
 So - let's get going!
 
-First you need to [grab the latest release of the Crafty library](http://craftyjs.com/tutorial/getting-started/download-and-setup).  
-You should probably bookmark the [Crafty forum at GoogleGroups](https://groups.google.com/forum/#!forum/craftyjs) for when run into problems.  Of course,
+First you need to [grab the latest release of the Crafty library](http://craftyjs.com/tutorial/getting-started/download-and-setup).  You should probably bookmark the [Crafty forum at GoogleGroups](https://groups.google.com/forum/#!forum/craftyjs) for when run into problems.  Of course,
 an amazing programmer like you might never run into a problem.   Also, make sure you have a handy HTML5 compliant browser such as [Chrome](https://chrome.google.com).
 Programming for Crafty is programming, so you should know some JavaScript and some HTML and have a decent editor.   
 
-Put the *crafty.js* file in your working directory.  Be sure to use the uncompressed version of the library so that you can see what is going on.  You will use the
-minified version only when releasing the games and want the game's webpage to be smaller and faster to download.  You can grab the
+Put the *crafty.js* file in your working directory.  Be sure to use the uncompressed version of the library so that you can see what is going on while you develop:  you will use the
+minified version only when releasing the games and want the game's webpage download to be faster.  You can grab the
 latest copy of the completed game from the [Banana Bomber GitHub repository] (https://github.com/sorenbs/bananabomber/blob/master/game.js) or
-type in the examples as you go.  It depends on how you learn quickest.
+type in the examples as you go; it depends on how you learn.
 
-Your game will be in three parts:  an HTML file named *BananaBomber.html* to hosT the game, the *crafty.js* library you put in your working directory, and a *game.js* file that you will write.
-Start by creating the html file.  You might name it *BananaBomber.html* though some just name it *g.html* because that is easier to type. 
+Your game will be in three parts:  an HTML file to host the game, the *crafty.js* library you put in your working directory, and a *game.js* file that you will write.
+Start by creating the HTML file:
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -34,9 +33,9 @@ Start by creating the html file.  You might name it *BananaBomber.html* though s
 </html>
 {% endhighlight %}
 
-So far, the HTML file is simple:  it loads two javascript libraries, sets the style to clip items that overflow a div (the overflow:hidden), and has an empty body.
+The HTML file is simple:  it loads two javascript libraries, sets the style to clip items that overflow a div (the overflow:hidden), and has an empty body.
 
-Now start writing *game.js* using a basic game skeleton:
+Now start writing *game.js* using a basic skeleton:
 
 {% highlight javascript %}
 window.onload = function () {
