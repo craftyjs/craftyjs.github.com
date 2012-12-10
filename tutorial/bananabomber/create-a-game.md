@@ -14,7 +14,7 @@ minified version only when releasing the games and want the game's webpage downl
 latest copy of the completed game from the [Banana Bomber GitHub repository] (https://github.com/sorenbs/bananabomber/blob/master/game.js) or
 type in the examples as you go; it depends on how you learn.
 
-Your game will be in three parts:  an HTML file to host the game, the *crafty.js* library you put in your working directory, and a *game.js* file that you will write.
+Your game will be in three main parts:  an HTML file to host the game, the *crafty.js* library you put in your working directory, and a *game.js* file that you will write.  Later, will add some graphics and other files.
 Start by creating the HTML file:
 
 {% highlight html %}
