@@ -69,7 +69,7 @@ Crafty.scene("loading", function () {
     //load takes an array of assets and a callback when complete
     Crafty.load(["sprite.png"], function () {
         Crafty.scene("main"); //when everything is loaded, run the main scene
-    });
+    })
 
     //black background with some loading text
     Crafty.background("#000");
@@ -82,11 +82,16 @@ Crafty.scene("loading", function () {
 Crafty.scene("loading");
 {% endhighlight %}
 
-Code outside of a function will execute as the interpreter gets to it, so the last line will invoke Crafty.scene("loading") which in turn invokes the method that we have just associated with that scene.
+Here's the order you see when you trace the exectution. If you aren't used to the syntax of inline functions as callbacks, you might need to turn your head sideways.  You will get used to it.
+// Make this a graphic?
+   * Crafty.scene("loading", function () {...}) associates a function with the "loading" scene.
+   * Crafty.scene("loading") to switch to the scene and call the function just assoicated.
+   * Crafty.load(["sprite.png"], function () {...}) to start loading resources
+   * Crafty.background() using #rgb values for black
+   * Crafty.e().text().css() to display "Loading..."
+   * Crafty.load() finishes loading *sprite.png* (our sprite sheet) and executes it finishing function, which switches to a new scene
 
-In this scene we do two things. We tell crafty to go fetch some assets that we will need (our sprite sheet) and then call a function when that is done. This function will unload the "loading" scene and load the "main" scene that will run our game. If you are not familiar with functional/dynamic languages this syntax of inlining functions might be new to you, but it is very common in javascript, so you better get used to it :-)
-
-Next we define a nice background and text to display while loading. The main scene is defined in much the same way:
+The main scene is defined in much the same way:
 
 {% highlight javascript %}
 Crafty.scene("main", function () {
@@ -95,7 +100,7 @@ Crafty.scene("main", function () {
 });
 {% endhighlight %}
 
-The first thing to do in the game scene is to populate the world with background, obstacles etc. But before we get to that, let me just briefly dwell on a central part of the Crafty design.
+You will write genenerateWorld() to populate the world with background, obstacles, etc. But before we get to that, you should understand components as a central element of Crafty design.
 
 ## Components
 
