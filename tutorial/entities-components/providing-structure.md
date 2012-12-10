@@ -27,16 +27,21 @@ The code should be in front of you.
 The library should fit in your head.
 
 
-# The Magic Words of Crafty
+# The Crafty Words
 
 Every library has a vocabulary of concepts and terms.  Each is explained in more detail somewhere else in the tutorial.
 
-Components
+### Component
+### Entity
+### Scene
+### Sprite Sheet
 
-Entities
+# Spotting the Concepts in a Crafty Game
 
-Scenes
+Here is a simple game written in Crafty.
 
-Sprite Sheet
+(game in IFrame here)
 
+Look closer at the game to see how concepts fit together.
 
+(lots of screenshots here)  Side boxes to highlight components, entities, screens, and sprites.
