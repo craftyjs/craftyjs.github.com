@@ -68,6 +68,6 @@ The bananabomber chapter was written by sorenbs a while ago. I have updated it a
 
 # Old Tutorial Site
 
-The old tutorial page is available at http://craftyjs.com/tutorials.php
+The old tutorial page is available at [http://craftyjs.com/tutorials.php](http://craftyjs.com/tutorials.php)
 
 Please keep in mind that a lot has happened in the last year and as such code presented in old articles are of little use. If you need help and are not using the latest version pf Crafty the first thing we will help you with is to update :-)
