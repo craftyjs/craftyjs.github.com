@@ -1,10 +1,16 @@
 ---
 layout: tutorial
-title: What we need
+title: Crafty tutorials
 ---
 
-Welcome to the Crafty tutorial section. This is very much a work in progress. You can find already written chapters to the left. Please help out by [forking](https://github.com/craftyjs/craftyjs.github.com)
+# Build New Games tutorial
 
+You can find a full-length tutorial that introduces you to Crafty's core elements and walks you through the process of building a simple game in Crafty from start to finish [over here at Build New Games](http://buildnewgames.com/introduction-to-crafty/).
+
+
+# What we need for this official tutorial
+
+Welcome to the Crafty tutorial section. This is very much a work in progress. You can find already written chapters to the left. Please help out by [forking](https://github.com/craftyjs/craftyjs.github.com)
 
 The proposed way to structure the tutorials is to explain only one topic in each chapter. If other (perhaps more advanced) parts of Crafty are required to aid in examples and text, a reference should be given to a chapter explaining the topic in detail, and a simple explanation can be given in place.
 
