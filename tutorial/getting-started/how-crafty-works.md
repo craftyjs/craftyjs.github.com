@@ -3,7 +3,6 @@ layout: tutorial
 title: How Crafty Works
 ---
 
-( This will be the front page of Tutorial section )
 
 # Introduction
 

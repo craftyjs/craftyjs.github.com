@@ -1,4 +1,4 @@
-body, html { padding:0; margin:0; font-family:Helvetica, Arial }
+body, html { padding:0; margin:0; font-family:'Open Sans', Helvetica, Arial; }
 #header { background:url('images/header-bg.png') repeat-x; border-bottom:1px solid #ccc; height:165px; text-align:center }
 #header ul { padding:0; margin:10px auto 0 auto; list-style:none; text-align:center }
 #header li { display:inline }
@@ -24,7 +24,7 @@ body, html { padding:0; margin:0; font-family:Helvetica, Arial }
 #contact a { margin:0 10px; text-decoration:none; color:#c37b25 }
 #contact img { border:0; vertical-align:text-top; margin-top:-1px }
 
-h2 { font-family:'Arvo', arial, serif; border-bottom:2px solid #ccc }
+h2 { font-family:'Open Sans', arial, serif; border-bottom:2px solid #ccc }
 a { color:#0084ea; }
 a:visited { color:#0084ea; }
 a img { border:0 }
