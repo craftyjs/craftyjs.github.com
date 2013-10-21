@@ -1,8 +1,7 @@
 --- 
-layout: default
+layout: gettingstarted
+title: Getting started - Building your first Game
 ---
-
-## Getting Started
 
 Darren Torpey from buildnewgames.com have written this amazing guide to Crafty.js which he explains in details how you can get started with Crafty.js.
 
