@@ -9,7 +9,7 @@ body, html { padding:0; margin:0; font-family:'Open Sans', Helvetica, Arial; }
 #logo { margin:10px 0 }
 #inner { width:820px; margin:auto }
 
-#main { width:820px; background:#fff url('images/inner-top.png') repeat-x top; margin:-19px auto 0 auto; min-height:300px; }
+#main { width:880px; background:#fff url('images/inner-top.png') repeat-x top; margin:-19px auto 0 auto; min-height:300px; }
 #main-left { float:left; width:9px; height:206px; background:url('images/inner-left.png') no-repeat; }
 #main-right { float:right; width:9px; height:206px; background:url('images/inner-right.png') no-repeat; }
 #content { padding:10px 20px }
@@ -81,7 +81,7 @@ button:active {
 .demo img { float:left; border:1px solid #aaa; margin-right:5px }
 .demo p { margin-top:-5px }
 
-#doc-nav { float:left;margin: 25px 40px 0 0; width: 140px; }
+#doc-nav { float:left;margin: 25px 40px 0 0; width: 160px; }
 #doc-level-one { margin:0; padding:0; list-style:none; font-size:12px }
 #doc-level-one li { font-weight:bold; padding:2px 0 }
 #doc-level-one li ul { padding-left:20px }
