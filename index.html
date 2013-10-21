@@ -85,34 +85,29 @@ title: JavaScript Game Engine, HTML5 Game Engine
 			<span>Q</span></a>
 	</li>
 	<li>
-		<a href="#fruitassassin">
+		<a href="demos/fruitassassin">
 			<img src="demos/thumbs/fruit.png"/>
 			<span>Fruit Assassin</span></a>
 	</li>
 	<li>
-		<a href="#connect4">
+		<a href="demos/connect4">
 			<img src="demos/thumbs/connect4.png"/>
 			<span>Connect 4</span></a>
 	</li>
 	<li>
-		<a href="#asteroids">
+		<a href="demos/asteroids">
 			<img src="demos/thumbs/asteroids.png"/>
 			<span>Asteroids</span></a>
 	</li>
 	<li>
-		<a href="#tutorial">
+		<a href="demos/tutorial">
 			<img src="demos/thumbs/rpg.png"/>
 			<span>RPG</span></a>
 	</li>
 	<li>
-		<a href="#isometric">
+		<a href="demos/isometric">
 			<img src="demos/thumbs/isometric.png"/>
 			<span>Isometric</span></a>
-	</li>
-	<li>
-		<a href="http://bowlerhatgames.com/html-games/gridshock/">
-			<img src="demos/thumbs/gridshock.png"/>
-			<span>GridShock</span></a>
 	</li>
 	<li>
 		<a href="http://projects.edillingham.com/senet/">
@@ -149,29 +144,29 @@ title: JavaScript Game Engine, HTML5 Game Engine
 		$("#download").click(function() {
 		    window.location = "/release/0.5.4/crafty.js";
 		});
-		$("#modal").click(function() {
-			$("#modal-window iframe").attr("src", "");
-			$(this).fadeOut(function() {
-				$(this).hide();
-			});
-			$("#modal-window").fadeOut(function() {
-				$(this).hide();
-			});
-		}).hide();
-		$("#demos a").click(function() {
-			var href = $(this).attr("href");
-			if(href.substr(0,7) === "http://") {
-				window.location = href;
-				return;
-			} else href = href.substr(1);
+		// $("#modal").click(function() {
+		// 	$("#modal-window iframe").attr("src", "");
+		// 	$(this).fadeOut(function() {
+		// 		$(this).hide();
+		// 	});
+		// 	$("#modal-window").fadeOut(function() {
+		// 		$(this).hide();
+		// 	});
+		// }).hide();
+		// $("#demos a").click(function() {
+		// 	var href = $(this).attr("href");
+		// 	if(href.substr(0,7) === "http://") {
+		// 		window.location = href;
+		// 		return;
+		// 	} else href = href.substr(1);
 		
-			$("#modal-window").css({left: $(window).width() / 2 - 400, top: $(window).height() / 2 - 300});
-			$("#modal-window").fadeIn();
-			$("#modal").fadeIn(function() {
-				$("#modal-window iframe").attr("src", "demos/"+href+"/");
-			});
+		// 	$("#modal-window").css({left: $(window).width() / 2 - 400, top: $(window).height() / 2 - 300});
+		// 	$("#modal-window").fadeIn();
+		// 	$("#modal").fadeIn(function() {
+		// 		$("#modal-window iframe").attr("src", "demos/"+href+"/");
+		// 	});
 		
-		});
+		// });
 	});
 </script>
 <style>
