@@ -6,11 +6,11 @@ title: JavaScript Game Engine, HTML5 Game Engine
 <div id="grid">
 	<div class="box">
 
-	<button style="width:240px; cursor: pointer;" class="download" id="download">
-		<h2>Download 0.5.4</h2>
-	</button> 
-		<p>Crafty is actively developed and has a monthly release cycle. See <a href="https://github.com/craftyjs/Crafty/wiki/Release-Notes">release notes.</a></p>
-	    <a href="/release/0.5.4/crafty-min.js">Download minified</a>
+	<a href="https://github.com/craftyjs/Crafty/blob/release/dist/crafty.js" class="download" id="download">
+		Download 0.6.1
+	</a> 
+		<p>Crafty is actively developed and has a monthly release cycle. See <a href="https://github.com/craftyjs/Crafty/releases/tag/0.6.1">release notes.</a></p>
+	    <a href="https://github.com/craftyjs/Crafty/blob/release/dist/crafty-min.js">Download minified</a>
 	</div>
 
 	<div class="box browser">
@@ -54,7 +54,11 @@ title: JavaScript Game Engine, HTML5 Game Engine
 	</div>
 	<div class="clearer"></div>
 </div>
-
+<h2>Easy install with bower</h2>
+<p>You can not install crafty very easy with <a href="http://bower.io/">bower</a>.</p>
+<p>You can just say:</p>
+<code class="grey">bower install crafty</code>
+<p>and it gets you the lastest version of crafty right in your current directory.</p>
 <h2>Demos</h2>
 <ul id="demos" class="gridlist">
 	
@@ -116,65 +120,44 @@ title: JavaScript Game Engine, HTML5 Game Engine
 	</li>
 </ul>
 <div class="clearer"></div>
-<div id="modal"></div>
-<div id="modal-window"><iframe></iframe></div>
-
-<h2><a href="http://gamedevweekly.com">Gamedev Weekly</a></h2>
-<p>
-<a href="http://gamedevweekly.com">Signup</a> for a free, weekly newsletter of the most interesting Gamedev articles, links, development stories and more!
-</p>
-
-<div id="mc_embed_signup">
-<form action="http://neuralmesh.us1.list-manage1.com/subscribe/post?u=dfdf08d824f5cd3aaa9ad24e6&amp;id=d7548b1038" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-<div class="mc-field-group">
+<div id="contributers" class="half">
+	<h2>Contributers</h2>
+	<p>The ones who makes Crafty.js and should have a big thanks!</p>
+	<ul>
+		<li><a href="https://github.com/starwed">Starwed</a></li>
+	</ul>
 	
-	<input id="email" type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email address...">
-	<input type="submit" value="Sign me up!" name="subscribe" class="button">
 </div>
-<span class="message">One email each <em>Friday</em>. No spam! Easy to unsubscribe.</span>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>	<div class="clear"></div>
-</form>
-</div>
+<div class="half">
+	<h2><a href="http://gamedevweekly.com">Gamedev Weekly</a></h2>
+	<p>
+	<a href="http://gamedevweekly.com">Signup</a> for a free, weekly newsletter of the most interesting Gamedev articles, links, development stories and more!
+	</p>
 
-<script type="text/javascript">
-	$(document).ready(function() {
-		$("#download").click(function() {
-		    window.location = "/release/0.5.4/crafty.js";
-		});
-		// $("#modal").click(function() {
-		// 	$("#modal-window iframe").attr("src", "");
-		// 	$(this).fadeOut(function() {
-		// 		$(this).hide();
-		// 	});
-		// 	$("#modal-window").fadeOut(function() {
-		// 		$(this).hide();
-		// 	});
-		// }).hide();
-		// $("#demos a").click(function() {
-		// 	var href = $(this).attr("href");
-		// 	if(href.substr(0,7) === "http://") {
-		// 		window.location = href;
-		// 		return;
-		// 	} else href = href.substr(1);
+	<div id="mc_embed_signup">
+	<form action="http://neuralmesh.us1.list-manage1.com/subscribe/post?u=dfdf08d824f5cd3aaa9ad24e6&amp;id=d7548b1038" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<div class="mc-field-group">
 		
-		// 	$("#modal-window").css({left: $(window).width() / 2 - 400, top: $(window).height() / 2 - 300});
-		// 	$("#modal-window").fadeIn();
-		// 	$("#modal").fadeIn(function() {
-		// 		$("#modal-window iframe").attr("src", "demos/"+href+"/");
-		// 	});
-		
-		// });
-	});
-</script>
+		<input id="email" type="email" value="" name="EMAIL" class="required email" placeholder="Enter your email address...">
+		<input type="submit" value="Sign me up!" name="subscribe" class="button">
+	</div>
+		<div id="mce-responses" class="clear">
+			<div class="response" id="mce-error-response" style="display:none"></div>
+			<div class="response" id="mce-success-response" style="display:none"></div>
+		</div>	<div class="clear"></div>
+	</form>
+</div>
+<div class="clearer"></div>
 <style>
-#modal { width:100%; height:100%; position:absolute; top:0; left:0; background:#000; opacity:0.2; display:none }
-#modal-window { width:800px; height:600px; background:#eee; position:absolute; display:none; left:0; top:0;
-	-moz-box-shadow: 0 0 5px #888;
-	-webkit-box-shadow: 0 0 5px #888;
-	box-shadow: 0 0 5px #888;
- }
-#modal-window iframe { width:100%; height:100%; border:0 }
+	.half {
+		float: left;
+		width: 47%;
+		padding-right: 2%
+	}
+	#contributers ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
 </style>
+</div>

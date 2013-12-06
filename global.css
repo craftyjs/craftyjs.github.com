@@ -30,18 +30,19 @@ a:visited { color:#0084ea; }
 a img { border:0 }
 var { font-family:Georgia; font-style:normal; margin:5px }
 
-button { 
+a.download { 
+	display: block;
 	border:1px solid #bac9d4; 
 	background:#d0e8f9 url('images/button.png') repeat-x; 
 	padding:5px 10px; 
 	color:#373f45; 
-	font-size:16px;
+	font-size:18px;
 	border-radius:4px;
 }
-button:hover {
+a.download:hover {
 	border:1px solid #373f45; 
 }
-button:active {
+a.download:active {
 	top:51px;
 	right:-1px
 }
@@ -96,3 +97,11 @@ button:active {
 
 div.doc-contents ul li {display: inline-block; margin: 0px 15px; min-width: 220px;}
 pre code {background-color: whiteSmoke; display: block; padding: 8.5px; margin: -10px 0 18px; line-height: 18px; font-size: 12px; border: 1px solid #CCC; border: 1px solid rgba(0, 0, 0, 0.15); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; white-space: pre; white-space: pre-wrap; word-wrap: break-word;}
+code.grey {
+padding: 5px 10px;
+margin-bottom: 20px;
+overflow: auto;
+font-family: courier;
+background: ghostwhite;
+border: 1px solid #DDD;
+}
