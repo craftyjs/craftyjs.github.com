@@ -62,7 +62,7 @@ a.download:active {
 #footer li a { margin:0 10px }
 
 #grid { margin:10px -10px 0 0 }
-.box { border:1px solid #ccc; float:left; width:240px; height:150px; margin:-1px 0 0 -1px; padding:10px; text-shadow:1px 1px 1px #fff }
+.box { border:1px solid #ccc; float:left; width:255px; height:150px; margin:-1px 0 0 -1px; padding:10px; text-shadow:1px 1px 1px #fff }
 .box h2 { padding:0; margin:0; border:0; font-size:20px; font-family:'Arvo', arial, serif; font-weight:normal }
 
 .browser { background:url('images/grid/browser.png') no-repeat bottom right }
