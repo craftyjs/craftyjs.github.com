@@ -40,9 +40,9 @@ Must be applied to an entity that has a sprite-map component.</p>
 <div id='-reel' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.reel</h2>
-<p><p>Used to define reels, to change the active reel, and to fetch the id of the active reel.</p></p>
-<p><p><code>public this .reel(String reelId, Duration duration, Number fromX, Number fromY, Number frameCount)</code> </p></p>
-<p><p>Defines a reel by starting and ending position on the sprite sheet.</p></p>
+<p>Used to define reels, to change the active reel, and to fetch the id of the active reel.</p>
+<p><code>public this .reel(String reelId, Duration duration, Number fromX, Number fromY, Number frameCount)</code> </p>
+<p>Defines a reel by starting and ending position on the sprite sheet.</p>
 <dl>
 <dt>reelId</dt><dd>ID of the animation reel being created</dd>
 <dt>duration</dt><dd>The length of the animation in milliseconds.</dd>
@@ -51,30 +51,30 @@ Must be applied to an entity that has a sprite-map component.</p>
 <dt>frameCount</dt><dd>The number of sequential frames in the animation.  If negative, the animation will play backwards.</dd>
 </dl>
 
-<p><p><code>public this .reel(String reelId, Duration duration, Array frames)</code> </p></p>
-<p><p>Defines a reel by an explicit list of frames</p></p>
+<p><code>public this .reel(String reelId, Duration duration, Array frames)</code> </p>
+<p>Defines a reel by an explicit list of frames</p>
 <dl>
 <dt>reelId</dt><dd>ID of the animation reel being created</dd>
 <dt>duration</dt><dd>The length of the animation in milliseconds.</dd>
 <dt>frames</dt><dd>An array of arrays containing the <code>x</code> and <code>y</code> values of successive frames: [[x1,y1],[x2,y2],...] (the values are in the unit of the sprite map&#39;s width/height respectively).</dd>
 </dl>
 
-<p><p><code>public this .reel(String reelId)</code> </p></p>
-<p><p>Switches to the specified reel.  The sprite will be updated to that reel&#39;s current frame</p></p>
+<p><code>public this .reel(String reelId)</code> </p>
+<p>Switches to the specified reel.  The sprite will be updated to that reel&#39;s current frame</p>
 <dl>
 <dt>reelID</dt><dd>the ID to switch to</dd>
 </dl>
 
-<p><p><code>public Reel .reel()</code> </p></p>
+<p><code>public Reel .reel()</code> </p>
 <dl>
 <dt class='return'>[returns]</dt><dd>The id of the current reel</dd>
 </dl>
 
 
-<p><p>A method to handle animation reels.  Only works for sprites built with the Crafty.sprite methods.
-See the Tween component for animation of 2D properties.</p></p>
-<p><p>To setup an animation reel, pass the name of the reel (used to identify the reel later), and either an
-array of absolute sprite positions or the start x on the sprite map, the y on the sprite map and then the end x on the sprite map.</p></p>
+<p>A method to handle animation reels.  Only works for sprites built with the Crafty.sprite methods.
+See the Tween component for animation of 2D properties.</p>
+<p>To setup an animation reel, pass the name of the reel (used to identify the reel later), and either an
+array of absolute sprite positions or the start x on the sprite map, the y on the sprite map and then the end x on the sprite map.</p>
 <h4> Example </h4>
 
 <pre><code>// Define a sprite-map component
@@ -95,18 +95,18 @@ Crafty.e(&quot;2D, DOM, SpriteAnimation, PlayerSprite&quot;).reel(&#39;PlayerRun
 <div id='-animate' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.animate</h2>
-<p><p><code>public this .animate([String reelId] [, Number loopCount])</code> </p></p>
+<p><code>public this .animate([String reelId] [, Number loopCount])</code> </p>
 <dl>
 <dt>reelId</dt><dd>ID of the animation reel to play.  Defaults to the current reel if none is specified.</dd>
 <dt>loopCount</dt><dd>Number of times to repeat the animation. Use -1 to repeat indefinitely.  Defaults to 1.</dd>
 </dl>
 
-<p><p>Play one of the reels previously defined through <code>.reel(...)</code>. Simply pass the name of the reel. If you wish the
+<p>Play one of the reels previously defined through <code>.reel(...)</code>. Simply pass the name of the reel. If you wish the
 animation to play multiple times in succession, pass in the amount of times as an additional parameter.
-To have the animation repeat indefinitely, pass in <code>-1</code>.</p></p>
-<p><p>If another animation is currently playing, it will be paused.</p></p>
-<p><p>This will always play an animation from the beginning.  If you wish to resume from the current state of a reel, use <code>resumeAnimation()</code>.</p></p>
-<p><p>Once an animation ends, it will remain at its last frame.</p></p>
+To have the animation repeat indefinitely, pass in <code>-1</code>.</p>
+<p>If another animation is currently playing, it will be paused.</p>
+<p>This will always play an animation from the beginning.  If you wish to resume from the current state of a reel, use <code>resumeAnimation()</code>.</p>
+<p>Once an animation ends, it will remain at its last frame.</p>
 <h4> Example </h4>
 
 <pre><code>// Define a sprite-map component
@@ -162,14 +162,14 @@ If a reel is already playing, or there is no current reel, there will be no effe
 <div id='-loops' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.loops</h2>
-<p><p><code>public this .loops(Number loopCount)</code> </p></p>
+<p><code>public this .loops(Number loopCount)</code> </p>
 <dl>
 <dt>loopCount</dt><dd>The number of times to play the animation</dd>
 </dl>
 
-<p><p>Sets the number of times the animation will loop for.
-If called while an animation is in progress, the current state will be considered the first loop.</p></p>
-<p><p><code>public Number .loops()</code> </p></p>
+<p>Sets the number of times the animation will loop for.
+If called while an animation is in progress, the current state will be considered the first loop.</p>
+<p><code>public Number .loops()</code> </p>
 <dl>
 <dt class='return'>[returns]</dt><dd>The number of loops left.  Returns 0 if no reel is active.</dd>
 </dl>
@@ -182,21 +182,21 @@ If called while an animation is in progress, the current state will be considere
 <div id='-reelPosition' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.reelPosition</h2>
-<p><p><code>public this .reelPosition(Integer position)</code> </p></p>
-<p><p>Sets the position of the current reel by frame number.</p></p>
+<p><code>public this .reelPosition(Integer position)</code> </p>
+<p>Sets the position of the current reel by frame number.</p>
 <dl>
 <dt>position</dt><dd>the frame to jump to.  This is zero-indexed.  A negative values counts back from the last frame.</dd>
 </dl>
 
-<p><p><code>public this .reelPosition(Number position)</code> </p></p>
-<p><p>Sets the position of the current reel by percent progress.</p></p>
+<p><code>public this .reelPosition(Number position)</code> </p>
+<p>Sets the position of the current reel by percent progress.</p>
 <dl>
 <dt>position</dt><dd>a non-integer number between 0 and 1</dd>
 </dl>
 
-<p><p><code>public this .reelPosition(String position)</code> </p></p>
-<p><p>Jumps to the specified position.  The only currently accepted value is &quot;end&quot;, which will jump to the end of the reel.</p></p>
-<p><p><code>public Number .reelPosition()</code> </p></p>
+<p><code>public this .reelPosition(String position)</code> </p>
+<p>Jumps to the specified position.  The only currently accepted value is &quot;end&quot;, which will jump to the end of the reel.</p>
+<p><code>public Number .reelPosition()</code> </p>
 <dl>
 <dt class='return'>[returns]</dt><dd>The current frame number</dd>
 </dl>
@@ -210,14 +210,14 @@ If called while an animation is in progress, the current state will be considere
 <div id='-isPlaying' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.isPlaying</h2>
-<p><p><code>public Boolean .isPlaying([String reelId])</code> </p></p>
+<p><code>public Boolean .isPlaying([String reelId])</code> </p>
 <dl>
 <dt>reelId</dt><dd>The reelId of the reel we wish to examine</dd>
 <dt class='return'>[returns]</dt><dd>The current animation state</dd>
 </dl>
 
-<p><p>Determines if the specified animation is currently playing. If no reelId is specified,
-checks if any animation is playing.</p></p>
+<p>Determines if the specified animation is currently playing. If no reelId is specified,
+checks if any animation is playing.</p>
 <h4> Example </h4>
 
 <pre><code>myEntity.isPlaying() // is any animation playing
@@ -231,12 +231,12 @@ myEntity.isPlaying(&#39;PlayerRunning&#39;) // is the PlayerRunning animation pl
 <div id='-getReel' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.getReel</h2>
-<p><p><code>public Reel .getReel()</code> </p></p>
+<p><code>public Reel .getReel()</code> </p>
 <dl>
 <dt class='return'>[returns]</dt><dd>The current reel, or null if there is no active reel</dd>
 </dl>
 
-<p><p><code>public Reel .getReel(reelId)</code> </p></p>
+<p><code>public Reel .getReel(reelId)</code> </p>
 <dl>
 <dt>reelId</dt><dd>The id of the reel to fetch.</dd>
 <dt class='return'>[returns]</dt><dd>The specified reel, or <code>undefined</code> if no such reel exists.</dd>

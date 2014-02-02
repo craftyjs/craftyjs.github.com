@@ -16,7 +16,7 @@ layout: default
 <div id='-setName' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.setName</h2>
-<p><p><code>public this .setName(String name)</code> </p></p>
+<p><code>public this .setName(String name)</code> </p>
 <dl>
 <dt>name</dt><dd>A human readable name for debugging purposes.</dd>
 </dl>
@@ -30,23 +30,23 @@ layout: default
 <div id='-addComponent' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.addComponent</h2>
-<p><p><code>public this .addComponent(String componentList)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>componentList</dt><dd>A string of components to add separated by a comma <code>,</code></dd>
+<p><code>public this .addComponent(String componentList)</code> </p>
+<p><dl></p>
+<p><dt>componentList</dt><dd>A string of components to add separated by a comma <code>,</code></dd>
 </dl>
-<code>public this .addComponent(String Component1[, .., String ComponentN])</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>Component#</dt><dd>Component ID to add.</dd>
+<code>public this .addComponent(String Component1[, .., String ComponentN])</code> </p>
+<p><dl></p>
+<p><dt>Component#</dt><dd>Component ID to add.</dd>
 </dl>
-Adds a component to the selected entities or entity.</p></p>
-<p><p>Components are used to extend the functionality of entities.
+Adds a component to the selected entities or entity.</p>
+<p>Components are used to extend the functionality of entities.
 This means it will copy properties and assign methods to
-augment the functionality of the entity.</p></p>
-<p><p>For adding multiple components, you can either pass a string with
+augment the functionality of the entity.</p>
+<p>For adding multiple components, you can either pass a string with
 all the component names (separated by commas), or pass each component name as
-an argument.</p></p>
-<p><p>If the component has a function named <code>init</code> it will be called.</p></p>
-<p><p>If the entity already has the component, the component is skipped (nothing happens).</p></p>
+an argument.</p>
+<p>If the component has a function named <code>init</code> it will be called.</p>
+<p>If the entity already has the component, the component is skipped (nothing happens).</p>
 <h4> Example </h4>
 
 <pre><code>this.addComponent(&quot;2D, Canvas&quot;);
@@ -60,15 +60,15 @@ this.addComponent(&quot;2D&quot;, &quot;Canvas&quot;);</code></pre>
 <div id='-toggleComponent' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.toggleComponent</h2>
-<p><p><code>public this .toggleComponent(String ComponentList)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>ComponentList</dt><dd>A string of components to add or remove separated by a comma <code>,</code></dd>
+<p><code>public this .toggleComponent(String ComponentList)</code> </p>
+<p><dl></p>
+<p><dt>ComponentList</dt><dd>A string of components to add or remove separated by a comma <code>,</code></dd>
 </dl>
-<code>public this .toggleComponent(String Component1[, .., String componentN])</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>Component#</dt><dd>Component ID to add or remove.</dd>
+<code>public this .toggleComponent(String Component1[, .., String componentN])</code> </p>
+<p><dl></p>
+<p><dt>Component#</dt><dd>Component ID to add or remove.</dd>
 </dl>
-Add or Remove Components from an entity.</p></p>
+Add or Remove Components from an entity.</p>
 <h4> Example </h4>
 
 <pre><code>var e = Crafty.e(&quot;2D,DOM,Test&quot;);
@@ -110,15 +110,15 @@ will only work properly if another component is present -- and used
 <div id='-removeComponent' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.removeComponent</h2>
-<p><p><code>public this .removeComponent(String Component[, soft])</code> </p></p>
+<p><code>public this .removeComponent(String Component[, soft])</code> </p>
 <dl>
 <dt>component</dt><dd>Component to remove</dd>
 <dt>soft</dt><dd>Whether to soft remove it (defaults to <code>true</code>)</dd>
 </dl>
 
-<p><p>Removes a component from an entity. A soft remove (the default) will only
+<p>Removes a component from an entity. A soft remove (the default) will only
 refrain <code>.has()</code> from returning true. Hard will remove all
-associated properties and methods.</p></p>
+associated properties and methods.</p>
 <h4> Example </h4>
 
 <pre><code>var e = Crafty.e(&quot;2D,DOM,Test&quot;);
@@ -133,12 +133,12 @@ e.removeComponent(&quot;Test&quot;, false); //Hard remove Test component</code><
 <div id='-getId' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.getId</h2>
-<p><p><code>public Number .getId(void)</code> </p></p>
-<p><p>Returns the ID of this entity.</p></p>
-<p><p>For better performance, simply use the this[0] property.</p></p>
+<p><code>public Number .getId(void)</code> </p>
+<p>Returns the ID of this entity.</p>
+<p>For better performance, simply use the this[0] property.</p>
 <h4> Example </h4>
 
-<p><p>Finding out the <code>ID</code> of an entity can be done by returning the property <code>0</code>.</p></p>
+<p>Finding out the <code>ID</code> of an entity can be done by returning the property <code>0</code>.</p>
 <pre><code>   var ent = Crafty.e(&quot;2D&quot;);
    ent[0]; //ID
    ent.getId(); //also ID</code></pre>
@@ -166,7 +166,7 @@ will not exist (or be <code>false</code>).</p>
 <div id='-attr' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.attr</h2>
-<p><p><code>public this .attr(String property, * value)</code> </p></p>
+<p><code>public this .attr(String property, * value)</code> </p>
 <dl>
 <dt>property</dt><dd>Property of the entity to modify</dd>
 <dt>value</dt><dd>Value to set the property to</dd>
@@ -177,7 +177,7 @@ will not exist (or be <code>false</code>).</p>
 <dt>map</dt><dd>Object where the key is the property to modify and the value as the property value</dd>
 </dl>
 
-<p><p>Use this method to set any property of the entity.</p></p>
+<p>Use this method to set any property of the entity.</p>
 <h4> Example </h4>
 
 <pre><code>this.attr({key: &quot;value&quot;, prop: 5});
@@ -211,17 +211,17 @@ this.key; //newvalue</code></pre>
 <div id='-timeout' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.timeout</h2>
-<p><p><code>public this .timeout(Function callback, Number delay)</code> </p></p>
+<p><code>public this .timeout(Function callback, Number delay)</code> </p>
 <dl>
 <dt>callback</dt><dd>Method to execute after given amount of milliseconds</dd>
 <dt>delay</dt><dd>Amount of milliseconds to execute the method</dd>
 </dl>
 
-<p><p>The delay method will execute a function after a given amount of time in milliseconds.</p></p>
-<p><p>Essentially a wrapper for <code>setTimeout</code>.</p></p>
+<p>The delay method will execute a function after a given amount of time in milliseconds.</p>
+<p>Essentially a wrapper for <code>setTimeout</code>.</p>
 <h4> Example </h4>
 
-<p><p>Destroy itself after 100 milliseconds</p></p>
+<p>Destroy itself after 100 milliseconds</p>
 <pre><code>this.timeout(function() {
 this.destroy();
 }, 100);</code></pre>
@@ -234,21 +234,21 @@ this.destroy();
 <div id='-bind' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.bind</h2>
-<p><p><code>public this .bind(String eventName, Function callback)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>eventName</dt><dd>Name of the event to bind to</dd></p></p>
-<p><p><dt>callback</dt><dd>Method to execute when the event is triggered</dd>
+<p><code>public this .bind(String eventName, Function callback)</code> </p>
+<p><dl></p>
+<p><dt>eventName</dt><dd>Name of the event to bind to</dd></p>
+<p><dt>callback</dt><dd>Method to execute when the event is triggered</dd>
 </dl>
-Attach the current entity (or entities) to listen for an event.</p></p>
-<p><p>Callback will be invoked when an event with the event name passed
+Attach the current entity (or entities) to listen for an event.</p>
+<p>Callback will be invoked when an event with the event name passed
 is triggered. Depending on the event, some data may be passed
-via an argument to the callback function.</p></p>
-<p><p>The first argument is the event name (can be anything) whilst the
+via an argument to the callback function.</p>
+<p>The first argument is the event name (can be anything) whilst the
 second argument is the callback. If the event has data, the
-callback should have an argument.</p></p>
-<p><p>Events are arbitrary and provide communication between components.
-You can trigger or bind an event even if it doesn&#39;t exist yet.</p></p>
-<p><p>Unlike DOM events, Crafty events are exectued synchronously.</p></p>
+callback should have an argument.</p>
+<p>Events are arbitrary and provide communication between components.
+You can trigger or bind an event even if it doesn&#39;t exist yet.</p>
+<p>Unlike DOM events, Crafty events are exectued synchronously.</p>
 <h4> Example </h4>
 
 <pre><code>this.attr(&quot;triggers&quot;, 0); //set a trigger count
@@ -347,17 +347,17 @@ second argument is the arbitrary event data. This can be absolutely anything.</p
 <div id='-each' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.each</h2>
-<p><p><code>public this .each(Function method)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>method</dt><dd>Method to call on each iteration</dd>
+<p><code>public this .each(Function method)</code> </p>
+<p><dl></p>
+<p><dt>method</dt><dd>Method to call on each iteration</dd>
 </dl>
-Iterates over found entities, calling a function for every entity.</p></p>
-<p><p>The function will be called for every entity and will pass the index
+Iterates over found entities, calling a function for every entity.</p>
+<p>The function will be called for every entity and will pass the index
 in the iteration as an argument. The context (value of <code>this</code>) of the
-function will be the current entity in the iteration.</p></p>
+function will be the current entity in the iteration.</p>
 <h4> Example </h4>
 
-<p><p>Destroy every second 2D entity</p></p>
+<p>Destroy every second 2D entity</p>
 <pre><code>Crafty(&quot;2D&quot;).each(function(i) {
     if(i % 2 === 0) {
         this.destroy();
@@ -372,12 +372,12 @@ function will be the current entity in the iteration.</p></p>
 <div id='-get' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.get</h2>
-<p><p><code>public Array .get()</code> </p></p>
+<p><code>public Array .get()</code> </p>
 <dl>
 <dt class='return'>[returns]</dt><dd>An array of entities corresponding to the active selector</dd>
 </dl>
 
-<p><p><code>public Entity .get(Number index)</code> </p></p>
+<p><code>public Entity .get(Number index)</code> </p>
 <dl>
 <dt class='return'>[returns]</dt><dd>an entity belonging to the current selection</dd>
 <dt>index</dt><dd>The index of the entity to return.  If negative, counts back from the end of the array.</dd>
@@ -386,7 +386,7 @@ function will be the current entity in the iteration.</p></p>
 
 <h4> Example </h4>
 
-<p><p>Get an array containing every &quot;2D&quot; entity</p></p>
+<p>Get an array containing every &quot;2D&quot; entity</p>
 <pre><code>var arr = Crafty(&quot;2D&quot;).get()</code></pre>
 <p>Get the first entity matching the selector</p>
 <pre><code>// equivalent to Crafty(&quot;2D&quot;).get()[0], but doesn&#39;t create a new array

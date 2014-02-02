@@ -78,24 +78,24 @@ layout: default
 <div id='-css' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.css</h2>
-<p><p><code>public css(String property, String value)</code> </p></p>
+<p><code>public css(String property, String value)</code> </p>
 <dl>
 <dt>property</dt><dd>CSS property to modify</dd>
 <dt>value</dt><dd>Value to give the CSS property</dd>
 </dl>
 
-<p><p><code>public  css(Object map)</code> </p></p>
+<p><code>public  css(Object map)</code> </p>
 <dl>
 <dt>map</dt><dd>Object where the key is the CSS property and the value is CSS value</dd>
 </dl>
 
-<p><p>Apply CSS styles to the element.</p></p>
-<p><p>Can pass an object where the key is the style property and the value is style value.</p></p>
-<p><p>For setting one style, simply pass the style as the first argument and the value as the second.</p></p>
-<p><p>The notation can be CSS or JS (e.g. <code>text-align</code> or <code>textAlign</code>).</p></p>
-<p><p>To return a value, pass the property.</p></p>
-<p><p>Note: For entities with &quot;Text&quot; component, some css properties are controlled by separate functions
-<code>.textFont()</code> and <code>.textColor()</code>, and ignore <code>.css()</code> settings. See Text component for details.</p></p>
+<p>Apply CSS styles to the element.</p>
+<p>Can pass an object where the key is the style property and the value is style value.</p>
+<p>For setting one style, simply pass the style as the first argument and the value as the second.</p>
+<p>The notation can be CSS or JS (e.g. <code>text-align</code> or <code>textAlign</code>).</p>
+<p>To return a value, pass the property.</p>
+<p>Note: For entities with &quot;Text&quot; component, some css properties are controlled by separate functions
+<code>.textFont()</code> and <code>.textColor()</code>, and ignore <code>.css()</code> settings. See Text component for details.</p>
 <h4> Example </h4>
 
 <pre><code>this.css({&#39;text-align&#39;, &#39;center&#39;, &#39;text-decoration&#39;: &#39;line-through&#39;});

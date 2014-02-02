@@ -77,15 +77,15 @@ or <code>Crafty.viewport.zoom(...)</code></p>
 <div id='Crafty-viewport.bounds' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>Crafty.viewport.bounds</h2>
-<p><p>A rectangle which defines the bounds of the viewport.
+<p>A rectangle which defines the bounds of the viewport.
 It should be an object with two properties, <code>max</code> and <code>min</code>,
-which are each an object with <code>x</code> and <code>y</code> properties.</p></p>
-<p><p>If this property is null, Crafty uses the bounding box of all the items
-on the stage.  This is the initial value.  (To prevent this behavior, set <code>Crafty.viewport.clampToEntities</code> to <code>false</code>)</p></p>
-<p><p>If you wish to bound the viewport along one axis but not the other, you can use <code>-Infinity</code> and <code>+Infinity</code> as bounds.</p></p>
+which are each an object with <code>x</code> and <code>y</code> properties.</p>
+<p>If this property is null, Crafty uses the bounding box of all the items
+on the stage.  This is the initial value.  (To prevent this behavior, set <code>Crafty.viewport.clampToEntities</code> to <code>false</code>)</p>
+<p>If you wish to bound the viewport along one axis but not the other, you can use <code>-Infinity</code> and <code>+Infinity</code> as bounds.</p>
 <h4> Example </h4>
 
-<p><p>Set the bounds to a 500 by 500 square:</p></p>
+<p>Set the bounds to a 500 by 500 square:</p>
 <pre><code>Crafty.viewport.bounds = {min:{x:0, y:0}, max:{x:500, y:500}};</code></pre>
 
 <p><h4>See Also</h4></p>
@@ -98,17 +98,17 @@ on the stage.  This is the initial value.  (To prevent this behavior, set <code>
 <div id='Crafty-viewport.scroll' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>Crafty.viewport.scroll</h2>
-<p><p><code>Crafty.viewport.scroll(String axis, Number val)</code> </p></p>
+<p><code>Crafty.viewport.scroll(String axis, Number val)</code> </p>
 <dl>
 <dt>axis</dt><dd>&#39;x&#39; or &#39;y&#39;</dd>
 <dt>val</dt><dd>The new absolute position on the axis</dd>
 </dl>
 
-<p><p>Will move the viewport to the position given on the specified axis</p></p>
+<p>Will move the viewport to the position given on the specified axis</p>
 <h4> Example </h4>
 
-<p><p>Will move the camera 500 pixels right of its initial position, in effect
-shifting everything in the viewport 500 pixels to the left.</p></p>
+<p>Will move the camera 500 pixels right of its initial position, in effect
+shifting everything in the viewport 500 pixels to the left.</p>
 <pre><code>Crafty.viewport.scroll(&#39;_x&#39;, 500);</code></pre>
 
 
@@ -133,15 +133,15 @@ shifting everything in the viewport 500 pixels to the left.</p></p>
 <div id='Crafty-viewport.follow' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>Crafty.viewport.follow</h2>
-<p><p><code>public void Crafty.viewport.follow(Object target, Number offsetx, Number offsety)</code> </p></p>
+<p><code>public void Crafty.viewport.follow(Object target, Number offsetx, Number offsety)</code> </p>
 <dl>
 <dt>Object target</dt><dd>An entity with the 2D component</dd>
 <dt>Number offsetx</dt><dd>Follow target should be offsetx pixels away from center</dd>
 <dt>Number offsety</dt><dd>Positive puts target to the right of center</dd>
 </dl>
 
-<p><p>Follows a given entity with the 2D component. If following target will take a portion of
-the viewport out of bounds of the world, following will stop until the target moves away.</p></p>
+<p>Follows a given entity with the 2D component. If following target will take a portion of
+the viewport out of bounds of the world, following will stop until the target moves away.</p>
 <h4> Example </h4>
 
 <pre><code>var ent = Crafty.e(&#39;2D, DOM&#39;).attr({w: 100, h: 100:});
@@ -191,18 +191,18 @@ Zooming is multiplicative. To reset the zoom amount, pass 0.</p>
 <div id='Crafty-viewport.scale' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>Crafty.viewport.scale</h2>
-<p><p><code>public void Crafty.viewport.scale(Number amt)</code> </p></p>
+<p><code>public void Crafty.viewport.scale(Number amt)</code> </p>
 <dl>
 <dt>Number amt</dt><dd>amount to zoom/scale in on the elements</dd>
 </dl>
 
-<p><p>Adjusts the scale (zoom). When <code>amt</code> is 1, it is set to the normal scale,
+<p>Adjusts the scale (zoom). When <code>amt</code> is 1, it is set to the normal scale,
 e.g. an entity with <code>this.w == 20</code> would appear exactly 20 pixels wide.
 When <code>amt</code> is 10, that same entity would appear 200 pixels wide (i.e., zoomed in
 by a factor of 10), and when <code>amt</code> is 0.1, that same entity would be 2 pixels wide
-(i.e., zoomed out by a factor of <code>(1 / 0.1)</code>).</p></p>
-<p><p>If you pass an <code>amt</code> of 0, it is treated the same as passing 1, i.e. the scale is reset.</p></p>
-<p><p>This method sets the absolute scale, while <code>Crafty.viewport.zoom</code> sets the scale relative to the existing value.</p></p>
+(i.e., zoomed out by a factor of <code>(1 / 0.1)</code>).</p>
+<p>If you pass an <code>amt</code> of 0, it is treated the same as passing 1, i.e. the scale is reset.</p>
+<p>This method sets the absolute scale, while <code>Crafty.viewport.zoom</code> sets the scale relative to the existing value.</p>
 <h4> Example </h4>
 
 <pre><code>Crafty.viewport.scale(2); // Zoom in -- all entities will appear twice as large.</code></pre>

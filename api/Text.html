@@ -26,14 +26,14 @@ or <code>.textColor()</code> -- the settings will be ignored.</p>
 <div id='-text' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.text</h2>
-<p><p><code>public this .text(String text)</code> </p></p>
-<p><p><code>public this .text(Function textgenerator)</code> </p></p>
+<p><code>public this .text(String text)</code> </p>
+<p><code>public this .text(Function textgenerator)</code> </p>
 <dl>
 <dt>text</dt><dd>String of text that will be inserted into the DOM or Canvas element.</dd>
 </dl>
 
-<p><p>This method will update the text inside the entity.</p></p>
-<p><p>If you need to reference attributes on the entity itself you can pass a function instead of a string.</p></p>
+<p>This method will update the text inside the entity.</p>
+<p>If you need to reference attributes on the entity itself you can pass a function instead of a string.</p>
 <h4> Example </h4>
 
 <pre><code>Crafty.e(&quot;2D, DOM, Text&quot;).attr({ x: 100, y: 100 }).text(&quot;Look at me!!&quot;);
@@ -51,13 +51,13 @@ Crafty.e(&quot;2D, Canvas, Text&quot;).attr({ x: 100, y: 100 })
 <div id='-textColor' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.textColor</h2>
-<p><p><code>public this .textColor(String color, Number strength)</code> </p></p>
+<p><code>public this .textColor(String color, Number strength)</code> </p>
 <dl>
 <dt>color</dt><dd>The color in hexadecimal</dd>
 <dt>strength</dt><dd>Level of opacity</dd>
 </dl>
 
-<p><p>Modify the text color and level of opacity.</p></p>
+<p>Modify the text color and level of opacity.</p>
 <h4> Example </h4>
 
 <pre><code>Crafty.e(&quot;2D, DOM, Text&quot;).attr({ x: 100, y: 100 }).text(&quot;Look at me!!&quot;)
@@ -76,20 +76,20 @@ Crafty.e(&quot;2D, Canvas, Text&quot;).attr({ x: 100, y: 100 }).text(&#39;Look a
 <div id='-textFont' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.textFont</h2>
-<p><p>Invalidate
-<code>public this .textFont(String key, * value)</code> </p></p>
+<p>Invalidate
+<code>public this .textFont(String key, * value)</code> </p>
 <dl>
 <dt>key</dt><dd>Property of the entity to modify</dd>
 <dt>value</dt><dd>Value to set the property to</dd>
 </dl>
 
-<p><p><code>public this .textFont(Object map)</code> </p></p>
+<p><code>public this .textFont(Object map)</code> </p>
 <dl>
 <dt>map</dt><dd>Object where the key is the property to modify and the value as the property value</dd>
 </dl>
 
-<p><p>Use this method to set font property of the text entity.  Possible values are: type, weight, size, family, lineHeight, and variant.</p></p>
-<p><p>When rendered by the canvas, lineHeight and variant will be ignored.</p></p>
+<p>Use this method to set font property of the text entity.  Possible values are: type, weight, size, family, lineHeight, and variant.</p>
+<p>When rendered by the canvas, lineHeight and variant will be ignored.</p>
 <h4> Example </h4>
 
 <pre><code>Crafty.e(&quot;2D, DOM, Text&quot;).textFont({ type: &#39;italic&#39;, family: &#39;Arial&#39; });
@@ -106,11 +106,11 @@ Crafty.e(&quot;2D, Canvas, Text&quot;).textFont(&quot;type&quot;); // italic</co
 <div id='-unselectable' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.unselectable</h2>
-<p><p>Invalidate
-<code>public this .unselectable()</code> </p></p>
-<p><p>This method sets the text so that it cannot be selected (highlighted) by dragging.
+<p>Invalidate
+<code>public this .unselectable()</code> </p>
+<p>This method sets the text so that it cannot be selected (highlighted) by dragging.
 (Canvas text can never be highlighted, so this only matters for DOM text.)
-Works by changing the css property &quot;user-select&quot; and its variants.</p></p>
+Works by changing the css property &quot;user-select&quot; and its variants.</p>
 <h4> Example </h4>
 
 <pre><code>Crafty.e(&quot;2D, DOM, Text&quot;).text(&#39;This text cannot be highlighted!&#39;).unselectable();</code></pre>

@@ -13,19 +13,19 @@ layout: default
 <div id='-tween' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.tween</h2>
-<p><p><code>public this .tween(Object properties, Number|String duration)</code> </p></p>
+<p><code>public this .tween(Object properties, Number|String duration)</code> </p>
 <dl>
 <dt>properties</dt><dd>Object of numeric properties and what they should animate to</dd>
 <dt>duration</dt><dd>Duration to animate the properties over, in milliseconds.</dd>
 </dl>
 
-<p><p>This method will animate numeric properties over the specified duration.
-These include <code>x</code>, <code>y</code>, <code>w</code>, <code>h</code>, <code>alpha</code> and <code>rotation</code>.</p></p>
-<p><p>The object passed should have the properties as keys and the value should be the resulting
-values of the properties.  The passed object might be modified if later calls to tween animate the same properties.</p></p>
+<p>This method will animate numeric properties over the specified duration.
+These include <code>x</code>, <code>y</code>, <code>w</code>, <code>h</code>, <code>alpha</code> and <code>rotation</code>.</p>
+<p>The object passed should have the properties as keys and the value should be the resulting
+values of the properties.  The passed object might be modified if later calls to tween animate the same properties.</p>
 <h4> Example </h4>
 
-<p><p>Move an object to 100,100 and fade out over 200 ms.</p></p>
+<p>Move an object to 100,100 and fade out over 200 ms.</p>
 <pre><code>Crafty.e(&quot;2D, Tween&quot;)
    .attr({alpha: 1.0, x: 0, y: 0})
    .tween({alpha: 0.0, x: 100, y: 100}, 200)</code></pre>

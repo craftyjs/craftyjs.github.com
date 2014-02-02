@@ -14,14 +14,14 @@ layout: default
 <div id='-multiway' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.multiway</h2>
-<p><p><code>public this .multiway([Number speed,] Object keyBindings )</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>speed</dt><dd>Amount of pixels to move the entity whilst a key is down</dd></p></p>
-<p><p><dt>keyBindings</dt><dd>What keys should make the entity go in which direction. Direction is specified in degrees</dd>
+<p><code>public this .multiway([Number speed,] Object keyBindings )</code> </p>
+<p><dl></p>
+<p><dt>speed</dt><dd>Amount of pixels to move the entity whilst a key is down</dd></p>
+<p><dt>keyBindings</dt><dd>What keys should make the entity go in which direction. Direction is specified in degrees</dd>
 </dl>
-Constructor to initialize the speed and keyBindings. Component will listen to key events and move the entity appropriately.</p></p>
-<p><p>When direction changes a NewDirection event is triggered with an object detailing the new direction: {x: x_movement, y: y_movement}
-When entity has moved on either x- or y-axis a Moved event is triggered with an object specifying the old position {x: old_x, y: old_y}</p></p>
+Constructor to initialize the speed and keyBindings. Component will listen to key events and move the entity appropriately.</p>
+<p>When direction changes a NewDirection event is triggered with an object detailing the new direction: {x: x_movement, y: y_movement}
+When entity has moved on either x- or y-axis a Moved event is triggered with an object specifying the old position {x: old_x, y: old_y}</p>
 <h4> Example </h4>
 
 <pre><code>this.multiway(3, {UP_ARROW: -90, DOWN_ARROW: 90, RIGHT_ARROW: 0, LEFT_ARROW: 180});
@@ -33,8 +33,8 @@ this.multiway({W: -90, S: 90, D: 0, A: 180});</code></pre>
 <div id='-enableControl' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.enableControl</h2>
-<p><p><code>public this .enableControl()</code> </p></p>
-<p><p>Enable the component to listen to key events.</p></p>
+<p><code>public this .enableControl()</code> </p>
+<p>Enable the component to listen to key events.</p>
 <h4> Example </h4>
 
 <pre><code>this.enableControl();</code></pre>
@@ -47,8 +47,8 @@ this.multiway({W: -90, S: 90, D: 0, A: 180});</code></pre>
 <div id='-disableControl' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.disableControl</h2>
-<p><p><code>public this .disableControl()</code> </p></p>
-<p><p>Disable the component to listen to key events.</p></p>
+<p><code>public this .disableControl()</code> </p>
+<p>Disable the component to listen to key events.</p>
 <h4> Example </h4>
 
 <pre><code>this.disableControl();</code></pre>
@@ -61,12 +61,12 @@ this.multiway({W: -90, S: 90, D: 0, A: 180});</code></pre>
 <div id='-speed' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.speed</h2>
-<p><p><code>public this .speed(Number speed)</code> </p></p>
+<p><code>public this .speed(Number speed)</code> </p>
 <dl>
 <dt>speed</dt><dd>The speed the entity has.</dd>
 </dl>
 
-<p><p>Change the speed that the entity moves with.</p></p>
+<p>Change the speed that the entity moves with.</p>
 <h4> Example </h4>
 
 <pre><code>this.speed(2);</code></pre>

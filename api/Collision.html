@@ -18,22 +18,22 @@ layout: default
 <div id='-collision' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.collision</h2>
-<p><p><code>public this .collision([Crafty.polygon polygon])</code> </p></p>
+<p><code>public this .collision([Crafty.polygon polygon])</code> </p>
 <dl>
 <dt>polygon</dt><dd>Crafty.polygon object that will act as the hit area</dd>
 </dl>
 
-<p><p><code>public this .collision(Array point1, .., Array pointN)</code> </p></p>
+<p><code>public this .collision(Array point1, .., Array pointN)</code> </p>
 <dl>
 <dt>point#</dt><dd>Array with an <code>x</code> and <code>y</code> position to generate a polygon</dd>
 </dl>
 
-<p><p>Constructor takes a polygon or array of points to use as the hit area.</p></p>
-<p><p>The hit area (polygon) must be a convex shape and not concave
-for the collision detection to work.</p></p>
-<p><p>Points are relative to the object&#39;s position and its unrotated state.</p></p>
-<p><p>If no parameter is passed, the x, y, w, h properties of the entity will be used, and the hitbox will be resized when the entity is.</p></p>
-<p><p>If a hitbox is set that is outside of the bounds of the entity itself, there will be a small performance penalty as it is tracked separately.</p></p>
+<p>Constructor takes a polygon or array of points to use as the hit area.</p>
+<p>The hit area (polygon) must be a convex shape and not concave
+for the collision detection to work.</p>
+<p>Points are relative to the object&#39;s position and its unrotated state.</p>
+<p>If no parameter is passed, the x, y, w, h properties of the entity will be used, and the hitbox will be resized when the entity is.</p>
+<p>If a hitbox is set that is outside of the bounds of the entity itself, there will be a small performance penalty as it is tracked separately.</p>
 <h4> Example </h4>
 
 <pre><code>Crafty.e(&quot;2D, Collision&quot;).collision(

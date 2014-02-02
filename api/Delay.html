@@ -9,18 +9,18 @@ layout: default
 <div id='-delay' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>.delay</h2>
-<p><p><code>public this.delay(Function callback, Number delay)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>callback</dt><dd>Method to execute after given amount of milliseconds</dd></p></p>
-<p><p><dt>delay</dt><dd>Amount of milliseconds to execute the method</dd></p></p>
-<p><p><dt>repeat</dt><dd>How often to repeat the delayed function. A value of 0 triggers the delayed</dd>
+<p><code>public this.delay(Function callback, Number delay)</code> </p>
+<p><dl></p>
+<p><dt>callback</dt><dd>Method to execute after given amount of milliseconds</dd></p>
+<p><dt>delay</dt><dd>Amount of milliseconds to execute the method</dd></p>
+<p><dt>repeat</dt><dd>How often to repeat the delayed function. A value of 0 triggers the delayed</dd>
 </dl>
 function exactly once. A value n &gt; 0 triggers the delayed function exactly n+1 times. A
-value of -1 triggers the delayed function indefinitely.</p></p>
-<p><p>The delay method will execute a function after a given amount of time in milliseconds.</p></p>
-<p><p>It is not a wrapper for <code>setTimeout</code>.</p></p>
-<p><p>If Crafty is paused, the delay is interrupted with the pause and then resume when unpaused</p></p>
-<p><p>If the entity is destroyed, the delay is also destroyed and will not have effect.</p></p>
+value of -1 triggers the delayed function indefinitely.</p>
+<p>The delay method will execute a function after a given amount of time in milliseconds.</p>
+<p>It is not a wrapper for <code>setTimeout</code>.</p>
+<p>If Crafty is paused, the delay is interrupted with the pause and then resume when unpaused</p>
+<p>If the entity is destroyed, the delay is also destroyed and will not have effect.</p>
 <h4> Example </h4>
 
 <pre><code>console.log(&quot;start&quot;);

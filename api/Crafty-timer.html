@@ -10,8 +10,8 @@ layout: default
 <div id='Crafty-timer.steptype' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>Crafty.timer.steptype</h2>
-<p><p><code>public void Crafty.timer.steptype(mode [, maxTimeStep])</code> </p></p>
-<p><p>Can be called to set the type of timestep the game loop uses</p></p>
+<p><code>public void Crafty.timer.steptype(mode [, maxTimeStep])</code> </p>
+<p>Can be called to set the type of timestep the game loop uses</p>
 <dl>
 <dt>mode</dt><dd>the type of time loop.  Allowed values are &quot;fixed&quot;, &quot;semifixed&quot;, and &quot;variable&quot;.  Crafty defaults to &quot;fixed&quot;.</dd>
 <dt>mode</dt><dd>For &quot;fixed&quot;, sets the max number of frames per step.   For &quot;variable&quot; and &quot;semifixed&quot;, sets the maximum time step allowed.</dd>
@@ -63,8 +63,8 @@ The default rate is 50.</p>
 <div id='Crafty-timer.simulateFrames' class='docblock'>
 
 <a href='#doc-nav' class='doc-top'>Back to top</a><h2>Crafty.timer.simulateFrames</h2>
-<p><p><code>public this Crafty.timer.simulateFrames(Number frames[, Number timestep])</code> </p></p>
-<p><p>Advances the game state by a number of frames and draws the resulting stage at the end. Useful for tests and debugging.</p></p>
+<p><code>public this Crafty.timer.simulateFrames(Number frames[, Number timestep])</code> </p>
+<p>Advances the game state by a number of frames and draws the resulting stage at the end. Useful for tests and debugging.</p>
 <dl>
 <dt>frames</dt><dd>number of frames to simulate</dd>
 <dt>timestep</dt><dd>the duration to pass each frame.  Defaults to milliSecPerFrame (20 ms) if not specified.</dd>
