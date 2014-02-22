@@ -7,7 +7,7 @@ body, html { padding:0; margin:0; font-family:'Open Sans', Helvetica, Arial; }
 #header li a sup { font-size:10px; margin-left:3px; padding:1px 3px; color:#c9330a;  }
 #header li.emph a { color:#c9330a; font-weight:bold }
 #logo { margin:10px 0 }
-#inner { width:820px; margin:auto }
+#inner { width:830px; margin:auto }
 
 #main { width:880px; background:#fff url('images/inner-top.png') repeat-x top; margin:-19px auto 0 auto; min-height:300px; }
 #main-left { float:left; width:9px; height:206px; background:url('images/inner-left.png') no-repeat; }
