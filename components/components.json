@@ -1,4 +1,5 @@
 [
   {"name":"TiledMapBuilder", "link": "https://github.com/Kibo/TiledMapBuilder"}
 , {"name":"ProgressBar", "link": "https://github.com/mucaho/crafty-component-progressbar"}
+, {"name":"FPS Counter", "link": "https://github.com/deengames/a-day-and-a-night/blob/master/src/components/fps.js"}
 ]
