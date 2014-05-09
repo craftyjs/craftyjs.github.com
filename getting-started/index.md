@@ -1,4 +1,4 @@
---- 
+---
 layout: gettingstarted
 title: Getting started - Building your first Game
 ---

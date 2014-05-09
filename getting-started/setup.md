@@ -1,4 +1,4 @@
---- 
+---
 layout: gettingstarted
 title: Setup Crafty.js
 ---
