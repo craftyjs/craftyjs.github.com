@@ -96,24 +96,40 @@ a.download:active {
 .doc-block { margin-top:50px }
 
 div.doc-contents ul li {display: inline-block; margin: 0px 15px; min-width: 220px;}
-#doc-content.api pre code {
-	background-color: whiteSmoke; 
-	display: block; 
-	padding: 8.5px; 
-	margin: -10px 0 18px; 
-	line-height: 18px; 
-	font-size: 12px; 
-	border: 1px solid #CCC; 
-	border: 1px solid rgba(0, 0, 0, 0.15); 
-	border-radius: 3px; 
-	white-space: pre-wrap; 
-	word-wrap: break-word;}
+pre {
+	word-wrap: normal;
+	padding: 16px;
+	overflow: auto;
+	font-size: 85%;
+	line-height: 1.45em !important;
+	background-color: #F7F7F7;
+	border-radius: 3px;
+	margin-top: 0;
+	margin-bottom: 16px;
+	font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	box-sizing: border-box;
+}
 pre code {
-	word-wrap: break-word;
+	display: inline;
+	max-width: initial;
+	padding: 0;
+	margin: 0;
+	overflow: initial;
+	line-height: inherit;
+	word-wrap: normal;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	font-size: 100%;
+	word-break: normal;
+	white-space: pre;
+	border-radius: 3px;
+	font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 pre {
 	padding: 10px 20px;
 }
+
+
 
 .edit-on-github {
 	float: right;
