@@ -7,9 +7,6 @@ Darren Torpey from buildnewgames.com have written this amazing guide to Crafty.j
 
 [http://buildnewgames.com/introduction-to-crafty/](http://buildnewgames.com/introduction-to-crafty/)
 
-If you just wanna get started with Crafty.js really fast, then checkout the next page:
-[Setting up Crafty.js the first time](/getting-started/setup.html)
-
 It is easy to setup Crafty.js, just put it in a script tag and you are running:
 
 {% highlight html %}
