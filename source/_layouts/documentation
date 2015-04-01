@@ -53,10 +53,11 @@ layout: default
 </div>
 <div id='doc-content'>
 	<span class="edit-on-github">
-	  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.path}}">Edit on Github</a>
+	  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.src}}">Edit on Github</a>
 	</span>
 
 	<h2> {{ page.title }} </h2>
-
-	{{ content }}
+	{{#markdown}}
+		{{> body }}
+	{{/markdown}}
 </div>
