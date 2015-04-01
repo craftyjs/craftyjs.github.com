@@ -57,6 +57,7 @@ layout: default
 	</span>
 
 	<h2> {{ page.title }} </h2>
-
-	{{ content }}
+	{{#markdown}}
+		{{> body }}
+	{{/markdown}}
 </div>

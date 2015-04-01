@@ -1,0 +1,59 @@
+---
+layout: default
+title: Crafty.js Modules
+---
+
+<h2>Components</h2>
+<p>An overview over components made by the community.</p>
+<p>Have you made a component and want it listed here, go and create a issue: <a href="https://github.com/craftyjs/craftyjs.github.com">craftyjs.github.com</a>
+</p>
+<div id="appView">
+  <div class="component-count" style="font-weight: bold;"></div>
+  <div id="component-list"></div>
+</div>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
+<script>
+  var ComponentModel = Backbone.Model.extend({});
+  var ComponentView = Backbone.View.extend({
+    template: _.template('<a href="<%= link %>"><%= name %></a>'),
+    initialize: function() {
+      this.listenTo(this.model, "change", this.render);
+    },
+    render: function() {
+      this.$el.html(this.template(this.model.attributes));
+      return this;
+    }
+  });
+  var ComponentCollection = Backbone.Collection.extend({
+    model: ComponentModel,
+    url: '/components/components.json'
+  });
+  var Components = new ComponentCollection;
+
+  var AppView = Backbone.View.extend({
+    el: $('#appView'),
+    initialize: function(){
+      Components.fetch();
+      this.listenTo(Components, 'add', this.addOne);
+      this.listenTo(Components, 'reset', this.addAll);
+      this.listenTo(Components, 'all', this.render);
+
+    },
+    addOne: function(component) {
+      var view = new ComponentView({model: component});
+      this.$('#component-list').append(view.render().el);
+    },
+    addAll: function() {
+      Components.each(this.addOne, this);
+    },
+    render: function() {
+      this.$el.find('.component-count').text('There are ' + Components.length + ' components!');
+      // Nothing really change in the app yet
+      // TODO Search, Columns
+    }
+  });
+  var App = new AppView;
+</script>

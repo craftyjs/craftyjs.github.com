@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Crafty - Crafty.js Modules</title>
+	<title>Crafty - Mouse</title>
 	<link type="text/css" rel="stylesheet" href="/global.css" />
 	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet'
 		type='text/css'>
@@ -48,60 +48,64 @@
 		<div id="content">
 			
 
-<h2>Components</h2>
-<p>An overview over components made by the community.</p>
-<p>Have you made a component and want it listed here, go and create a issue: <a href="https://github.com/craftyjs/craftyjs.github.com">craftyjs.github.com</a>
-</p>
-<div id="appView">
-  <div class="component-count" style="font-weight: bold;"></div>
-  <div id="component-list"></div>
+<div id='doc-nav'>
+	<ul id='doc-level-one'>
+		<li>
+			Topics
+			<ul>
+				<li>
+					<a href='/documentation/'>
+						Documentation
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/2d.html'>
+						2D Graphics
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/gameloop.html'>
+						Game Loop
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/text.html'>
+						Text
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/keyboard.html'>
+						Keyboard
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/sound.html'>
+						Sound
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/scenes.html'>
+						Scenes
+					</a>
+				</li>
+				<li>
+					<a href='/documentation/mouse.html'>
+						Mouse
+					</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
 </div>
+<div id='doc-content'>
+	<span class="edit-on-github">
+	  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/">Edit on Github</a>
+	</span>
 
+	<h2> Mouse </h2>
+	<p>Here would be information about how Crafty.js mouse, and what options you have to modify it.</p>
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js"></script>
-<script>
-  var ComponentModel = Backbone.Model.extend({});
-  var ComponentView = Backbone.View.extend({
-    template: _.template('<a href="<%= link %>"><%= name %></a>'),
-    initialize: function() {
-      this.listenTo(this.model, "change", this.render);
-    },
-    render: function() {
-      this.$el.html(this.template(this.model.attributes));
-      return this;
-    }
-  });
-  var ComponentCollection = Backbone.Collection.extend({
-    model: ComponentModel,
-    url: '/components/components.json'
-  });
-  var Components = new ComponentCollection;
-
-  var AppView = Backbone.View.extend({
-    el: $('#appView'),
-    initialize: function(){
-      Components.fetch();
-      this.listenTo(Components, 'add', this.addOne);
-      this.listenTo(Components, 'reset', this.addAll);
-      this.listenTo(Components, 'all', this.render);
-
-    },
-    addOne: function(component) {
-      var view = new ComponentView({model: component});
-      this.$('#component-list').append(view.render().el);
-    },
-    addAll: function() {
-      Components.each(this.addOne, this);
-    },
-    render: function() {
-      this.$el.find('.component-count').text('There are ' + Components.length + ' components!');
-      // Nothing really change in the app yet
-      // TODO Search, Columns
-    }
-  });
-  var App = new AppView;
-</script>
+</div>
 
 			
 		</div>

@@ -1,0 +1,7 @@
+[
+  {"name":"TiledMapBuilder", "link": "https://github.com/Kibo/TiledMapBuilder"}
+, {"name":"ProgressBar", "link": "https://github.com/mucaho/crafty-component-progressbar"}
+, {"name":"FPS Counter", "link": "https://github.com/deengames/a-day-and-a-night/blob/gh-pages/src/components/fps.js"}
+, {"name":"UniAxis controls", "link": "https://github.com/budda/crafty.component.uniaxis"}
+, {"name":"MouseFace", "link": "https://github.com/petarov/CraftyMouseFace"}
+]
