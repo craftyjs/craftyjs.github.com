@@ -9,7 +9,7 @@ If you want to be more creative about the fonts in your game you can create a sp
 
 and chop it up in Crafty like this 
 
-```
+{% highlight javascript %}
 Crafty.init();
 
 Crafty.sprite(24,32,"http://opengameart.org/sites/default/files/font-hand-24x32.png",
@@ -61,12 +61,13 @@ Crafty.c("SpriteText",{
         }
     }
 });
-```
+{% endhighlight %}
+
 Then simply use the SpriteText component like this
 
-```
+{% highlight javascript %}
 var text = Crafty.e("SpriteText").text("Crafty Roxx");
-```
+{% endhighlight %}
 
 And the result
 
