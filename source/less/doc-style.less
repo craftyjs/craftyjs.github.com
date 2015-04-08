@@ -1,0 +1,108 @@
+
+/*Documentation styles*/
+
+/* color that matches bootstraps code background */
+@doc-pale-grey: #F5F5F5;
+
+
+/* Sidebar navigation styles */
+#doc-nav {
+	padding-top: 1em;
+}
+
+
+#doc-level-one { 
+	margin:0; 
+	padding:0; 
+	font-size:12px 
+}
+#doc-level-one li { 
+	font-weight:bold; 
+	padding: 2px 0;
+}
+#doc-level-one li ul { 
+	padding-left: 8px 
+}
+#doc-level-one li ul li { 
+	font-weight:normal; 
+}
+
+
+/* Spacing */
+
+
+.doc-block { 
+	margin-top:50px 
+}
+
+
+/* Heading styles for api docs, overriding the global ones */
+
+#api-container h1 {
+	font-weight: 300;
+	font-size: 30px;
+}
+
+#api-container h2 {
+	font-size: 24px;
+}
+
+/* The "back to top" links */
+
+.doc-top { 
+	float:right; 
+	font-size:12px; 
+	margin-top:10px 
+}
+
+
+
+/* Code styles */
+
+#doc-content code {
+	color: hsl(200, 40%, 50%);
+	background-color: transparent;
+}
+
+#doc-content pre code {
+	background-color: @doc-pale-grey;
+	color: black;
+}
+
+/* Dictionary styles */
+
+#doc-content dl { 
+	background: @doc-pale-grey;
+	padding:10px; 
+	font-size:13px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+#doc-content dt { 
+	font-weight:bold; 
+	font-family: @monofont;
+	}
+#doc-content dd { 
+	margin:0 0 5px 25px;
+}
+
+
+
+/* List styles */
+
+#doc-content ul {
+	padding: 0;
+	padding-left: 15px;
+}
+
+#doc-content ul li {
+	min-width: 220px;
+}
+
+.doc-contents ul li {
+	display: inline-block; 
+}
+
+

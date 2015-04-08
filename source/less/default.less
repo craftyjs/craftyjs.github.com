@@ -1,0 +1,133 @@
+
+
+/* Body and page background */
+body, html { 
+	padding:0; 
+	margin:0; 
+	font-family: @bodyfont; 
+}
+
+
+body {
+	width: 100%;
+	padding-bottom: @footeroffset;
+
+	background-color:  @pagebacklight ! important ;
+}
+
+
+#header-background {
+	background: linear-gradient(180deg, #444, #888);
+	height: @headerbackgroundheight;
+	width: 100%;
+}
+
+#page-frame {
+	width: 100% - 2 * @bodygutter;
+	margin-left: @bodygutter;
+	margin-top: @headeroffset - @headerbackgroundheight;
+	box-shadow: 2px 2px 5px #333;
+}
+
+
+/* Navbar */
+
+.navbar {
+	background-color: @navbarback;
+	border-radius: 0;
+	border: 0;
+	.sidepadding;
+	margin-bottom: 0;
+}
+
+.navbar ul a:hover {
+	background-color: @highlight-color ! important;
+	text-shadow: 1px 1px 1px #eee;
+}
+
+.navbar a {
+	color: @greytext;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: @bodyfont;
+}
+
+
+@logoheight: 40px;
+
+.navbar-brand {
+	padding: (50px - @logoheight)/2;
+}
+
+.logo {
+	height: @logoheight;
+	padding-top: 0px;
+}
+
+/* Content holder */
+
+#content { 
+	width: 100%; 
+}
+
+#content > div {
+	.sidepadding;
+}
+
+#main { 
+	z-index: 1000;
+	background-color: white;
+	position: relative;
+}
+
+
+/* Footer */
+
+/* Color for text and links in the footer */
+@footer-text-color: #ccc;
+
+#footer { 
+	margin-top: 0;
+	background: #707070 url('images/footer.png') repeat-x; 
+	text-align: center; 
+	padding: 10px; 
+	font-size: 12px; 
+	color: @footer-text-color; 
+	border-top: @lightline;
+	margin-top: 10px
+}
+
+#contact { 
+	font-family: @bodyfont; 
+	font-size: 10px; 
+	margin: 0 auto 10px auto; 
+	text-align: center; 
+	padding: 3px 0
+}
+
+#contact a, #footer li a { 
+	margin: 0 10px; 
+}
+
+#contact img { 
+	border: 0; 
+	vertical-align: text-top; 
+	margin-top: -1px;
+}
+
+
+
+
+
+#footer ul { 
+	padding:0; 
+	margin:0 auto; 
+}
+
+#footer li { 
+	display:inline
+}
+
+#footer a { 
+	color: @footer-text-color;
+}

@@ -1,0 +1,243 @@
+
+/* Splash section (download + code sample)*/
+
+.splash {
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	display: flex;
+    align-items: center;
+
+    border-top: @lightline;
+    border-bottom: @lightline;
+}
+
+
+.splash pre {
+	margin-top: 10px;
+	border-radius: 0px;
+}
+
+#splash-text {
+	color: @darktext;
+	font-size: 20px;
+	font-family: @seriffont;
+	text-align: center;
+
+	margin-bottom: 1em;
+}
+
+
+
+
+.blurb-title {
+	font-variant: small-caps;
+}
+
+.splash a {
+	color: @darktext;
+	font-style: normal;
+	font-size: 16px;
+}
+
+
+
+/* Download link */
+
+a.download { 
+	display: block;
+	padding:5px 10px; 
+	
+	font-size:18px;
+	background-color: @highlight-color;
+	color: black;
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+}
+
+
+a.download:hover {
+	text-decoration: none;
+	
+	box-shadow: 2px 2px 5px #100;
+}
+a.download:active {
+	top:51px;
+	right:-1px
+}
+
+a.download .version {
+	font-size: 12px;
+}
+
+
+.install-options, .install-options a{
+	text-align: center;
+	font-size: 12px;
+	font-style: normal;
+	color: black;
+	text-decoration: none;
+	font-family: @seriffont;
+}
+
+/* Announcement line */
+
+.announcement {
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.announcement a {
+	color: @orange-color;
+	font-style: italic;
+}
+.announcement .date {
+	color: @darktext;
+}
+
+#love {
+	color: @orange-color;
+	font-weight: bold;
+}
+
+
+
+
+/* Feature list section*/
+
+
+@boxback: white;
+@boxspacing: 0px;
+
+#grid {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: @boxspacing;
+	padding-bottom: @boxspacing;
+	background-color: white;
+
+}
+
+
+.inner-box {
+	background-color: @boxback;
+	height: 12em;
+	padding: 10px;
+	border: @lightline;
+}
+
+
+
+.box {
+	padding: @boxspacing;
+	text-shadow: 1px 1px 1px white;
+	font-family: @bodyfont;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+.box h2 { 
+	padding:0; 
+	margin:0; 
+	border:0; 
+	font-size: 20px; 
+	font-family:@seriffont; 
+	font-weight:normal;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 5px;
+	margin-left: -5px;
+
+	text-shadow: 0 0 0 transparent;
+	color: @greytext;
+}
+
+
+
+.browser { background: @boxback url('images/grid/browser.png') no-repeat bottom right }
+.canvas { background: @boxback url('images/grid/canvas.png') no-repeat bottom center }
+.sprite { background: @boxback  url('images/grid/sprites.png') no-repeat bottom right }
+.collide { background: @boxback  url('images/grid/collide.png') no-repeat bottom left }
+
+
+
+
+
+
+/* Install section */
+
+@install-indent: 15px;
+#install-div {
+	background-color: white;
+	color: #300;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#install-div > div {
+	padding-top: 1em;
+}
+
+#install-div code {
+	margin-bottom: 10px;
+	margin-left: @install-indent;
+}
+
+#install-div p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#install-div .bullet-point {
+	margin-left: @install-indent;
+	display: block;
+}
+
+#install-div h3 {
+	color: @greytext;
+	font-family: @seriffont;
+	font-size: 22px;
+}
+
+
+
+/* Demos section */
+
+#demos-div {
+	background-color: white;
+	color: @darktext;
+}
+
+#demos-div img {
+	border-radius: 50%;
+}
+
+#demos-div img:hover {
+	box-shadow: 1px 1px 2px #555;
+}
+
+.gridlist { padding:0; margin:0; list-style:none }
+.gridlist li { float:left; width:90px; height: 115px; text-align:center }
+.gridlist li a span { display:block; font-size:12px }
+.gridlist li a img { border:1px solid #ccc }
+.gridlist li a:hover img { border:1px solid #9f5600 }
+
+.demo { margin-bottom:30px }
+.demo img { float:left; border:1px solid #aaa; margin-right:5px }
+.demo p { margin-top:-5px }
+
+
+
+
+/*Contributors section*/
+
+#contributors ul {
+	padding-left: 1em;
+	list-style: none;
+}

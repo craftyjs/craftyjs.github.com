@@ -16,14 +16,13 @@ module.exports = function(grunt) {
               return hljs.highlightAuto(code, ["javascript", "html"]).value;
           }
         }
-        //partials: './src/bonnet/partials/**/*.hbs'
       },
       posts: {
         files: [{
           cwd: './source',
           dest: './',
           expand: true,
-          src: ['index.html', 'documentation/*', 'cookbook/**/*.md', 'api/**/*.*', 'getting-started/*', 'components/*.html']
+          src: ['index.html', 'documentation/*', 'cookbook/**/*.md', 'getting-started/*', 'api/**/*.*', 'components/*.html'] //'api/**/*.*', 
         }]  
       }
     },
@@ -36,12 +35,34 @@ module.exports = function(grunt) {
           keepalive: true
         }
       }
-    }
+    },
+
+    less: {
+      default: {
+        files: {
+          "craftyjs-site.css":"source/less/craftyjs-site.less",
+        }
+      }
+    },
+    watch: {
+        less: {
+          files: 'source/less/*.less',
+          tasks: ['less'],
+        },
+        templates: {
+          files: ['source/**/*', '!source/less/*.less'],
+          tasks: ['assemble'],
+        },
+
+      }
   });
 
   grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.registerTask('default', ['less', 'assemble']);
 
 
 
