@@ -1,0 +1,82 @@
+
+/* Color */
+
+@pagebacklight: #fbfbfb;
+@navbarback: white;
+@defaultback: white;
+
+@lightline: 1px solid #CCC;
+@highlight-color: hsl(205, 60%, 65%);
+@orange-color: darkorange;
+
+
+/* Fonts */
+
+@darktext: black;
+@greytext: #444;
+
+@seriffont: 'Arvo', arial, serif;
+@bodyfont: 'Open Sans', Helvetica, Arial;
+@monofont: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+
+
+/* Layout */
+
+@sidepadding: 5%;
+@leftpadding: @sidepadding;
+@rightpadding: @sidepadding;
+
+@bodygutter: 8%;
+
+@headeroffset: 30px;
+@headerbackgroundheight: 150px;
+@footeroffset: @headeroffset;
+	
+
+
+
+
+
+.clearer { clear:both }
+
+
+@h2-top-space: 20px;
+@h2-bottom-space: 10px;
+
+h2 { 
+	font-family: @bodyfont;
+	font-weight: 300;
+	border-bottom:2px solid hsl(0, 0%, 80%);
+	margin-top: @h2-top-space;
+	margin-bottom: @h2-bottom-space;
+}
+
+.edit-on-github {
+	float: right;
+	margin-top: @h2-top-space + 13px;
+}
+
+
+.sidepadding {
+	padding-left: @leftpadding;
+	padding-right: @rightpadding;
+}
+
+li {
+	list-style: none;
+}
+
+
+a { 
+	color:#0084ea; 
+}
+
+a img { 
+	border:0 
+}
+
+#component-list {
+	list-style: none;
+	padding-left: 1em;
+}
+

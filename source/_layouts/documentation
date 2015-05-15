@@ -1,63 +1,64 @@
 ---
 layout: default
 ---
+<div id="docs">
+	<div id='doc-nav'>
+		<ul id='doc-level-one'>
+			<li>
+				Topics
+				<ul>
+					<li>
+						<a href='/documentation/'>
+							Documentation
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/2d.html'>
+							2D Graphics
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/gameloop.html'>
+							Game Loop
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/text.html'>
+							Text
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/keyboard.html'>
+							Keyboard
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sound.html'>
+							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/scenes.html'>
+							Scenes
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id='doc-content'>
+		<span class="edit-on-github">
+		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.src}}">Edit on Github</a>
+		</span>
 
-<div id='doc-nav'>
-	<ul id='doc-level-one'>
-		<li>
-			Topics
-			<ul>
-				<li>
-					<a href='/documentation/'>
-						Documentation
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/2d.html'>
-						2D Graphics
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/gameloop.html'>
-						Game Loop
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/text.html'>
-						Text
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/keyboard.html'>
-						Keyboard
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/sound.html'>
-						Sound
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/scenes.html'>
-						Scenes
-					</a>
-				</li>
-				<li>
-					<a href='/documentation/mouse.html'>
-						Mouse
-					</a>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-<div id='doc-content'>
-	<span class="edit-on-github">
-	  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.src}}">Edit on Github</a>
-	</span>
-
-	<h2> {{ page.title }} </h2>
-	{{#markdown}}
-		{{> body }}
-	{{/markdown}}
+		<h2> {{ page.title }} </h2>
+		{{#markdown}}
+			{{> body }}
+		{{/markdown}}
+	</div>
 </div>

@@ -1,23 +1,24 @@
 ---
 layout: default
 ---
-
-<div id='doc-nav'>
-	<ul id='doc-level-one'>
-		<li>
+<div id='quickstart'>
+	<div id='doc-nav'>
+		<ul id='doc-level-one'>
+			<li>
+				
+			</li>
 			
-		</li>
-		
-	</ul>
-</div>
-<div id='doc-content'>
+		</ul>
+	</div>
+	<div id='doc-content'>
 
-	<span class="edit-on-github">
-	  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.path}}">Edit on Github</a>
-	</span>
+		<span class="edit-on-github">
+		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.path}}">Edit on Github</a>
+		</span>
 
-	<h2> {{ page.title }} </h2>
-	{{#markdown}}
-		{{> body }}
-	{{/markdown}}
+		<h2> {{ page.title }} </h2>
+		{{#markdown}}
+			{{> body }}
+		{{/markdown}}
+	</div>
 </div>

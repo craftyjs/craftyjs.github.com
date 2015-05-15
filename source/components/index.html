@@ -2,14 +2,17 @@
 layout: default
 title: Crafty.js Modules
 ---
-
-<h2>Components</h2>
-<p>An overview over components made by the community.</p>
-<p>Have you made a component and want it listed here, go and create a issue: <a href="https://github.com/craftyjs/craftyjs.github.com">craftyjs.github.com</a>
-</p>
-<div id="appView">
-  <div class="component-count" style="font-weight: bold;"></div>
-  <div id="component-list"></div>
+<div id="components-div">
+  <div id="components-summary">
+    <h2>Components</h2>
+    <p>An overview over components made by the community.</p>
+    <p>If you would like your component listed here, create an issue or PR <a href="https://github.com/craftyjs/craftyjs.github.com">on Github.</a>
+    </p>
+  </div>
+  <div id="appView">
+    <div class="component-count" style="font-weight: bold;"></div>
+    <ul id="component-list"></ul>
+  </div>
 </div>
 
 
@@ -18,7 +21,7 @@ title: Crafty.js Modules
 <script>
   var ComponentModel = Backbone.Model.extend({});
   var ComponentView = Backbone.View.extend({
-    template: _.template('<a href="<%= link %>"><%= name %></a>'),
+    template: _.template('<li><a href="<%= link %>"><%= name %></a></li>'),
     initialize: function() {
       this.listenTo(this.model, "change", this.render);
     },
@@ -50,7 +53,7 @@ title: Crafty.js Modules
       Components.each(this.addOne, this);
     },
     render: function() {
-      this.$el.find('.component-count').text('There are ' + Components.length + ' components!');
+      this.$el.find('.component-count').text('There are ' + Components.length + ' components:');
       // Nothing really change in the app yet
       // TODO Search, Columns
     }
