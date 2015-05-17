@@ -57,6 +57,18 @@
 
 
 <div class="row splash">
+	
+	<div id = "splash-right">
+	<pre><code class="language-javascript"><span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    Crafty.init();
+    <span class="hljs-comment">// A blue block, controlled by arrow keys</span>
+    <span class="hljs-keyword">var</span> player = Crafty.e(<span class="hljs-string">"2D, Canvas, Color, Fourway"</span>)
+        .attr({x:<span class="hljs-number">100</span>, y:<span class="hljs-number">100</span>, w:<span class="hljs-number">50</span>, h:<span class="hljs-number">50</span>})
+        .color(<span class="hljs-string">"blue"</span>)
+        .fourway();
+};</code></pre>
+
+	</div>
 	<div id="splash-left">
 		<div id="splash-text">
 			<div class="row" id="blurb">
@@ -79,17 +91,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id = "splash-right">
-	<pre><code class="language-javascript"><span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
-    Crafty.init();
-    <span class="hljs-comment">// A blue block, controlled by arrow keys</span>
-    <span class="hljs-keyword">var</span> player = Crafty.e(<span class="hljs-string">"2D, Canvas, Color, Fourway"</span>)
-        .attr({x:<span class="hljs-number">100</span>, y:<span class="hljs-number">100</span>, w:<span class="hljs-number">50</span>, h:<span class="hljs-number">50</span>})
-        .color(<span class="hljs-string">"blue"</span>)
-        .fourway();
-};</code></pre>
-
 	</div>
 	
 </div>

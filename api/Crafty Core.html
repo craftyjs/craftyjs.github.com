@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Crafty - </title>
+	<title>Crafty - Crafty Core</title>
 	<link type="text/css" rel="stylesheet" href="/craftyjs-site.css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet' 	type='text/css'>
@@ -53,466 +53,156 @@
 		<div id="content" class="container">
 			
 
-<div id='api-container'>
-	
 
-<div id='doc-nav'><ul id='doc-level-one'><li><a href='events.html'>List of Events</a></li><li>2D<ul><li><a href='Crafty-map.html'>Crafty.map</a></li><li><a href='2D.html'>2D</a></li><li><a href='Gravity.html'>Gravity</a></li><li><a href='Crafty-polygon.html'>Crafty.polygon</a></li><li><a href='Crafty-circle.html'>Crafty.circle</a></li><li><a href='Crafty-HashMap.html'>Crafty.HashMap</a></li><li><a href='Collision.html'>Collision</a></li><li><a href='Crafty-diamondIso.html'>Crafty.diamondIso</a></li><li><a href='Crafty-isometric.html'>Crafty.isometric</a></li><li><a href='Crafty-math.html'>Crafty.math</a></li><li><a href='Crafty-math.Vector2D.html'>Crafty.math.Vector2D</a></li><li><a href='Crafty-math.Matrix2D.html'>Crafty.math.Matrix2D</a></li></ul></li><li>Graphics<ul><li><a href='DOM.html'>DOM</a></li><li><a href='Crafty-DOM.html'>Crafty.DOM</a></li><li><a href='Canvas.html'>Canvas</a></li><li><a href='Crafty-canvas.html'>Crafty.canvas</a></li><li><a href='Crafty-assignColor.html'>Crafty.assignColor</a></li><li><a href='Color.html'>Color</a></li><li><a href='Image.html'>Image</a></li><li><a href='Crafty-DrawManager.html'>Crafty.DrawManager</a></li><li><a href='Crafty-pixelart.html'>Crafty.pixelart</a></li><li><a href='Crafty-background.html'>Crafty.background</a></li><li><a href='HTML.html'>HTML</a></li><li><a href='Particles.html'>Particles</a></li><li><a href='Crafty-sprite.html'>Crafty.sprite</a></li><li><a href='Sprite.html'>Sprite</a></li><li><a href='Text.html'>Text</a></li></ul></li><li>Debug<ul><li><a href='DebugCanvas.html'>DebugCanvas</a></li><li><a href='DebugRectangle.html'>DebugRectangle</a></li><li><a href='VisibleMBR.html'>VisibleMBR</a></li><li><a href='DebugPolygon.html'>DebugPolygon</a></li><li><a href='WiredHitBox.html'>WiredHitBox</a></li><li><a href='SolidHitBox.html'>SolidHitBox</a></li></ul></li><li>Animation<ul><li><a href='Tween.html'>Tween</a></li><li><a href='SpriteAnimation.html'>SpriteAnimation</a></li></ul></li><li>Input<ul><li><a href='Crafty-keydown.html'>Crafty.keydown</a></li><li><a href='Crafty-mouseDispatch.html'>Crafty.mouseDispatch</a></li><li><a href='Crafty-touchDispatch.html'>Crafty.touchDispatch</a></li><li><a href='KeyboardEvent.html'>KeyboardEvent</a></li><li><a href='Crafty-eventObject.html'>Crafty.eventObject</a></li><li><a href='Mouse.html'>Mouse</a></li><li><a href='Draggable.html'>Draggable</a></li><li><a href='Keyboard.html'>Keyboard</a></li><li><a href='Multiway.html'>Multiway</a></li><li><a href='Fourway.html'>Fourway</a></li><li><a href='Twoway.html'>Twoway</a></li><li><a href='Crafty-keys.html'>Crafty.keys</a></li><li><a href='Crafty-mouseButtons.html'>Crafty.mouseButtons</a></li></ul></li><li>Core<ul><li><a href='Crafty.html'>Crafty</a></li><li><a href='Crafty Core.html'>Crafty Core</a></li><li><a href='Crafty-extend.html'>Crafty.extend</a></li><li><a href='Crafty-init.html'>Crafty.init</a></li><li><a href='Crafty-getVersion.html'>Crafty.getVersion</a></li><li><a href='Crafty-stop.html'>Crafty.stop</a></li><li><a href='Crafty-pause.html'>Crafty.pause</a></li><li><a href='Crafty-isPaused.html'>Crafty.isPaused</a></li><li><a href='Crafty-e.html'>Crafty.e</a></li><li><a href='Crafty-c.html'>Crafty.c</a></li><li><a href='Crafty-trigger.html'>Crafty.trigger</a></li><li><a href='Crafty-bind.html'>Crafty.bind</a></li><li><a href='Crafty-uniqueBind.html'>Crafty.uniqueBind</a></li><li><a href='Crafty-one.html'>Crafty.one</a></li><li><a href='Crafty-unbind.html'>Crafty.unbind</a></li><li><a href='Crafty-frame.html'>Crafty.frame</a></li><li><a href='Crafty-settings.html'>Crafty.settings</a></li><li><a href='Crafty-clone.html'>Crafty.clone</a></li><li><a href='Crafty-support.html'>Crafty.support</a></li><li><a href='Crafty-stage.html'>Crafty.stage</a></li></ul></li><li>Game Loop<ul><li><a href='Crafty-timer.html'>Crafty.timer</a></li></ul></li><li>Events<ul><li><a href='Crafty-trigger.html'>Crafty.trigger</a></li><li><a href='Crafty-bind.html'>Crafty.bind</a></li><li><a href='Crafty-uniqueBind.html'>Crafty.uniqueBind</a></li><li><a href='Crafty-one.html'>Crafty.one</a></li><li><a href='Crafty-unbind.html'>Crafty.unbind</a></li><li><a href='Crafty-addEvent.html'>Crafty.addEvent</a></li><li><a href='Crafty-removeEvent.html'>Crafty.removeEvent</a></li></ul></li><li>Misc<ul><li><a href='Crafty-device.html'>Crafty.device</a></li><li><a href='Crafty-support.html'>Crafty.support</a></li><li><a href='Crafty-addEvent.html'>Crafty.addEvent</a></li><li><a href='Crafty-removeEvent.html'>Crafty.removeEvent</a></li></ul></li><li>Stage<ul><li><a href='Crafty-background.html'>Crafty.background</a></li><li><a href='Crafty-scene.html'>Crafty.scene</a></li><li><a href='Crafty-viewport.html'>Crafty.viewport</a></li></ul></li><li>Assets<ul><li><a href='Crafty-assets.html'>Crafty.assets</a></li><li><a href='Crafty-paths.html'>Crafty.paths</a></li><li><a href='Crafty-asset.html'>Crafty.asset</a></li><li><a href='Crafty-image_whitelist.html'>Crafty.image_whitelist</a></li><li><a href='Crafty-loader.html'>Crafty.loader</a></li><li><a href='Crafty-removeAssets.html'>Crafty.removeAssets</a></li></ul></li><li>Model<ul><li><a href='Model.html'>Model</a></li></ul></li><li>Scenes<ul><li><a href='Crafty-scene.html'>Crafty.scene</a></li></ul></li><li>Audio<ul><li><a href='Crafty-audio.html'>Crafty.audio</a></li></ul></li><li>Utilities<ul><li><a href='Storage.html'>Storage</a></li><li><a href='Delay.html'>Delay</a></li></ul></li></ul></div>
-<div id='doc-content'><h1 id="crafty-core">Crafty Core</h1>
-<p>Set of methods added to every single entity.</p>
 
-<h4>Events</h4>
-<dl><dt><span class='event-name'>NewEntityName</span> [<span class='event-property-name'>entity name</span>: <span class='event-property'>String</span>]</dt><dd>After setting new name for entity</dd>
-<dt><span class='event-name'>NewComponent</span> [<span class='event-property-name'>Component</span>: <span class='event-property'>String</span>]</dt><dd>when a new component is added to the entity</dd>
-<dt><span class='event-name'>RemoveComponent</span> [<span class='event-property-name'>Component</span>: <span class='event-property'>String</span>]</dt><dd>when a component is removed from the entity</dd>
-<dt><span class='event-name'>Remove</span></dt><dd>when the entity is removed by calling .destroy()</dd>
-</dl><div class='doc-contents'><h4>Properties and Methods</h4><ul><li><a href='#-setName'>.setName</a></li><li><a href='#-addComponent'>.addComponent</a></li><li><a href='#-toggleComponent'>.toggleComponent</a></li><li><a href='#-requires'>.requires</a></li><li><a href='#-removeComponent'>.removeComponent</a></li><li><a href='#-getId'>.getId</a></li><li><a href='#-has'>.has</a></li><li><a href='#-attr'>.attr</a></li><li><a href='#-toArray'>.toArray</a></li><li><a href='#-timeout'>.timeout</a></li><li><a href='#-bind'>.bind</a></li><li><a href='#-uniqueBind'>.uniqueBind</a></li><li><a href='#-one'>.one</a></li><li><a href='#-unbind'>.unbind</a></li><li><a href='#-trigger'>.trigger</a></li><li><a href='#-each'>.each</a></li><li><a href='#-get'>.get</a></li><li><a href='#-clone'>.clone</a></li><li><a href='#-setter'>.setter</a></li><li><a href='#-destroy'>.destroy</a></li></ul></div>
-
-<div id='-setName' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.setName</h2>
-<p><p><code>public this .setName(String name)</code> </p></p>
-<dl>
-<dt>name</dt><dd>A human readable name for debugging purposes.</dd>
-</dl>
-
-<h4> Example </h4>
-
-<pre><code>this.setName(&quot;Player&quot;);
-</code></pre>
-
-<p></div></p>
-<div id='-addComponent' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.addComponent</h2>
-<p><p><code>public this .addComponent(String componentList)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>componentList</dt><dd>A string of components to add separated by a comma <code>,</code></dd>
-</dl>
-<code>public this .addComponent(String Component1[, .., String ComponentN])</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>Component#</dt><dd>Component ID to add.</dd>
-</dl>
-Adds a component to the selected entities or entity.</p></p>
-<p><p>Components are used to extend the functionality of entities.
+<div id="docs"><div class="toc-holder" id="doc-nav"><ul id="doc-level-one"><li><a href="events.html">List of Events</a></li><li class="category">Core<ul class="category-list"><li><a href="Crafty.html">Crafty</a></li><li><a href="Crafty Core.html">Crafty Core</a></li><li><a href="Crafty-bind.html">Crafty.bind</a></li><li><a href="Crafty-c.html">Crafty.c</a></li><li><a href="Crafty-clone.html">Crafty.clone</a></li><li><a href="Crafty-e.html">Crafty.e</a></li><li><a href="Crafty-extend.html">Crafty.extend</a></li><li><a href="Crafty-frame.html">Crafty.frame</a></li><li><a href="Crafty-getVersion.html">Crafty.getVersion</a></li><li><a href="Crafty-init.html">Crafty.init</a></li><li><a href="Crafty-isPaused.html">Crafty.isPaused</a></li><li><a href="Crafty-one.html">Crafty.one</a></li><li><a href="Crafty-pause.html">Crafty.pause</a></li><li><a href="Crafty-settings.html">Crafty.settings</a></li><li><a href="Crafty-stage.html">Crafty.stage</a></li><li><a href="Crafty-stop.html">Crafty.stop</a></li><li><a href="Crafty-support.html">Crafty.support</a></li><li><a href="Crafty-trigger.html">Crafty.trigger</a></li><li><a href="Crafty-unbind.html">Crafty.unbind</a></li><li><a href="Crafty-uniqueBind.html">Crafty.uniqueBind</a></li></ul></li><li class="category">2D<ul class="category-list"><li><a href="2D.html">2D</a></li><li><a href="Collision.html">Collision</a></li><li><a href="Crafty-circle.html">Crafty.circle</a></li><li><a href="Crafty-diamondIso.html">Crafty.diamondIso</a></li><li><a href="Crafty-HashMap.html">Crafty.HashMap</a></li><li><a href="Crafty-isometric.html">Crafty.isometric</a></li><li><a href="Crafty-map.html">Crafty.map</a></li><li><a href="Crafty-math.html">Crafty.math</a></li><li><a href="Crafty-math-Matrix2D.html">Crafty.math.Matrix2D</a></li><li><a href="Crafty-math-Vector2D.html">Crafty.math.Vector2D</a></li><li><a href="Crafty-polygon.html">Crafty.polygon</a></li><li><a href="Gravity.html">Gravity</a></li></ul></li><li class="category">Animation<ul class="category-list"><li><a href="SpriteAnimation.html">SpriteAnimation</a></li><li><a href="Tween.html">Tween</a></li></ul></li><li class="category">Assets<ul class="category-list"><li><a href="Crafty-asset.html">Crafty.asset</a></li><li><a href="Crafty-assets.html">Crafty.assets</a></li><li><a href="Crafty-image_whitelist.html">Crafty.image_whitelist</a></li><li><a href="Crafty-loader.html">Crafty.loader</a></li><li><a href="Crafty-paths.html">Crafty.paths</a></li><li><a href="Crafty-removeAssets.html">Crafty.removeAssets</a></li></ul></li><li class="category">Audio<ul class="category-list"><li><a href="Crafty-audio.html">Crafty.audio</a></li></ul></li><li class="category">Debug<ul class="category-list"><li><a href="DebugCanvas.html">DebugCanvas</a></li><li><a href="DebugPolygon.html">DebugPolygon</a></li><li><a href="DebugRectangle.html">DebugRectangle</a></li><li><a href="SolidHitBox.html">SolidHitBox</a></li><li><a href="VisibleMBR.html">VisibleMBR</a></li><li><a href="WiredHitBox.html">WiredHitBox</a></li></ul></li><li class="category">Events<ul class="category-list"><li><a href="Crafty-addEvent.html">Crafty.addEvent</a></li><li><a href="Crafty-bind.html">Crafty.bind</a></li><li><a href="Crafty-one.html">Crafty.one</a></li><li><a href="Crafty-removeEvent.html">Crafty.removeEvent</a></li><li><a href="Crafty-trigger.html">Crafty.trigger</a></li><li><a href="Crafty-unbind.html">Crafty.unbind</a></li><li><a href="Crafty-uniqueBind.html">Crafty.uniqueBind</a></li></ul></li><li class="category">Game Loop<ul class="category-list"><li><a href="Crafty-timer.html">Crafty.timer</a></li></ul></li><li class="category">Graphics<ul class="category-list"><li><a href="Canvas.html">Canvas</a></li><li><a href="Color.html">Color</a></li><li><a href="Crafty-assignColor.html">Crafty.assignColor</a></li><li><a href="Crafty-background.html">Crafty.background</a></li><li><a href="Crafty-canvas.html">Crafty.canvas</a></li><li><a href="Crafty-DOM.html">Crafty.DOM</a></li><li><a href="Crafty-DrawManager.html">Crafty.DrawManager</a></li><li><a href="Crafty-pixelart.html">Crafty.pixelart</a></li><li><a href="Crafty-sprite.html">Crafty.sprite</a></li><li><a href="DOM.html">DOM</a></li><li><a href="HTML.html">HTML</a></li><li><a href="Image.html">Image</a></li><li><a href="Particles.html">Particles</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li></ul></li><li class="category">Input<ul class="category-list"><li><a href="Crafty-eventObject.html">Crafty.eventObject</a></li><li><a href="Crafty-keydown.html">Crafty.keydown</a></li><li><a href="Crafty-keys.html">Crafty.keys</a></li><li><a href="Crafty-mouseButtons.html">Crafty.mouseButtons</a></li><li><a href="Crafty-mouseDispatch.html">Crafty.mouseDispatch</a></li><li><a href="Crafty-touchDispatch.html">Crafty.touchDispatch</a></li><li><a href="Draggable.html">Draggable</a></li><li><a href="Fourway.html">Fourway</a></li><li><a href="Keyboard.html">Keyboard</a></li><li><a href="KeyboardEvent.html">KeyboardEvent</a></li><li><a href="Mouse.html">Mouse</a></li><li><a href="Multiway.html">Multiway</a></li><li><a href="Twoway.html">Twoway</a></li></ul></li><li class="category">Misc<ul class="category-list"><li><a href="Crafty-addEvent.html">Crafty.addEvent</a></li><li><a href="Crafty-device.html">Crafty.device</a></li><li><a href="Crafty-removeEvent.html">Crafty.removeEvent</a></li><li><a href="Crafty-support.html">Crafty.support</a></li></ul></li><li class="category">Model<ul class="category-list"><li><a href="Model.html">Model</a></li></ul></li><li class="category">Scenes<ul class="category-list"><li><a href="Crafty-scene.html">Crafty.scene</a></li></ul></li><li class="category">Stage<ul class="category-list"><li><a href="Crafty-background.html">Crafty.background</a></li><li><a href="Crafty-scene.html">Crafty.scene</a></li><li><a href="Crafty-viewport.html">Crafty.viewport</a></li></ul></li><li class="category">Utilities<ul class="category-list"><li><a href="Delay.html">Delay</a></li><li><a href="Storage.html">Storage</a></li></ul></li></ul></div><div id="doc-content" class="doc-page-holder"><div class="doc-page"><h1>Crafty Core</h1><div id="Crafty Core"><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L64-72">src/core.js#L64-72</a></div><div class="triggered-events"><h4>Events</h4><div class="trigger-list"><dl class="trigger"><dt>NewEntityName <span class="trigger-data">[ entity name { String }]</span></dt><dd>After setting new name for entity</dd></dl><dl class="trigger"><dt>NewComponent <span class="trigger-data">[ Component { String }]</span></dt><dd>when a new component is added to the entity</dd></dl><dl class="trigger"><dt>RemoveComponent <span class="trigger-data">[ Component { String }]</span></dt><dd>when a component is removed from the entity</dd></dl><dl class="trigger"><dt>Remove </dt><dd>when the entity is removed by calling .destroy()</dd></dl></div></div><span class="markdown"><p>Set of methods added to every single entity.</p>
+</span></div><div><h4>Methods and Properties</h4><ul class="page-toc"><li><a href="#-addComponent">.addComponent</a></li><li><a href="#-attr">.attr</a></li><li><a href="#-bind">.bind</a></li><li><a href="#-clone">.clone</a></li><li><a href="#-destroy">.destroy</a></li><li><a href="#-each">.each</a></li><li><a href="#-get">.get</a></li><li><a href="#-getId">.getId</a></li><li><a href="#-has">.has</a></li><li><a href="#-one">.one</a></li><li><a href="#-removeComponent">.removeComponent</a></li><li><a href="#-requires">.requires</a></li><li><a href="#-setName">.setName</a></li><li><a href="#-setter">.setter</a></li><li><a href="#-timeout">.timeout</a></li><li><a href="#-toArray">.toArray</a></li><li><a href="#-toggleComponent">.toggleComponent</a></li><li><a href="#-trigger">.trigger</a></li><li><a href="#-unbind">.unbind</a></li><li><a href="#-uniqueBind">.uniqueBind</a></li></ul><div id=".addComponent"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.addComponent</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L195-220">src/core.js#L195-220</a></div><div class="crafty-method"><code class="signature">public this .addComponent(String componentList)</code><dl class="parameter"><dt> componentList </dt><dd><span class="markdown"><p>A string of components to add separated by a comma <code>,</code></p>
+</span></dd></dl></div><div class="crafty-method"><code class="signature">public this .addComponent(String Component1[, .., String ComponentN])</code><dl class="parameter"><dt> Component# </dt><dd><span class="markdown"><p>Component ID to add.</p>
+</span></dd></dl></div><span class="markdown"><p>Adds a component to the selected entities or entity.</p>
+<p>Components are used to extend the functionality of entities.
 This means it will copy properties and assign methods to
-augment the functionality of the entity.</p></p>
-<p><p>For adding multiple components, you can either pass a string with
+augment the functionality of the entity.</p>
+<p>For adding multiple components, you can either pass a string with
 all the component names (separated by commas), or pass each component name as
-an argument.</p></p>
-<p><p>If the component has a function named <code>init</code> it will be called.</p></p>
-<p><p>If the entity already has the component, the component is skipped (nothing happens).</p></p>
-<h4> Example </h4>
+an argument.</p>
+<p>If the component has a function named <code>init</code> it will be called.</p>
+<p>If the entity already has the component, the component is skipped (nothing happens).</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D, Canvas"</span>);
+<span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D"</span>, <span class="hljs-string">"Canvas"</span>);</code></pre></span></div></div><div id=".attr"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.attr</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L406-449">src/core.js#L406-449</a></div><div class="triggered-events"><h4>Events</h4><div class="trigger-list"><dl class="trigger"><dt>Change <span class="trigger-data">[ Data { {key: value} }]</span></dt><dd>when properties change</dd></dl></div></div><span class="markdown"></span><div class="crafty-method"><code class="signature">public this .attr(String property, Any value[, Boolean silent[, Boolean recursive]])</code><dl class="parameter"><dt> property </dt><dd><span class="markdown"><p>Property of the entity to modify</p>
+</span></dd></dl><dl class="parameter"><dt> value </dt><dd><span class="markdown"><p>Value to set the property to</p>
+</span></dd></dl><dl class="parameter"><dt> silent </dt><dd><span class="markdown"><p>If you would like to supress events</p>
+</span></dd></dl><dl class="parameter"><dt> recursive </dt><dd><span class="markdown"><p>If you would like merge recursively</p>
+</span></dd></dl></div><span class="markdown"><p>Use this method to set any property of the entity.</p>
+</span><div class="crafty-method"><code class="signature">public this .attr(Object map[, Boolean silent[, Boolean recursive]])</code><dl class="parameter"><dt> map </dt><dd><span class="markdown"><p>Object where each key is the property to modify and the value as the property value</p>
+</span></dd></dl><dl class="parameter"><dt> silent </dt><dd><span class="markdown"><p>If you would like to supress events</p>
+</span></dd></dl><dl class="parameter"><dt> recursive </dt><dd><span class="markdown"><p>If you would like merge recursively</p>
+</span></dd></dl></div><span class="markdown"><p>Use this method to set multiple properties of the entity.</p>
+<p>Setter options:
+<code>silent</code>: If you want to prevent it from firing events.
+<code>recursive</code>: If you pass in an object you could overwrite sibling keys, this recursively merges instead of just merging it. This is <code>false</code> by default, unless you are using dot notation <code>name.first</code>.</p>
+</span><div class="crafty-method"><code class="signature">public Any .attr(String property)</code><dl class="parameter"><dt> property </dt><dd><span class="markdown"><p>Property of the entity to modify</p>
+</span></dd></dl><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>Value - the value of the property</p>
+</span></dd></dl></div><span class="markdown"><p>Use this method to get any property of the entity. You can also retrieve the property using <code>this.property</code>.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.attr({key: <span class="hljs-string">"value"</span>, prop: <span class="hljs-number">5</span>});
+<span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"key"</span>); <span class="hljs-comment">// returns "value"</span>
+<span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"prop"</span>); <span class="hljs-comment">// returns 5</span>
+<span class="hljs-keyword">this</span>.key; <span class="hljs-comment">// "value"</span>
+<span class="hljs-keyword">this</span>.prop; <span class="hljs-comment">// 5</span>
 
-<pre><code>this.addComponent(&quot;2D, Canvas&quot;);
-this.addComponent(&quot;2D&quot;, &quot;Canvas&quot;);
-</code></pre>
+<span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"key"</span>, <span class="hljs-string">"newvalue"</span>);
+<span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"key"</span>); <span class="hljs-comment">// returns "newvalue"</span>
+<span class="hljs-keyword">this</span>.key; <span class="hljs-comment">// "newvalue"</span>
 
-</div>
-
-
-
-<div id='-toggleComponent' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.toggleComponent</h2>
-<p><p><code>public this .toggleComponent(String ComponentList)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>ComponentList</dt><dd>A string of components to add or remove separated by a comma <code>,</code></dd>
-</dl>
-<code>public this .toggleComponent(String Component1[, .., String componentN])</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>Component#</dt><dd>Component ID to add or remove.</dd>
-</dl>
-Add or Remove Components from an entity.</p></p>
-<h4> Example </h4>
-
-<pre><code>var e = Crafty.e(&quot;2D,DOM,Test&quot;);
-e.toggleComponent(&quot;Test,Test2&quot;); //Remove Test, add Test2
-e.toggleComponent(&quot;Test,Test2&quot;); //Add Test, remove Test2
-</code></pre><pre><code>var e = Crafty.e(&quot;2D,DOM,Test&quot;);
-e.toggleComponent(&quot;Test&quot;,&quot;Test2&quot;); //Remove Test, add Test2
-e.toggleComponent(&quot;Test&quot;,&quot;Test2&quot;); //Add Test, remove Test2
-e.toggleComponent(&quot;Test&quot;);         //Remove Test
-</code></pre>
-
-</div>
-
-
-
-<div id='-requires' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.requires</h2>
-<p><code>public this .requires(String componentList)</code> </p>
-<dl>
-<dt>componentList</dt><dd>List of components that must be added</dd>
-</dl>
-
-<p>Makes sure the entity has the components listed. If the entity does not
+<span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"parent.child"</span>, <span class="hljs-string">"newvalue"</span>);
+<span class="hljs-keyword">this</span>.parent; <span class="hljs-comment">// {child: "newvalue"};</span>
+<span class="hljs-keyword">this</span>.attr(<span class="hljs-string">'parent.child'</span>); <span class="hljs-comment">// "newvalue"</span></code></pre></span></div></div><div id=".bind"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.bind</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L603-635">src/core.js#L603-635</a></div><div class="crafty-method"><code class="signature">public this .bind(String eventName, Function callback)</code><dl class="parameter"><dt> eventName </dt><dd><span class="markdown"><p>Name of the event to bind to</p>
+</span></dd></dl><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Method to execute when the event is triggered</p>
+</span></dd></dl></div><span class="markdown"><p>Attach the current entity (or entities) to listen for an event.</p>
+<p>Callback will be invoked when an event with the event name passed
+is triggered. Depending on the event, some data may be passed
+via an argument to the callback function.</p>
+<p>The first argument is the event name (can be anything) whilst the
+second argument is the callback. If the event has data, the
+callback should have an argument.</p>
+<p>Events are arbitrary and provide communication between components.
+You can trigger or bind an event even if it doesn&#39;t exist yet.</p>
+<p>Unlike DOM events, Crafty events are exectued synchronously.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"triggers"</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">//set a trigger count</span>
+<span class="hljs-keyword">this</span>.bind(<span class="hljs-string">"myevent"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">this</span>.triggers++; <span class="hljs-comment">//whenever myevent is triggered, increment</span>
+});
+<span class="hljs-keyword">this</span>.bind(<span class="hljs-string">"EnterFrame"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">this</span>.trigger(<span class="hljs-string">"myevent"</span>); <span class="hljs-comment">//trigger myevent on every frame</span>
+});</code></pre></span></div><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-trigger.html">.trigger</a></li><li><a href="-unbind.html">.unbind</a></li></ul></div></div><div id=".clone"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.clone</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L884-891">src/core.js#L884-891</a></div><div class="crafty-method"><code class="signature">public Entity .clone(void)</code><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>Cloned entity of the current entity</p>
+</span></dd></dl></div><span class="markdown"><p>Method will create another entity with the exact same
+properties, components and methods as the current entity.</p>
+</span></div><div id=".destroy"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.destroy</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L933-937">src/core.js#L933-937</a></div><div class="crafty-method"><code class="signature">public this .destroy(void)</code></div><span class="markdown"><p>Will remove all event listeners and delete all properties as well as removing from the stage</p>
+</span></div><div id=".each"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.each</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L805-824">src/core.js#L805-824</a></div><div class="crafty-method"><code class="signature">public this .each(Function method)</code><dl class="parameter"><dt> method </dt><dd><span class="markdown"><p>Method to call on each iteration</p>
+</span></dd></dl></div><span class="markdown"><p>Iterates over found entities, calling a function for every entity.</p>
+<p>The function will be called for every entity and will pass the index
+in the iteration as an argument. The context (value of <code>this</code>) of the
+function will be the current entity in the iteration.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><p>Destroy every second 2D entity</p>
+<pre><code class="hljs ">Crafty(<span class="hljs-string">"2D"</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(i)</span> </span>{
+    <span class="hljs-keyword">if</span>(i % <span class="hljs-number">2</span> === <span class="hljs-number">0</span>) {
+        <span class="hljs-keyword">this</span>.destroy();
+    }
+});</code></pre></span></div></div><div id=".get"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.get</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L837-862">src/core.js#L837-862</a></div><div class="crafty-method"><code class="signature">public Array .get()</code><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>An array of entities corresponding to the active selector</p>
+</span></dd></dl></div><span class="markdown"></span><div class="crafty-method"><code class="signature">public Entity .get(Number index)</code><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>an entity belonging to the current selection</p>
+</span></dd></dl><dl class="parameter"><dt> index </dt><dd><span class="markdown"><p>The index of the entity to return.  If negative, counts back from the end of the array.</p>
+</span></dd></dl></div><span class="markdown"></span><div class="example"><h4>Example</h4><span class="markdown"><p>Get an array containing every &quot;2D&quot; entity</p>
+<pre><code class="hljs "><span class="hljs-keyword">var</span> arr = Crafty(<span class="hljs-string">"2D"</span>).get()</code></pre><p>Get the first entity matching the selector</p>
+<pre><code class="hljs "><span class="hljs-comment">// equivalent to Crafty("2D").get()[0], but doesn't create a new array</span>
+<span class="hljs-keyword">var</span> e = Crafty(<span class="hljs-string">"2D"</span>).get(<span class="hljs-number">0</span>)</code></pre><p>Get the last &quot;2D&quot; entity matching the selector</p>
+<pre><code class="hljs "><span class="hljs-keyword">var</span> e = Crafty(<span class="hljs-string">"2D"</span>).get(-<span class="hljs-number">1</span>)</code></pre></span></div></div><div id=".getId"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.getId</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L371-385">src/core.js#L371-385</a></div><div class="crafty-method"><code class="signature">public Number .getId(void)</code></div><span class="markdown"><p>Returns the ID of this entity.</p>
+<p>For better performance, simply use the this[0] property.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><p>Finding out the <code>ID</code> of an entity can be done by returning the property <code>0</code>.</p>
+<pre><code class="hljs ">   <span class="hljs-keyword">var</span> ent = Crafty.e(<span class="hljs-string">"2D"</span>);
+   ent[<span class="hljs-number">0</span>]; <span class="hljs-comment">//ID</span>
+   ent.getId(); <span class="hljs-comment">//also ID</span></code></pre></span></div></div><div id=".has"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.has</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L391-400">src/core.js#L391-400</a></div><div class="crafty-method"><code class="signature">public Boolean .has(String component)</code></div><span class="markdown"><p>Returns <code>true</code> or <code>false</code> depending on if the
+entity has the given component.</p>
+<p>For better performance, simply use the <code>.__c</code> object
+which will be <code>true</code> if the entity has the component or
+will not exist (or be <code>false</code>).</p>
+</span></div><div id=".one"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.one</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L683-693">src/core.js#L683-693</a></div><div class="crafty-method"><code class="signature">public Number one(String eventName, Function callback)</code><dl class="parameter"><dt> eventName </dt><dd><span class="markdown"><p>Name of the event to bind to</p>
+</span></dd></dl><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Method to execute upon event triggered</p>
+</span></dd></dl><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>ID of the current callback used to unbind</p>
+</span></dd></dl></div><span class="markdown"><p>Works like Crafty.bind, but will be unbound once the event triggers.</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-bind.html">.bind</a></li></ul></div></div><div id=".removeComponent"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.removeComponent</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L336-352">src/core.js#L336-352</a></div><div class="crafty-method"><code class="signature">public this .removeComponent(String Component[, soft])</code><dl class="parameter"><dt> component </dt><dd><span class="markdown"><p>Component to remove</p>
+</span></dd></dl><dl class="parameter"><dt> soft </dt><dd><span class="markdown"><p>Whether to soft remove it (defaults to <code>true</code>)</p>
+</span></dd></dl></div><span class="markdown"><p>Removes a component from an entity. A soft remove (the default) will only
+refrain <code>.has()</code> from returning true. Hard will remove all
+associated properties and methods.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">var</span> e = Crafty.e(<span class="hljs-string">"2D,DOM,Test"</span>);
+e.removeComponent(<span class="hljs-string">"Test"</span>);        <span class="hljs-comment">//Soft remove Test component</span>
+e.removeComponent(<span class="hljs-string">"Test"</span>, <span class="hljs-literal">false</span>); <span class="hljs-comment">//Hard remove Test component</span></code></pre></span></div></div><div id=".requires"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.requires</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L315-330">src/core.js#L315-330</a></div><div class="crafty-method"><code class="signature">public this .requires(String componentList)</code><dl class="parameter"><dt> componentList </dt><dd><span class="markdown"><p>List of components that must be added</p>
+</span></dd></dl></div><span class="markdown"><p>Makes sure the entity has the components listed. If the entity does not
 have the component, it will add it.</p>
 <p>(In the current version of Crafty, this function behaves exactly the same
 as <code>addComponent</code>. By convention, developers have used <code>requires</code> for
 component dependencies -- i.e. to indicate specifically that one component
 will only work properly if another component is present -- and used
 <code>addComponent</code> in all other situations.)</p>
-
-<p><h4>See Also</h4></p>
-<ul><li><a href=#-addComponent>.addComponent</a></li></ul>
-
-</div>
-
-
-
-<div id='-removeComponent' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.removeComponent</h2>
-<p><p><code>public this .removeComponent(String Component[, soft])</code> </p></p>
-<dl>
-<dt>component</dt><dd>Component to remove</dd>
-<dt>soft</dt><dd>Whether to soft remove it (defaults to <code>true</code>)</dd>
-</dl>
-
-<p><p>Removes a component from an entity. A soft remove (the default) will only
-refrain <code>.has()</code> from returning true. Hard will remove all
-associated properties and methods.</p></p>
-<h4> Example </h4>
-
-<pre><code>var e = Crafty.e(&quot;2D,DOM,Test&quot;);
-e.removeComponent(&quot;Test&quot;);        //Soft remove Test component
-e.removeComponent(&quot;Test&quot;, false); //Hard remove Test component
-</code></pre>
-
-</div>
-
-
-
-<div id='-getId' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.getId</h2>
-<p><p><code>public Number .getId(void)</code> </p></p>
-<p><p>Returns the ID of this entity.</p></p>
-<p><p>For better performance, simply use the this[0] property.</p></p>
-<h4> Example </h4>
-
-<p><p>Finding out the <code>ID</code> of an entity can be done by returning the property <code>0</code>.</p></p>
-<pre><code>   var ent = Crafty.e(&quot;2D&quot;);
-   ent[0]; //ID
-   ent.getId(); //also ID
-</code></pre>
-
-</div>
-
-
-
-<div id='-has' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.has</h2>
-<p><code>public Boolean .has(String component)</code> </p>
-<p>Returns <code>true</code> or <code>false</code> depending on if the
-entity has the given component.</p>
-<p>For better performance, simply use the <code>.__c</code> object
-which will be <code>true</code> if the entity has the component or
-will not exist (or be <code>false</code>).</p>
-
-
-</div>
-
-
-
-<div id='-attr' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.attr</h2>
-<p><p><code>public this .attr(String property, Any value[, Boolean silent[, Boolean recursive]])</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>property</dt><dd>Property of the entity to modify</dd></p></p>
-<p><p><dt>value</dt><dd>Value to set the property to</dd></p></p>
-<p><p><dt>silent</dt><dd>If you would like to supress events</dd></p></p>
-<p><p><dt>recursive</dt><dd>If you would like merge recursively</dd>
-</dl>
-Use this method to set any property of the entity.</p></p>
-<p><p><code>public this .attr(Object map[, Boolean silent[, Boolean recursive]])</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>map</dt><dd>Object where each key is the property to modify and the value as the property value</dd></p></p>
-<p><p><dt>silent</dt><dd>If you would like to supress events</dd></p></p>
-<p><p><dt>recursive</dt><dd>If you would like merge recursively</dd>
-</dl>
-Use this method to set multiple properties of the entity.</p></p>
-<p><p>Setter options:
-<code>silent</code>: If you want to prevent it from firing events.
-<code>recursive</code>: If you pass in an object you could overwrite sibling keys, this recursively merges instead of just merging it. This is <code>false</code> by default, unless you are using dot notation <code>name.first</code>.</p></p>
-<p><p><code>public Any .attr(String property)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>property</dt><dd>Property of the entity to modify</dd></p></p>
-<p><p><dt class='return'>[returns]</dt><dd>Value - the value of the property</dd>
-</dl>
-Use this method to get any property of the entity. You can also retrieve the property using <code>this.property</code>.</p></p>
-<h4> Example </h4>
-
-<p><pre><code>this.attr({key: &quot;value&quot;, prop: 5});
-this.attr(&quot;key&quot;); // returns &quot;value&quot;
-this.attr(&quot;prop&quot;); // returns 5
-this.key; // &quot;value&quot;
-this.prop; // 5</p>
-<p>this.attr(&quot;key&quot;, &quot;newvalue&quot;);
-this.attr(&quot;key&quot;); // returns &quot;newvalue&quot;
-this.key; // &quot;newvalue&quot;</p>
-<p>this.attr(&quot;parent.child&quot;, &quot;newvalue&quot;);
-this.parent; // {child: &quot;newvalue&quot;};
-this.attr(&#39;parent.child&#39;); // &quot;newvalue&quot;
-</code></pre></p>
-<p><h4>Events</h4></p>
-<dl><dt><span class='event-name'>Change</span> [<span class='event-property-name'>Data</span>: <span class='event-property'>{key: value}</span>]</dt><dd>when properties change</dd>
-</dl>
-
-</div>
-
-
-
-<div id='-toArray' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.toArray</h2>
-<p><code>public this .toArray(void)</code> </p>
-<p>This method will simply return the found entities as an array of ids.  To get an array of the actual entities, use <code>get()</code>.</p>
-
-<p><h4>See Also</h4></p>
-<ul><li><a href=#-get>.get</a></li></ul>
-
-</div>
-
-
-
-<div id='-timeout' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.timeout</h2>
-<p><p><code>public this .timeout(Function callback, Number delay)</code> </p></p>
-<dl>
-<dt>callback</dt><dd>Method to execute after given amount of milliseconds</dd>
-<dt>delay</dt><dd>Amount of milliseconds to execute the method</dd>
-</dl>
-
-<p><p>The delay method will execute a function after a given amount of time in milliseconds.</p></p>
-<p><p>Essentially a wrapper for <code>setTimeout</code>.</p></p>
-<h4> Example </h4>
-
-<p><p>Destroy itself after 100 milliseconds</p></p>
-<pre><code>this.timeout(function() {
-this.destroy();
-}, 100);
-</code></pre>
-
-</div>
-
-
-
-<div id='-bind' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.bind</h2>
-<p><p><code>public this .bind(String eventName, Function callback)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>eventName</dt><dd>Name of the event to bind to</dd></p></p>
-<p><p><dt>callback</dt><dd>Method to execute when the event is triggered</dd>
-</dl>
-Attach the current entity (or entities) to listen for an event.</p></p>
-<p><p>Callback will be invoked when an event with the event name passed
-is triggered. Depending on the event, some data may be passed
-via an argument to the callback function.</p></p>
-<p><p>The first argument is the event name (can be anything) whilst the
-second argument is the callback. If the event has data, the
-callback should have an argument.</p></p>
-<p><p>Events are arbitrary and provide communication between components.
-You can trigger or bind an event even if it doesn&#39;t exist yet.</p></p>
-<p><p>Unlike DOM events, Crafty events are exectued synchronously.</p></p>
-<h4> Example </h4>
-
-<p><pre><code>this.attr(&quot;triggers&quot;, 0); //set a trigger count
-this.bind(&quot;myevent&quot;, function() {
-    this.triggers++; //whenever myevent is triggered, increment
-});
-this.bind(&quot;EnterFrame&quot;, function() {
-    this.trigger(&quot;myevent&quot;); //trigger myevent on every frame
-});
-</code></pre></p>
-<p><h4>See Also</h4></p>
-<ul><li><a href=#-trigger>.trigger</a></li><li><a href=#-unbind>.unbind</a></li></ul>
-
-</div>
-
-
-
-<div id='-uniqueBind' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.uniqueBind</h2>
-<p><code>public Number .uniqueBind(String eventName, Function callback)</code> </p>
-<dl>
-<dt>eventName</dt><dd>Name of the event to bind to</dd>
-<dt>callback</dt><dd>Method to execute upon event triggered</dd>
-<dt class='return'>[returns]</dt><dd>ID of the current callback used to unbind</dd>
-</dl>
-
-<p>Works like Crafty.bind, but prevents a callback from being bound multiple times.</p>
-
-<p><h4>See Also</h4></p>
-<ul><li><a href=#-bind>.bind</a></li></ul>
-
-</div>
-
-
-
-<div id='-one' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.one</h2>
-<p><code>public Number one(String eventName, Function callback)</code> </p>
-<dl>
-<dt>eventName</dt><dd>Name of the event to bind to</dd>
-<dt>callback</dt><dd>Method to execute upon event triggered</dd>
-<dt class='return'>[returns]</dt><dd>ID of the current callback used to unbind</dd>
-</dl>
-
-<p>Works like Crafty.bind, but will be unbound once the event triggers.</p>
-
-<p><h4>See Also</h4></p>
-<ul><li><a href=#-bind>.bind</a></li></ul>
-
-</div>
-
-
-
-<div id='-unbind' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.unbind</h2>
-<p><code>public this .unbind(String eventName[, Function callback])</code> </p>
-<p><dl></p>
-<p><dt>eventName</dt><dd>Name of the event to unbind</dd></p>
-<p><dt>callback</dt><dd>Function to unbind</dd>
-</dl>
-Removes binding with an event from current entity.</p>
-<p>Passing an event name will remove all events bound to
-that event. Passing a reference to the callback will
-unbind only that callback.</p>
-
-<p><h4>See Also</h4></p>
-<ul><li><a href=#-bind>.bind</a></li><li><a href=#-trigger>.trigger</a></li></ul>
-
-</div>
-
-
-
-<div id='-trigger' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.trigger</h2>
-<p><code>public this .trigger(String eventName[, Object data])</code> </p>
-<p><dl></p>
-<p><dt>eventName</dt><dd>Event to trigger</dd></p>
-<p><dt>data</dt><dd>Arbitrary data that will be passed into every callback as an argument</dd>
-</dl>
-Trigger an event with arbitrary data. Will invoke all callbacks with
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-addComponent.html">.addComponent</a></li></ul></div></div><div id=".setName"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.setName</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L175-184">src/core.js#L175-184</a></div><div class="crafty-method"><code class="signature">public this .setName(String name)</code><dl class="parameter"><dt> name </dt><dd><span class="markdown"><p>A human readable name for debugging purposes.</p>
+</span></dd></dl></div><span class="markdown"></span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.setName(<span class="hljs-string">"Player"</span>);</code></pre></span></div></div><div id=".setter"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.setter</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L911-919">src/core.js#L911-919</a></div><div class="crafty-method"><code class="signature">public this .setter(String property, Function callback)</code><dl class="parameter"><dt> property </dt><dd><span class="markdown"><p>Property to watch for modification</p>
+</span></dd></dl><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Method to execute if the property is modified</p>
+</span></dd></dl></div><span class="markdown"><p>Will watch a property waiting for modification and will then invoke the
+given callback when attempting to modify.</p>
+</span></div><div id=".timeout"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.timeout</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L574-591">src/core.js#L574-591</a></div><div class="crafty-method"><code class="signature">public this .timeout(Function callback, Number delay)</code><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Method to execute after given amount of milliseconds</p>
+</span></dd></dl><dl class="parameter"><dt> delay </dt><dd><span class="markdown"><p>Amount of milliseconds to execute the method</p>
+</span></dd></dl></div><span class="markdown"><p>The delay method will execute a function after a given amount of time in milliseconds.</p>
+<p>Essentially a wrapper for <code>setTimeout</code>.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><p>Destroy itself after 100 milliseconds</p>
+<pre><code class="hljs "><span class="hljs-keyword">this</span>.timeout(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-keyword">this</span>.destroy();
+}, <span class="hljs-number">100</span>);</code></pre></span></div></div><div id=".toArray"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.toArray</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L562-568">src/core.js#L562-568</a></div><div class="crafty-method"><code class="signature">public this .toArray(void)</code></div><span class="markdown"><p>This method will simply return the found entities as an array of ids.  To get an array of the actual entities, use <code>get()</code>.</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-get.html">.get</a></li></ul></div></div><div id=".toggleComponent"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.toggleComponent</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L255-276">src/core.js#L255-276</a></div><div class="crafty-method"><code class="signature">public this .toggleComponent(String ComponentList)</code><dl class="parameter"><dt> ComponentList </dt><dd><span class="markdown"><p>A string of components to add or remove separated by a comma <code>,</code></p>
+</span></dd></dl></div><div class="crafty-method"><code class="signature">public this .toggleComponent(String Component1[, .., String componentN])</code><dl class="parameter"><dt> Component# </dt><dd><span class="markdown"><p>Component ID to add or remove.</p>
+</span></dd></dl></div><span class="markdown"><p>Add or Remove Components from an entity.</p>
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">var</span> e = Crafty.e(<span class="hljs-string">"2D,DOM,Test"</span>);
+e.toggleComponent(<span class="hljs-string">"Test,Test2"</span>); <span class="hljs-comment">//Remove Test, add Test2</span>
+e.toggleComponent(<span class="hljs-string">"Test,Test2"</span>); <span class="hljs-comment">//Add Test, remove Test2</span></code></pre><pre><code class="hljs "><span class="hljs-keyword">var</span> e = Crafty.e(<span class="hljs-string">"2D,DOM,Test"</span>);
+e.toggleComponent(<span class="hljs-string">"Test"</span>,<span class="hljs-string">"Test2"</span>); <span class="hljs-comment">//Remove Test, add Test2</span>
+e.toggleComponent(<span class="hljs-string">"Test"</span>,<span class="hljs-string">"Test2"</span>); <span class="hljs-comment">//Add Test, remove Test2</span>
+e.toggleComponent(<span class="hljs-string">"Test"</span>);         <span class="hljs-comment">//Remove Test</span></code></pre></span></div></div><div id=".trigger"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.trigger</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L745-759">src/core.js#L745-759</a></div><div class="crafty-method"><code class="signature">public this .trigger(String eventName[, Object data])</code><dl class="parameter"><dt> eventName </dt><dd><span class="markdown"><p>Event to trigger</p>
+</span></dd></dl><dl class="parameter"><dt> data </dt><dd><span class="markdown"><p>Arbitrary data that will be passed into every callback as an argument</p>
+</span></dd></dl></div><span class="markdown"><p>Trigger an event with arbitrary data. Will invoke all callbacks with
 the context (value of <code>this</code>) of the current entity object.</p>
 <p><em>Note: This will only execute callbacks within the current entity, no other entity.</em></p>
 <p>The first argument is the event name to trigger and the optional
 second argument is the arbitrary event data. This can be absolutely anything.</p>
 <p>Unlike DOM events, Crafty events are exectued synchronously.</p>
-
-
-</div>
-
-
-
-<div id='-each' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.each</h2>
-<p><p><code>public this .each(Function method)</code> </p></p>
-<p><p><dl></p></p>
-<p><p><dt>method</dt><dd>Method to call on each iteration</dd>
-</dl>
-Iterates over found entities, calling a function for every entity.</p></p>
-<p><p>The function will be called for every entity and will pass the index
-in the iteration as an argument. The context (value of <code>this</code>) of the
-function will be the current entity in the iteration.</p></p>
-<h4> Example </h4>
-
-<p><p>Destroy every second 2D entity</p></p>
-<pre><code>Crafty(&quot;2D&quot;).each(function(i) {
-    if(i % 2 === 0) {
-        this.destroy();
-    }
-});
-</code></pre>
-
-</div>
-
-
-
-<div id='-get' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.get</h2>
-<p><p><code>public Array .get()</code> </p></p>
-<dl>
-<dt class='return'>[returns]</dt><dd>An array of entities corresponding to the active selector</dd>
-</dl>
-
-<p><p><code>public Entity .get(Number index)</code> </p></p>
-<dl>
-<dt class='return'>[returns]</dt><dd>an entity belonging to the current selection</dd>
-<dt>index</dt><dd>The index of the entity to return.  If negative, counts back from the end of the array.</dd>
-</dl>
-
-
-<h4> Example </h4>
-
-<p><p>Get an array containing every &quot;2D&quot; entity</p></p>
-<pre><code>var arr = Crafty(&quot;2D&quot;).get()
-</code></pre><p>Get the first entity matching the selector</p>
-<pre><code>// equivalent to Crafty(&quot;2D&quot;).get()[0], but doesn&#39;t create a new array
-var e = Crafty(&quot;2D&quot;).get(0)
-</code></pre><p>Get the last &quot;2D&quot; entity matching the selector</p>
-<pre><code>var e = Crafty(&quot;2D&quot;).get(-1)
-</code></pre>
-
-</div>
-
-
-
-<div id='-clone' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.clone</h2>
-<p><code>public Entity .clone(void)</code> </p>
-<dl>
-<dt class='return'>[returns]</dt><dd>Cloned entity of the current entity</dd>
-</dl>
-
-<p>Method will create another entity with the exact same
-properties, components and methods as the current entity.</p>
-
-
-</div>
-
-
-
-<div id='-setter' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.setter</h2>
-<p><code>public this .setter(String property, Function callback)</code> </p>
-<p><dl></p>
-<p><dt>property</dt><dd>Property to watch for modification</dd></p>
-<p><dt>callback</dt><dd>Method to execute if the property is modified</dd>
-</dl>
-Will watch a property waiting for modification and will then invoke the
-given callback when attempting to modify.</p>
-
-
-</div>
-
-
-
-<div id='-destroy' class='docblock'>
-
-<a href='#doc-nav' class='doc-top'>Back to top</a><h2>.destroy</h2>
-<p><code>public this .destroy(void)</code> </p>
-<p>Will remove all event listeners and delete all properties as well as removing from the stage</p>
-
-
-</div>
-
-</div>
-</div>
+</span></div><div id=".unbind"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.unbind</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L705-716">src/core.js#L705-716</a></div><div class="crafty-method"><code class="signature">public this .unbind(String eventName[, Function callback])</code><dl class="parameter"><dt> eventName </dt><dd><span class="markdown"><p>Name of the event to unbind</p>
+</span></dd></dl><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Function to unbind</p>
+</span></dd></dl></div><span class="markdown"><p>Removes binding with an event from current entity.</p>
+<p>Passing an event name will remove all events bound to
+that event. Passing a reference to the callback will
+unbind only that callback.</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-bind.html">.bind</a></li><li><a href="-trigger.html">.trigger</a></li></ul></div></div><div id=".uniqueBind"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.uniqueBind</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/core.js#L665-675">src/core.js#L665-675</a></div><div class="crafty-method"><code class="signature">public Number .uniqueBind(String eventName, Function callback)</code><dl class="parameter"><dt> eventName </dt><dd><span class="markdown"><p>Name of the event to bind to</p>
+</span></dd></dl><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Method to execute upon event triggered</p>
+</span></dd></dl><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>ID of the current callback used to unbind</p>
+</span></dd></dl></div><span class="markdown"><p>Works like Crafty.bind, but prevents a callback from being bound multiple times.</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-bind.html">.bind</a></li></ul></div></div></div></div></div></div>
 			
 		</div>
 	</div>
