@@ -59,3 +59,32 @@
 	.hidden-sm;
 	.hidden-xs;
 }
+
+
+
+.category-list {
+	&:extend(.list-unstyled);
+}
+
+.page-toc {
+	.list-unstyled;
+	.row;
+	width: 50%;
+	padding-left: 1em;
+
+}
+
+.page-toc li {
+	.make-sm-column(6);
+}
+
+.toc-holder {
+	.make-md-column(3);
+	/*.make-md-column-offset(1);*/
+}
+
+.doc-page-holder {
+	/*.make-md-column-offset(1);*/
+	.make-md-column(9);
+}
+

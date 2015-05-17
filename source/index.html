@@ -7,6 +7,21 @@ title: JavaScript Game Engine, HTML5 Game Engine
 
 
 <div class="row splash">
+	
+	<div id = "splash-right">
+	{{#markdown}}
+``` javascript
+window.onload = function() {
+	Crafty.init();
+	// A blue block, controlled by arrow keys
+	var player = Crafty.e("2D, Canvas, Color, Fourway")
+		.attr({x:100, y:100, w:50, h:50})
+		.color("blue")
+		.fourway();
+};
+```
+    {{/markdown}}
+	</div>
 	<div id="splash-left">
 		<div id="splash-text">
 			<div class="row" id="blurb">
@@ -29,20 +44,6 @@ title: JavaScript Game Engine, HTML5 Game Engine
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id = "splash-right">
-	{{#markdown}}
-``` javascript
-window.onload = function() {
-	Crafty.init();
-	// A blue block, controlled by arrow keys
-	var player = Crafty.e("2D, Canvas, Color, Fourway")
-		.attr({x:100, y:100, w:50, h:50})
-		.color("blue")
-		.fourway();
-};
-```
-    {{/markdown}}
 	</div>
 	
 </div>

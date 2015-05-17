@@ -1,10 +1,168 @@
-
 /*Documentation styles*/
 
-/* color that matches bootstraps code background */
-@doc-pale-grey: #F5F5F5;
+@event: color("lightgreen");
+@event-light: lighten(@event, 20%);
+@method: color("lightblue");
+@method-light: lighten(@method, 10%);
+@example: lighten(color("black"), 50%);
+@example-light: lighten(@example, 20%);
 
 
+/* Blocks offset by a large colored margin */
+.big-indent(@color) {
+  border-left: 20px solid @color !important;
+  /*box-shadow: 3px 2px 3px #555555;*/
+  margin-top: 1em;
+}
+
+/* Links to the source code */
+
+.doc-source {
+  color: grey;
+  font-size: 10px;
+  .code-font;
+  margin-top: -10px;
+}
+
+.crafty-method, .triggered-events {
+  margin-bottom: 3px;
+}
+
+.code-font {
+  font-family: @monofont;
+}
+
+/*Headers */
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+.doclet-header {
+  border-bottom: 2px solid #CCC;
+  margin-top: 2em;
+}
+
+/* The "back to top" links */
+.doc-top {
+  float: right;
+  font-size: 12px;
+  margin-top: 18px;
+}
+
+.usage-header {
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+/* Event blocks */
+
+.trigger dt {
+  white-space: pre;
+}
+
+.trigger-data {
+  white-space: pre;
+  font-family: monospace;
+}
+
+
+.triggered-events {
+  padding-left: 1em;
+  .big-indent(@event);
+  background-color: @event-light;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+dl.trigger {
+  padding-left: 0em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Method signature blocks*/
+
+.crafty-method p {
+  padding-left: 1em;
+}
+
+.crafty-method {
+  .big-indent(@method);
+  background-color: @method-light;
+}
+
+.crafty-method > .markdown {
+  padding-left: 1em;
+}
+
+code.signature {
+  border-radius: 0;
+  background-color: #F2F2F2;
+  border: 0;
+  color: black;
+  font-weight: bold;
+  padding: 3px;
+  padding-left: 1em;
+  margin: 0;
+  min-width: 100%;
+  display: block;
+  .code-font;
+}
+
+.parameter dt {
+  font-weight: bold;
+}
+
+.parameter dd {
+  padding-left: 0.33em;
+  padding-bottom: 3px;
+}
+
+
+dl.parameter {
+  padding-left: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+dl.parameter  p {
+  margin: 0;
+}
+
+/*General code blocks*/
+
+code {
+  color: rgb(100, 0, 0);
+  background-color: rgba(150,150,150,0.2);
+  border: 0px;
+}
+
+.markdown {
+  display: block;
+}
+
+
+.markdown pre, #quickstart pre, #docs pre, .splash pre{
+  border-radius: 0;
+  border: 0px;
+  padding: 0;
+  .big-indent(@example);
+}
+
+pre code {
+  margin: 0;
+  display: block;
+  line-height: 1.5;
+  padding: 10px;
+  border: 0 ! important;
+  border-radius: 0;
+  .code-font;
+}
+
+ 
 /* Sidebar navigation styles */
 #doc-nav {
 	padding-top: 1em;
@@ -16,7 +174,7 @@
 	padding:0; 
 	font-size:12px 
 }
-#doc-level-one li { 
+#doc-level-one li {  
 	font-weight:bold; 
 	padding: 2px 0;
 }
@@ -38,71 +196,12 @@
 
 /* Heading styles for api docs, overriding the global ones */
 
-#api-container h1 {
+#api-container h1, .doc-page-holder h1 {
 	font-weight: 300;
 	font-size: 30px;
+	.underlined-heading;
 }
 
 #api-container h2 {
 	font-size: 24px;
 }
-
-/* The "back to top" links */
-
-.doc-top { 
-	float:right; 
-	font-size:12px; 
-	margin-top:10px 
-}
-
-
-
-/* Code styles */
-
-#doc-content code {
-	color: hsl(200, 40%, 50%);
-	background-color: transparent;
-}
-
-#doc-content pre code {
-	background-color: @doc-pale-grey;
-	color: black;
-}
-
-/* Dictionary styles */
-
-#doc-content dl { 
-	background: @doc-pale-grey;
-	padding:10px; 
-	font-size:13px; 
-	-webkit-border-radius: 3px; 
-	-moz-border-radius: 3px; 
-	border-radius: 3px;
-}
-
-#doc-content dt { 
-	font-weight:bold; 
-	font-family: @monofont;
-	}
-#doc-content dd { 
-	margin:0 0 5px 25px;
-}
-
-
-
-/* List styles */
-
-#doc-content ul {
-	padding: 0;
-	padding-left: 15px;
-}
-
-#doc-content ul li {
-	min-width: 220px;
-}
-
-.doc-contents ul li {
-	display: inline-block; 
-}
-
-

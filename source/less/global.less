@@ -43,12 +43,18 @@
 @h2-top-space: 20px;
 @h2-bottom-space: 10px;
 
-h2 { 
-	font-family: @bodyfont;
-	font-weight: 300;
+.underlined-heading {
 	border-bottom:2px solid hsl(0, 0%, 80%);
 	margin-top: @h2-top-space;
 	margin-bottom: @h2-bottom-space;
+}
+
+
+h2 { 
+	font-family: @bodyfont;
+	font-weight: 300;
+	.underlined-heading;
+
 }
 
 .edit-on-github {
