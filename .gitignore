@@ -1,5 +1,6 @@
 _site/
-*.swp
+source/api
+*.swp	
 pkg/
 test/
 .DS_Store

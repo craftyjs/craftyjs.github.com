@@ -1,4 +1,3 @@
-/*Documentation styles*/
 
 @event: color("lightgreen");
 @event-light: lighten(@event, 20%);
@@ -7,19 +6,30 @@
 @example: lighten(color("black"), 50%);
 @example-light: lighten(@example, 20%);
 
-
-/* Blocks offset by a large colored margin */
 .big-indent(@color) {
   border-left: 20px solid @color !important;
   /*box-shadow: 3px 2px 3px #555555;*/
   margin-top: 1em;
 }
 
-/* Links to the source code */
+ul {
+  list-style-type: square;
+
+}
+
+
+.category-list {
+  font-size: 12px;
+}
+
+.category-list h4 {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
 
 .doc-source {
   color: grey;
-  font-size: 10px;
+  font-size: smaller;
   .code-font;
   margin-top: -10px;
 }
@@ -29,10 +39,12 @@
 }
 
 .code-font {
-  font-family: @monofont;
+  font-family: Menlo, Monaco, Consolas, monospace;
 }
 
-/*Headers */
+body {
+  font-family:'Open Sans', Helvetica, Arial;
+}
 
 h1, h2, h3 {
   font-weight: 300;
@@ -42,30 +54,27 @@ h1, h2, h3 {
   border-bottom: 2px solid #CCC;
   margin-top: 2em;
 }
-
-/* The "back to top" links */
 .doc-top {
-  float: right;
-  font-size: 12px;
-  margin-top: 18px;
+  float:right;
+  font-size:12px;
+  margin-top: 20px;
 }
 
-.usage-header {
-  padding-left: 1em;
+.category-list {
+  margin-left: 1em;
+}
+
+dl.parameter {
+  
+}
+.parameter dt {
   font-weight: bold;
 }
 
-/* Event blocks */
-
-.trigger dt {
-  white-space: pre;
+.parameter dd {
+  padding-left: 0.33em;
+  padding-bottom: 3px;
 }
-
-.trigger-data {
-  white-space: pre;
-  font-family: monospace;
-}
-
 
 .triggered-events {
   padding-left: 1em;
@@ -77,17 +86,36 @@ h1, h2, h3 {
 
 dl.trigger {
   padding-left: 0em;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
+dl.parameter {
+  padding-left: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
 
-/* Method signature blocks*/
+dl.parameter  p {
+  margin: 0;
+}
 
 .crafty-method p {
   padding-left: 1em;
 }
 
+.usage-header {
+  padding-left: 1em;
+  font-weight: bold;
+}
+
+.trigger dt {
+  white-space: pre;
+}
+
+.trigger-data {
+  white-space: pre;
+  font-family: monospace;
+}
 .crafty-method {
   .big-indent(@method);
   background-color: @method-light;
@@ -111,29 +139,6 @@ code.signature {
   .code-font;
 }
 
-.parameter dt {
-  font-weight: bold;
-}
-
-.parameter dd {
-  padding-left: 0.33em;
-  padding-bottom: 3px;
-}
-
-
-dl.parameter {
-  padding-left: 1em;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
-}
-
-dl.parameter  p {
-  margin: 0;
-}
-
-/*General code blocks*/
-
 code {
   color: rgb(100, 0, 0);
   background-color: rgba(150,150,150,0.2);
@@ -155,53 +160,12 @@ code {
 pre code {
   margin: 0;
   display: block;
+  /*background: #2d2d2d;
+  color: #cccccc;*/
   line-height: 1.5;
   padding: 10px;
   border: 0 ! important;
   border-radius: 0;
+  
   .code-font;
-}
-
- 
-/* Sidebar navigation styles */
-#doc-nav {
-	padding-top: 1em;
-}
-
-
-#doc-level-one { 
-	margin:0; 
-	padding:0; 
-	font-size:12px 
-}
-#doc-level-one li {  
-	font-weight:bold; 
-	padding: 2px 0;
-}
-#doc-level-one li ul { 
-	padding-left: 8px 
-}
-#doc-level-one li ul li { 
-	font-weight:normal; 
-}
-
-
-/* Spacing */
-
-
-.doc-block { 
-	margin-top:50px 
-}
-
-
-/* Heading styles for api docs, overriding the global ones */
-
-#api-container h1, .doc-page-holder h1 {
-	font-weight: 300;
-	font-size: 30px;
-	.underlined-heading;
-}
-
-#api-container h2 {
-	font-size: 24px;
 }

@@ -1,6 +1,12 @@
 var hljs = require('highlight.js');
 
 module.exports = function(grunt) {
+  var generateApi = require("./source/api-gen/generate-api-docs.js");
+  function buildStatic() {
+      // last two arguments are input file and output directory
+      generateApi(grunt, "./source/api-gen/api.json", "./source/api");
+  }
+
   grunt.initConfig({
   // ...
    
@@ -62,7 +68,9 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default', ['less', 'assemble']);
+  grunt.registerTask('default', ['api', 'less', 'assemble']);
+
+  grunt.registerTask('api', "Generate api documentation", buildStatic);
 
 
 

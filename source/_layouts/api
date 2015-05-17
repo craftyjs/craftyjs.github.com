@@ -2,6 +2,4 @@
 layout: default
 ---
 
-<div id='api-container'>
-	{{> body }}
-</div>
+{{> body }}
