@@ -13,6 +13,7 @@
     "highlight.js": "^8.4.0",
     "marked": "^0.3.3",
     "node-jsx": "^0.13.3",
-    "react": "^0.13.3"
+    "react": "^0.13.3",
+    "grunt-link-checker": "^0.1.0"
   }
 }
