@@ -241,7 +241,7 @@ var Doclet = React.createClass({
       var header = "";
     }
     return (
-      <div id={this.props.data.name}>
+      <div id={cleanName(this.props.data.name)}>
         {link}
         {header}
         <div className="doc-source"><SourceLink data={this.props.data}/></div>
@@ -291,7 +291,7 @@ var DocPage = React.createClass({
     var parts = page.parts;
     parts.sort(nameSort);
     var partlets = parts.map(function(part, index){return <Doclet key={index} data={part} top={false}/>});
-    var page_toc = parts.map( function(part, index){ return <li key={index}><InternalLink target={part.name} value={part.name}/></li>});
+    var page_toc = parts.map( function(part, index){ return <li key={index}><InternalLink parent={page.main.name} target={part.name} value={part.name}/></li>});
     if (!page.main){
       return <div/>
     }
@@ -349,7 +349,8 @@ var EventPage = React.createClass({
 var InternalLink = React.createClass({
     render: function() {
       var cleanTarget = cleanName(this.props.target);
-      return <a href={"#" + cleanTarget}>{this.props.target}</a>
+      var linkText = this.props.target.replace(this.props.parent, "");
+      return <a href={"#" + cleanTarget}>{linkText}</a>
     }
 });
 
