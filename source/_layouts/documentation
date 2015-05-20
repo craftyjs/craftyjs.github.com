@@ -18,11 +18,6 @@ layout: default
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/gameloop.html'>
-							Game Loop
-						</a>
-					</li>
-					<li>
 						<a href='/documentation/text.html'>
 							Text
 						</a>
@@ -33,8 +28,18 @@ layout: default
 						</a>
 					</li>
 					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
 						<a href='/documentation/sound.html'>
 							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
 						</a>
 					</li>
 					<li>
@@ -43,15 +48,15 @@ layout: default
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/mouse.html'>
-							Mouse
+						<a href='/documentation/gameloop.html'>
+							Game Loop
 						</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<div id='doc-content'>
+	<div id='doc-content' class="markdown">
 		<span class="edit-on-github">
 		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/{{page.src}}">Edit on Github</a>
 		</span>
