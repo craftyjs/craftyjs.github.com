@@ -60,17 +60,52 @@ module.exports = function(grunt) {
           tasks: ['assemble'],
         },
 
+    },
+    linkChecker: {
+      includeApi: {
+        site: 'localhost',
+        options: {
+          initialPort: 8000,
+          callback: function (crawler) {
+            crawler.addFetchCondition(function (url) {
+              if (url.path.indexOf("glyphicon") >= 0)
+                return false
+              return true;
+            });
+          }
+        }
+      },
+      ignoreApi: {
+        site: 'localhost',
+        options: {
+          initialPort: 8000,
+          callback: function (crawler) {
+            crawler.addFetchCondition(function (url) {
+              if (url.path.indexOf("glyphicon") >= 0)
+                return false
+              else if (url.path.indexOf("api") >= 0)
+                return false;
+              return true;
+            });
+          }
+        }
       }
+    }
+
   });
 
   grunt.loadNpmTasks('assemble');
-  grunt.loadNpmTasks('grunt-contrib-watch');
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-link-checker');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.registerTask('default', ['api', 'less', 'assemble']);
 
   grunt.registerTask('api', "Generate api documentation", buildStatic);
+  grunt.registerTask('fast-check', 'linkChecker:ignoreApi');
+  grunt.registerTask('full-check', 'linkChecker:includeApi');
+
 
 
 
