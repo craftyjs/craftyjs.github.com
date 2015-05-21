@@ -6583,6 +6583,9 @@ h2 {
 li {
   list-style: none;
 }
+.markdown li {
+  list-style: disc;
+}
 a {
   color: #0084ea;
 }
@@ -6709,6 +6712,12 @@ code {
   border-radius: 0;
   border: 0px;
   padding: 0;
+  border-left: 20px solid #808080 !important;
+  /*box-shadow: 3px 2px 3px #555555;*/
+  margin-top: 1em;
+}
+/* We use some iframes for running examples */
+.markdown iframe {
   border-left: 20px solid #808080 !important;
   /*box-shadow: 3px 2px 3px #555555;*/
   margin-top: 1em;

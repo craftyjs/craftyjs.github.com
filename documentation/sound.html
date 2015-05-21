@@ -69,11 +69,6 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/gameloop.html'>
-							Game Loop
-						</a>
-					</li>
-					<li>
 						<a href='/documentation/text.html'>
 							Text
 						</a>
@@ -84,8 +79,18 @@
 						</a>
 					</li>
 					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
 						<a href='/documentation/sound.html'>
 							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
 						</a>
 					</li>
 					<li>
@@ -94,21 +99,40 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/mouse.html'>
-							Mouse
+						<a href='/documentation/gameloop.html'>
+							Game Loop
 						</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<div id='doc-content'>
+	<div id='doc-content' class="markdown">
 		<span class="edit-on-github">
 		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/sound.md">Edit on Github</a>
 		</span>
 
 		<h2> Sound </h2>
-		<p>Here would be information about how Crafty.js sounds, and what options you have to modify it.</p>
+		<p>Currently Crafty implements sound playback through the audio element, which is buggy in some browsers.  In the future we plan to switch to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio API</a> where available.</p>
+<h2 id="loading-audio">Loading audio</h2>
+<p>To play a sound, you first have to load it.  Because browser support for audio formats is inconsistent, you can supply a list of audio files, and Crafty will load only the first one which is supported in the current environment.  For more information on loading assets, see <a href="/api/Crafty-loader.html">Crafty.load</a>.</p>
+<pre><code><span class="hljs-comment">// Here we're just loading a single sound, and calling it "beep".</span>
+<span class="hljs-comment">// But you can load multiple assets at once!</span>
+<span class="hljs-keyword">var</span> assets = {
+    <span class="hljs-string">"audio"</span>: {
+        <span class="hljs-string">"beep"</span>: [<span class="hljs-string">"beep.wav"</span>, <span class="hljs-string">"beep.mp3"</span>, <span class="hljs-string">"beep.ogg"</span>]
+    }
+}
+Crafty.load({assets,  callback})</code></pre>
+<h2 id="playing-audio">Playing audio</h2>
+<p>Once the sound has loaded, you can play it using the name you previously designated:</p>
+<pre><code>Crafty.audio.play(<span class="hljs-string">"beep"</span>)</code></pre>
+<p>You can also specify a repeat count and a volume:</p>
+<pre><code><span class="hljs-comment">// Play the sound, repeating twice, at 75% volume:</span>
+Crafty.audio.play(<span class="hljs-string">"beep"</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0.75</span>)</code></pre>
+<p>To repeat a sound forever, use a repeat count of <code>-1</code>.</p>
+<pre><code>Crafty.audio.play(<span class="hljs-string">"beep"</span>, -<span class="hljs-number">1</span>)</code></pre>
+<p>You can also mute, pause and resume audio playback.  See <a href="/api/Crafty-audio.html">Crafty.audio</a> for complete documentation.</p>
 
 	</div>
 </div>

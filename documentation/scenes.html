@@ -69,11 +69,6 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/gameloop.html'>
-							Game Loop
-						</a>
-					</li>
-					<li>
 						<a href='/documentation/text.html'>
 							Text
 						</a>
@@ -84,8 +79,18 @@
 						</a>
 					</li>
 					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
 						<a href='/documentation/sound.html'>
 							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
 						</a>
 					</li>
 					<li>
@@ -94,21 +99,36 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/mouse.html'>
-							Mouse
+						<a href='/documentation/gameloop.html'>
+							Game Loop
 						</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<div id='doc-content'>
+	<div id='doc-content' class="markdown">
 		<span class="edit-on-github">
 		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/scenes.md">Edit on Github</a>
 		</span>
 
 		<h2> Scenes </h2>
-		<p>Here would be information about how Crafty.js scenes, and what options you have to modify it.</p>
+		<p><a href="/api/Crafty-scene.html">Scenes</a> are a way to organize your game.</p>
+<p>A scene is defined by a name, a setupt function called when the scene starts, and (optionally) a function that&#39;s called when the scene ends.  When a new scene is started, the current scene is automatically ended.  Importantly, any entity with the <code>2D</code> component will be destroyed when this happens, providing a clean slate for the next scene.  Likewise, the viewport will be reset to its default values.</p>
+<p>If an entity should not be destroyed by a new scene, you can give it  the <code>&quot;Persist&quot;</code> component.  (Persist doesn&#39;t provide any other functionality; you can use components to categorize and tag entities.)</p>
+<p>You can pass in a single object as data to the setup function.  The general syntax is:</p>
+<pre><code><span class="hljs-comment">// Defining a new scene with an init function</span>
+Crafty.scene(<span class="hljs-string">"SelectMenu"</span>, initMenu )
+
+<span class="hljs-comment">// This will call initMenu(menuData).</span>
+<span class="hljs-comment">// (`menuData` can't be a function, though!)</span>
+Crafty.scene(<span class="hljs-string">"SelectMenu"</span>, menuData)</code></pre>
+<p>There are also a couple of event hooks which are triggered on a scene change:</p>
+<ul>
+<li>When an existing scene ends, it triggers a &quot;SceneDestroy&quot; event before running the uninit function</li>
+<li>when a new scene starts, it triggers &quot;SceneChange&quot; before calling its init function</li>
+</ul>
+<p>For more detailed information, see the <a href="/api/Crafty-scene.html">Crafty.scene</a> documentation.</p>
 
 	</div>
 </div>

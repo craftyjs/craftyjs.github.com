@@ -69,11 +69,6 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/gameloop.html'>
-							Game Loop
-						</a>
-					</li>
-					<li>
 						<a href='/documentation/text.html'>
 							Text
 						</a>
@@ -84,8 +79,18 @@
 						</a>
 					</li>
 					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
 						<a href='/documentation/sound.html'>
 							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
 						</a>
 					</li>
 					<li>
@@ -94,32 +99,38 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/mouse.html'>
-							Mouse
+						<a href='/documentation/gameloop.html'>
+							Game Loop
 						</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<div id='doc-content'>
+	<div id='doc-content' class="markdown">
 		<span class="edit-on-github">
 		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/text.md">Edit on Github</a>
 		</span>
 
 		<h2> Text </h2>
-		<p>It is very easy to add text to your game. You create a entity
-which contains the component &quot;Text&quot;.</p>
-<pre><code><span class="hljs-keyword">var</span> helloWorldText = Crafty.e(<span class="hljs-string">'2D, Canvas, Text'</span>)
+		<p>It is very easy to add text to your game. Create an entity
+which contains the component <a href="/api/Text.html">&quot;Text&quot;</a>:</p>
+<pre><code><span class="hljs-keyword">var</span> helloWorldText = Crafty.e(<span class="hljs-string">'2D, DOM, Text'</span>)
   .attr({
     x: <span class="hljs-number">10</span>,
-    y: <span class="hljs-number">10</span>  
+    y: <span class="hljs-number">10</span>
   });</code></pre>
 <p>A very simple text example looks like this:</p>
 <pre><code>helloWorldText.text(<span class="hljs-string">'Hello World'</span>);</code></pre>
-<p>You can then change the color by using the <code>.textColor()</code></p>
+<h2 id="styling-text">Styling text</h2>
+<p>The &quot;Text&quot; component provides several methods for styling the text.</p>
+<p>You can set the color by using the <code>.textColor()</code> method:</p>
 <pre><code>helloWorldText.textColor(<span class="hljs-string">'red'</span>);</code></pre>
-<p>You can customize the text further by using the ´.textFont()`</p>
+<p>You can customize the text further by passing an object of styles to the ´.textFont()` method:</p>
+<pre><code>helloWorldText.textFont({
+  size: <span class="hljs-string">'20px'</span>,
+  weight: <span class="hljs-string">'bold'</span>
+});</code></pre>
 <p>Possible keys are:</p>
 <ul>
 <li>type</li>
@@ -129,10 +140,12 @@ which contains the component &quot;Text&quot;.</p>
 <li>lineHeight</li>
 <li>variant</li>
 </ul>
-<pre><code>helloWorldText.textFont({
-  size: <span class="hljs-string">'20px'</span>,
-  weight: <span class="hljs-string">'bold'</span>
-});</code></pre>
+<h2 id="2d-properties">2D properties</h2>
+<p>Most of the standard <a href="/api/2D.html">2D</a> properties and methods will function with text: you can move it, rotate it, attach it to follow other entities, and so on.  There are a couple of caveats:</p>
+<ul>
+<li>Text will work with <a href="/api/Canvas.html">Canvas</a> and <a href="/api/DOM.html">DOM</a> layers.   However, styling will work best with the DOM layer, since browsers are extremely good at displaying text!</li>
+<li>The height and width of the text entity will be set automatically when using Canvas, since the html canvas has no facilities for reflowing text.</li>
+</ul>
 
 	</div>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Crafty - 2D Mechanics</title>
+	<title>Crafty - 2D Graphics</title>
 	<link type="text/css" rel="stylesheet" href="/craftyjs-site.css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet' 	type='text/css'>
@@ -69,11 +69,6 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/gameloop.html'>
-							Game Loop
-						</a>
-					</li>
-					<li>
 						<a href='/documentation/text.html'>
 							Text
 						</a>
@@ -84,8 +79,18 @@
 						</a>
 					</li>
 					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
 						<a href='/documentation/sound.html'>
 							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
 						</a>
 					</li>
 					<li>
@@ -94,21 +99,21 @@
 						</a>
 					</li>
 					<li>
-						<a href='/documentation/mouse.html'>
-							Mouse
+						<a href='/documentation/gameloop.html'>
+							Game Loop
 						</a>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</div>
-	<div id='doc-content'>
+	<div id='doc-content' class="markdown">
 		<span class="edit-on-github">
 		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/2d.md">Edit on Github</a>
 		</span>
 
-		<h2> 2D Mechanics </h2>
-		<p>We are first going to do the simplest drawing you can do, a basic square.</p>
+		<h2> 2D Graphics </h2>
+		<p>It&#39;s pretty easy to get Crafty to display a simple square.  (In a full game you&#39;d likely want to use sprites instead of squares, but they&#39;re still great for prototyping, so we&#39;ll keep using them in these examples.)</p>
 <pre><code>Crafty.init(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
 <span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>);
 square.attr({
@@ -117,15 +122,20 @@ square.attr({
   w: <span class="hljs-number">100</span>,
   h: <span class="hljs-number">100</span>
 }).color(<span class="hljs-string">'red'</span>);</code></pre>
-<p>This creates a stage that is 400 pixels wide and high. Then we create a entity called <code>square</code> that we then say that is should be placed at 10 x coordiate and 10 y coordinate from the top left corner and that is shoudl be 100 pixels wide and high.</p>
-<p>Now we have a red box showing up on the page, now we want it to move in 2D. In Crafty if we want something to move by itself we bind to a event called <code>EnterFrame</code>.</p>
+<p>What&#39;s going on here?</p>
+<ul>
+<li>First we start Crafty with a stage that is 400 pixels wide and high.</li>
+<li>Then we create an entity with three components: <code>&quot;2D, Canvas, Color&quot;</code>.  Anything you want to display will need both the <code>&quot;2D&quot;</code> component and a specific rendering layer; here it&#39;s set to use the <code>&quot;Canvas&quot;</code> layer.  The <code>&quot;Color&quot;</code> component is responsible for actually drawing a coloured square.</li>
+<li>Finally we use the <code>.attr()</code> function to set several properties of the entity, in this case its position and dimensions.  Like most functions, <code>attr()</code> returns the entity it was called on, so we can chain the <code>color()</code> method to set the color of the entity.</li>
+</ul>
+<p>Easy enough!  Now we have a red box showing up on the page, but how about setting it into motion?  For instance, we might want to set the box spinning; if you look at the documentation for <code>&quot;2D&quot;</code>, you&#39;ll see that it provides a <code>rotation</code> property, but how could we animate that?  Simple enough: we can bind to the <code>&quot;EnterFrame&quot;</code> event to change the rotation once per frame:</p>
 <pre><code>square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
   <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
 });</code></pre>
-<p>Now we have bound to <code>EnterFrame</code> event, this will be triggered for ever frame which on normal browser speed is 60 times a second.</p>
-<p>You will notice that it is rotating about the top left corner, we would like it to rotate about its center and to do that we have to use the <a href="http://craftyjs.com/api/2D.html#-origin">.origin()</a> function.</p>
+<p>Now we have bound to <code>&quot;EnterFrame&quot;</code> event, this will be triggered each frame, so the square will rotate.</p>
+<p>Now, by default this will rotate about the top left corner, but you&#39;d probably like it to rotate about its center.  We can set the origin of the rotation (this is a method provided by <code>&quot;2D&quot;</code>):</p>
 <pre><code>square.origin(<span class="hljs-string">"center"</span>)</code></pre>
-<p>So now the our whole example looks like this</p>
+<p>So putting it all together, the final code would be:</p>
 <pre><code>Crafty.init(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
 
 <span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>);
@@ -141,13 +151,9 @@ square.origin(<span class="hljs-string">"center"</span>)
 square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
   <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
 });</code></pre>
+<p>And here&#39;s the code in action! </p>
 <p><a class="jsbin-embed" href="http://jsbin.com/rakituvoso/1/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
-<p>We can make it move around by changing the x and y coordiantes directly like this</p>
-<pre><code>square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
-  <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
-  <span class="hljs-keyword">this</span>.x = <span class="hljs-keyword">this</span>.x + <span class="hljs-number">1</span>;
-});</code></pre>
-<p>Now it is up to you to make it do what you want it to do!</p>
+<p>The script is editable; try making the square move to the right by adding the code <code>this.x = this.x+1;</code> in the bound <code>&quot;EnterFrame&quot;</code> function.</p>
 
 	</div>
 </div>
