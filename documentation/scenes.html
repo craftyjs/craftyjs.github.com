@@ -64,6 +64,21 @@
 						</a>
 					</li>
 					<li>
+						<a href='/documentation/entities.html'>
+							Entities
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/events.html'>
+							Events
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/components.html'>
+							Components
+						</a>
+					</li>
+					<li>
 						<a href='/documentation/2d.html'>
 							2D Graphics
 						</a>
@@ -114,7 +129,7 @@
 
 		<h2> Scenes </h2>
 		<p><a href="/api/Crafty-scene.html">Scenes</a> are a way to organize your game.</p>
-<p>A scene is defined by a name, a setupt function called when the scene starts, and (optionally) a function that&#39;s called when the scene ends.  When a new scene is started, the current scene is automatically ended.  Importantly, any entity with the <code>2D</code> component will be destroyed when this happens, providing a clean slate for the next scene.  Likewise, the viewport will be reset to its default values.</p>
+<p>A scene is defined by a name, a setup function called when the scene starts, and (optionally) a function that&#39;s called when the scene ends.  When a new scene is started, the current scene is automatically ended.  Importantly, any entity with the <code>2D</code> component will be destroyed when this happens, providing a clean slate for the next scene.  Likewise, the viewport will be reset to its default values.</p>
 <p>If an entity should not be destroyed by a new scene, you can give it  the <code>&quot;Persist&quot;</code> component.  (Persist doesn&#39;t provide any other functionality; you can use components to categorize and tag entities.)</p>
 <p>You can pass in a single object as data to the setup function.  The general syntax is:</p>
 <pre><code><span class="hljs-comment">// Defining a new scene with an init function</span>
