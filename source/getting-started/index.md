@@ -2,12 +2,13 @@
 layout: gettingstarted
 title: Getting started - Building your first Game
 ---
+This is a very quick guide to using Crafty.
 
-Darren Torpey from buildnewgames.com have written this amazing guide to Crafty.js which he explains in details how you can get started with Crafty.js.
+For a more thorough but somewhat out-dated guide, check out [Darren Torpey's tutorial](http://buildnewgames.com/introduction-to-crafty/).  (As of 0.6.3, in addition to the changes Darren mentions at the end, you'll need to change the signature of [`Crafty.load`](/api/Crafty-loader.html))
 
-[http://buildnewgames.com/introduction-to-crafty/](http://buildnewgames.com/introduction-to-crafty/)
+## Setup
 
-It is easy to setup Crafty.js, just put it in a script tag and you are running:
+First let's setup our HTML file.  We're trying to get you up and running quickly, so we'll just directly link to the latest release version.  (Of course you can also [install it](craftyjs.com/#install) locally!)
 
 ``` html
 <html>
@@ -22,16 +23,19 @@ It is easy to setup Crafty.js, just put it in a script tag and you are running:
 </html>
 ```
 
-A Crafty.js game is build up by entities, that would be eg. your hero and the enemies. 
 
-This is the simplest entity you can create which shows up on the game.
+A Crafty.js game is build up of entities -- the player character, enemies, and obstacles are all represented this way.
+
+Lets start by creating a simple colored square:
 ``` javascript
 Crafty.e('2D, DOM, Color').attr({x: 0, y: 0, w: 100, h: 100}).color('#F00');
 ```
 
-As you can see a string is passed to the e() function, these are the Crafty.js Components that entity would have avaiable. You can think of it a building blocks. Here we have said that our entity has the building block Color, but also the 2D components, which makes it possible to place it in the game.
+There are a few things going on here:
 
-You will learn more about Components later on.
+- We first call [`Crafty.e`](/api/Crafty-e.html) with a list of components to add to the entity.  Components provide basic building blocks of functionality. In this case, we add [2D](/api/2D.html), [DOM](/api/DOM.html), and [Color](/api/Color.html).  You can learn more about those later!
+- We then call two methods of our newly created entity: `attr()` and `color()`.  The `attr` method is one of [many](/api/Crafty-Core.html) that all entities share, but `color()` is (unsuprisingly) provided by the "Color" component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.
+
 
 The full code would look something like this now:
 
@@ -55,7 +59,7 @@ And when executed:
 
 Now that we got something to show up on the screen, lets try making it move by using the keyboard arrows.
 
-That can be done with the "Fourway" component.
+That can be done with the ["Fourway"](/api/Fourway.html) component.
 
 ``` javascript
 Crafty.e('2D, DOM, Color, Fourway')
@@ -64,15 +68,13 @@ Crafty.e('2D, DOM, Color, Fourway')
   .fourway(4);
 ```
 
-Notice how we added the component to the string after Color. When we added the component some functions got accessible like the ".fourway" function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.
+Notice how we added the name of this component to the string after Color. This adds new methods like the ".fourway" function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.
 
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/9jCr7/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Lets try to make it look like a platform game, where the entity is impacted by gravity. That can be done with the "Gravity" component. 
 
-But if we added the Gravity component now, the entity would just fall because there is nothing to stop it from falling. Therefore we are going to add a "Floor". Notice how we added the name Floor as a Component. That is because it is used to "group" entities so we can later select them.
-
-The Gravity component should only be added to entities which should be falling, so we do not need to add it to the "Floor" entity.
+But if we added the Gravity component now, the entity would just fall because there is nothing to stop it from falling.  So lets add a long, thin green box which will provide a surface to fall upon:
 
 ``` javascript
 Crafty.e('Floor, 2D, Canvas, Color')
@@ -80,7 +82,11 @@ Crafty.e('Floor, 2D, Canvas, Color')
   .color('green');
 ```
 
-Then we added the red box and can then add the Gravity component to that entity.
+Notice how we added a new component called "Floor" to this entity.  You won't find this component in the api docs, and it doesn't add any new methods.  It's a name we just made up, and it serves to tag this entity.
+
+The Gravity component should only be added to entities which should be falling, so we do not need to add it to our new entity.
+
+Now we'll add the Gravity component to our previous red box:
 
 ``` js
 Crafty.e('2D, Canvas, Color, Fourway, Gravity')
@@ -93,3 +99,5 @@ Crafty.e('2D, Canvas, Color, Fourway, Gravity')
 You should notice that the ".gravity()" function has been called with the argument "Floor". That means that all entites which have the Floor component prevent the entity from falling further.
 
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/2nBLb/2/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+Well, that's not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our [overview](/documentation) of common topics, and detailed [api documentation](/api/). 
