@@ -60,8 +60,26 @@ var ToC = React.createClass({
 
 var DocLink = React.createClass({
   render: function() {
-    var cleanTarget = cleanName(this.props.target);
-    return <a href={cleanTarget + ".html"}>{this.props.target}</a>
+    var target = this.props.target;
+    var linkText, href;
+    var parent = (this.props.parentPage) ? this.props.parentPage.main.name : undefined;
+    // If the link target starts with the name of the page, assume it is an internal link
+    // (This is about resolving links such as Crafty.viewport.centerOn)
+    // If the ref begins with # or ., also assume it is an internal link
+    if (parent && target.indexOf(parent + ".") === 0 ) {
+      linkText = target.replace(parent, "");
+      href = "#" + cleanName(target);
+    } else if (target[0] === "#") {
+      linkText = target.substr(1);
+      href = cleanName(target);
+    } else if (target[0] === ".") {
+      linkText = target;
+      href = "#" + cleanName(target);
+    } else {
+      linkText = target;
+      href = cleanName(target) + ".html";
+    }
+    return <a href={href}>{linkText}</a>
   }
 })
 
@@ -78,27 +96,37 @@ var Category = React.createClass({
       </li>
     )
   }
+});
+
+var Node = React.createClass({
+  render: function() {
+    var node = this.props.node;
+    var page = this.props.page;
+    switch(node.type) {
+      case "method":
+        return <Method data={node} page={page}/>
+      case "param":
+        return <Parameter paramName={node.name} page={page} paramDescription={node.description} />
+      case "triggers":
+        return <Events triggers={node.events} page={page}/>
+      case "raw":
+        return <MarkdownBlock value={node.value} page={page}/>
+      case "return":
+        return <Returns value={node.value} page={page}/>
+      case "xref":
+        return <SeeAlso xrefs = {node.xrefs} page={page} />
+      case "example":
+        return <Example contents={node.contents} page={page} />
+      default:
+        return <p> Unsupported node type: <b style={{color:"red"}}>{node.type}</b></p>
+    }
+  }
 })
 
-function createNode(node, index) {
-  switch(node.type) {
-    case "method":
-      return <Method key={index} data={node}/>
-    case "param":
-      return <Parameter key={index} paramName={node.name} paramDescription={node.description} />
-    case "triggers":
-      return <Events key={index} triggers={node.events}/>
-    case "raw":
-      return <MarkdownBlock value={node.value} key={index} />
-    case "return":
-      return <Returns key={index} value={node.value}/>
-    case "xref":
-      return <SeeAlso key={index} xrefs = {node.xrefs} />
-    case "example":
-      return <Example key={index} contents={node.contents} />
-    default:
-      return <p key={index} > Unsupported node type: <b style={{color:"red"}}>{node.type}</b></p>
-  }
+function mapNodes(contents, page){
+  return contents.map( function(node, index){ 
+    return <Node key={index} node={node} page={page}/>
+  });
 }
 
 
@@ -111,8 +139,10 @@ var SubSectionHeader = React.createClass({
 // SeeAlso
 var SeeAlso = React.createClass({
   render: function() {
+    var page = this.props.page;
     xrefs = this.props.xrefs.map(function(xref, index){
-      return <li key={xref}><DocLink target={xref} /></li>
+      // if ()
+      return <li key={xref}><DocLink parentPage={page} target={xref} /></li>
     });
     return <div>
       <SubSectionHeader>See Also</SubSectionHeader>
@@ -129,7 +159,7 @@ var SeeAlso = React.createClass({
 var Example = React.createClass({
   render: function() {
     var contents = this.props.contents;
-    var pieces = contents.map(createNode);
+    var pieces = mapNodes(contents, this.props.page);
     return (<div className = "example">
       <SubSectionHeader>Example</SubSectionHeader>
       {pieces}
@@ -186,7 +216,7 @@ var Trigger = React.createClass({
 var Method = React.createClass({
   render: function() {
     var contents = this.props.data.contents;
-    var pieces = contents.map(createNode);
+    var pieces = mapNodes(contents, this.props.page);
     return (
       <div className="crafty-method">
         <Signature  sign = {this.props.data.signature} />
@@ -232,7 +262,7 @@ var Returns = React.createClass({
 var Doclet = React.createClass({
   render: function() {
     var contents = this.props.data.contents;
-    var pieces = contents.map(createNode)
+    var pieces =  mapNodes(contents, this.props.page);
     if (!this.props.top) {
       var link = <a href='#doc-nav' className='doc-top'>Back to top</a>
       var header = <h2 className="doclet-header">{this.props.data.name}</h2>
@@ -290,7 +320,7 @@ var DocPage = React.createClass({
     }
     var parts = page.parts;
     parts.sort(nameSort);
-    var partlets = parts.map(function(part, index){return <Doclet key={index} data={part} top={false}/>});
+    var partlets = parts.map(function(part, index){return <Doclet key={index} data={part} top={false} page={page}/>});
     var page_toc = parts.map( function(part, index){ return <li key={index}><InternalLink parent={page.main.name} target={part.name} value={part.name}/></li>});
     if (!page.main){
       return <div/>
@@ -310,7 +340,7 @@ var DocPage = React.createClass({
     return (
       <div className="doc-page">
         <h1>{page.main.name}</h1>
-        <Doclet data={page.main} top={true}/>
+        <Doclet data={page.main} page={page} top={true}/>
         {bottomParts}
       </div>
     )

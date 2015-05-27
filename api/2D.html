@@ -91,7 +91,7 @@ every entity attached.</p>
 Is actually a getter/setter so when using this value for calculations and not modifying it,
 use the <code>._h</code> property.</p>
 <p>Changing this value is not recommended as canvas has terrible resize quality and DOM will just clip the image.</p>
-</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-_attr.html">._attr</a></li></ul></div></div><div id="-intersect"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.intersect</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L503-513">src/2D.js#L503-513</a></div><div class="crafty-method"><code class="signature">public Boolean .intersect(Number x, Number y, Number w, Number h)</code><dl class="parameter"><dt> x </dt><dd><span class="markdown"><p>X position of the rect</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-_attr">._attr</a></li></ul></div></div><div id="-intersect"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.intersect</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L503-513">src/2D.js#L503-513</a></div><div class="crafty-method"><code class="signature">public Boolean .intersect(Number x, Number y, Number w, Number h)</code><dl class="parameter"><dt> x </dt><dd><span class="markdown"><p>X position of the rect</p>
 </span></dd></dl><dl class="parameter"><dt> y </dt><dd><span class="markdown"><p>Y position of the rect</p>
 </span></dd></dl><dl class="parameter"><dt> w </dt><dd><span class="markdown"><p>Width of the rect</p>
 </span></dd></dl><dl class="parameter"><dt> h </dt><dd><span class="markdown"><p>Height of the rect</p>
@@ -121,7 +121,7 @@ on the entity it will return the rect.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.origin(<span class="hljs-string">"top left"</span>)
 <span class="hljs-keyword">this</span>.origin(<span class="hljs-string">"center"</span>)
 <span class="hljs-keyword">this</span>.origin(<span class="hljs-string">"bottom right"</span>)
-<span class="hljs-keyword">this</span>.origin(<span class="hljs-string">"middle right"</span>)</code></pre></span></div><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-rotation.html">.rotation</a></li></ul></div></div><div id="-pos"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.pos</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L590-598">src/2D.js#L590-598</a></div><div class="crafty-method"><code class="signature">public Object .pos(void)</code></div><span class="markdown"><p>Returns the x, y, w, h properties as a rect object
+<span class="hljs-keyword">this</span>.origin(<span class="hljs-string">"middle right"</span>)</code></pre></span></div><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-rotation">.rotation</a></li></ul></div></div><div id="-pos"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.pos</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L590-598">src/2D.js#L590-598</a></div><div class="crafty-method"><code class="signature">public Object .pos(void)</code></div><span class="markdown"><p>Returns the x, y, w, h properties as a rect object
 (a rect object is just an object with the keys _x, _y, _w, _h).</p>
 <p>The keys have an underscore prefix. This is due to the x, y, w, h
 properties being merely setters and getters that wrap the properties with an underscore (_x, _y, _w, _h).</p>
@@ -138,7 +138,7 @@ use the <code>._rotation</code> property.</p>
 rotation. (Numerical errors do not occur until you get to millions of degrees.)</p>
 <p>The default is to rotate the entity around its (initial) top-left corner; use
 <code>.origin()</code> to change that.</p>
-</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-_attr.html">._attr</a></li><li><a href="-origin.html">.origin</a></li></ul></div></div><div id="-shift"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.shift</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L665-674">src/2D.js#L665-674</a></div><div class="crafty-method"><code class="signature">public this .shift(Number x, Number y, Number w, Number h)</code><dl class="parameter"><dt> x </dt><dd><span class="markdown"><p>Amount to move X</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-_attr">._attr</a></li><li><a href="#-origin">.origin</a></li></ul></div></div><div id="-shift"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.shift</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L665-674">src/2D.js#L665-674</a></div><div class="crafty-method"><code class="signature">public this .shift(Number x, Number y, Number w, Number h)</code><dl class="parameter"><dt> x </dt><dd><span class="markdown"><p>Amount to move X</p>
 </span></dd></dl><dl class="parameter"><dt> y </dt><dd><span class="markdown"><p>Amount to move Y</p>
 </span></dd></dl><dl class="parameter"><dt> w </dt><dd><span class="markdown"><p>Amount to widen</p>
 </span></dd></dl><dl class="parameter"><dt> h </dt><dd><span class="markdown"><p>Amount to increase height</p>
@@ -153,7 +153,7 @@ Can be used for optimization by setting an entities visibility to false when not
 Is actually a getter/setter so when using this value for calculations and not modifying it,
 use the <code>._w</code> property.</p>
 <p>Changing this value is not recommended as canvas has terrible resize quality and DOM will just clip the image.</p>
-</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-_attr.html">._attr</a></li></ul></div></div><div id="-within"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.within</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L532-542">src/2D.js#L532-542</a></div><div class="crafty-method"><code class="signature">public Boolean .within(Number x, Number y, Number w, Number h)</code><dl class="parameter"><dt> x </dt><dd><span class="markdown"><p>X position of the rect</p>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-_attr">._attr</a></li></ul></div></div><div id="-within"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.within</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L532-542">src/2D.js#L532-542</a></div><div class="crafty-method"><code class="signature">public Boolean .within(Number x, Number y, Number w, Number h)</code><dl class="parameter"><dt> x </dt><dd><span class="markdown"><p>X position of the rect</p>
 </span></dd></dl><dl class="parameter"><dt> y </dt><dd><span class="markdown"><p>Y position of the rect</p>
 </span></dd></dl><dl class="parameter"><dt> w </dt><dd><span class="markdown"><p>Width of the rect</p>
 </span></dd></dl><dl class="parameter"><dt> h </dt><dd><span class="markdown"><p>Height of the rect</p>
@@ -162,17 +162,17 @@ use the <code>._w</code> property.</p>
 </span></div><div id="-x"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.x</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L78-84">src/2D.js#L78-84</a></div><span class="markdown"><p>The <code>x</code> position on the stage. When modified, will automatically be redrawn.
 Is actually a getter/setter so when using this value for calculations and not modifying it,
 use the <code>._x</code> property.</p>
-</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-_attr.html">._attr</a></li></ul></div></div><div id="-y"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.y</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L87-93">src/2D.js#L87-93</a></div><span class="markdown"><p>The <code>y</code> position on the stage. When modified, will automatically be redrawn.
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-_attr">._attr</a></li></ul></div></div><div id="-y"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.y</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L87-93">src/2D.js#L87-93</a></div><span class="markdown"><p>The <code>y</code> position on the stage. When modified, will automatically be redrawn.
 Is actually a getter/setter so when using this value for calculations and not modifying it,
 use the <code>._y</code> property.</p>
-</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-_attr.html">._attr</a></li></ul></div></div><div id="-z"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.z</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L118-130">src/2D.js#L118-130</a></div><span class="markdown"><p>The <code>z</code> index on the stage. When modified, will automatically be redrawn.
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-_attr">._attr</a></li></ul></div></div><div id="-z"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.z</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/b74c13c0cc74f8773bb2bf563009728113ac751c/src/2D.js#L118-130">src/2D.js#L118-130</a></div><span class="markdown"><p>The <code>z</code> index on the stage. When modified, will automatically be redrawn.
 Is actually a getter/setter so when using this value for calculations and not modifying it,
 use the <code>._z</code> property.</p>
 <p>A higher <code>z</code> value will be closer to the front of the stage. A smaller <code>z</code> value will be closer to the back.
 A global Z index is produced based on its <code>z</code> value as well as the GID (which entity was created first).
 Therefore entities will naturally maintain order depending on when it was created if same z value.</p>
 <p><code>z</code> is required to be an integer, e.g. <code>z=11.2</code> is not allowed.</p>
-</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="-_attr.html">._attr</a></li></ul></div></div></div></div></div></div>
+</span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-_attr">._attr</a></li></ul></div></div></div></div></div></div>
 			
 		</div>
 	</div>
