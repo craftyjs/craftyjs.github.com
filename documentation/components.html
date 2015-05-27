@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Crafty - Custom Components</title>
+	<link type="text/css" rel="stylesheet" href="/craftyjs-site.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet' 	type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/github.css"/>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23935213-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+<body>
+	<div id = "header-background"> </div>
+	<div id = "page-frame">
+	<div id="header">
+		<nav class="navbar">
+  			<div class="container-fluid">
+  				<div class="navbar-header">
+  					<a class="navbar-brand" href="/"> <img class="logo" src="/images/text-logo.png" /> </a>
+  					
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/getting-started/">Getting started</a></li>
+						<li><a href="/documentation/">Documentation</a></li>
+						<li><a href="/api/">API</a></li>
+						<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
+						<li><a href="/components/">Components</a></li>
+						<li class="emph"><a href="/#install">Download</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<div id="main">
+		<div id="content" class="container">
+			
+<div id="docs">
+	<div id='doc-nav'>
+		<ul id='doc-level-one'>
+			<li>
+				Topics
+				<ul>
+					<li>
+						<a href='/documentation/'>
+							Documentation
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/entities.html'>
+							Entities
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/events.html'>
+							Events
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/components.html'>
+							Components
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/2d.html'>
+							2D Graphics
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/text.html'>
+							Text
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/keyboard.html'>
+							Keyboard
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sound.html'>
+							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/scenes.html'>
+							Scenes
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/gameloop.html'>
+							Game Loop
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id='doc-content' class="markdown">
+		<span class="edit-on-github">
+		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/components.md">Edit on Github</a>
+		</span>
+
+		<h2> Custom Components </h2>
+		<p>Crafty has a lot of built-in components, but creating your own is a good way to organize your game.</p>
+<p>In several examples we&#39;ve created colored squares, and we&#39;ve repeated that code a <em>lot</em>.  For instance, the code below creates two squares:</p>
+<pre><code><span class="hljs-keyword">var</span> sq1 = Crafty.e(<span class="hljs-string">"2D, Canvas, Color"</span>)
+    .attr({x:<span class="hljs-number">10</span>, y:<span class="hljs-number">10</span>, w:<span class="hljs-number">30</span>, h:<span class="hljs-number">30</span>})
+    .color(<span class="hljs-string">"red"</span>);
+<span class="hljs-keyword">var</span> sq1 = Crafty.e(<span class="hljs-string">"2D, Canvas, Color"</span>)
+    .attr({x:<span class="hljs-number">150</span>, y:<span class="hljs-number">100</span>, w:<span class="hljs-number">30</span>, h:<span class="hljs-number">30</span>})
+    .color(<span class="hljs-string">"green"</span>);</code></pre>
+<p>Now, you could create a function that simply generates such a square, but the Crafty way is to use components.  Define a component by using <a href="/api/Crafty-c.html"><code>Crafty.c</code></a>.</p>
+<pre><code>Crafty.c(<span class="hljs-string">"Square"</span>, {
+    <span class="hljs-comment">// This function will be called when the component is added to an entity</span>
+    <span class="hljs-comment">// So it sets up the things that both our entities had in common</span>
+    init: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D, Canvas, Color"</span>);
+        <span class="hljs-keyword">this</span>.w = <span class="hljs-number">30</span>;
+        <span class="hljs-keyword">this</span>.h = <span class="hljs-number">30</span>;
+    },
+
+    <span class="hljs-comment">// Our two entities had different positions, </span>
+    <span class="hljs-comment">// so we define a method for setting the position</span>
+    place: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(x, y)</span> </span>{
+        <span class="hljs-keyword">this</span>.x = x;
+        <span class="hljs-keyword">this</span>.y = y;
+
+        <span class="hljs-comment">// There's no magic to method chaining.</span>
+        <span class="hljs-comment">// To allow it, we have to return the entity!</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+})</code></pre>
+<p><code>Crafty.c</code> takes two arguments: the first is the name of the component, the second is an object which defines its methods and properties.  When the component is added to an entity, all the methods and properties are copied to the entity in question.  The <code>init</code> field is treated specially, and is called when the component is added to an entity.  (You can also define a <code>remove</code> function that will be run when the component is removed, or right before the entity is destroyed.)</p>
+<p>With the above definition, our original code could be rewritten as</p>
+<pre><code><span class="hljs-keyword">var</span> sq1 = Crafty.e(<span class="hljs-string">"Square"</span>)
+    .place(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>)
+    .color(<span class="hljs-string">"red"</span>);
+
+<span class="hljs-keyword">var</span> sq2 = Crafty.e(<span class="hljs-string">"Square"</span>)
+    .place(<span class="hljs-number">150</span>, <span class="hljs-number">100</span>)
+    .color(<span class="hljs-string">"green"</span>);</code></pre>
+<p>We&#39;ve taken everything that the two entities had in common, and put it in the <code>init</code> function of our component.  This is a very common way to reuse code between entities.  In some ways it&#39;s a bit like &quot;Square&quot; inherits the methods of the other components; by adding &quot;Square&quot; to an entity, we automatically get all the methods of &quot;Color&quot;.</p>
+<p>Keep in mind that the method chaining technique (calling <code>e.place().color()</code>) is only possible because we explicitly return <code>this</code> from our custom method.  Forgetting to do so can be a common source of errors, so keep that in mind if you get a hard-to-pin-down &quot;method undefined&quot; message.</p>
+<h2 id="the-nitty-gritty">The nitty gritty</h2>
+<p>Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won&#39;t be further modified.)</p>
+<ul>
+<li>First a flag indicating the existence of the component is set</li>
+<li>Then all properties are copied over from the component&#39;s object.  If any already exist, they will be overwritten.</li>
+<li>If a property is an object or array, it is copied by reference.</li>
+<li>Finally, the init function of the component object is called.</li>
+</ul>
+<h3 id="the-shared-object-trap">The shared object trap</h3>
+<p>As mentioned above, objects and arrays are copied by reference.  This can cause unexpected behavior if you&#39;re not careful:</p>
+<pre><code>Crafty.c(<span class="hljs-string">"MyComponent"</span>, {
+    sharedObject: {a:<span class="hljs-number">1</span>, b:<span class="hljs-number">2</span>}
+});
+<span class="hljs-keyword">var</span> e1 = Crafty.e(<span class="hljs-string">"MyComponent"</span>);
+<span class="hljs-keyword">var</span> e2 = Crafty.e(<span class="hljs-string">"MyComponent"</span>);
+e1.sharedObject.a = <span class="hljs-number">5</span>;
+<span class="hljs-built_in">console</span>.log(e2.sharedObject.a); <span class="hljs-comment">// Logs 5!</span></code></pre>
+<p>If you want a property to be an object, but <em>don&#39;t</em> want it shared between entities, the solution is to create a new object inside the init method:</p>
+<pre><code>Crafty.c(<span class="hljs-string">"MyComponent"</span>, {
+    init: <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">this</span>.myObject = {a:<span class="hljs-number">1</span>, b:<span class="hljs-number">2</span>};
+    }
+});
+<span class="hljs-keyword">var</span> e1 = Crafty.e(<span class="hljs-string">"MyComponent"</span>);
+<span class="hljs-keyword">var</span> e2 = Crafty.e(<span class="hljs-string">"MyComponent"</span>);
+e1.myObject.a = <span class="hljs-number">5</span>;
+<span class="hljs-built_in">console</span>.log(e2.myObject.a); <span class="hljs-comment">// Logs the original value of 1</span></code></pre>
+
+	</div>
+</div>
+			
+		</div>
+	</div>
+	<div class="clearer"></div>
+	<div id="footer">
+		<div id="contact">
+			<a href="https://groups.google.com/forum/#!forum/craftyjs">
+				<img src="/images/google.png" />
+				google groups</a>
+			<a href="mailto:starwed@gmail.com">
+				<img src="/images/email.png" />
+				starwed@gmail.com</a>
+			<a href="https://github.com/craftyjs/Crafty">
+				<img src="/images/github.png" />
+				github</a>
+		</div>
+		<ul>
+			<li><a href="/">Home</a></li>
+				<li><a href="/getting-started/">Getting started</a></li>
+				<li><a href="/documentation/">Documentation</a></li>
+				<li><a href="/api/">API</a></li>
+				<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
+				<li><a href="/components/">Modules</a></li>
+				<li class="emph"><a href="/#install">Download</a></li>
+		</ul>
+		<p>
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
+			license.
+		</p>
+	</div>
+</div>
+</body>
+</html>

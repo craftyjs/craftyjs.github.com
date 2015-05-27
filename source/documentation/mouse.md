@@ -3,7 +3,7 @@ title: Mouse
 layout: documentation
 ---
 
-If you want an entity to interact with mouse events, add the [Mouse](/api/Mouse.html) component.  It will then be passed the standard DOM-style mouse events: "MouseDown", "Click", etc.  (Note the capitilization.)
+If you want an entity to interact with mouse events, add the [Mouse](/api/Mouse.html) component.  It will then be passed the standard DOM-style mouse events: "MouseDown", "Click", etc.  (Note the capitalization.)
 
 - Entities in a DOM layer will directly use the native DOM events
 - Crafty implements picking in other layers using the entity's MBR

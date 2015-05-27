@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Crafty - </title>
+	<title>Crafty - Working with entities</title>
 	<link type="text/css" rel="stylesheet" href="/craftyjs-site.css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet' 	type='text/css'>
@@ -52,6 +52,157 @@
 	<div id="main">
 		<div id="content" class="container">
 			
+<div id="docs">
+	<div id='doc-nav'>
+		<ul id='doc-level-one'>
+			<li>
+				Topics
+				<ul>
+					<li>
+						<a href='/documentation/'>
+							Documentation
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/entities.html'>
+							Entities
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/events.html'>
+							Events
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/components.html'>
+							Components
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/2d.html'>
+							2D Graphics
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/text.html'>
+							Text
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/keyboard.html'>
+							Keyboard
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sound.html'>
+							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/scenes.html'>
+							Scenes
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/gameloop.html'>
+							Game Loop
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id='doc-content' class="markdown">
+		<span class="edit-on-github">
+		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/entities.md">Edit on Github</a>
+		</span>
+
+		<h2> Working with entities </h2>
+		<p>An entity is some <em>thing</em> in your game.  If that sounds vague, it&#39;s because practically anything can be an entity -- the player, the enemies, a projectile, a high score counter, or a menu item.</p>
+<p>Entities are made up of components, which you can think of as bundles of functionality.  Crafty provides several built-in components, and you can also define your own with <a href="/api/Crafty-c.html"><code>Crafty.c()</code></a>.</p>
+<h2 id="creating-entities">Creating entities</h2>
+<p>You create an entity with <a href="/api/Craft-e.html"><code>Crafty.e()</code></a>.  In most cases you&#39;ll pass in a list of the components you want to start with:</p>
+<pre><code><span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">"2D, Canvas, Color"</span>);</code></pre>
+<p>Typically you&#39;ll need to write some more code to actually <em>do</em> something with the entity, but the above is all you need to create it.  In fact, you don&#39;t even need to assign the entity to a variable -- just calling <code>Crafty.e</code> is enough, and we&#39;ll learn later how to manipulate entities without a direct reference.</p>
+<h2 id="core-properties-and-methods">Core properties and methods</h2>
+<p>There are certain properties and methods that every entity shares, even if no components have been added.  You&#39;ll find these documented under <a href="/api/Crafty Core.html">Crafty Core</a>.</p>
+<h3 id="component-methods">Component methods</h3>
+<p>You can <a href="api/Crafty Core.html#-addComponent">add</a> and <a href="http://craftyjs.com/api/Crafty%20Core.html#-removeComponent">remove</a> components to an entity after it has been created.  So instead of our previous code, we could have written:</p>
+<pre><code><span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">"2D, Canvas"</span>);
+square.addComponent(<span class="hljs-string">"Color"</span>);</code></pre>
+<p>If we no longer wanted our component to appear as a colored square, we could remove that component later:</p>
+<pre><code>square.removeComponent(<span class="hljs-string">"Color"</span>, <span class="hljs-literal">false</span>)</code></pre>
+<p>We pass in <code>false</code> to <code>removeComponent()</code> because we want to actually remove all properties and methods associated with the component.</p>
+<p>To learn whether an entity has a particular component, you can use the <code>has()</code> method.  For instance, perhaps we want to check if an entity might explode:</p>
+<pre><code><span class="hljs-keyword">if</span> (e.has(<span class="hljs-string">"Explode"</span>))
+    e.explode();</code></pre>
+<h3 id="setting-properties">Setting properties</h3>
+<p>A component such as <a href="/api/api.html">2D</a> might interact with certain properties of an entity.  You can set them directly, or use <code>attr</code> as a shorthand for setting several at once.  So this:</p>
+<pre><code>square.x = 5;
+square.y = 10;</code></pre>
+<p>is equivalent to</p>
+<pre><code>square.attr({x:5, y:10})</code></pre>
+<h3 id="events">Events</h3>
+<p>Crafty uses both global and local events for communication amongst entities and components.  To create an event listener, you can use the <code>.bind()</code> method.  Let&#39;s make our previous square switch colors in response to an event.</p>
+<pre><code><span class="hljs-comment">// Bind a function to the event</span>
+square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(eventData)</span></span>{
+        <span class="hljs-comment">// `this` refers to the entity</span>
+        <span class="hljs-keyword">this</span>.color(eventData.color);
+    })
+<span class="hljs-comment">// Trigger that event directly on the entity</span>
+square.trigger(<span class="hljs-string">"ChangeColor"</span>, {color:<span class="hljs-string">"blue"</span>});</code></pre>
+<p>In the above code, we directly trigger the effect on the entity.  You can also trigger an effect globally, which means <em>all</em> entities will receive it.  Events are often used for communication between components -- you can find information about such events in the component&#39;s documentation.</p>
+<p>If a function should only be triggered once, you can bind with the <code>one()</code> method instead of <code>bind()</code>.  To remove a bound event, use <code>unbind()</code>.</p>
+<p>See the section on <a href="/documentation/events.html">events</a> for more discussion of the event system.</p>
+<h3 id="destruction">Destruction</h3>
+<p>Calling the <code>destroy()</code> method of an entity will destroy it.</p>
+<h2 id="selecting-entities">Selecting entities</h2>
+<p>When an entity is created, it&#39;s given a unique ID.  To find this id, you can call the <code>getId()</code> method.</p>
+<p>If you know the id of an entity, you can get a reference to it like this:</p>
+<pre><code><span class="hljs-keyword">var</span> secondEntity = Crafty(<span class="hljs-number">2</span>);</code></pre>
+<p><a href="/api/Crafty.html"><code>Crafty</code></a> is both an object and a function.  This might be familiar to you from working with jQuery.  And as in jQuery, you can select multiple entities at once, typically based on what components they have:</p>
+<pre><code><span class="hljs-comment">// Select all entities with the 2D components</span>
+Crafty(<span class="hljs-string">"2D"</span>);
+<span class="hljs-comment">// select all entities with both 2D and DOM</span>
+Crafty(<span class="hljs-string">"2D DOM"</span>);
+<span class="hljs-comment">// select entities with either DOM or Canvas</span>
+Crafty(<span class="hljs-string">"DOM, Canvas"</span>);
+<span class="hljs-comment">// Select all entities</span>
+Crafty(<span class="hljs-string">"*"</span>);</code></pre>
+<p>Once you have a selection, you can call event-related methods directly:</p>
+<pre><code><span class="hljs-comment">// Bind a function to *every* entity with the Keyboard component</span>
+Crafty(<span class="hljs-string">"Keyboard"</span>).bind(<span class="hljs-string">"KeyDown"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-comment">// Do something on keydown</span>
+});
+
+<span class="hljs-comment">// Explode all the things!</span>
+Crafty(<span class="hljs-string">"*"</span>).trigger(<span class="hljs-string">"Explode"</span>);</code></pre>
+<p>You can run a function in the context of every entity:</p>
+<pre><code><span class="hljs-comment">// Move every 2D entity 5 pixels to the right</span>
+Crafty(<span class="hljs-string">"2D"</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">this</span>.x += <span class="hljs-number">5</span>;
+});</code></pre>
+<p>If you need to know how many entities are in the selection, you can check the <code>length</code> property.</p>
+<p>You can use <code>get()</code> to either obtain an array containing every entity in the selection, or the entity at a particular index:</p>
+<pre><code><span class="hljs-comment">// Get the first Canvas entity</span>
+<span class="hljs-keyword">var</span> first_entity = Crafty(<span class="hljs-string">"Canvas"</span>).get(<span class="hljs-number">0</span>);
+<span class="hljs-comment">// Get an array of all 2D entities</span>
+<span class="hljs-keyword">var</span> array_of_entities = Crafty(<span class="hljs-string">"2D"</span>).get();
+<span class="hljs-comment">// Convert to an array of ids, rather than entities</span>
+<span class="hljs-keyword">var</span> array_of_ids = Crafty(<span class="hljs-string">"2D"</span>).toArray();</code></pre>
+
+	</div>
+</div>
 			
 		</div>
 	</div>
@@ -74,8 +225,8 @@
 				<li><a href="/documentation/">Documentation</a></li>
 				<li><a href="/api/">API</a></li>
 				<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
-				<li><a href="/modules/">Modules</a></li>
-				<li class="emph"><a href="/download/">Download</a></li>
+				<li><a href="/components/">Modules</a></li>
+				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
 			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Crafty - The Event System</title>
+	<link type="text/css" rel="stylesheet" href="/craftyjs-site.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet' 	type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/github.css"/>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23935213-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+<body>
+	<div id = "header-background"> </div>
+	<div id = "page-frame">
+	<div id="header">
+		<nav class="navbar">
+  			<div class="container-fluid">
+  				<div class="navbar-header">
+  					<a class="navbar-brand" href="/"> <img class="logo" src="/images/text-logo.png" /> </a>
+  					
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/getting-started/">Getting started</a></li>
+						<li><a href="/documentation/">Documentation</a></li>
+						<li><a href="/api/">API</a></li>
+						<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
+						<li><a href="/components/">Components</a></li>
+						<li class="emph"><a href="/#install">Download</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<div id="main">
+		<div id="content" class="container">
+			
+<div id="docs">
+	<div id='doc-nav'>
+		<ul id='doc-level-one'>
+			<li>
+				Topics
+				<ul>
+					<li>
+						<a href='/documentation/'>
+							Documentation
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/entities.html'>
+							Entities
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/events.html'>
+							Events
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/components.html'>
+							Components
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/2d.html'>
+							2D Graphics
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/text.html'>
+							Text
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/keyboard.html'>
+							Keyboard
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/mouse.html'>
+							Mouse
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sound.html'>
+							Sound
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/sprites.html'>
+							Sprites
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/scenes.html'>
+							Scenes
+						</a>
+					</li>
+					<li>
+						<a href='/documentation/gameloop.html'>
+							Game Loop
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id='doc-content' class="markdown">
+		<span class="edit-on-github">
+		  <a href="https://github.com/craftyjs/craftyjs.github.com/edit/master/source/documentation/events.md">Edit on Github</a>
+		</span>
+
+		<h2> The Event System </h2>
+		<p>Crafty uses events for communication.</p>
+<p>The basic idea is to bind functions to named events.  When that event is triggered, the function will then be called directly.  Here&#39;s a very simple example:</p>
+<pre><code><span class="hljs-comment">// Create a red square</span>
+<span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">"2D, Canvas, Color"</span>)
+        .attr({x:<span class="hljs-number">10</span>,y:<span class="hljs-number">10</span>, w:<span class="hljs-number">30</span>, h:<span class="hljs-number">30</span>})
+        .color(<span class="hljs-string">"blue"</span>);
+
+<span class="hljs-comment">// When a "Blush" event is triggered, turn pink</span>
+square.bind(<span class="hljs-string">"Blush"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// the function will be called in the context of the entity</span>
+    <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"pink"</span>)
+});
+
+<span class="hljs-comment">// Trigger the event, causing the square to turn pink</span>
+square.trigger(<span class="hljs-string">"Blush"</span>);</code></pre>
+<p>Above, we bind to an event on an entity and then immediately trigger it.  More typically, the event would be triggered elsewhere in the game logic.  You can bind multiple functions to the same event, but you generally shouldn&#39;t rely on them executing in a particular order.</p>
+<p>Every entity automatically gets several methods which relate to events; these are documented under <a href="/api/Crafty Core.html">Crafty Core</a>.  We&#39;ll explore aspects of this in more detail below.    </p>
+<h2 id="passing-data">Passing data</h2>
+<p>Many events pass data to the bound function.  Let&#39;s make the above code a bit more generic by defining a &quot;ChangeColor&quot; event:</p>
+<pre><code>square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(color)</span> </span>{
+    <span class="hljs-keyword">this</span>.color(color);
+});
+
+square.trigger(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-string">"pink"</span>); <span class="hljs-comment">// Turn pink</span></code></pre>
+<p>When you trigger the event, a single paramter can be passed as the second argument.  This isn&#39;t too limiting, because you can always pass an object -- for instance, if we wanted <code>&quot;ChangeColor&quot;</code> to use rgb values instead of a single name:</p>
+<pre><code><span class="hljs-comment">// Assume that color is an object</span>
+square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(color)</span> </span>{
+    <span class="hljs-keyword">this</span>.color(color.r, color,g, color.b);
+})
+
+<span class="hljs-comment">// Specify the RGB values corresponding to pink</span>
+square.trigger(<span class="hljs-string">"ChangeColor"</span>, {r:<span class="hljs-number">255</span>, g:<span class="hljs-number">192</span>, b:<span class="hljs-number">203</span>});</code></pre>
+<h2 id="unbinding-events">Unbinding events</h2>
+<p>To unbind an event, you need a reference to the bound function, so you typically can&#39;t use an anonymous one.  Modifying our initial example:</p>
+<pre><code><span class="hljs-keyword">var</span> turnPink = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{ 
+    <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"pink"</span>);
+}
+
+<span class="hljs-comment">// Bind the function to an event</span>
+square.bind(<span class="hljs-string">"Blush"</span>, turnPink);
+
+<span class="hljs-comment">// Immediately unbind it!</span>
+square.unbind(<span class="hljs-string">"Blush"</span>, turnPink);</code></pre>
+<p>Very commonly, you might want a function to only be triggered once.  In that case, you can bind it with <code>.one()</code> instead of <code>.bind()</code>:</p>
+<pre><code><span class="hljs-comment">// Use the .one() method instead of .bind()</span>
+square.one(<span class="hljs-string">"JumpRight"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// Move 10 px to the right</span>
+    <span class="hljs-keyword">this</span>.x += <span class="hljs-number">100</span>;
+});
+
+<span class="hljs-comment">// If we trigger the event twice, the bound function will be called only the first time</span>
+square.trigger(<span class="hljs-string">"JumpRight"</span>);
+square.trigger(<span class="hljs-string">"JumpRight"</span>);</code></pre>
+<h2 id="working-with-built-in-events">Working with built-in events</h2>
+<p>Many of Crafty&#39;s built-in components will trigger events, and the more useful ones will be documented in the API reference.  For instance, the <a href="/api/2D.html"><code>2D</code> component</a> tells us that it will trigger a &quot;Move&quot; event any time the object&#39;s position changes, and that the event will pass along an object containing the entity&#39;s old position.</p>
+<pre><code><span class="hljs-comment">// Bind a function to the "Move" event</span>
+<span class="hljs-comment">// It will log the initial and new x position anytime the entity moves</span>
+square.bind(<span class="hljs-string">"Move"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(oldPosition)</span> </span>{
+    <span class="hljs-built_in">console</span>.log(oldPosition._x, <span class="hljs-keyword">this</span>.x);
+});
+
+square.x = <span class="hljs-number">100</span>; <span class="hljs-comment">// Will print "10, 100"</span></code></pre>
+<p>As you explore Crafty&#39;s <a href="/api/">API</a>, you&#39;ll see such built-in events highlighted in green.</p>
+<h2 id="global-events">Global events</h2>
+<p>All the events we&#39;ve discussed so far have been local to one specific entity.  But events can be triggered globally as well -- they will then trigger on <em>every</em> entity.</p>
+<pre><code><span class="hljs-comment">// Define two entities at x=5 and x=10</span>
+<span class="hljs-keyword">var</span> varrick = Crafty.e(<span class="hljs-string">"2D"</span>).attr({x:<span class="hljs-number">5</span>});
+<span class="hljs-keyword">var</span> xhuli = Crafty.e(<span class="hljs-string">"2D"</span>).attr({x:<span class="hljs-number">10</span>});
+
+<span class="hljs-comment">// Bind to an event called "Thing"</span>
+varrick.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">this</span>.x += <span class="hljs-number">20</span>; });
+xhuli.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">this</span>.x += <span class="hljs-number">10</span>; });
+
+<span class="hljs-comment">// Do the thing!</span>
+<span class="hljs-comment">// varrick and xhuli will *both* move to the right</span>
+Crafty.trigger(<span class="hljs-string">"Thing"</span>);
+
+<span class="hljs-comment">// You can still trigger the same events directly on an entity</span>
+xhuli.trigger(<span class="hljs-string">"Thing"</span>);</code></pre>
+<p>You can also bind to events directly on the Crafty object:</p>
+<pre><code>Crafty.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Crafty does the thing."</span>)
+});</code></pre>
+<p>In such a globally bound function, the context will be the global Crafty object (<code>this === Crafty</code>).</p>
+<p><code>Crafty.unbind()</code> and <code>Crafty.one()</code> also exist, and act exactly as you&#39;d expect!</p>
+<p>One particularly important built-in global event is &quot;EnterFrame&quot;.  You can read more about it in the section on Crafty&#39;s <a href="/documentation/gameloop.html">game loop</a></p>
+
+	</div>
+</div>
+			
+		</div>
+	</div>
+	<div class="clearer"></div>
+	<div id="footer">
+		<div id="contact">
+			<a href="https://groups.google.com/forum/#!forum/craftyjs">
+				<img src="/images/google.png" />
+				google groups</a>
+			<a href="mailto:starwed@gmail.com">
+				<img src="/images/email.png" />
+				starwed@gmail.com</a>
+			<a href="https://github.com/craftyjs/Crafty">
+				<img src="/images/github.png" />
+				github</a>
+		</div>
+		<ul>
+			<li><a href="/">Home</a></li>
+				<li><a href="/getting-started/">Getting started</a></li>
+				<li><a href="/documentation/">Documentation</a></li>
+				<li><a href="/api/">API</a></li>
+				<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
+				<li><a href="/components/">Modules</a></li>
+				<li class="emph"><a href="/#install">Download</a></li>
+		</ul>
+		<p>
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
+			license.
+		</p>
+	</div>
+</div>
+</body>
+</html>

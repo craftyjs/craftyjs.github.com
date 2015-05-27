@@ -13,7 +13,7 @@ In this case, it depicts multiple frames of a single animation, but it's common 
 
 ## Loading sprite sheets
 
-To prepare the sheets for use, you need to not only load them, but specify the locations of individual spirtes within them.  This can be done in one step with [`Crafty.load`](/api/Crafty-loader.html).
+To prepare the sheets for use, you need to not only load them, but specify the locations of individual sprites within them.  This can be done in one step with [`Crafty.load`](/api/Crafty-loader.html).
 
 ```
 var assetsObj = {
