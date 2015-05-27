@@ -68,9 +68,10 @@
 		</span>
 
 		<h2> Getting started - Building your first Game </h2>
-		<p>Darren Torpey from buildnewgames.com have written this amazing guide to Crafty.js which he explains in details how you can get started with Crafty.js.</p>
-<p><a href="http://buildnewgames.com/introduction-to-crafty/"><a href="http://buildnewgames.com/introduction-to-crafty/">http://buildnewgames.com/introduction-to-crafty/</a></a></p>
-<p>It is easy to setup Crafty.js, just put it in a script tag and you are running:</p>
+		<p>This is a very quick guide to using Crafty.</p>
+<p>For a more thorough but somewhat out-dated guide, check out <a href="http://buildnewgames.com/introduction-to-crafty/">Darren Torpey&#39;s tutorial</a>.  (As of 0.6.3, in addition to the changes Darren mentions at the end, you&#39;ll need to change the signature of <a href="/api/Crafty-loader.html"><code>Crafty.load</code></a>)</p>
+<h2 id="setup">Setup</h2>
+<p>First let&#39;s setup our HTML file.  We&#39;re trying to get you up and running quickly, so we&#39;ll just directly link to the latest release version.  (Of course you can also <a href="craftyjs.com/#install">install it</a> locally!)</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
@@ -81,11 +82,14 @@
     </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
-<p>A Crafty.js game is build up by entities, that would be eg. your hero and the enemies. </p>
-<p>This is the simplest entity you can create which shows up on the game.</p>
+<p>A Crafty.js game is build up of entities -- the player character, enemies, and obstacles are all represented this way.</p>
+<p>Lets start by creating a simple colored square:</p>
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color'</span>).attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>}).color(<span class="hljs-string">'#F00'</span>);</code></pre>
-<p>As you can see a string is passed to the e() function, these are the Crafty.js Components that entity would have avaiable. You can think of it a building blocks. Here we have said that our entity has the building block Color, but also the 2D components, which makes it possible to place it in the game.</p>
-<p>You will learn more about Components later on.</p>
+<p>There are a few things going on here:</p>
+<ul>
+<li>We first call <a href="/api/Crafty-e.html"><code>Crafty.e</code></a> with a list of components to add to the entity.  Components provide basic building blocks of functionality. In this case, we add <a href="/api/2D.html">2D</a>, <a href="/api/DOM.html">DOM</a>, and <a href="/api/Color.html">Color</a>.  You can learn more about those later!</li>
+<li>We then call two methods of our newly created entity: <code>attr()</code> and <code>color()</code>.  The <code>attr</code> method is one of <a href="/api/Crafty-Core.html">many</a> that all entities share, but <code>color()</code> is (unsuprisingly) provided by the &quot;Color&quot; component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.</li>
+</ul>
 <p>The full code would look something like this now:</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
@@ -102,21 +106,22 @@
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/pShLx/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Now that we got something to show up on the screen, lets try making it move by using the keyboard arrows.</p>
-<p>That can be done with the &quot;Fourway&quot; component.</p>
+<p>That can be done with the <a href="/api/Fourway.html">&quot;Fourway&quot;</a> component.</p>
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color, Fourway'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>})
   .color(<span class="hljs-string">'#F00'</span>)
   .fourway(<span class="hljs-number">4</span>);</code></pre>
-<p>Notice how we added the component to the string after Color. When we added the component some functions got accessible like the &quot;.fourway&quot; function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.</p>
+<p>Notice how we added the name of this component to the string after Color. This adds new methods like the &quot;.fourway&quot; function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/9jCr7/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Lets try to make it look like a platform game, where the entity is impacted by gravity. That can be done with the &quot;Gravity&quot; component. </p>
-<p>But if we added the Gravity component now, the entity would just fall because there is nothing to stop it from falling. Therefore we are going to add a &quot;Floor&quot;. Notice how we added the name Floor as a Component. That is because it is used to &quot;group&quot; entities so we can later select them.</p>
-<p>The Gravity component should only be added to entities which should be falling, so we do not need to add it to the &quot;Floor&quot; entity.</p>
+<p>But if we added the Gravity component now, the entity would just fall because there is nothing to stop it from falling.  So lets add a long, thin green box which will provide a surface to fall upon:</p>
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'Floor, 2D, Canvas, Color'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">250</span>, w: <span class="hljs-number">250</span>, h: <span class="hljs-number">10</span>})
   .color(<span class="hljs-string">'green'</span>);</code></pre>
-<p>Then we added the red box and can then add the Gravity component to that entity.</p>
+<p>Notice how we added a new component called &quot;Floor&quot; to this entity.  You won&#39;t find this component in the api docs, and it doesn&#39;t add any new methods.  It&#39;s a name we just made up, and it serves to tag this entity.</p>
+<p>The Gravity component should only be added to entities which should be falling, so we do not need to add it to our new entity.</p>
+<p>Now we&#39;ll add the Gravity component to our previous red box:</p>
 <pre><code class="language-js">Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Fourway, Gravity'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">50</span>, h: <span class="hljs-number">50</span>})
   .color(<span class="hljs-string">'#F00'</span>)
@@ -125,6 +130,7 @@
 <p>You should notice that the &quot;.gravity()&quot; function has been called with the argument &quot;Floor&quot;. That means that all entites which have the Floor component prevent the entity from falling further.</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/2nBLb/2/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
+<p>Well, that&#39;s not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our <a href="/documentation">overview</a> of common topics, and detailed <a href="/api/">api documentation</a>. </p>
 
 	</div>
 </div>
