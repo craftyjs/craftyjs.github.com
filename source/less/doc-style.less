@@ -6,6 +6,14 @@
 @method-light: lighten(@method, 10%);
 @example: lighten(color("black"), 50%);
 @example-light: lighten(@example, 20%);
+@warning: color("orange");
+@warning-light: lighten(@warning, 30%);
+
+/* Horizontal space between blocks*/
+.block-spacing {
+  margin-top: 1em;
+}
+
 
 
 /* Blocks offset by a large colored margin */
@@ -21,7 +29,7 @@
   color: grey;
   font-size: 10px;
   .code-font;
-  margin-top: -10px;
+  margin-top: -1em;
 }
 
 .crafty-method, .triggered-events {
@@ -54,6 +62,28 @@ h1, h2, h3 {
   padding-left: 1em;
   font-weight: bold;
 }
+
+/* Warnings */
+
+.warning {
+  .big-indent(@warning);
+  background-color: @warning-light;
+  padding-left: 1em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.warning-prefix {
+	font-variant: small-caps;
+  font-weight: bold;
+}
+
+/* Notes */
+
+.note {
+	.block-spacing;
+}
+
 
 /* Event blocks */
 
@@ -111,6 +141,20 @@ code.signature {
   .code-font;
 }
 
+.signature .sig-noun {
+	font-weight: bold;
+}
+
+.signature .sig-qualifier {
+	font-size: normal;
+	font-weight: normal;
+	color: hsl(210, 40%, 35%);
+}
+
+.signature .sig-seperator {
+	color: black;
+}
+
 .parameter dt {
   font-weight: bold;
 }
@@ -142,6 +186,10 @@ code {
 
 .markdown {
   display: block;
+}
+
+.doclet > .markdown {
+  .block-spacing;
 }
 
 
