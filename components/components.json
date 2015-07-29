@@ -10,6 +10,7 @@
 , {"name":"Debug Toolbar", "link": "https://github.com/ahilles107/CraftyDebug"}
 , {"name":"FPS Counter", "link": "https://github.com/deengames/a-day-and-a-night/blob/gh-pages/src/components/fps.js"}
 , {"name":"RealDelay", "link": "https://github.com/hugeen/Crafty-RealDelay-component"}
+, {"name":"Tweener", "link": "https://github.com/talitapagani/craftytweener"}
 , {"name":"ViewportControl", "link": "https://github.com/berdon/Crafty-bmViewport"}
 , {"name":"MouseFace", "link": "https://github.com/petarov/CraftyMouseFace"}
 , {"name":"ClickFocus", "link": "https://github.com/pengyu/Crafty-ClickFocus"}
@@ -22,7 +23,6 @@
 , {"name":"ProgressBar", "link": "https://github.com/mucaho/crafty-component-progressbar"}
 , {"name":"BoxOverlays", "link": "https://github.com/towbi/CraftyEntityBoxOverlays"}
 , {"name":"HitBox", "link": "https://github.com/BlackScorp/crafty_hitbox"}
-, {"name":"Tweener", "link": "https://github.com/talitapagani/craftytweener"}
 , {"name":"3D Display", "link": "https://github.com/DocLabyrinth/Crafty-3D-Component"}
 , {"name":"CraftyBox2D", "link": "https://github.com/shogoki-vnz/CraftyBox2D"}
 , {"name":"Craftybox", "link": "https://github.com/sntran/craftybox"}
