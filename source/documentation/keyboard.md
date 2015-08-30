@@ -43,7 +43,7 @@ You might well need more control than the above components provide.  To respond 
 
 ```
 Crafty.init();
-Crafty.e('2D, Canvas, Keyboard')
+Crafty.e('2D, Canvas, Color, Keyboard')
   .attr({x: 10, y: 10, h: 30, w: 30})
   .color('red')
   .bind("KeyDown", function() {
@@ -54,7 +54,7 @@ Crafty.e('2D, Canvas, Keyboard')
 The various [keyboard events](/api/KeyboardEvent.html) will be passed information about the original DOM event, and Crafty provides a [dictionary of key codes](/api/Crafty-keys.html) for convenience.  In the following example, we create a square that can be moved by the arrow keys:
 
 ```
-Crafty.e("2D, Canvas, Color")
+Crafty.e("2D, Canvas, Color, Keyboard")
   .attr({x: 10, y: 10, w: 30, h: 30})
   .color("red")
   .bind('KeyDown', function(e) {
