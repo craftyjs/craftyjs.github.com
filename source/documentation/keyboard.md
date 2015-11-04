@@ -3,7 +3,7 @@ title: Keyboard
 layout: documentation
 ---
 
-To have the keyboard control player movement, Crafty provides three simple componenets that will get you started very quickly:
+To have the keyboard control player movement, Crafty provides three simple components that will get you started very quickly:
 
 - [Twoway](/api/Twoway.html)
 - [Fourway](/api/Fourway.html)
