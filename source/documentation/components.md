@@ -59,6 +59,44 @@ We've taken everything that the two entities had in common, and put it in the `i
 
 Keep in mind that the method chaining technique (calling `e.place().color()`) is only possible because we explicitly return `this` from our custom method.  Forgetting to do so can be a common source of errors, so keep that in mind if you get a hard-to-pin-down "method undefined" message.
 
+## Shorthand for adding components
+
+To quickly declare a list of additional components that need to be added to the entity before a custom component initializes, you can use the `required` field:
+
+```
+Crafty.c("Square", {
+	// These components will be added to any entity with the "Square" component before it is initialized
+	required: "2D, Canvas, Color"
+});
+```
+
+## Shorthand for binding events
+
+It's very common to bind events when a component initializes, unbinding those same events when the component is removed.  To simplify this, you can declare event handlers directly in the component object:
+
+```
+Crafty.c("Square", {
+	required: "2D, Canvas, Color",
+
+	// These handlers will be bound upon init, and unbound when the component is removed
+	events: {
+		// bind the given function to the blush event
+		"Blush": function() {
+			this.color("pink");
+		},
+
+		// Bind the named function to the "Blanch" event.
+		"Blanch": "turnWhite"
+	},
+
+	turnWhite: function(){
+		this.color("white");
+	}
+});
+```
+
+You can either use a function object, or the name of an existing function on the component.  (The latter style can be useful when you need to refer to the method in contexts other than a single event.)
+
 ## The nitty gritty
 
 Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won't be further modified.)
