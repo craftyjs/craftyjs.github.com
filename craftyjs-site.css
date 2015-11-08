@@ -6597,13 +6597,17 @@ a img {
   padding-left: 1em;
 }
 /*Documentation styles*/
+/* Horizontal space between blocks*/
+.block-spacing {
+  margin-top: 1em;
+}
 /* Blocks offset by a large colored margin */
 /* Links to the source code */
 .doc-source {
   color: grey;
   font-size: 10px;
   font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
-  margin-top: -10px;
+  margin-top: -1em;
 }
 .crafty-method,
 .triggered-events {
@@ -6631,6 +6635,24 @@ h3 {
 .usage-header {
   padding-left: 1em;
   font-weight: bold;
+}
+/* Warnings */
+.warning {
+  border-left: 20px solid #ffa500 !important;
+  /*box-shadow: 3px 2px 3px #555555;*/
+  margin-top: 1em;
+  background-color: #ffdb99;
+  padding-left: 1em;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.warning-prefix {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+/* Notes */
+.note {
+  margin-top: 1em;
 }
 /* Event blocks */
 .trigger dt {
@@ -6680,6 +6702,17 @@ code.signature {
   display: block;
   font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 }
+.signature .sig-noun {
+  font-weight: bold;
+}
+.signature .sig-qualifier {
+  font-size: normal;
+  font-weight: normal;
+  color: #36597d;
+}
+.signature .sig-seperator {
+  color: black;
+}
 .parameter dt {
   font-weight: bold;
 }
@@ -6704,6 +6737,9 @@ code {
 }
 .markdown {
   display: block;
+}
+.doclet > .markdown {
+  margin-top: 1em;
 }
 .markdown pre,
 #quickstart pre,

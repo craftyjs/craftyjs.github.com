@@ -102,16 +102,16 @@ Crafty.sprite(<span class="hljs-number">24</span>,<span class="hljs-number">32</
               });
 
 Crafty.c(<span class="hljs-string">"Char"</span>,{
-    init:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    init:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
         <span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D,DOM"</span>).attr({w:<span class="hljs-number">24</span>,h:<span class="hljs-number">32</span>});
     }
 });
 
 Crafty.c(<span class="hljs-string">"SpriteText"</span>,{
-    init:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+    init:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
         <span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D,DOM"</span>);
     },
-    text:<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(text)</span></span>{
+    text:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">text</span>)</span>{
         <span class="hljs-keyword">var</span> c;
         <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i&lt;text.length;i++){
             c = Crafty.e(<span class="hljs-string">"Char"</span>,text.charAt(i).toUpperCase());

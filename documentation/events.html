@@ -136,7 +136,7 @@
         .color(<span class="hljs-string">"blue"</span>);
 
 <span class="hljs-comment">// When a "Blush" event is triggered, turn pink</span>
-square.bind(<span class="hljs-string">"Blush"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+square.bind(<span class="hljs-string">"Blush"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// the function will be called in the context of the entity</span>
     <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"pink"</span>)
 });
@@ -147,14 +147,14 @@ square.trigger(<span class="hljs-string">"Blush"</span>);</code></pre>
 <p>Every entity automatically gets several methods which relate to events; these are documented under <a href="/api/Crafty Core.html">Crafty Core</a>.  We&#39;ll explore aspects of this in more detail below.    </p>
 <h2 id="passing-data">Passing data</h2>
 <p>Many events pass data to the bound function.  Let&#39;s make the above code a bit more generic by defining a &quot;ChangeColor&quot; event:</p>
-<pre><code>square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(color)</span> </span>{
+<pre><code>square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">color</span>) </span>{
     <span class="hljs-keyword">this</span>.color(color);
 });
 
 square.trigger(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-string">"pink"</span>); <span class="hljs-comment">// Turn pink</span></code></pre>
 <p>When you trigger the event, a single paramter can be passed as the second argument.  This isn&#39;t too limiting, because you can always pass an object -- for instance, if we wanted <code>&quot;ChangeColor&quot;</code> to use rgb values instead of a single name:</p>
 <pre><code><span class="hljs-comment">// Assume that color is an object</span>
-square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(color)</span> </span>{
+square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">color</span>) </span>{
     <span class="hljs-keyword">this</span>.color(color.r, color,g, color.b);
 })
 
@@ -162,7 +162,7 @@ square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-fu
 square.trigger(<span class="hljs-string">"ChangeColor"</span>, {r:<span class="hljs-number">255</span>, g:<span class="hljs-number">192</span>, b:<span class="hljs-number">203</span>});</code></pre>
 <h2 id="unbinding-events">Unbinding events</h2>
 <p>To unbind an event, you need a reference to the bound function, so you typically can&#39;t use an anonymous one.  Modifying our initial example:</p>
-<pre><code><span class="hljs-keyword">var</span> turnPink = <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{ 
+<pre><code><span class="hljs-keyword">var</span> turnPink = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ 
     <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"pink"</span>);
 }
 
@@ -173,7 +173,7 @@ square.bind(<span class="hljs-string">"Blush"</span>, turnPink);
 square.unbind(<span class="hljs-string">"Blush"</span>, turnPink);</code></pre>
 <p>Very commonly, you might want a function to only be triggered once.  In that case, you can bind it with <code>.one()</code> instead of <code>.bind()</code>:</p>
 <pre><code><span class="hljs-comment">// Use the .one() method instead of .bind()</span>
-square.one(<span class="hljs-string">"JumpRight"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+square.one(<span class="hljs-string">"JumpRight"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-comment">// Move 10 px to the right</span>
     <span class="hljs-keyword">this</span>.x += <span class="hljs-number">100</span>;
 });
@@ -185,7 +185,7 @@ square.trigger(<span class="hljs-string">"JumpRight"</span>);</code></pre>
 <p>Many of Crafty&#39;s built-in components will trigger events, and the more useful ones will be documented in the API reference.  For instance, the <a href="/api/2D.html"><code>2D</code> component</a> tells us that it will trigger a &quot;Move&quot; event any time the object&#39;s position changes, and that the event will pass along an object containing the entity&#39;s old position.</p>
 <pre><code><span class="hljs-comment">// Bind a function to the "Move" event</span>
 <span class="hljs-comment">// It will log the initial and new x position anytime the entity moves</span>
-square.bind(<span class="hljs-string">"Move"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(oldPosition)</span> </span>{
+square.bind(<span class="hljs-string">"Move"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">oldPosition</span>) </span>{
     <span class="hljs-built_in">console</span>.log(oldPosition._x, <span class="hljs-keyword">this</span>.x);
 });
 
@@ -198,8 +198,8 @@ square.x = <span class="hljs-number">100</span>; <span class="hljs-comment">// W
 <span class="hljs-keyword">var</span> xhuli = Crafty.e(<span class="hljs-string">"2D"</span>).attr({x:<span class="hljs-number">10</span>});
 
 <span class="hljs-comment">// Bind to an event called "Thing"</span>
-varrick.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">this</span>.x += <span class="hljs-number">20</span>; });
-xhuli.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{ <span class="hljs-keyword">this</span>.x += <span class="hljs-number">10</span>; });
+varrick.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">this</span>.x += <span class="hljs-number">20</span>; });
+xhuli.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">this</span>.x += <span class="hljs-number">10</span>; });
 
 <span class="hljs-comment">// Do the thing!</span>
 <span class="hljs-comment">// varrick and xhuli will *both* move to the right</span>
@@ -208,7 +208,7 @@ Crafty.trigger(<span class="hljs-string">"Thing"</span>);
 <span class="hljs-comment">// You can still trigger the same events directly on an entity</span>
 xhuli.trigger(<span class="hljs-string">"Thing"</span>);</code></pre>
 <p>You can also bind to events directly on the Crafty object:</p>
-<pre><code>Crafty.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+<pre><code>Crafty.bind(<span class="hljs-string">"Thing"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Crafty does the thing."</span>)
 });</code></pre>
 <p>In such a globally bound function, the context will be the global Crafty object (<code>this === Crafty</code>).</p>

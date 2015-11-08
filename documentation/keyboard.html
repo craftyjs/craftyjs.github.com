@@ -128,7 +128,7 @@
 		</span>
 
 		<h2> Keyboard </h2>
-		<p>To have the keyboard control player movement, Crafty provides three simple componenets that will get you started very quickly:</p>
+		<p>To have the keyboard control player movement, Crafty provides three simple components that will get you started very quickly:</p>
 <ul>
 <li><a href="/api/Twoway.html">Twoway</a></li>
 <li><a href="/api/Fourway.html">Fourway</a></li>
@@ -153,17 +153,17 @@ Crafty.e(<span class="hljs-string">'2D, Canvas, Twoway, Color'</span>)
 <h2 id="the-keyboard-component">The Keyboard component</h2>
 <p>You might well need more control than the above components provide.  To respond to specific keyboard events, give an entity the <a href="/api/Keyboard.html">&quot;Keyboard&quot;</a> component.  In the example below, we create a red square that will turn blue when you press any key.</p>
 <pre><code>Crafty.init();
-Crafty.e(<span class="hljs-string">'2D, Canvas, Keyboard'</span>)
+Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Keyboard'</span>)
   .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, h: <span class="hljs-number">30</span>, w: <span class="hljs-number">30</span>})
   .color(<span class="hljs-string">'red'</span>)
-  .bind(<span class="hljs-string">"KeyDown"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+  .bind(<span class="hljs-string">"KeyDown"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"blue"</span>);
   })</code></pre>
 <p>The various <a href="/api/KeyboardEvent.html">keyboard events</a> will be passed information about the original DOM event, and Crafty provides a <a href="/api/Crafty-keys.html">dictionary of key codes</a> for convenience.  In the following example, we create a square that can be moved by the arrow keys:</p>
-<pre><code>Crafty.e(<span class="hljs-string">"2D, Canvas, Color"</span>)
+<pre><code>Crafty.e(<span class="hljs-string">"2D, Canvas, Color, Keyboard"</span>)
   .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, w: <span class="hljs-number">30</span>, h: <span class="hljs-number">30</span>})
   .color(<span class="hljs-string">"red"</span>)
-  .bind(<span class="hljs-string">'KeyDown'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span> </span>{
+  .bind(<span class="hljs-string">'KeyDown'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
     <span class="hljs-keyword">if</span>(e.key == Crafty.keys.LEFT_ARROW) {
       <span class="hljs-keyword">this</span>.x = <span class="hljs-keyword">this</span>.x - <span class="hljs-number">1</span>;
     } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (e.key == Crafty.keys.RIGHT_ARROW) {

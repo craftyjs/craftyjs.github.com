@@ -155,7 +155,7 @@ square.y = 10;</code></pre>
 <h3 id="events">Events</h3>
 <p>Crafty uses both global and local events for communication amongst entities and components.  To create an event listener, you can use the <code>.bind()</code> method.  Let&#39;s make our previous square switch colors in response to an event.</p>
 <pre><code><span class="hljs-comment">// Bind a function to the event</span>
-square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(eventData)</span></span>{
+square.bind(<span class="hljs-string">"ChangeColor"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">eventData</span>)</span>{
         <span class="hljs-comment">// `this` refers to the entity</span>
         <span class="hljs-keyword">this</span>.color(eventData.color);
     })
@@ -181,7 +181,7 @@ Crafty(<span class="hljs-string">"DOM, Canvas"</span>);
 Crafty(<span class="hljs-string">"*"</span>);</code></pre>
 <p>Once you have a selection, you can call event-related methods directly:</p>
 <pre><code><span class="hljs-comment">// Bind a function to *every* entity with the Keyboard component</span>
-Crafty(<span class="hljs-string">"Keyboard"</span>).bind(<span class="hljs-string">"KeyDown"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+Crafty(<span class="hljs-string">"Keyboard"</span>).bind(<span class="hljs-string">"KeyDown"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
     <span class="hljs-comment">// Do something on keydown</span>
 });
 
@@ -189,7 +189,7 @@ Crafty(<span class="hljs-string">"Keyboard"</span>).bind(<span class="hljs-strin
 Crafty(<span class="hljs-string">"*"</span>).trigger(<span class="hljs-string">"Explode"</span>);</code></pre>
 <p>You can run a function in the context of every entity:</p>
 <pre><code><span class="hljs-comment">// Move every 2D entity 5 pixels to the right</span>
-Crafty(<span class="hljs-string">"2D"</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+Crafty(<span class="hljs-string">"2D"</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">this</span>.x += <span class="hljs-number">5</span>;
 });</code></pre>
 <p>If you need to know how many entities are in the selection, you can check the <code>length</code> property.</p>

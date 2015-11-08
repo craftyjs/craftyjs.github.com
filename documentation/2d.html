@@ -144,7 +144,7 @@ square.attr({
 <li>Finally we use the <code>.attr()</code> function to set several properties of the entity, in this case its position and dimensions.  Like most functions, <code>attr()</code> returns the entity it was called on, so we can chain the <code>color()</code> method to set the color of the entity.</li>
 </ul>
 <p>Easy enough!  Now we have a red box showing up on the page, but how about setting it into motion?  For instance, we might want to set the box spinning; if you look at the documentation for <code>&quot;2D&quot;</code>, you&#39;ll see that it provides a <code>rotation</code> property, but how could we animate that?  Simple enough: we can bind to the <code>&quot;EnterFrame&quot;</code> event to change the rotation once per frame:</p>
-<pre><code>square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+<pre><code>square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
   <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
 });</code></pre>
 <p>Now we have bound to <code>&quot;EnterFrame&quot;</code> event, this will be triggered each frame, so the square will rotate.</p>
@@ -163,7 +163,7 @@ square.attr({
 
 square.origin(<span class="hljs-string">"center"</span>)
 
-square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span></span>{
+square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
   <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
 });</code></pre>
 <p>And here&#39;s the code in action! </p>
