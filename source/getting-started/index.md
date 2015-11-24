@@ -34,7 +34,7 @@ Crafty.e('2D, DOM, Color').attr({x: 0, y: 0, w: 100, h: 100}).color('#F00');
 There are a few things going on here:
 
 - We first call [`Crafty.e`](/api/Crafty-e.html) with a list of components to add to the entity.  Components provide basic building blocks of functionality. In this case, we add [2D](/api/2D.html), [DOM](/api/DOM.html), and [Color](/api/Color.html).  You can learn more about those later!
-- We then call two methods of our newly created entity: `attr()` and `color()`.  The `attr` method is one of [many](/api/Crafty-Core.html) that all entities share, but `color()` is (unsuprisingly) provided by the "Color" component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.
+- We then call two methods of our newly created entity: `attr()` and `color()`.  The `attr` method is one of [many](/api/Crafty%20Core.html) that all entities share, but `color()` is (unsuprisingly) provided by the "Color" component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.
 
 
 The full code would look something like this now:
