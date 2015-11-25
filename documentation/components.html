@@ -168,6 +168,33 @@
     .color(<span class="hljs-string">"green"</span>);</code></pre>
 <p>We&#39;ve taken everything that the two entities had in common, and put it in the <code>init</code> function of our component.  This is a very common way to reuse code between entities.  In some ways it&#39;s a bit like &quot;Square&quot; inherits the methods of the other components; by adding &quot;Square&quot; to an entity, we automatically get all the methods of &quot;Color&quot;.</p>
 <p>Keep in mind that the method chaining technique (calling <code>e.place().color()</code>) is only possible because we explicitly return <code>this</code> from our custom method.  Forgetting to do so can be a common source of errors, so keep that in mind if you get a hard-to-pin-down &quot;method undefined&quot; message.</p>
+<h2 id="shorthand-for-adding-components">Shorthand for adding components</h2>
+<p>To quickly declare a list of additional components that need to be added to the entity before a custom component initializes, you can use the <code>required</code> field:</p>
+<pre><code>Crafty.c(<span class="hljs-string">"Square"</span>, {
+    <span class="hljs-comment">// These components will be added to any entity with the "Square" component before it is initialized</span>
+    required: <span class="hljs-string">"2D, Canvas, Color"</span>
+});</code></pre>
+<h2 id="shorthand-for-binding-events">Shorthand for binding events</h2>
+<p>It&#39;s very common to bind events when a component initializes, unbinding those same events when the component is removed.  To simplify this, you can declare event handlers directly in the component object:</p>
+<pre><code>Crafty.c(<span class="hljs-string">"Square"</span>, {
+    required: <span class="hljs-string">"2D, Canvas, Color"</span>,
+
+    <span class="hljs-comment">// These handlers will be bound upon init, and unbound when the component is removed</span>
+    events: {
+        <span class="hljs-comment">// bind the given function to the blush event</span>
+        <span class="hljs-string">"Blush"</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"pink"</span>);
+        },
+
+        <span class="hljs-comment">// Bind the named function to the "Blanch" event.</span>
+        <span class="hljs-string">"Blanch"</span>: <span class="hljs-string">"turnWhite"</span>
+    },
+
+    turnWhite: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"white"</span>);
+    }
+});</code></pre>
+<p>You can either use a function object, or the name of an existing function on the component.  (The latter style can be useful when you need to refer to the method in contexts other than a single event.)</p>
 <h2 id="the-nitty-gritty">The nitty gritty</h2>
 <p>Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won&#39;t be further modified.)</p>
 <ul>
