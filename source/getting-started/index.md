@@ -59,7 +59,7 @@ And when executed:
 
 Now that we got something to show up on the screen, lets try making it move by using the keyboard arrows.
 
-That can be done with the ["Fourway"](/api/Fourway.html) component.
+That can be done with the ["Fourway"](/api/Fourway.html) component. This component is well suited for games with a top-down perspective and enables us to move in four directions (as the name suggests).
 
 ``` javascript
 Crafty.e('2D, DOM, Color, Fourway')
@@ -98,6 +98,8 @@ Crafty.e('2D, Canvas, Color, Twoway, Gravity')
 
 You should notice that the ".gravity()" function has been called with the argument "Floor". That means that all entites which have the Floor component prevent the entity from falling further.
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/2nBLb/2/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+Additionally, we replaced the Fourway component with the ["Twoway"](/api/Twoway.html) component. This component is well suited for side-scrolling platformers and enables us to move in two directions (as the name suggests). It also allows us to jump in combination with the Gravity component. Notice that we replaced the "fourway" function with the "twoway" function, which is similarly used to specify the movement speed.
+
+<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/1/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Well, that's not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our [overview](/documentation) of common topics, and detailed [api documentation](/api/). 
