@@ -89,10 +89,10 @@ The Gravity component should only be added to entities which should be falling, 
 Now we'll add the Gravity component to our previous red box:
 
 ``` js
-Crafty.e('2D, Canvas, Color, Fourway, Gravity')
+Crafty.e('2D, Canvas, Color, Twoway, Gravity')
   .attr({x: 0, y: 0, w: 50, h: 50})
   .color('#F00')
-  .fourway(4)
+  .twoway(4)
   .gravity('Floor');
 ```
 
