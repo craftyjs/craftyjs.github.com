@@ -28,6 +28,16 @@ Crafty.c("Square", {
 		this.h = 30;
 	},
 
+	// This function will be called when the component is removed from an entity
+	// or right before entity is destroyed.
+	// Useful for doing custom cleanup.
+	remove: function() {
+		// This function serves for logging.
+		// Once your game is release ready you can disable logging
+		// by setting Crafty.loggingEnabled to false
+		Crafty.log('Square was removed!');
+	},
+
 	// Our two entities had different positions, 
 	// so we define a method for setting the position
 	place: function(x, y) {
@@ -41,7 +51,7 @@ Crafty.c("Square", {
 })
 ```
 
-`Crafty.c` takes two arguments: the first is the name of the component, the second is an object which defines its methods and properties.  When the component is added to an entity, all the methods and properties are copied to the entity in question.  The `init` field is treated specially, and is called when the component is added to an entity.  (You can also define a `remove` function that will be run when the component is removed, or right before the entity is destroyed.)
+`Crafty.c` takes two arguments: the first is the name of the component, the second is an object which defines its methods and properties.  When the component is added to an entity, all the methods and properties are copied to the entity in question.  The `init` field is treated specially, and is called when the component is added to an entity. You can also define a `remove` function that will be run when the component is removed, or right before the entity is destroyed.
 
 With the above definition, our original code could be rewritten as
 
