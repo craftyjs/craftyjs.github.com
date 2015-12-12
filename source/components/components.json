@@ -1,7 +1,31 @@
 [
   {"name":"TiledMapBuilder", "link": "https://github.com/Kibo/TiledMapBuilder"}
-, {"name":"ProgressBar", "link": "https://github.com/mucaho/crafty-component-progressbar"}
+, {"name":"TiledMapImporter", "link": "https://github.com/mleveck/Crafty-Tiled-Map-Importer"}
+, {"name":"TiledMapPlugin", "link": "https://github.com/danieltdt/crafty-tiled-map"}
+, {"name":"TiledMapConverter", "link": "https://github.com/BlackScorp/tiled2crafty"}
+, {"name":"Isometric Hexagonal Grid", "link": "https://github.com/matthewsimo/crafty.hexametric"}
+, {"name":"Hexmap", "link": "http://furniman.site90.net/contenido/lib/hex.js"}
+, {"name":"A-Star", "link": "https://github.com/lukebitts/A_star-for-Crafty"}
+, {"name":"RPG Maker assets", "link": "https://github.com/jmaupoux/craftyjs-rpgmaker"}
+, {"name":"Debug Toolbar", "link": "https://github.com/ahilles107/CraftyDebug"}
 , {"name":"FPS Counter", "link": "https://github.com/deengames/a-day-and-a-night/blob/gh-pages/src/components/fps.js"}
-, {"name":"UniAxis controls", "link": "https://github.com/budda/crafty.component.uniaxis"}
+, {"name":"RealDelay", "link": "https://github.com/hugeen/Crafty-RealDelay-component"}
+, {"name":"Tweener", "link": "https://github.com/talitapagani/craftytweener"}
+, {"name":"ViewportControl", "link": "https://github.com/berdon/Crafty-bmViewport"}
 , {"name":"MouseFace", "link": "https://github.com/petarov/CraftyMouseFace"}
+, {"name":"ClickFocus", "link": "https://github.com/pengyu/Crafty-ClickFocus"}
+, {"name":"MoveToMouse", "link": "https://github.com/sorenbs/MoveTo"}
+, {"name":"UniAxis Controls", "link": "https://github.com/budda/crafty.component.uniaxis"}
+, {"name":"Gamepad Controls", "link": "https://github.com/svenjacobs/crafty-gamepad"}
+, {"name":"Joystick Controls", "link": "https://github.com/flywithmonkey/Crafty-joystick"}
+, {"name":"CraftyDialogues", "link": "https://github.com/Kibo/CraftyDialogues"}
+, {"name":"Sprite Text", "link": "https://github.com/starmelt/crafty_spritetext"}
+, {"name":"ProgressBar", "link": "https://github.com/mucaho/crafty-component-progressbar"}
+, {"name":"BoxOverlays", "link": "https://github.com/towbi/CraftyEntityBoxOverlays"}
+, {"name":"HitBox", "link": "https://github.com/BlackScorp/crafty_hitbox"}
+, {"name":"3D Display", "link": "https://github.com/DocLabyrinth/Crafty-3D-Component"}
+, {"name":"CraftyBox2D", "link": "https://github.com/shogoki-vnz/CraftyBox2D"}
+, {"name":"Craftybox", "link": "https://github.com/sntran/craftybox"}
+, {"name":"CraftyBox Coffee", "link": "https://github.com/in-human/Humans-Must-Die/blob/master/src/CraftyBox.coffee"}
+
 ]
