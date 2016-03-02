@@ -65,12 +65,12 @@ That can be done with the ["Fourway"](/api/Fourway.html) component. This compone
 Crafty.e('2D, DOM, Color, Fourway')
   .attr({x: 0, y: 0, w: 100, h: 100})
   .color('#F00')
-  .fourway(4);
+  .fourway(200);
 ```
 
 Notice how we added the name of this component to the string after Color. This adds new methods like the ".fourway" function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.
 
-<iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/9jCr7/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/w5m40ofL/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Lets try to make it look like a platform game, where the entity is impacted by gravity. That can be done with the "Gravity" component. 
 
@@ -92,7 +92,7 @@ Now we'll add the Gravity component to our previous red box:
 Crafty.e('2D, Canvas, Color, Twoway, Gravity')
   .attr({x: 0, y: 0, w: 50, h: 50})
   .color('#F00')
-  .twoway(4)
+  .twoway(200)
   .gravity('Floor');
 ```
 
@@ -100,6 +100,6 @@ You should notice that the ".gravity()" function has been called with the argume
 
 Additionally, we replaced the Fourway component with the ["Twoway"](/api/Twoway.html) component. This component is well suited for side-scrolling platformers and enables us to move in two directions (as the name suggests). It also allows us to jump in combination with the Gravity component. Notice that we replaced the "fourway" function with the "twoway" function, which is similarly used to specify the movement speed.
 
-<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/1/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 Well, that's not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our [overview](/documentation) of common topics, and detailed [api documentation](/api/). 

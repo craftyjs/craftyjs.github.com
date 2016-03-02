@@ -110,9 +110,9 @@
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color, Fourway'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>})
   .color(<span class="hljs-string">'#F00'</span>)
-  .fourway(<span class="hljs-number">4</span>);</code></pre>
+  .fourway(<span class="hljs-number">200</span>);</code></pre>
 <p>Notice how we added the name of this component to the string after Color. This adds new methods like the &quot;.fourway&quot; function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.</p>
-<iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/9jCr7/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/w5m40ofL/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Lets try to make it look like a platform game, where the entity is impacted by gravity. That can be done with the &quot;Gravity&quot; component. </p>
 <p>But if we added the Gravity component now, the entity would just fall because there is nothing to stop it from falling.  So lets add a long, thin green box which will provide a surface to fall upon:</p>
@@ -125,11 +125,11 @@
 <pre><code class="language-js">Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Twoway, Gravity'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">50</span>, h: <span class="hljs-number">50</span>})
   .color(<span class="hljs-string">'#F00'</span>)
-  .twoway(<span class="hljs-number">4</span>)
+  .twoway(<span class="hljs-number">200</span>)
   .gravity(<span class="hljs-string">'Floor'</span>);</code></pre>
 <p>You should notice that the &quot;.gravity()&quot; function has been called with the argument &quot;Floor&quot;. That means that all entites which have the Floor component prevent the entity from falling further.</p>
 <p>Additionally, we replaced the Fourway component with the <a href="/api/Twoway.html">&quot;Twoway&quot;</a> component. This component is well suited for side-scrolling platformers and enables us to move in two directions (as the name suggests). It also allows us to jump in combination with the Gravity component. Notice that we replaced the &quot;fourway&quot; function with the &quot;twoway&quot; function, which is similarly used to specify the movement speed.</p>
-<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/1/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Well, that&#39;s not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our <a href="/documentation">overview</a> of common topics, and detailed <a href="/api/">api documentation</a>. </p>
 
