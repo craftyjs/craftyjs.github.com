@@ -88,7 +88,7 @@
 <p>There are a few things going on here:</p>
 <ul>
 <li>We first call <a href="/api/Crafty-e.html"><code>Crafty.e</code></a> with a list of components to add to the entity.  Components provide basic building blocks of functionality. In this case, we add <a href="/api/2D.html">2D</a>, <a href="/api/DOM.html">DOM</a>, and <a href="/api/Color.html">Color</a>.  You can learn more about those later!</li>
-<li>We then call two methods of our newly created entity: <code>attr()</code> and <code>color()</code>.  The <code>attr</code> method is one of <a href="/api/Crafty-Core.html">many</a> that all entities share, but <code>color()</code> is (unsuprisingly) provided by the &quot;Color&quot; component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.</li>
+<li>We then call two methods of our newly created entity: <code>attr()</code> and <code>color()</code>.  The <code>attr</code> method is one of <a href="/api/Crafty%20Core.html">many</a> that all entities share, but <code>color()</code> is (unsuprisingly) provided by the &quot;Color&quot; component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.</li>
 </ul>
 <p>The full code would look something like this now:</p>
 <pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
@@ -106,7 +106,7 @@
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/pShLx/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Now that we got something to show up on the screen, lets try making it move by using the keyboard arrows.</p>
-<p>That can be done with the <a href="/api/Fourway.html">&quot;Fourway&quot;</a> component.</p>
+<p>That can be done with the <a href="/api/Fourway.html">&quot;Fourway&quot;</a> component. This component is well suited for games with a top-down perspective and enables us to move in four directions (as the name suggests).</p>
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color, Fourway'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>})
   .color(<span class="hljs-string">'#F00'</span>)
@@ -122,13 +122,14 @@
 <p>Notice how we added a new component called &quot;Floor&quot; to this entity.  You won&#39;t find this component in the api docs, and it doesn&#39;t add any new methods.  It&#39;s a name we just made up, and it serves to tag this entity.</p>
 <p>The Gravity component should only be added to entities which should be falling, so we do not need to add it to our new entity.</p>
 <p>Now we&#39;ll add the Gravity component to our previous red box:</p>
-<pre><code class="language-js">Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Fourway, Gravity'</span>)
+<pre><code class="language-js">Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Twoway, Gravity'</span>)
   .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">50</span>, h: <span class="hljs-number">50</span>})
   .color(<span class="hljs-string">'#F00'</span>)
-  .fourway(<span class="hljs-number">4</span>)
+  .twoway(<span class="hljs-number">4</span>)
   .gravity(<span class="hljs-string">'Floor'</span>);</code></pre>
 <p>You should notice that the &quot;.gravity()&quot; function has been called with the argument &quot;Floor&quot;. That means that all entites which have the Floor component prevent the entity from falling further.</p>
-<iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/2nBLb/2/embedded/result,js,html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<p>Additionally, we replaced the Fourway component with the <a href="/api/Twoway.html">&quot;Twoway&quot;</a> component. This component is well suited for side-scrolling platformers and enables us to move in two directions (as the name suggests). It also allows us to jump in combination with the Gravity component. Notice that we replaced the &quot;fourway&quot; function with the &quot;twoway&quot; function, which is similarly used to specify the movement speed.</p>
+<iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/1/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Well, that&#39;s not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our <a href="/documentation">overview</a> of common topics, and detailed <a href="/api/">api documentation</a>. </p>
 

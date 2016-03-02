@@ -146,6 +146,16 @@
         <span class="hljs-keyword">this</span>.h = <span class="hljs-number">30</span>;
     },
 
+    <span class="hljs-comment">// This function will be called when the component is removed from an entity</span>
+    <span class="hljs-comment">// or right before entity is destroyed.</span>
+    <span class="hljs-comment">// Useful for doing custom cleanup.</span>
+    remove: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-comment">// This function serves for logging.</span>
+        <span class="hljs-comment">// Once your game is release ready you can disable logging</span>
+        <span class="hljs-comment">// by setting Crafty.loggingEnabled to false</span>
+        Crafty.log(<span class="hljs-string">'Square was removed!'</span>);
+    },
+
     <span class="hljs-comment">// Our two entities had different positions, </span>
     <span class="hljs-comment">// so we define a method for setting the position</span>
     place: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">x, y</span>) </span>{
@@ -157,7 +167,7 @@
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
     }
 })</code></pre>
-<p><code>Crafty.c</code> takes two arguments: the first is the name of the component, the second is an object which defines its methods and properties.  When the component is added to an entity, all the methods and properties are copied to the entity in question.  The <code>init</code> field is treated specially, and is called when the component is added to an entity.  (You can also define a <code>remove</code> function that will be run when the component is removed, or right before the entity is destroyed.)</p>
+<p><code>Crafty.c</code> takes two arguments: the first is the name of the component, the second is an object which defines its methods and properties.  When the component is added to an entity, all the methods and properties are copied to the entity in question.  The <code>init</code> field is treated specially, and is called when the component is added to an entity. You can also define a <code>remove</code> function that will be run when the component is removed, or right before the entity is destroyed.</p>
 <p>With the above definition, our original code could be rewritten as</p>
 <pre><code><span class="hljs-keyword">var</span> sq1 = Crafty.e(<span class="hljs-string">"Square"</span>)
     .place(<span class="hljs-number">10</span>, <span class="hljs-number">10</span>)
