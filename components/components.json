@@ -6,6 +6,7 @@
 , {"name":"Isometric Hexagonal Grid", "link": "https://github.com/matthewsimo/crafty.hexametric"}
 , {"name":"Hexmap", "link": "http://furniman.site90.net/contenido/lib/hex.js"}
 , {"name":"A-Star", "link": "https://github.com/lukebitts/A_star-for-Crafty"}
+, {"name":"craftyjs-ai", "link": "https://github.com/tansaku/craftyjs-ai"}
 , {"name":"CraftyAnimationEditor", "link": "https://github.com/Sythe2o0/CraftyAnimationEditor"}
 , {"name":"RPG Maker assets", "link": "https://github.com/jmaupoux/craftyjs-rpgmaker"}
 , {"name":"Debug Toolbar", "link": "https://github.com/ahilles107/CraftyDebug"}
