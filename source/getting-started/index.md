@@ -8,7 +8,7 @@ For a more thorough but somewhat out-dated guide, check out [Darren Torpey's tut
 
 ## Setup
 
-First let's setup our HTML file.  We're trying to get you up and running quickly, so we'll just directly link to the latest release version.  (Of course you can also [install it](craftyjs.com/#install) locally!)
+First let's setup our HTML file.  We're trying to get you up and running quickly, so we'll just directly link to the latest release version.  (Of course you can also [install it](http://craftyjs.com/#install) locally!)
 
 ``` html
 <html>
