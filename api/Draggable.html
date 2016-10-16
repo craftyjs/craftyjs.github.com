@@ -65,11 +65,11 @@ If direction is not set, the entity being dragged will move along any direction.
 </span></dd></dl></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">this </span><span class="sig-noun">.dragDirection</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-noun">degree</span></span><span class="sig-seperator">)</span></code><dl class="parameter"><dt> degree </dt><dd><span class="markdown"><p>A number, the degree (clockwise) of the move direction with respect to the x axis.</p>
 </span></dd></dl></div><span class="markdown"><p>Specify the dragging direction.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.dragDirection()
-<span class="hljs-keyword">this</span>.dragDirection({x:<span class="hljs-number">1</span>, y:<span class="hljs-number">0</span>}) <span class="hljs-comment">//Horizontal</span>
-<span class="hljs-keyword">this</span>.dragDirection({x:<span class="hljs-number">0</span>, y:<span class="hljs-number">1</span>}) <span class="hljs-comment">//Vertical</span>
+<span class="hljs-keyword">this</span>.dragDirection({<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">0</span>}) <span class="hljs-comment">//Horizontal</span>
+<span class="hljs-keyword">this</span>.dragDirection({<span class="hljs-attr">x</span>:<span class="hljs-number">0</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">1</span>}) <span class="hljs-comment">//Vertical</span>
 <span class="hljs-comment">// Note: because of the orientation of x and y axis,</span>
 <span class="hljs-comment">// this is 45 degree clockwise with respect to the x axis.</span>
-<span class="hljs-keyword">this</span>.dragDirection({x:<span class="hljs-number">1</span>, y:<span class="hljs-number">1</span>}) <span class="hljs-comment">//45 degree.</span>
+<span class="hljs-keyword">this</span>.dragDirection({<span class="hljs-attr">x</span>:<span class="hljs-number">1</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">1</span>}) <span class="hljs-comment">//45 degree.</span>
 <span class="hljs-keyword">this</span>.dragDirection(<span class="hljs-number">60</span>) <span class="hljs-comment">//60 degree.</span></code></pre></span></div></div><div class="doclet" id="-enableDrag"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.enableDrag</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/controls/controls.js#L28-36">src/controls/controls.js#L28-36</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">this </span><span class="sig-noun">.enableDrag</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-noun">void</span></span><span class="sig-seperator">)</span></code></div><span class="markdown"><p>Reenable dragging of entity. Use if <code>.disableDrag</code> has been called.</p>
 </span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="#-disableDrag">.disableDrag</a></li></ul></div></div></div></div></div></div>
 			
@@ -98,8 +98,7 @@ If direction is not set, the entity being dragged will move along any direction.
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

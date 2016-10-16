@@ -68,47 +68,47 @@
 		</span>
 
 		<h2> Getting started - Building your first Game </h2>
-		<p>This is a very quick guide to using Crafty.</p>
+<p>This is a very quick guide to using Crafty.</p>
 <p>For a more thorough but somewhat out-dated guide, check out <a href="http://buildnewgames.com/introduction-to-crafty/">Darren Torpey&#39;s tutorial</a>.  (As of 0.6.3, in addition to the changes Darren mentions at the end, you&#39;ll need to change the signature of <a href="/api/Crafty-loader.html"><code>Crafty.load</code></a>)</p>
 <h2 id="setup">Setup</h2>
-<p>First let&#39;s setup our HTML file.  We&#39;re trying to get you up and running quickly, so we&#39;ll just directly link to the latest release version.  (Of course you can also <a href="craftyjs.com/#install">install it</a> locally!)</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"game"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+<p>First let&#39;s setup our HTML file.  We&#39;re trying to get you up and running quickly, so we&#39;ll just directly link to the latest release version.  (Of course you can also <a href="http://craftyjs.com/#install">install it</a> locally!)</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"game"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
       Crafty.init(<span class="hljs-number">500</span>,<span class="hljs-number">350</span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'game'</span>));
-    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
 <p>A Crafty.js game is build up of entities -- the player character, enemies, and obstacles are all represented this way.</p>
 <p>Lets start by creating a simple colored square:</p>
-<pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color'</span>).attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>}).color(<span class="hljs-string">'#F00'</span>);</code></pre>
+<pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color'</span>).attr({<span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>}).color(<span class="hljs-string">'#F00'</span>);</code></pre>
 <p>There are a few things going on here:</p>
 <ul>
 <li>We first call <a href="/api/Crafty-e.html"><code>Crafty.e</code></a> with a list of components to add to the entity.  Components provide basic building blocks of functionality. In this case, we add <a href="/api/2D.html">2D</a>, <a href="/api/DOM.html">DOM</a>, and <a href="/api/Color.html">Color</a>.  You can learn more about those later!</li>
 <li>We then call two methods of our newly created entity: <code>attr()</code> and <code>color()</code>.  The <code>attr</code> method is one of <a href="/api/Crafty%20Core.html">many</a> that all entities share, but <code>color()</code> is (unsuprisingly) provided by the &quot;Color&quot; component.  Most methods you call on an entity will return the entity itself, allowing method chaining as in the above example.</li>
 </ul>
 <p>The full code would look something like this now:</p>
-<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"game"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"game"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
       Crafty.init(<span class="hljs-number">500</span>,<span class="hljs-number">350</span>, <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'game'</span>));
-      Crafty.e(<span class="hljs-string">'2D, DOM, Color'</span>).attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>}).color(<span class="hljs-string">'#F00'</span>);
-    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre>
+      Crafty.e(<span class="hljs-string">'2D, DOM, Color'</span>).attr({<span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>}).color(<span class="hljs-string">'#F00'</span>);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
 <p>And when executed:</p>
 <iframe width="100%" height="300" src="http://jsfiddle.net/kevinsimper/pShLx/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Now that we got something to show up on the screen, lets try making it move by using the keyboard arrows.</p>
 <p>That can be done with the <a href="/api/Fourway.html">&quot;Fourway&quot;</a> component. This component is well suited for games with a top-down perspective and enables us to move in four directions (as the name suggests).</p>
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'2D, DOM, Color, Fourway'</span>)
-  .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>})
   .color(<span class="hljs-string">'#F00'</span>)
   .fourway(<span class="hljs-number">200</span>);</code></pre>
 <p>Notice how we added the name of this component to the string after Color. This adds new methods like the &quot;.fourway&quot; function. The number which is passed to the function determines the speed, so if the number is higher it will move even faster.</p>
@@ -117,13 +117,13 @@
 <p>Lets try to make it look like a platform game, where the entity is impacted by gravity. That can be done with the &quot;Gravity&quot; component. </p>
 <p>But if we added the Gravity component now, the entity would just fall because there is nothing to stop it from falling.  So lets add a long, thin green box which will provide a surface to fall upon:</p>
 <pre><code class="language-javascript">Crafty.e(<span class="hljs-string">'Floor, 2D, Canvas, Color'</span>)
-  .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">250</span>, w: <span class="hljs-number">250</span>, h: <span class="hljs-number">10</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">250</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">250</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">10</span>})
   .color(<span class="hljs-string">'green'</span>);</code></pre>
 <p>Notice how we added a new component called &quot;Floor&quot; to this entity.  You won&#39;t find this component in the api docs, and it doesn&#39;t add any new methods.  It&#39;s a name we just made up, and it serves to tag this entity.</p>
 <p>The Gravity component should only be added to entities which should be falling, so we do not need to add it to our new entity.</p>
 <p>Now we&#39;ll add the Gravity component to our previous red box:</p>
 <pre><code class="language-js">Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Twoway, Gravity'</span>)
-  .attr({x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>, w: <span class="hljs-number">50</span>, h: <span class="hljs-number">50</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">50</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">50</span>})
   .color(<span class="hljs-string">'#F00'</span>)
   .twoway(<span class="hljs-number">200</span>)
   .gravity(<span class="hljs-string">'Floor'</span>);</code></pre>
@@ -132,7 +132,6 @@
 <iframe width="100%" height="300" src="//jsfiddle.net/mucaho/v8okhwob/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <p>Well, that&#39;s not really a very good game, but its a start!  To learn more about how to use Crafty, you can explore both our <a href="/documentation">overview</a> of common topics, and detailed <a href="/api/">api documentation</a>. </p>
-
 	</div>
 </div>
 
@@ -162,8 +161,7 @@
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

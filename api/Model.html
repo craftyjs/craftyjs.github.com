@@ -65,17 +65,17 @@ to access them directly.</p>
 <p>Deep events allow you to bind to specific fields, like <code>name</code> or even deep fields
 like <code>contact.email</code> and get notified when those specific fields are updated.</p>
 </span><div class="triggered-events"><h4>Events</h4><div class="trigger-list"><dl class="trigger"><dt>Change </dt><dd>When any data on the model has changed.</dd></dl><dl class="trigger"><dt>Change[key] </dt><dd>When the specific key on the model has changed.</dd></dl><dl class="trigger"><dt>Change[key.key] </dt><dd>The nested key value has changed.</dd></dl></div></div><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">Crafty.c(<span class="hljs-string">'Person'</span>, {
-  name: <span class="hljs-string">'Fox'</span>,
-  init: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">this</span>.requires(<span class="hljs-string">'Model'</span>); }
+  <span class="hljs-attr">name</span>: <span class="hljs-string">'Fox'</span>,
+  <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">this</span>.requires(<span class="hljs-string">'Model'</span>); }
 });
-person = Crafty.e(<span class="hljs-string">'Person'</span>).attr({name: <span class="hljs-string">'blaine'</span>});
+person = Crafty.e(<span class="hljs-string">'Person'</span>).attr({<span class="hljs-attr">name</span>: <span class="hljs-string">'blaine'</span>});
 person.bind(<span class="hljs-string">'Change[name]'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
   Crafty.log(<span class="hljs-string">'name changed!'</span>);
 });
 person.attr(<span class="hljs-string">'name'</span>, <span class="hljs-string">'blainesch'</span>); <span class="hljs-comment">// Triggers event</span>
 person.is_dirty(<span class="hljs-string">'name'</span>); <span class="hljs-comment">// true</span>
 person.changed <span class="hljs-comment">// name</span></code></pre></span></div></div><div><h4>Methods and Properties</h4><ul class="page-toc"><li><a href="#-is_dirty">.is_dirty</a></li></ul><div class="doclet" id="-is_dirty"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.is_dirty</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/core/model.js#L73-90">src/core/model.js#L73-90</a></div><span class="markdown"><p>Helps determine when data or the entire component is &quot;dirty&quot; or has changed attributes.</p>
-</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">person = Crafty.e(<span class="hljs-string">'Person'</span>).attr({name: <span class="hljs-string">'Fox'</span>, age: <span class="hljs-number">24</span>})
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">person = Crafty.e(<span class="hljs-string">'Person'</span>).attr({<span class="hljs-attr">name</span>: <span class="hljs-string">'Fox'</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">24</span>})
 person.is_dirty() <span class="hljs-comment">// false</span>
 person.is_dirty(<span class="hljs-string">'name'</span>) <span class="hljs-comment">// false</span>
 
@@ -110,8 +110,7 @@ person.changed; <span class="hljs-comment">// ['name']</span></code></pre></span
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

@@ -74,7 +74,7 @@ either a URL or an Array of URLs (to determine which type to use).</p>
 <p>The ID you use will be how you refer to that sound when using <code>Crafty.audio.play</code>.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-comment">//adding audio from an object</span>
 Crafty.audio.add({
-  shoot: [<span class="hljs-string">"sounds/shoot.wav"</span>,
+  <span class="hljs-attr">shoot</span>: [<span class="hljs-string">"sounds/shoot.wav"</span>,
           <span class="hljs-string">"sounds/shoot.mp3"</span>,
           <span class="hljs-string">"sounds/shoot.ogg"</span>]
 });
@@ -107,7 +107,7 @@ Has a default maximum of 5 channels so that the same sound can play simultaneous
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">Crafty.audio.play(<span class="hljs-string">"walk"</span>);
 
 <span class="hljs-comment">//play and repeat forever</span>
-Crafty.audio.play(<span class="hljs-string">"backgroundMusic"</span>, -<span class="hljs-number">1</span>);
+Crafty.audio.play(<span class="hljs-string">"backgroundMusic"</span>, <span class="hljs-number">-1</span>);
 Crafty.audio.play(<span class="hljs-string">"explosion"</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0.5</span>); <span class="hljs-comment">//play sound once with volume of 50%</span></code></pre></span></div></div><div class="doclet" id="Crafty-audio-remove"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">Crafty.audio.remove</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/sound/sound.js#L305-320">src/sound/sound.js#L305-320</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">this </span><span class="sig-noun">Crafty.audio.remove</span></span><span class="sig-seperator">([</span><span class="sig-phrase"><span class="sig-qualifier">String </span><span class="sig-noun">id</span></span><span class="sig-seperator">])</span></code><dl class="parameter"><dt> id </dt><dd><span class="markdown"><p>A string to refer to sounds</p>
 </span></dd></dl></div><span class="markdown"><p>Will stop the sound and remove all references to the audio object allowing the browser to free the memory.
 If no id is given, all sounds will be removed.</p>
@@ -152,8 +152,7 @@ Crafty.audio.toggleMute();</code></pre></span></div></div><div class="doclet" id
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

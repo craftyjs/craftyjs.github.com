@@ -80,25 +80,25 @@ Note that when a component method gets called, the <code>this</code> keyword wil
 and is generally used when you need to pass configuration data to the component on a per entity basis.</li>
 </ul>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">Crafty.c(<span class="hljs-string">"Annoying"</span>, {
-    _message: <span class="hljs-string">"HiHi"</span>,
-    init: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-attr">_message</span>: <span class="hljs-string">"HiHi"</span>,
+    <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
         <span class="hljs-keyword">this</span>.bind(<span class="hljs-string">"EnterFrame"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ alert(<span class="hljs-keyword">this</span>.message); });
     },
-    annoying: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{ <span class="hljs-keyword">this</span>.message = message; }
+    <span class="hljs-attr">annoying</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{ <span class="hljs-keyword">this</span>.message = message; }
 });
 
 Crafty.e(<span class="hljs-string">"Annoying"</span>).annoying(<span class="hljs-string">"I'm an orange..."</span>);</code></pre><p>To attach to the &quot;EnterFrame&quot; event using the <code>events</code> property instead:</p>
 <pre><code class="hljs ">Crafty.c(<span class="hljs-string">"Annoying"</span>, {
-    _message: <span class="hljs-string">"HiHi"</span>,
-    events: {
+    <span class="hljs-attr">_message</span>: <span class="hljs-string">"HiHi"</span>,
+    <span class="hljs-attr">events</span>: {
         <span class="hljs-string">"EnterFrame"</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{alert(<span class="hljs-keyword">this</span>.message);}
     }
     annoying: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">message</span>) </span>{ <span class="hljs-keyword">this</span>.message = message; }
 });</code></pre></span></div><div class="warning"><div class="warning-prefix">Warning</div><span class="markdown"><p>In the examples above the field _message is local to the entity. That is, if you create many entities with the Annoying component, they can all have different values for _message. That is because it is a simple value, and simple values are copied by value. If however the field had been an object or array, the value would have been shared by all entities with the component, because complex types are copied by reference in javascript. This is probably not what you want and the following example demonstrates how to work around it.</p>
 </span></div><span class="markdown"><pre><code class="hljs ">Crafty.c(<span class="hljs-string">"MyComponent"</span>, {
-    _iAmShared: { a: <span class="hljs-number">3</span>, b: <span class="hljs-number">4</span> },
-    init: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">this</span>._iAmNotShared = { a: <span class="hljs-number">3</span>, b: <span class="hljs-number">4</span> };
+    <span class="hljs-attr">_iAmShared</span>: { <span class="hljs-attr">a</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">4</span> },
+    <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>._iAmNotShared = { <span class="hljs-attr">a</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">4</span> };
     },
 });</code></pre></span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="Crafty-e.html">Crafty.e</a></li></ul></div></div></div></div></div>
 			
@@ -127,8 +127,7 @@ Crafty.e(<span class="hljs-string">"Annoying"</span>).annoying(<span class="hljs
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

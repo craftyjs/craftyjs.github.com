@@ -128,14 +128,14 @@
 		</span>
 
 		<h2> 2D Graphics </h2>
-		<p>It&#39;s pretty easy to get Crafty to display a simple square.  (In a full game you&#39;d likely want to use sprites instead of squares, but they&#39;re still great for prototyping, so we&#39;ll keep using them in these examples.)</p>
+<p>It&#39;s pretty easy to get Crafty to display a simple square.  (In a full game you&#39;d likely want to use sprites instead of squares, but they&#39;re still great for prototyping, so we&#39;ll keep using them in these examples.)</p>
 <pre><code>Crafty.init(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
 <span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>);
 square.attr({
-  x: <span class="hljs-number">10</span>,
-  y: <span class="hljs-number">10</span>,
-  w: <span class="hljs-number">100</span>,
-  h: <span class="hljs-number">100</span>
+  <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>
 }).color(<span class="hljs-string">'red'</span>);</code></pre>
 <p>What&#39;s going on here?</p>
 <ul>
@@ -155,10 +155,10 @@ square.attr({
 
 <span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>);
 square.attr({
-  x: <span class="hljs-number">10</span>,
-  y: <span class="hljs-number">10</span>,
-  w: <span class="hljs-number">100</span>,
-  h: <span class="hljs-number">100</span>
+  <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>,
+  <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>
 }).color(<span class="hljs-string">'red'</span>);
 
 square.origin(<span class="hljs-string">"center"</span>)
@@ -169,7 +169,6 @@ square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-fun
 <p>And here&#39;s the code in action! </p>
 <p><a class="jsbin-embed" href="http://jsbin.com/rakituvoso/1/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
 <p>The script is editable; try making the square move to the right by adding the code <code>this.x = this.x+1;</code> in the bound <code>&quot;EnterFrame&quot;</code> function.</p>
-
 	</div>
 </div>
 			
@@ -198,8 +197,7 @@ square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-fun
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

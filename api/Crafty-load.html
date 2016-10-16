@@ -74,7 +74,7 @@ you want some asset to be loaded from another domain.</p>
 <p>The <code>onProgress</code> function will be passed on object with information about
 the progress including how many assets loaded, total of all the assets to
 load and a percentage of the progress.</p>
-<pre><code class="hljs ">{ loaded: j, total: total, percent: (j / total * <span class="hljs-number">100</span>), src:src }</code></pre><p><code>onError</code> will be passed with the asset that couldn&#39;t load.</p>
+<pre><code class="hljs ">{ <span class="hljs-attr">loaded</span>: j, <span class="hljs-attr">total</span>: total, <span class="hljs-attr">percent</span>: (j / total * <span class="hljs-number">100</span>), <span class="hljs-attr">src</span>:src }</code></pre><p><code>onError</code> will be passed with the asset that couldn&#39;t load.</p>
 <p>When <code>onError</code> is not provided, the onLoad is loaded even when some assets are not successfully loaded.
 Otherwise, onLoad will be called no matter whether there are errors or not.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">var</span> assetsObj = {
@@ -140,8 +140,7 @@ Crafty.load(assetsObj, <span class="hljs-comment">// preload assets</span>
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

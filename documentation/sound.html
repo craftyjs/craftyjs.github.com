@@ -128,7 +128,7 @@
 		</span>
 
 		<h2> Sound </h2>
-		<p>Currently Crafty implements sound playback through the audio element, which is buggy in some browsers.  In the future we plan to switch to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio API</a> where available.</p>
+<p>Currently Crafty implements sound playback through the audio element, which is buggy in some browsers.  In the future we plan to switch to the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web Audio API</a> where available.</p>
 <h2 id="loading-audio">Loading audio</h2>
 <p>To play a sound, you first have to load it.  Because browser support for audio formats is inconsistent, you can supply a list of audio files, and Crafty will load only the first one which is supported in the current environment.  For more information on loading assets, see <a href="/api/Crafty-loader.html">Crafty.load</a>.</p>
 <pre><code><span class="hljs-comment">// Here we're just loading a single sound, and calling it "beep".</span>
@@ -146,9 +146,8 @@ Crafty.load({assets,  callback})</code></pre>
 <pre><code><span class="hljs-comment">// Play the sound, repeating twice, at 75% volume:</span>
 Crafty.audio.play(<span class="hljs-string">"beep"</span>, <span class="hljs-number">2</span>, <span class="hljs-number">0.75</span>)</code></pre>
 <p>To repeat a sound forever, use a repeat count of <code>-1</code>.</p>
-<pre><code>Crafty.audio.play(<span class="hljs-string">"beep"</span>, -<span class="hljs-number">1</span>)</code></pre>
+<pre><code>Crafty.audio.play(<span class="hljs-string">"beep"</span>, <span class="hljs-number">-1</span>)</code></pre>
 <p>You can also mute, pause and resume audio playback.  See <a href="/api/Crafty-audio.html">Crafty.audio</a> for complete documentation.</p>
-
 	</div>
 </div>
 			
@@ -177,8 +176,7 @@ Crafty.audio.play(<span class="hljs-string">"beep"</span>, <span class="hljs-num
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

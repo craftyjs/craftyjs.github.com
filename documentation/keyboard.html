@@ -128,7 +128,7 @@
 		</span>
 
 		<h2> Keyboard </h2>
-		<p>To have the keyboard control player movement, Crafty provides three simple components that will get you started very quickly:</p>
+<p>To have the keyboard control player movement, Crafty provides three simple components that will get you started very quickly:</p>
 <ul>
 <li><a href="/api/Twoway.html">Twoway</a></li>
 <li><a href="/api/Fourway.html">Fourway</a></li>
@@ -138,7 +138,7 @@
 <p>To use the Fourway component, you need to specify the rate of movement by calling the <code>fourway()</code> method with a speed.</p>
 <pre><code>Crafty.init();
 Crafty.e(<span class="hljs-string">'2D, Canvas, Fourway, Color'</span>)
-  .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, h: <span class="hljs-number">30</span>, w: <span class="hljs-number">30</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">30</span>})
   .color(<span class="hljs-string">'red'</span>)
   .fourway(<span class="hljs-number">5</span>)</code></pre>
 <p>This will create a red square that will move in response to both the arrow keys and WASD.  &quot;Fourway&quot; is really a wrapper about <a href="/api/Multiway.html">&quot;Multiway&quot;</a>, which you can use to define more complex movement.</p>
@@ -146,7 +146,7 @@ Crafty.e(<span class="hljs-string">'2D, Canvas, Fourway, Color'</span>)
 <p>You might want to use <a href="/api/Twoway.html">Twoway</a> if you&#39;re making a simple platform game (like Mario). Here you can move you from either side and jump up and down.</p>
 <pre><code>Crafty.init();
 Crafty.e(<span class="hljs-string">'2D, Canvas, Twoway, Color'</span>)
-  .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, h: <span class="hljs-number">30</span>, w: <span class="hljs-number">30</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">30</span>})
   .color(<span class="hljs-string">'red'</span>)
   .twoway()</code></pre>
 <p>In most cases, you&#39;d want to include the <a href="/api/Gravity.html">Gravity</a> component as well!</p>
@@ -154,14 +154,14 @@ Crafty.e(<span class="hljs-string">'2D, Canvas, Twoway, Color'</span>)
 <p>You might well need more control than the above components provide.  To respond to specific keyboard events, give an entity the <a href="/api/Keyboard.html">&quot;Keyboard&quot;</a> component.  In the example below, we create a red square that will turn blue when you press any key.</p>
 <pre><code>Crafty.init();
 Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Keyboard'</span>)
-  .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, h: <span class="hljs-number">30</span>, w: <span class="hljs-number">30</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">30</span>})
   .color(<span class="hljs-string">'red'</span>)
   .bind(<span class="hljs-string">"KeyDown"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     <span class="hljs-keyword">this</span>.color(<span class="hljs-string">"blue"</span>);
   })</code></pre>
 <p>The various <a href="/api/KeyboardEvent.html">keyboard events</a> will be passed information about the original DOM event, and Crafty provides a <a href="/api/Crafty-keys.html">dictionary of key codes</a> for convenience.  In the following example, we create a square that can be moved by the arrow keys:</p>
 <pre><code>Crafty.e(<span class="hljs-string">"2D, Canvas, Color, Keyboard"</span>)
-  .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, w: <span class="hljs-number">30</span>, h: <span class="hljs-number">30</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">30</span>})
   .color(<span class="hljs-string">"red"</span>)
   .bind(<span class="hljs-string">'KeyDown'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
     <span class="hljs-keyword">if</span>(e.key == Crafty.keys.LEFT_ARROW) {
@@ -174,7 +174,6 @@ Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Keyboard'</span>)
       <span class="hljs-keyword">this</span>.y = <span class="hljs-keyword">this</span>.y + <span class="hljs-number">1</span>;
     }
   });</code></pre>
-
 	</div>
 </div>
 			
@@ -203,8 +202,7 @@ Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Keyboard'</span>)
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

@@ -60,35 +60,35 @@
 </span></div><span class="markdown"><p>For implementation details, check out the source code.</p>
 </span></div><div><h4>Methods and Properties</h4><ul class="page-toc"><li><a href="#-particles">.particles</a></li></ul><div class="doclet" id="-particles"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.particles</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/graphics/particles.js#L22-64">src/graphics/particles.js#L22-64</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">this </span><span class="sig-noun">.particles</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-qualifier">Object </span><span class="sig-noun">options</span></span><span class="sig-seperator">)</span></code><dl class="parameter"><dt> options </dt><dd><span class="markdown"><p>Map of options that specify the behavior and look of the particles.</p>
 </span></dd></dl></div><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">var</span> options = {
-  maxParticles: <span class="hljs-number">150</span>,
-  size: <span class="hljs-number">18</span>,
-  sizeRandom: <span class="hljs-number">4</span>,
-  speed: <span class="hljs-number">1</span>,
-  speedRandom: <span class="hljs-number">1.2</span>,
+  <span class="hljs-attr">maxParticles</span>: <span class="hljs-number">150</span>,
+  <span class="hljs-attr">size</span>: <span class="hljs-number">18</span>,
+  <span class="hljs-attr">sizeRandom</span>: <span class="hljs-number">4</span>,
+  <span class="hljs-attr">speed</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">speedRandom</span>: <span class="hljs-number">1.2</span>,
   <span class="hljs-comment">// Lifespan in frames</span>
   lifeSpan: <span class="hljs-number">29</span>,
-  lifeSpanRandom: <span class="hljs-number">7</span>,
+  <span class="hljs-attr">lifeSpanRandom</span>: <span class="hljs-number">7</span>,
   <span class="hljs-comment">// Angle is calculated clockwise: 12pm is 0deg, 3pm is 90deg etc.</span>
   angle: <span class="hljs-number">65</span>,
-  angleRandom: <span class="hljs-number">34</span>,
-  startColour: [<span class="hljs-number">255</span>, <span class="hljs-number">131</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
-  startColourRandom: [<span class="hljs-number">48</span>, <span class="hljs-number">50</span>, <span class="hljs-number">45</span>, <span class="hljs-number">0</span>],
-  endColour: [<span class="hljs-number">245</span>, <span class="hljs-number">35</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
-  endColourRandom: [<span class="hljs-number">60</span>, <span class="hljs-number">60</span>, <span class="hljs-number">60</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">angleRandom</span>: <span class="hljs-number">34</span>,
+  <span class="hljs-attr">startColour</span>: [<span class="hljs-number">255</span>, <span class="hljs-number">131</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>],
+  <span class="hljs-attr">startColourRandom</span>: [<span class="hljs-number">48</span>, <span class="hljs-number">50</span>, <span class="hljs-number">45</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">endColour</span>: [<span class="hljs-number">245</span>, <span class="hljs-number">35</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>],
+  <span class="hljs-attr">endColourRandom</span>: [<span class="hljs-number">60</span>, <span class="hljs-number">60</span>, <span class="hljs-number">60</span>, <span class="hljs-number">0</span>],
   <span class="hljs-comment">// Only applies when fastMode is off, specifies how sharp the gradients are drawn</span>
   sharpness: <span class="hljs-number">20</span>,
-  sharpnessRandom: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">sharpnessRandom</span>: <span class="hljs-number">10</span>,
   <span class="hljs-comment">// Random spread from origin</span>
   spread: <span class="hljs-number">10</span>,
   <span class="hljs-comment">// How many frames should this last</span>
-  duration: -<span class="hljs-number">1</span>,
+  duration: <span class="hljs-number">-1</span>,
   <span class="hljs-comment">// Will draw squares instead of circle gradients</span>
   fastMode: <span class="hljs-literal">false</span>,
-  gravity: { x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0.1</span> },
+  <span class="hljs-attr">gravity</span>: { <span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0.1</span> },
   <span class="hljs-comment">// sensible values are 0-3</span>
   jitter: <span class="hljs-number">0</span>,
   <span class="hljs-comment">// Offset for the origin of the particles</span>
-  originOffset: {x: <span class="hljs-number">0</span>, y: <span class="hljs-number">0</span>}
+  originOffset: {<span class="hljs-attr">x</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">0</span>}
 };
 
 Crafty.e(<span class="hljs-string">"2D,Canvas,Particles"</span>).particles(options);</code></pre></span></div></div></div></div></div></div>
@@ -118,8 +118,7 @@ Crafty.e(<span class="hljs-string">"2D,Canvas,Particles"</span>).particles(optio
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

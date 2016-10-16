@@ -1,7 +1,7 @@
 var React = require('react');
 require('node-jsx').install({extension: '.jsx'});
 var StaticPage = require('./server-side'); // React component
-
+var ReactDOMServer = require('react-dom/server');
 var createIndex = require("./index-docs");
 var cleanName = require("./clean-name");
 
@@ -39,7 +39,7 @@ function generateApiDocs(grunt, input, outputDir) {
 		filename = filename || cleanName(selector) + ".html";
 		props.selector = selector;
 		var page = React.createElement(StaticPage, props);
-		var raw = React.renderToStaticMarkup(page);
+		var raw = ReactDOMServer.renderToStaticMarkup(page);
 		if (pages[selector]) {
 			var title = pages[selector].main.name;
 		} else {
