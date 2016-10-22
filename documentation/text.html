@@ -128,12 +128,12 @@
 		</span>
 
 		<h2> Text </h2>
-		<p>It is very easy to add text to your game. Create an entity
+<p>It is very easy to add text to your game. Create an entity
 which contains the component <a href="/api/Text.html">&quot;Text&quot;</a>:</p>
 <pre><code><span class="hljs-keyword">var</span> helloWorldText = Crafty.e(<span class="hljs-string">'2D, DOM, Text'</span>)
   .attr({
-    x: <span class="hljs-number">10</span>,
-    y: <span class="hljs-number">10</span>
+    <span class="hljs-attr">x</span>: <span class="hljs-number">10</span>,
+    <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>
   });</code></pre>
 <p>A very simple text example looks like this:</p>
 <pre><code>helloWorldText.text(<span class="hljs-string">'Hello World'</span>);</code></pre>
@@ -143,8 +143,8 @@ which contains the component <a href="/api/Text.html">&quot;Text&quot;</a>:</p>
 <pre><code>helloWorldText.textColor(<span class="hljs-string">'red'</span>);</code></pre>
 <p>You can customize the text further by passing an object of styles to the ´.textFont()` method:</p>
 <pre><code>helloWorldText.textFont({
-  size: <span class="hljs-string">'20px'</span>,
-  weight: <span class="hljs-string">'bold'</span>
+  <span class="hljs-attr">size</span>: <span class="hljs-string">'20px'</span>,
+  <span class="hljs-attr">weight</span>: <span class="hljs-string">'bold'</span>
 });</code></pre>
 <p>Possible keys are:</p>
 <ul>
@@ -161,7 +161,6 @@ which contains the component <a href="/api/Text.html">&quot;Text&quot;</a>:</p>
 <li>Text will work with <a href="/api/Canvas.html">Canvas</a> and <a href="/api/DOM.html">DOM</a> layers.   However, styling will work best with the DOM layer, since browsers are extremely good at displaying text!</li>
 <li>The height and width of the text entity will be set automatically when using Canvas, since the html canvas has no facilities for reflowing text.</li>
 </ul>
-
 	</div>
 </div>
 			
@@ -190,8 +189,7 @@ which contains the component <a href="/api/Text.html">&quot;Text&quot;</a>:</p>
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

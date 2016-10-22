@@ -72,16 +72,16 @@ or <code>y</code> padding. If they are the same, just add one value.</p>
 passed for tile size.</p>
 <p>Entities that add the generated components are also given the <code>2D</code> component, and
 a component called <code>Sprite</code>.</p>
-</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">Crafty.sprite(<span class="hljs-string">"imgs/spritemap6.png"</span>, {flower:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>]});
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">Crafty.sprite(<span class="hljs-string">"imgs/spritemap6.png"</span>, {<span class="hljs-attr">flower</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>]});
 <span class="hljs-keyword">var</span> flower_entity = Crafty.e(<span class="hljs-string">"2D, DOM, flower"</span>);</code></pre><p>The first line creates a component called <code>flower</code> associated with the sub-image of
 spritemap6.png with top-left corner (0,0), width 20 pixels, and height 30 pixels.
 The second line creates an entity with that image. (Note: The <code>2D</code> is not really
 necessary here, because adding the <code>flower</code> component automatically also adds the
 <code>2D</code> component.)</p>
-<pre><code class="hljs ">Crafty.sprite(<span class="hljs-number">50</span>, <span class="hljs-string">"imgs/spritemap6.png"</span>, {flower:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>], grass:[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>]});</code></pre><p>In this case, the <code>flower</code> component is pixels 0 &lt;= x &lt; 50, 0 &lt;= y &lt; 50, and the
+<pre><code class="hljs ">Crafty.sprite(<span class="hljs-number">50</span>, <span class="hljs-string">"imgs/spritemap6.png"</span>, {<span class="hljs-attr">flower</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>], <span class="hljs-attr">grass</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">1</span>]});</code></pre><p>In this case, the <code>flower</code> component is pixels 0 &lt;= x &lt; 50, 0 &lt;= y &lt; 50, and the
 <code>grass</code> component is pixels 0 &lt;= x &lt; 150, 50 &lt;= y &lt; 100. (The <code>3</code> means grass has a
 width of 3 tiles, i.e. 150 pixels.)</p>
-<pre><code class="hljs ">Crafty.sprite(<span class="hljs-number">50</span>, <span class="hljs-number">100</span>, <span class="hljs-string">"imgs/spritemap6.png"</span>, {flower:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>], grass:[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>]}, <span class="hljs-number">10</span>);</code></pre><p>In this case, each tile is 50x100, and there is a spacing of 10 pixels between
+<pre><code class="hljs ">Crafty.sprite(<span class="hljs-number">50</span>, <span class="hljs-number">100</span>, <span class="hljs-string">"imgs/spritemap6.png"</span>, {<span class="hljs-attr">flower</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>], <span class="hljs-attr">grass</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>]}, <span class="hljs-number">10</span>);</code></pre><p>In this case, each tile is 50x100, and there is a spacing of 10 pixels between
 consecutive tiles. So <code>flower</code> is pixels 0 &lt;= x &lt; 50, 0 &lt;= y &lt; 100, and <code>grass</code> is
 pixels 0 &lt;= x &lt; 50, 110 &lt;= y &lt; 210.</p>
 </span></div><div><h4>See Also</h4><ul class="see-also-list"><li><a href="Sprite.html">Sprite</a></li></ul></div></div></div></div></div>
@@ -111,8 +111,7 @@ pixels 0 &lt;= x &lt; 50, 110 &lt;= y &lt; 210.</p>
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

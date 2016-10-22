@@ -67,7 +67,7 @@
 </ul>
 </span><div class="note"><span class="markdown"><p><strong>Note:</strong> If you&#39;re targeting mobile, you should know that by default Crafty turns touch events into mouse events, making mouse dependent components work with touch. However, if you need multitouch, you&#39;ll have to make use of the Touch component instead, which can break compatibility with things which directly interact with the Mouse component.</p>
 </span></div><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">var</span> myEntity = Crafty.e(<span class="hljs-string">'2D, Canvas, Color, Mouse'</span>)
-.attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, w: <span class="hljs-number">40</span>, h: <span class="hljs-number">40</span>})
+.attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">40</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">40</span>})
 .color(<span class="hljs-string">'red'</span>)
 .bind(<span class="hljs-string">'Click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">MouseEvent</span>)</span>{
   alert(<span class="hljs-string">'clicked'</span>, MouseEvent);
@@ -103,8 +103,7 @@ myEntity.bind(<span class="hljs-string">'MouseUp'</span>, <span class="hljs-func
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

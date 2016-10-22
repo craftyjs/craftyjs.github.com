@@ -85,7 +85,7 @@ an argument.</p>
 </span><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">Any </span><span class="sig-noun">.attr</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-qualifier">String </span><span class="sig-noun">property</span></span><span class="sig-seperator">)</span></code><dl class="parameter"><dt> property </dt><dd><span class="markdown"><p>Property of the entity to modify</p>
 </span></dd></dl><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>Value - the value of the property</p>
 </span></dd></dl></div><span class="markdown"><p>Use this method to get any property of the entity. You can also retrieve the property using <code>this.property</code>.</p>
-</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.attr({key: <span class="hljs-string">"value"</span>, prop: <span class="hljs-number">5</span>});
+</span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-keyword">this</span>.attr({<span class="hljs-attr">key</span>: <span class="hljs-string">"value"</span>, <span class="hljs-attr">prop</span>: <span class="hljs-number">5</span>});
 <span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"key"</span>); <span class="hljs-comment">// returns "value"</span>
 <span class="hljs-keyword">this</span>.attr(<span class="hljs-string">"prop"</span>); <span class="hljs-comment">// returns 5</span>
 <span class="hljs-keyword">this</span>.key; <span class="hljs-comment">// "value"</span>
@@ -152,7 +152,7 @@ function will be the current entity in the iteration.</p>
 <pre><code class="hljs "><span class="hljs-keyword">var</span> arr = Crafty(<span class="hljs-string">"2D"</span>).get()</code></pre><p>Get the first entity matching the selector</p>
 <pre><code class="hljs "><span class="hljs-comment">// equivalent to Crafty("2D").get()[0], but doesn't create a new array</span>
 <span class="hljs-keyword">var</span> e = Crafty(<span class="hljs-string">"2D"</span>).get(<span class="hljs-number">0</span>)</code></pre><p>Get the last &quot;2D&quot; entity matching the selector</p>
-<pre><code class="hljs "><span class="hljs-keyword">var</span> e = Crafty(<span class="hljs-string">"2D"</span>).get(-<span class="hljs-number">1</span>)</code></pre></span></div></div><div class="doclet" id="-getId"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.getId</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/core/core.js#L405-420">src/core/core.js#L405-420</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">Number </span><span class="sig-noun">.getId</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-noun">void</span></span><span class="sig-seperator">)</span></code><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>the ID of this entity.</p>
+<pre><code class="hljs "><span class="hljs-keyword">var</span> e = Crafty(<span class="hljs-string">"2D"</span>).get(<span class="hljs-number">-1</span>)</code></pre></span></div></div><div class="doclet" id="-getId"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.getId</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/core/core.js#L405-420">src/core/core.js#L405-420</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">Number </span><span class="sig-noun">.getId</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-noun">void</span></span><span class="sig-seperator">)</span></code><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>the ID of this entity.</p>
 </span></dd></dl></div><span class="markdown"><p>For better performance, simply use the this[0] property.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><p>Finding out the <code>ID</code> of an entity can be done by returning the property <code>0</code>.</p>
 <pre><code class="hljs ">   <span class="hljs-keyword">var</span> ent = Crafty.e(<span class="hljs-string">"2D"</span>);
@@ -248,8 +248,7 @@ unbind only that callback.</p>
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

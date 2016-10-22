@@ -66,52 +66,52 @@
 <div id='doc-content'>
 
 <h2> Text Sprites </h2>
-    <p>If you want to be more creative about the fonts in your game you can create a sprite sheet of your font like this</p>
+<p>If you want to be more creative about the fonts in your game you can create a sprite sheet of your font like this</p>
 <p> <img src="examples/textsprite/font-hand-24x32.png" alt="examples/textsprite/font-hand-24x32.png"></p>
 <p>and chop it up in Crafty like this </p>
 <pre><code>Crafty.init();
 
 Crafty.sprite(<span class="hljs-number">24</span>,<span class="hljs-number">32</span>,<span class="hljs-string">"http://opengameart.org/sites/default/files/font-hand-24x32.png"</span>,
               {
-                  EMPTY:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>],
-                  A:[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>],
-                  B:[<span class="hljs-number">2</span>,<span class="hljs-number">2</span>],
-                  C:[<span class="hljs-number">3</span>,<span class="hljs-number">2</span>],
-                  D:[<span class="hljs-number">4</span>,<span class="hljs-number">2</span>],
-                  E:[<span class="hljs-number">5</span>,<span class="hljs-number">2</span>],
-                  F:[<span class="hljs-number">6</span>,<span class="hljs-number">2</span>],
-                  G:[<span class="hljs-number">7</span>,<span class="hljs-number">2</span>],
-                  H:[<span class="hljs-number">8</span>,<span class="hljs-number">2</span>],
-                  I:[<span class="hljs-number">9</span>,<span class="hljs-number">2</span>],
-                  J:[<span class="hljs-number">10</span>,<span class="hljs-number">2</span>],
-                  K:[<span class="hljs-number">11</span>,<span class="hljs-number">2</span>],
-                  L:[<span class="hljs-number">12</span>,<span class="hljs-number">2</span>],
-                  M:[<span class="hljs-number">13</span>,<span class="hljs-number">2</span>],
-                  N:[<span class="hljs-number">14</span>,<span class="hljs-number">2</span>],
-                  O:[<span class="hljs-number">15</span>,<span class="hljs-number">2</span>],
-                  P:[<span class="hljs-number">0</span>,<span class="hljs-number">3</span>],
-                  Q:[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>],
-                  R:[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],
-                  S:[<span class="hljs-number">3</span>,<span class="hljs-number">3</span>],
-                  T:[<span class="hljs-number">4</span>,<span class="hljs-number">3</span>],
-                  U:[<span class="hljs-number">5</span>,<span class="hljs-number">3</span>],
-                  V:[<span class="hljs-number">6</span>,<span class="hljs-number">3</span>],
-                  W:[<span class="hljs-number">7</span>,<span class="hljs-number">3</span>],
-                  X:[<span class="hljs-number">8</span>,<span class="hljs-number">3</span>],
-                  Y:[<span class="hljs-number">9</span>,<span class="hljs-number">3</span>]
+                  <span class="hljs-attr">EMPTY</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>],
+                  <span class="hljs-attr">A</span>:[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">B</span>:[<span class="hljs-number">2</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">C</span>:[<span class="hljs-number">3</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">D</span>:[<span class="hljs-number">4</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">E</span>:[<span class="hljs-number">5</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">F</span>:[<span class="hljs-number">6</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">G</span>:[<span class="hljs-number">7</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">H</span>:[<span class="hljs-number">8</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">I</span>:[<span class="hljs-number">9</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">J</span>:[<span class="hljs-number">10</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">K</span>:[<span class="hljs-number">11</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">L</span>:[<span class="hljs-number">12</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">M</span>:[<span class="hljs-number">13</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">N</span>:[<span class="hljs-number">14</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">O</span>:[<span class="hljs-number">15</span>,<span class="hljs-number">2</span>],
+                  <span class="hljs-attr">P</span>:[<span class="hljs-number">0</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">Q</span>:[<span class="hljs-number">1</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">R</span>:[<span class="hljs-number">2</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">S</span>:[<span class="hljs-number">3</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">T</span>:[<span class="hljs-number">4</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">U</span>:[<span class="hljs-number">5</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">V</span>:[<span class="hljs-number">6</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">W</span>:[<span class="hljs-number">7</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">X</span>:[<span class="hljs-number">8</span>,<span class="hljs-number">3</span>],
+                  <span class="hljs-attr">Y</span>:[<span class="hljs-number">9</span>,<span class="hljs-number">3</span>]
               });
 
 Crafty.c(<span class="hljs-string">"Char"</span>,{
-    init:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
-        <span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D,DOM"</span>).attr({w:<span class="hljs-number">24</span>,h:<span class="hljs-number">32</span>});
+    <span class="hljs-attr">init</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D,DOM"</span>).attr({<span class="hljs-attr">w</span>:<span class="hljs-number">24</span>,<span class="hljs-attr">h</span>:<span class="hljs-number">32</span>});
     }
 });
 
 Crafty.c(<span class="hljs-string">"SpriteText"</span>,{
-    init:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-attr">init</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
         <span class="hljs-keyword">this</span>.addComponent(<span class="hljs-string">"2D,DOM"</span>);
     },
-    text:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">text</span>)</span>{
+    <span class="hljs-attr">text</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">text</span>)</span>{
         <span class="hljs-keyword">var</span> c;
         <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i&lt;text.length;i++){
             c = Crafty.e(<span class="hljs-string">"Char"</span>,text.charAt(i).toUpperCase());
@@ -126,7 +126,6 @@ Crafty.c(<span class="hljs-string">"SpriteText"</span>,{
 <iframe width="600" height="300" src="examples/textsprite/textsprite.html">
     This is an iframe. sorry.
 </iframe>
-
 </div>
 
 			
@@ -155,8 +154,7 @@ Crafty.c(<span class="hljs-string">"SpriteText"</span>,{
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

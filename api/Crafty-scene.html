@@ -72,7 +72,7 @@ simply add the component <code>Persist</code>.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs ">Crafty.defineScene(<span class="hljs-string">"loading"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
     Crafty.background(<span class="hljs-string">"#000"</span>);
     Crafty.e(<span class="hljs-string">"2D, DOM, Text"</span>)
-          .attr({ w: <span class="hljs-number">100</span>, h: <span class="hljs-number">20</span>, x: <span class="hljs-number">150</span>, y: <span class="hljs-number">120</span> })
+          .attr({ <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">x</span>: <span class="hljs-number">150</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">120</span> })
           .text(<span class="hljs-string">"Loading"</span>)
           .css({ <span class="hljs-string">"text-align"</span>: <span class="hljs-string">"center"</span>})
           .textColor(<span class="hljs-string">"#FFFFFF"</span>);
@@ -98,7 +98,7 @@ those with the <code>Persist</code> component). Then it will set the background 
 gray and create a UFO entity. Finally, the next time the game encounters
 another command of the form <code>Crafty.scene(scene_name)</code> (if ever), then the
 game will send a message to the server.</p>
-<pre><code class="hljs ">Crafty.enterScene(<span class="hljs-string">"square"</span>, {x:<span class="hljs-number">10</span>, y:<span class="hljs-number">10</span>, w:<span class="hljs-number">20</span>, h:<span class="hljs-number">20</span>});</code></pre><p>This will clear the stage, set the background black, and create a red square with the specified position and dimensions.
+<pre><code class="hljs ">Crafty.enterScene(<span class="hljs-string">"square"</span>, {<span class="hljs-attr">x</span>:<span class="hljs-number">10</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">10</span>, <span class="hljs-attr">w</span>:<span class="hljs-number">20</span>, <span class="hljs-attr">h</span>:<span class="hljs-number">20</span>});</code></pre><p>This will clear the stage, set the background black, and create a red square with the specified position and dimensions.
 ```</p>
 </span></div></div></div></div></div>
 			
@@ -127,8 +127,7 @@ game will send a message to the server.</p>
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

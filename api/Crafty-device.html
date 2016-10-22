@@ -59,11 +59,11 @@
 </span></div><div><h4>Methods and Properties</h4><ul class="page-toc"><li><a href="#Crafty-device-deviceMotion">.deviceMotion</a></li><li><a href="#Crafty-device-deviceOrientation">.deviceOrientation</a></li><li><a href="#Crafty-mobile">Crafty.mobile</a></li></ul><div class="doclet" id="Crafty-device-deviceMotion"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">Crafty.device.deviceMotion</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/controls/device.js#L122-148">src/controls/device.js#L122-148</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-noun">Crafty.device.deviceMotion</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-qualifier">Function </span><span class="sig-noun">callback</span></span><span class="sig-seperator">)</span></code><dl class="parameter"><dt> callback </dt><dd><span class="markdown"><p>Callback method executed once as soon as device motion is change</p>
 </span></dd></dl></div><span class="markdown"><p>Do something with normalized device motion data:</p>
 <pre><code class="hljs ">{
-    acceleration : <span class="hljs-string">'Grab the acceleration including gravity from the results'</span>,
-    rawAcceleration : <span class="hljs-string">'Display the raw acceleration data'</span>,
-    facingUp : <span class="hljs-string">'Z is the acceleration in the Z axis, and if the device is facing up or down'</span>,
-    tiltLR : <span class="hljs-string">'Convert the value from acceleration to degrees. acceleration.x is the acceleration according to gravity, we'</span>ll assume we<span class="hljs-string">'re on Earth and divide by 9.81 (earth gravity) to get a percentage value, and then multiply that by 90 to convert to degrees.'</span>,
-    tiltFB : <span class="hljs-string">'Convert the value from acceleration to degrees.'</span>
+    <span class="hljs-attr">acceleration</span> : <span class="hljs-string">'Grab the acceleration including gravity from the results'</span>,
+    <span class="hljs-attr">rawAcceleration</span> : <span class="hljs-string">'Display the raw acceleration data'</span>,
+    <span class="hljs-attr">facingUp</span> : <span class="hljs-string">'Z is the acceleration in the Z axis, and if the device is facing up or down'</span>,
+    <span class="hljs-attr">tiltLR</span> : <span class="hljs-string">'Convert the value from acceleration to degrees. acceleration.x is the acceleration according to gravity, we'</span>ll assume we<span class="hljs-string">'re on Earth and divide by 9.81 (earth gravity) to get a percentage value, and then multiply that by 90 to convert to degrees.'</span>,
+    <span class="hljs-attr">tiltFB</span> : <span class="hljs-string">'Convert the value from acceleration to degrees.'</span>
 }</code></pre></span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-comment">// Get DeviceMotion event normalized data.</span>
 Crafty.device.deviceMotion(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>)</span>{
     Crafty.log(<span class="hljs-string">'data.moAccel : '</span>+data.rawAcceleration+<span class="hljs-string">', data.moCalcTiltLR : '</span>+<span class="hljs-built_in">Math</span>.round(data.tiltLR)+<span class="hljs-string">', data.moCalcTiltFB : '</span>+<span class="hljs-built_in">Math</span>.round(data.tiltFB)+<span class="hljs-string">''</span>);
@@ -110,8 +110,7 @@ Crafty.device.deviceOrientation(<span class="hljs-function"><span class="hljs-ke
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

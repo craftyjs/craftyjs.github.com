@@ -128,7 +128,7 @@
 		</span>
 
 		<h2> Gameloop mechanics </h2>
-		<p>Crafty&#39;s game loop is implemented in <a href="/api/Crafty-timer.html#Crafty-timer-step">Crafty.timer.step</a>.  It uses global events to communicate with the rest of the engine.  The basic loop is driven by <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"><code>requestAnimationFrame</code></a> if available, and consists of the following phases:</p>
+<p>Crafty&#39;s game loop is implemented in <a href="/api/Crafty-timer.html#Crafty-timer-step">Crafty.timer.step</a>.  It uses global events to communicate with the rest of the engine.  The basic loop is driven by <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame"><code>requestAnimationFrame</code></a> if available, and consists of the following phases:</p>
 <ul>
 <li>One or more calls to &quot;EnterFrame&quot; which advance the game state</li>
 <li>A single call to &quot;RenderScene&quot; which triggers each layer to draw itself</li>
@@ -138,13 +138,13 @@
 <h2 id="enterframe">EnterFrame</h2>
 <p>Functions bound to this event are passed an object with several properties, only a couple of which are typically important:</p>
 <pre><code>data = {
-    frame: frameNumber <span class="hljs-comment">// the number of frames since Crafty.init()</span>
+    <span class="hljs-attr">frame</span>: frameNumber <span class="hljs-comment">// the number of frames since Crafty.init()</span>
     dt: ms <span class="hljs-comment">// the time in ms which has passed since the last "EnterFrame" event</span>
 }</code></pre>
 <p>All game logic, i.e. anything that changes over time, is ultimately hooked into the &quot;EnterFrame&quot; event.  Many components (such as <a href="/api/Tween.html">&quot;Tween&quot;</a>) exist to simplify this interaction, but to provide custom behavior you&#39;ll probably end up binding entities  directly to this event.  If you want to provide smooth behavior, you should use the <code>dt</code> property to determine how far the game state should advance.  As a simple example, here&#39;s a red square that will move to the right at 10 pixels per second:</p>
 <pre><code>Crafty.init(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
 <span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>);
-  .attr({x: <span class="hljs-number">10</span>, y: <span class="hljs-number">10</span>, w: <span class="hljs-number">100</span>, h: <span class="hljs-number">100</span>})
+  .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>})
   .color(<span class="hljs-string">'red'</span>)
   .bind(<span class="hljs-string">"EnterFrame"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">eventData</span>) </span>{
     <span class="hljs-comment">// Move to the right by 10 pixels per second</span>
@@ -155,7 +155,6 @@
 <h2 id="crafty-timer-steptype">Crafty.timer.steptype</h2>
 <p>The <a href="/api/Crafty-timer.html#Crafty-timer-steptype">Crafty.timer.steptype</a> function lets you control the exact way &quot;EnterFrame&quot; events consume game time.  This can be a pretty complex topic; for an in-depth discussion, see Glenn Fiedler&#39;s famous <a href="http://gafferongames.com/game-physics/fix-your-timestep/">Fix Your Timestep!</a> article.</p>
 <p>Crafty defaults to a fixed timestep with the possibility of using multiple &quot;EnterFrame&quot; events to combat slowdown, but this behavior is customizable.  See the method&#39;s documentation for details!</p>
-
 	</div>
 </div>
 			
@@ -184,8 +183,7 @@
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

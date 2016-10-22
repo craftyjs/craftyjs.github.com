@@ -64,12 +64,12 @@ Crafty.clone(<span class="hljs-number">4</span>);    <span class="hljs-comment">
 <span class="hljs-comment">// Objects</span>
 <span class="hljs-keyword">var</span> globalCount = <span class="hljs-number">0</span>;
 <span class="hljs-keyword">var</span> obj1 = {
-  count: <span class="hljs-number">0</span>,
-  inc: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">inc</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
      <span class="hljs-keyword">this</span>.count++;
      globalCount++;
   },
-  log: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-attr">log</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.count + <span class="hljs-string">'/'</span> + globalCount);
   }
 };
@@ -109,8 +109,7 @@ obj2.log(); <span class="hljs-comment">// prints "1/2" to the log</span></code><
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

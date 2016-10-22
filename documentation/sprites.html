@@ -128,7 +128,7 @@
 		</span>
 
 		<h2> Sprites </h2>
-		<p>Sprite sheets are image files which contain multiple game images.</p>
+<p>Sprite sheets are image files which contain multiple game images.</p>
 <p>This example uses a public domain file from the <a href="http://opengameart.org/content/glitch-sprite-assets-huge-collection">Glitch assets collection</a>.  Thanks to Tiny Speck for opening their assets up! Here&#39;s the image we&#39;ll be referring to:</p>
 <p><img src="/images/glitch_walker.png" height=114 width=416 /></p>
 <p>In this case, it depicts multiple frames of a single animation, but it&#39;s common for sprite sheets to combine many different animations.</p>
@@ -145,7 +145,7 @@
             tileh: <span class="hljs-number">114</span>,
             <span class="hljs-comment">// We give names to three individual images</span>
             map: {
-                walker_start: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
+                <span class="hljs-attr">walker_start</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
                 walker_middle: [<span class="hljs-number">7</span>, <span class="hljs-number">0</span>]
                 walker_end: [<span class="hljs-number">7</span>, <span class="hljs-number">1</span>]
             }
@@ -160,12 +160,12 @@ Crafty.load(assetsObj, callback)</code></pre>
 <pre><code><span class="hljs-comment">// This will display the image associated with walker_start</span>
 <span class="hljs-comment">// It automatically gets the dimensions of that image: 104x114</span>
 <span class="hljs-keyword">var</span> actual_size = Crafty.e(<span class="hljs-string">"2D, Canvas, walker_start"</span>)
-    .attr({x: <span class="hljs-number">10</span>, y:<span class="hljs-number">10</span>});
+    .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">10</span>});
 
 <span class="hljs-comment">// An image from a different part of the sprite sheet</span>
 <span class="hljs-comment">// Here we scale it to half size</span>
 <span class="hljs-keyword">var</span> small_sprite = Crafty.e(<span class="hljs-string">"2D, Canvas, walker_middle"</span>)
-    .attr({x:<span class="hljs-number">150</span>, y:<span class="hljs-number">10</span>, w:<span class="hljs-number">52</span>, h:<span class="hljs-number">57</span>})</code></pre>
+    .attr({<span class="hljs-attr">x</span>:<span class="hljs-number">150</span>, <span class="hljs-attr">y</span>:<span class="hljs-number">10</span>, <span class="hljs-attr">w</span>:<span class="hljs-number">52</span>, <span class="hljs-attr">h</span>:<span class="hljs-number">57</span>})</code></pre>
 <h2 id="animating-sprites">Animating sprites</h2>
 <p>You can animate one of the sprites above by adding the <a href="/api/SpriteAnimation.html">&quot;SpriteAnimation&quot;</a> component.</p>
 <pre><code><span class="hljs-keyword">var</span> walker = Crafty.e(<span class="hljs-string">'2D, Canvas, walker_start, SpriteAnimation'</span>);</code></pre>
@@ -175,11 +175,10 @@ Crafty.load(assetsObj, callback)</code></pre>
     [<span class="hljs-number">0</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">2</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">3</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">4</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">5</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">6</span>, <span class="hljs-number">1</span>], [<span class="hljs-number">7</span>, <span class="hljs-number">1</span>]
 ])</code></pre>
 <p>Then, to play the animation, you simply call the <code>animate</code> method to start it!  This method takes two parameters: the name of the reel, and the number of times to play it.  To loop indefinitely, pass a value of <code>-1</code>:</p>
-<pre><code>walker.animate(<span class="hljs-string">"walking"</span>, -<span class="hljs-number">1</span>)</code></pre>
+<pre><code>walker.animate(<span class="hljs-string">"walking"</span>, <span class="hljs-number">-1</span>)</code></pre>
 <p>Finally, here&#39;s a complete example running on jsbin, showing our sprite walking in place:
 <a class="jsbin-embed" href="http://jsbin.com/reneji/1/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
 <p>Try adding <code>walker.animationSpeed = 2</code> at the end of the <code>go()</code> function!</p>
-
 	</div>
 </div>
 			
@@ -208,8 +207,7 @@ Crafty.load(assetsObj, callback)</code></pre>
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>

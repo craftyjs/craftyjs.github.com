@@ -75,13 +75,13 @@ To have the animation repeat indefinitely, pass in <code>-1</code>.</p>
 <p>Once an animation ends, it will remain at its last frame.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-comment">// Define a sprite-map component</span>
 Crafty.sprite(<span class="hljs-number">16</span>, <span class="hljs-string">"images/sprite.png"</span>, {
-    PlayerSprite: [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
+    <span class="hljs-attr">PlayerSprite</span>: [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
 });
 
 <span class="hljs-comment">// Play the animation across 20 frames (so each sprite in the 4 sprite animation should be seen for 5 frames) and repeat indefinitely</span>
 Crafty.e(<span class="hljs-string">"2D, DOM, SpriteAnimation, PlayerSprite"</span>)
     .reel(<span class="hljs-string">'PlayerRunning'</span>, <span class="hljs-number">20</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>) <span class="hljs-comment">// setup animation</span>
-    .animate(<span class="hljs-string">'PlayerRunning'</span>, -<span class="hljs-number">1</span>); <span class="hljs-comment">// start animation</span></code></pre></span></div></div><div class="doclet" id="-animationSpeed"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.animationSpeed</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/graphics/sprite-animation.js#L55-60">src/graphics/sprite-animation.js#L55-60</a></div><span class="markdown"><p>The playback rate of the animation.  This property defaults to 1.</p>
+    .animate(<span class="hljs-string">'PlayerRunning'</span>, <span class="hljs-number">-1</span>); <span class="hljs-comment">// start animation</span></code></pre></span></div></div><div class="doclet" id="-animationSpeed"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.animationSpeed</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/graphics/sprite-animation.js#L55-60">src/graphics/sprite-animation.js#L55-60</a></div><span class="markdown"><p>The playback rate of the animation.  This property defaults to 1.</p>
 </span></div><div class="doclet" id="-getReel"><a href="#doc-nav" class="doc-top">Back to top</a><h2 class="doclet-header">.getReel</h2><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/5c34e4039278e39defc230858d1e83c078935f50/src/graphics/sprite-animation.js#L457-467">src/graphics/sprite-animation.js#L457-467</a></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">Reel </span><span class="sig-noun">.getReel</span></span><span class="sig-seperator">()</span></code><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>The current reel, or null if there is no active reel</p>
 </span></dd></dl></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">Reel </span><span class="sig-noun">.getReel</span></span><span class="sig-seperator">(</span><span class="sig-phrase"><span class="sig-noun">reelId</span></span><span class="sig-seperator">)</span></code><dl class="parameter"><dt> reelId </dt><dd><span class="markdown"><p>The id of the reel to fetch.</p>
 </span></dd></dl><dl class="parameter returns"><dt class="returns"> [Returns] </dt><dd><span class="markdown"><p>The specified reel, or <code>undefined</code> if no such reel exists.</p>
@@ -115,7 +115,7 @@ See the Tween component for animation of 2D properties.</p>
 array of absolute sprite positions or the start x on the sprite map, the y on the sprite map and then the end x on the sprite map.</p>
 </span><div class="example"><h4>Example</h4><span class="markdown"><pre><code class="hljs "><span class="hljs-comment">// Define a sprite-map component</span>
 Crafty.sprite(<span class="hljs-number">16</span>, <span class="hljs-string">"images/sprite.png"</span>, {
-    PlayerSprite: [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
+    <span class="hljs-attr">PlayerSprite</span>: [<span class="hljs-number">0</span>,<span class="hljs-number">0</span>]
 });
 
 <span class="hljs-comment">// Define an animation on the second row of the sprite map (fromY = 1)</span>
@@ -161,8 +161,7 @@ If a reel is already playing, or there is no current reel, there will be no effe
 				<li class="emph"><a href="/#install">Download</a></li>
 		</ul>
 		<p>
-			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT</a> or <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License">GPL</a>
-			license.
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
 		</p>
 	</div>
 </div>
