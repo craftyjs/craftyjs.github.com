@@ -21,7 +21,15 @@ var StaticPage = React.createClass({
 			if (page) {
 				var content = <DocPage page={page} dict={dict} />
 			} else {
-				var content = <div/>
+				var content = <div className="api-landing-page markdown">
+      <h1>Crafty API</h1>
+	  <p>This is Crafty's api documentation, with numerous topics arranged by category.  
+	  For a gentler introduction, try either</p>
+	  <ul>
+	  	<li>The <a href="../getting-started">quickstart guide</a></li>
+	  	<li>The <a href="../documentation">documentation overview</a></li>
+	  </ul>
+    </div>
 			}
 		}
 

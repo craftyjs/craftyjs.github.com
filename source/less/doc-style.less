@@ -10,8 +10,18 @@
 @warning-light: lighten(@warning, 30%);
 
 /* Horizontal space between blocks*/
-.block-spacing {
+.block-spacing {  
   margin-top: 1em;
+}
+
+.badge(@color) {
+  font-variant: small-caps;
+  background: @color;
+  color: #aaa;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 2px;
+  vertical-align: middle;
 }
 
 
@@ -49,6 +59,11 @@ h1, h2, h3 {
 .doclet-header {
   border-bottom: 2px solid #CCC;
   margin-top: 2em;
+}
+
+.page-badge {
+  .badge(#eee);
+  margin-top: 5px;
 }
 
 /* The "back to top" links */

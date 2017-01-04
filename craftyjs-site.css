@@ -6626,6 +6626,16 @@ h3 {
   border-bottom: 2px solid #CCC;
   margin-top: 2em;
 }
+.page-badge {
+  font-variant: small-caps;
+  background: #eee;
+  color: #aaa;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 2px;
+  vertical-align: middle;
+  margin-top: 5px;
+}
 /* The "back to top" links */
 .doc-top {
   float: right;
