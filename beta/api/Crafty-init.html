@@ -1,7 +1,59 @@
----
-title: Crafty.init
-layout: api
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Crafty - Crafty.init</title>
+	<link type="text/css" rel="stylesheet" href="/craftyjs-site.css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Arvo:regular,bold' rel='stylesheet' 	type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="/github.css"/>
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-23935213-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function () {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+	</script>
+</head>
+<body>
+	<div id = "header-background"> </div>
+	<div id = "page-frame">
+	<div id="header">
+		<nav class="navbar">
+  			<div class="container-fluid">
+  				<div class="navbar-header">
+  					<a class="navbar-brand" href="/"> <img class="logo" src="/images/text-logo.png" /> </a>
+  					
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/getting-started/">Getting started</a></li>
+						<li><a href="/documentation/">Documentation</a></li>
+						<li><a href="/api/">API</a></li>
+						<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
+						<li><a href="/components/">Components</a></li>
+						<li class="emph"><a href="/#install">Download</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+	<div id="main">
+		<div id="content" class="container">
+			
+
+
 
 <div id="docs"><div class="toc-holder" id="doc-nav"><ul id="doc-level-one"><li><a href="events.html">List of Events</a></li><li class="category">Core<ul class="category-list"><li><a href="Crafty.html">Crafty</a></li><li><a href="Crafty Core.html">Crafty Core</a></li><li><a href="Crafty-bind.html">Crafty.bind()</a></li><li><a href="Crafty-c.html">Crafty.c()</a></li><li><a href="Crafty-clone.html">Crafty.clone()</a></li><li><a href="Crafty-defineField.html">Crafty.defineField()</a></li><li><a href="Crafty-e.html">Crafty.e()</a></li><li><a href="Crafty-extend.html">Crafty.extend()</a></li><li><a href="Crafty-frame.html">Crafty.frame()</a></li><li><a href="Crafty-getVersion.html">Crafty.getVersion()</a></li><li><a href="Crafty-init.html">Crafty.init()</a></li><li><a href="Crafty-isPaused.html">Crafty.isPaused()</a></li><li><a href="Crafty-one.html">Crafty.one()</a></li><li><a href="Crafty-pause.html">Crafty.pause()</a></li><li><a href="Crafty-s.html">Crafty.s()</a></li><li><a href="Crafty-settings.html">Crafty.settings</a></li><li><a href="Crafty-stage.html">Crafty.stage</a></li><li><a href="Crafty-stop.html">Crafty.stop()</a></li><li><a href="Crafty-support.html">Crafty.support</a></li><li><a href="Crafty-trigger.html">Crafty.trigger()</a></li><li><a href="Crafty-unbind.html">Crafty.unbind()</a></li><li><a href="Crafty-uniqueBind.html">Crafty.uniqueBind()</a></li></ul></li><li class="category">2D<ul class="category-list"><li><a href="2D.html">2D</a></li><li><a href="AngularMotion.html">AngularMotion</a></li><li><a href="Collision.html">Collision</a></li><li><a href="Crafty-circle.html">Crafty.circle</a></li><li><a href="Crafty-diamondIso.html">Crafty.diamondIso</a></li><li><a href="Crafty-HashMap.html">Crafty.HashMap</a></li><li><a href="Crafty-isometric.html">Crafty.isometric</a></li><li><a href="Crafty-map.html">Crafty.map</a></li><li><a href="Crafty-math-Matrix2D.html">Crafty.math.Matrix2D</a></li><li><a href="Crafty-math-Vector2D.html">Crafty.math.Vector2D</a></li><li><a href="Crafty-polygon.html">Crafty.polygon</a></li><li><a href="Crafty-raycast.html">Crafty.raycast()</a></li><li><a href="Crafty-rectManager.html">Crafty.rectManager</a></li><li><a href="Gravity.html">Gravity</a></li><li><a href="GroundAttacher.html">GroundAttacher</a></li><li><a href="Motion.html">Motion</a></li><li><a href="Supportable.html">Supportable</a></li></ul></li><li class="category">Animation<ul class="category-list"><li><a href="Crafty-easing.html">Crafty.easing</a></li><li><a href="SpriteAnimation.html">SpriteAnimation</a></li><li><a href="Tween.html">Tween</a></li></ul></li><li class="category">Assets<ul class="category-list"><li><a href="Crafty-asset.html">Crafty.asset()</a></li><li><a href="Crafty-assets.html">Crafty.assets</a></li><li><a href="Crafty-imageWhitelist.html">Crafty.imageWhitelist()</a></li><li><a href="Crafty-load.html">Crafty.load()</a></li><li><a href="Crafty-paths.html">Crafty.paths()</a></li><li><a href="Crafty-removeAssets.html">Crafty.removeAssets()</a></li></ul></li><li class="category">Audio<ul class="category-list"><li><a href="Crafty-audio.html">Crafty.audio</a></li></ul></li><li class="category">Controls<ul class="category-list"><li><a href="Controllable.html">Controllable</a></li><li><a href="Controls.html">Controls</a></li><li><a href="Draggable.html">Draggable</a></li><li><a href="Fourway.html">Fourway</a></li><li><a href="Jumper.html">Jumper</a></li><li><a href="Multiway.html">Multiway</a></li><li><a href="Twoway.html">Twoway</a></li></ul></li><li class="category">Debug<ul class="category-list"><li><a href="Crafty-error.html">Crafty.error()</a></li><li><a href="Crafty-log.html">Crafty.log()</a></li><li><a href="DebugCanvas.html">DebugCanvas</a></li><li><a href="DebugPolygon.html">DebugPolygon</a></li><li><a href="DebugRectangle.html">DebugRectangle</a></li><li><a href="SolidAreaMap.html">SolidAreaMap</a></li><li><a href="SolidHitBox.html">SolidHitBox</a></li><li><a href="VisibleMBR.html">VisibleMBR</a></li><li><a href="WiredAreaMap.html">WiredAreaMap</a></li><li><a href="WiredHitBox.html">WiredHitBox</a></li></ul></li><li class="category">Events<ul class="category-list"><li><a href="Crafty-addEvent.html">Crafty.addEvent()</a></li><li><a href="Crafty-bind.html">Crafty.bind()</a></li><li><a href="Crafty-one.html">Crafty.one()</a></li><li><a href="Crafty-removeEvent.html">Crafty.removeEvent()</a></li><li><a href="Crafty-trigger.html">Crafty.trigger()</a></li><li><a href="Crafty-unbind.html">Crafty.unbind()</a></li><li><a href="Crafty-uniqueBind.html">Crafty.uniqueBind()</a></li></ul></li><li class="category">Game Loop<ul class="category-list"><li><a href="Crafty-timer.html">Crafty.timer</a></li></ul></li><li class="category">Graphics<ul class="category-list"><li><a href="Canvas.html">Canvas</a></li><li><a href="CanvasLayer.html">CanvasLayer</a></li><li><a href="Color.html">Color</a></li><li><a href="Crafty-assignColor.html">Crafty.assignColor()</a></li><li><a href="Crafty-background.html">Crafty.background()</a></li><li><a href="Crafty-createLayer.html">Crafty.createLayer()</a></li><li><a href="Crafty-defaultShader.html">Crafty.defaultShader()</a></li><li><a href="Crafty-domHelper.html">Crafty.domHelper</a></li><li><a href="Crafty-pixelart.html">Crafty.pixelart()</a></li><li><a href="Crafty-sprite.html">Crafty.sprite()</a></li><li><a href="Crafty-WebGLShader.html">Crafty.WebGLShader()</a></li><li><a href="DOM.html">DOM</a></li><li><a href="DomLayer.html">DomLayer</a></li><li><a href="HTML.html">HTML</a></li><li><a href="Image.html">Image</a></li><li><a href="Particles.html">Particles</a></li><li><a href="Renderable.html">Renderable</a></li><li><a href="Sprite.html">Sprite</a></li><li><a href="Text.html">Text</a></li><li><a href="WebGL.html">WebGL</a></li><li><a href="WebGLLayer.html">WebGLLayer</a></li></ul></li><li class="category">Input<ul class="category-list"><li><a href="AreaMap.html">AreaMap</a></li><li><a href="Button.html">Button</a></li><li><a href="Crafty-findPointerEventTargetByComponent.html">Crafty.findPointerEventTargetByComponent()</a></li><li><a href="Crafty-keyboardDispatch.html">Crafty.keyboardDispatch()</a></li><li><a href="Crafty-keydown.html">Crafty.keydown</a></li><li><a href="Crafty-keys.html">Crafty.keys</a></li><li><a href="Crafty-lastEvent.html">Crafty.lastEvent</a></li><li><a href="Crafty-mouseButtons.html">Crafty.mouseButtons</a></li><li><a href="Crafty-mouseDispatch.html">Crafty.mouseDispatch()</a></li><li><a href="Crafty-mouseWheelDispatch.html">Crafty.mouseWheelDispatch()</a></li><li><a href="Crafty-multitouch.html">Crafty.multitouch()</a></li><li><a href="Crafty-selected.html">Crafty.selected</a></li><li><a href="Crafty-touchDispatch.html">Crafty.touchDispatch()</a></li><li><a href="Keyboard.html">Keyboard</a></li><li><a href="Mouse.html">Mouse</a></li><li><a href="MouseDrag.html">MouseDrag</a></li><li><a href="Touch.html">Touch</a></li></ul></li><li class="category">Misc<ul class="category-list"><li><a href="Crafty-addEvent.html">Crafty.addEvent()</a></li><li><a href="Crafty-device.html">Crafty.device</a></li><li><a href="Crafty-removeEvent.html">Crafty.removeEvent()</a></li><li><a href="Crafty-support.html">Crafty.support</a></li></ul></li><li class="category">Model<ul class="category-list"><li><a href="Model.html">Model</a></li></ul></li><li class="category">Scenes<ul class="category-list"><li><a href="Crafty-scene.html">Crafty.scene()</a></li></ul></li><li class="category">Stage<ul class="category-list"><li><a href="Crafty-background.html">Crafty.background()</a></li><li><a href="Crafty-scene.html">Crafty.scene()</a></li><li><a href="Crafty-viewport.html">Crafty.viewport</a></li></ul></li><li class="category">Utilities<ul class="category-list"><li><a href="Crafty-math.html">Crafty.math</a></li><li><a href="Delay.html">Delay</a></li><li><a href="Storage.html">Storage</a></li></ul></li></ul></div><div id="doc-content" class="doc-page-holder"><div class="doc-page"><h1>Crafty.init() <span></span></h1><div class="doclet" id="Crafty-init"><div class="doc-source"><a href="https://github.com/craftyjs/Crafty/blob/1ef28454144100272fd439e5c3e8afb90601c00e/src/core/core.js#L1205-L1227">src/core/core.js#L1205-L1227</a></div><div class="triggered-events"><h4>Events</h4><div class="trigger-list"><dl class="trigger"><dt>Load </dt><dd>Just after the viewport is initialised. Before the EnterFrame loops is started</dd></dl></div></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">this </span><span class="sig-noun">Crafty.init</span></span><span class="sig-seperator">([</span><span class="sig-phrase"><span class="sig-qualifier">Number </span><span class="sig-noun">width</span></span><span class="sig-seperator">,</span><span class="sig-phrase"><span class="sig-qualifier"> </span><span class="sig-qualifier">Number </span><span class="sig-noun">height</span></span><span class="sig-seperator">,</span><span class="sig-phrase"><span class="sig-qualifier"> </span><span class="sig-qualifier">String </span><span class="sig-noun">stage_elem</span></span><span class="sig-seperator">])</span></code></div><div class="crafty-method"><code class="signature"><span class="sig-phrase"><span class="sig-qualifier">public </span><span class="sig-qualifier">this </span><span class="sig-noun">Crafty.init</span></span><span class="sig-seperator">([</span><span class="sig-phrase"><span class="sig-qualifier">Number </span><span class="sig-noun">width</span></span><span class="sig-seperator">,</span><span class="sig-phrase"><span class="sig-qualifier"> </span><span class="sig-qualifier">Number </span><span class="sig-noun">height</span></span><span class="sig-seperator">,</span><span class="sig-phrase"><span class="sig-qualifier"> </span><span class="sig-qualifier">HTMLElement </span><span class="sig-noun">stage_elem</span></span><span class="sig-seperator">])</span></code><dl class="parameter"><dt> Number width </dt><dd><span class="markdown"><p>Width of the stage</p>
 </span></dd></dl><dl class="parameter"><dt> Number height </dt><dd><span class="markdown"><p>Height of the stage</p>
@@ -12,3 +64,35 @@ layout: api
 <p>All <code>Load</code> events will be executed.</p>
 <p>Uses <code>requestAnimationFrame</code> to sync the drawing with the browser but will default to <code>setInterval</code> if the browser does not support it.</p>
 </span><div><h4>See Also</h4><ul class="see-also-list"><li><a href="Crafty-stop.html">Crafty.stop</a></li><li><a href="Crafty-viewport.html">Crafty.viewport</a></li></ul></div></div></div></div></div>
+			
+		</div>
+	</div>
+	<div class="clearer"></div>
+	<div id="footer">
+		<div id="contact">
+			<a href="https://groups.google.com/forum/#!forum/craftyjs">
+				<img src="/images/google.png" />
+				google groups</a>
+			<a href="mailto:starwed@gmail.com">
+				<img src="/images/email.png" />
+				starwed@gmail.com</a>
+			<a href="https://github.com/craftyjs/Crafty">
+				<img src="/images/github.png" />
+				github</a>
+		</div>
+		<ul>
+			<li><a href="/">Home</a></li>
+				<li><a href="/getting-started/">Getting started</a></li>
+				<li><a href="/documentation/">Documentation</a></li>
+				<li><a href="/api/">API</a></li>
+				<li><a href="https://groups.google.com/forum/#!forum/craftyjs">Forum</a></li>
+				<li><a href="/components/">Modules</a></li>
+				<li class="emph"><a href="/#install">Download</a></li>
+		</ul>
+		<p>
+			&copy; Crafty 2010-2015. Crafty is distributed under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT License</a>.
+		</p>
+	</div>
+</div>
+</body>
+</html>
