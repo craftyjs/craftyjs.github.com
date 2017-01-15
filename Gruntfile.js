@@ -23,14 +23,23 @@ module.exports = function(grunt) {
           }
         }
       },
-      posts: {
+      release: {
         files: [{
           cwd: './source',
           dest: './',
           expand: true,
           src: ['index.html', 'documentation/*', 'cookbook/**/*.md', 'getting-started/*', 'api/**/*.*', 'components/*.html'] //'api/**/*.*', 
         }]  
+      },
+      beta: {
+        files: [{
+          cwd: './source',
+          dest: './beta',
+          expand: true,
+          src: ['api/**/*.*']
+        }]  
       }
+      
     },
     connect: {
       dev: {
@@ -100,7 +109,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-link-checker');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.registerTask('default', ['api', 'less', 'assemble']);
+  grunt.registerTask('default', ['api', 'less', 'assemble:release']);
+  grunt.registerTask('beta-docs', ['api', 'less', 'assemble:beta']);
 
   grunt.registerTask('api', "Generate api documentation", buildStatic);
   grunt.registerTask('fast-check', 'linkChecker:ignoreApi');
