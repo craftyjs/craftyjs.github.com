@@ -27,8 +27,8 @@ var assetsObj = {
 			tileh: 114,
 			// We give names to three individual images
 			map: {
-				walker_start: [0, 0]
-				walker_middle: [7, 0]
+				walker_start: [0, 0],
+				walker_middle: [7, 0],
 				walker_end: [7, 1]
 			}
 		}
