@@ -34,7 +34,7 @@ var square = Crafty.e('2D, Canvas, Color');
   .bind("EnterFrame", function(eventData) {
     // Move to the right by 10 pixels per second
     this.x = this.x + 10 * (eventData.dt / 1000);
-  };
+  });
 
 ```
 
