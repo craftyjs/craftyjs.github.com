@@ -46,10 +46,10 @@ var myEnt = Crafty.e("2D, DOM, Twoway, RandomPosition, Color").twoway(3).color("
 
 I also changed the size of the entity and gave it a color so you can see it. You now have a fully runnable game - go ahead and add it to the skeleton from <a href='/tutorial/getting-started/download-and-setup'>Download and setup</a> to see for yourself!
 
-Entities can react to events that occur in the game. Crafty provides a suite of build in events such as EnterFrame, Pause, SceneChange. Moving an entity one pixel to the left each frame is achieved by binding a function to the EnterFrame event
+Entities can react to events that occur in the game. Crafty provides a suite of build in events such as UpdateFrame, Pause, SceneChange. Moving an entity one pixel to the left each frame is achieved by binding a function to the UpdateFrame event
 
 {% highlight javascript %}
-myEnt.bind("EnterFrame", function() {
+myEnt.bind("UpdateFrame", function() {
 	this.x--;
 })
 {% endhighlight %}
@@ -78,7 +78,7 @@ Crafty.e("2D, DOM, Color, Collision")
 	.attr({ x: 300, y: 150, w: 10, h: 10, 
 			dX: Crafty.math.randomInt(2, 5), 
 			dY: Crafty.math.randomInt(2, 5) })
-	.bind('EnterFrame', function () {
+	.bind('UpdateFrame', function () {
 		//hit floor or roof
 		if (this.y <= 0 || this.y >= 290)
 			this.dY *= -1;

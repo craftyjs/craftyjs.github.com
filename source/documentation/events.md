@@ -130,4 +130,4 @@ In such a globally bound function, the context will be the global Crafty object 
 
 `Crafty.unbind()` and `Crafty.one()` also exist, and act exactly as you'd expect!
 
-One particularly important built-in global event is "EnterFrame".  You can read more about it in the section on Crafty's [game loop](/documentation/gameloop.html)
+One particularly important built-in global event is "UpdateFrame".  You can read more about it in the section on Crafty's [game loop](/documentation/gameloop.html)
