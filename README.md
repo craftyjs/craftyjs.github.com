@@ -1,4 +1,4 @@
-#Crafty.js Homepage
+# Crafty.js Homepage
 
 This repo contains the content and infrastructure for craftyjs.com
 
