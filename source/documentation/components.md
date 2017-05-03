@@ -107,6 +107,77 @@ Crafty.c("Square", {
 
 You can either use a function object, or the name of an existing function on the component.  (The latter style can be useful when you need to refer to the method in contexts other than a single event.)
 
+
+## Shorthand for defining properties
+
+It's also common to define properties. To reduce the needed boilerplate code you can add [property descriptors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) directly into the component object. These properties will be defined when the component is added to an entity:
+
+```
+Crafty.c("Square", {
+	required: "2D, Canvas, Color",
+
+	init: function() {
+		this.w = 30;
+		this.h = 30;
+	},
+
+	// These properties will be defined upon init
+	properties: {
+		// public `area` property, used by external code not aware of the implementation
+		area: {
+			// setter for the `area` property
+			set: function(value) {
+				// set the entity's width and height to the square root of the new area
+				var sqrt = Math.sqrt(value);
+				this.w = sqrt;
+				this.h = sqrt;
+				// avoid "complex" area computations, by caching it for retrieval
+				this._area = value;
+			},
+
+			// getter for the `area` property
+			get: function() {
+				// return the cached area value
+				return this._area;
+			},
+
+			// make the property show up in property enumerations
+			enumerable: true,
+			// property shouldn't be deletable
+			configurable: false
+		},
+
+		// private `_area` property, serves as a cached value for the area computation
+		_area: {
+			// set the initial value to this.w * this.h
+			value: 30 * 30,
+			// it's a mutable property
+			writable: true,
+			// hide the property from property enumerations
+			enumerable:false,
+			// property shouldn't be deletable
+			configurable: false
+		}
+	}
+});
+```
+
+The `area` property we defined above can be used in the following way, for example:
+```
+var sq = Crafty.e("Square");
+Crafty.log('Initial area:', sq.area); // logs '900'
+Crafty.log('Initial width:', sq.w); // logs '30'
+Crafty.log('Initial height:', sq.h); // logs '30'
+
+sq.area = 400;
+Crafty.log('New area:', sq.area); // logs '400'
+Crafty.log('New width:', sq.w); // logs '20'
+Crafty.log('New height:', sq.h); // logs '20'
+```
+
+This example is a bit contrived and doesn't properly update the area when the entity's width or height are changed by another piece of code, but showcases some benefits of using properties to hide implementation details. Try to extend this code to properly account for external changes of the entity's dimensions (hint: listen for [`Resize` events](http://craftyjs.com/api/2D.html)).
+
+
 ## The nitty gritty
 
 Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won't be further modified.)
