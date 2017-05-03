@@ -19,6 +19,7 @@ After cloning this site repo, the demo files won't be available immediately. To 
 ```shell
 # clone the repo
 $ git clone https://github.com/craftyjs/craftyjs.github.com.git
+$ cd craftyjs.github.com/
 # setup the demo submodule on your PC if it isn't already
 $ git submodule init
 # fetch the demo submodule files
