@@ -143,11 +143,11 @@ square.attr({
 <li>Then we create an entity with three components: <code>&quot;2D, Canvas, Color&quot;</code>.  Anything you want to display will need both the <code>&quot;2D&quot;</code> component and a specific rendering layer; here it&#39;s set to use the <code>&quot;Canvas&quot;</code> layer.  The <code>&quot;Color&quot;</code> component is responsible for actually drawing a coloured square.</li>
 <li>Finally we use the <code>.attr()</code> function to set several properties of the entity, in this case its position and dimensions.  Like most functions, <code>attr()</code> returns the entity it was called on, so we can chain the <code>color()</code> method to set the color of the entity.</li>
 </ul>
-<p>Easy enough!  Now we have a red box showing up on the page, but how about setting it into motion?  For instance, we might want to set the box spinning; if you look at the documentation for <code>&quot;2D&quot;</code>, you&#39;ll see that it provides a <code>rotation</code> property, but how could we animate that?  Simple enough: we can bind to the <code>&quot;EnterFrame&quot;</code> event to change the rotation once per frame:</p>
-<pre><code>square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+<p>Easy enough!  Now we have a red box showing up on the page, but how about setting it into motion?  For instance, we might want to set the box spinning; if you look at the documentation for <code>&quot;2D&quot;</code>, you&#39;ll see that it provides a <code>rotation</code> property, but how could we animate that?  Simple enough: we can bind to the <code>&quot;UpdateFrame&quot;</code> event to change the rotation once per frame:</p>
+<pre><code>square.bind(<span class="hljs-string">'UpdateFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
   <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
 });</code></pre>
-<p>Now we have bound to <code>&quot;EnterFrame&quot;</code> event, this will be triggered each frame, so the square will rotate.</p>
+<p>Now we have bound to <code>&quot;UpdateFrame&quot;</code> event, this will be triggered each frame, so the square will rotate.</p>
 <p>Now, by default this will rotate about the top left corner, but you&#39;d probably like it to rotate about its center.  We can set the origin of the rotation (this is a method provided by <code>&quot;2D&quot;</code>):</p>
 <pre><code>square.origin(<span class="hljs-string">"center"</span>)</code></pre>
 <p>So putting it all together, the final code would be:</p>
@@ -163,12 +163,12 @@ square.attr({
 
 square.origin(<span class="hljs-string">"center"</span>)
 
-square.bind(<span class="hljs-string">'EnterFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+square.bind(<span class="hljs-string">'UpdateFrame'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
   <span class="hljs-keyword">this</span>.rotation = <span class="hljs-keyword">this</span>.rotation + <span class="hljs-number">1</span>;
 });</code></pre>
 <p>And here&#39;s the code in action! </p>
-<p><a class="jsbin-embed" href="http://jsbin.com/rakituvoso/1/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
-<p>The script is editable; try making the square move to the right by adding the code <code>this.x = this.x+1;</code> in the bound <code>&quot;EnterFrame&quot;</code> function.</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/fefune/embed?js,output">JS Bin</a><script src="http://static.jsbin.com/js/embed.js"></script></p>
+<p>The script is editable; try making the square move to the right by adding the code <code>this.x = this.x+1;</code> in the bound <code>&quot;UpdateFrame&quot;</code> function.</p>
 	</div>
 </div>
 			

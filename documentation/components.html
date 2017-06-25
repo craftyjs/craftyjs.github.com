@@ -205,6 +205,66 @@
     }
 });</code></pre>
 <p>You can either use a function object, or the name of an existing function on the component.  (The latter style can be useful when you need to refer to the method in contexts other than a single event.)</p>
+<h2 id="shorthand-for-defining-properties">Shorthand for defining properties</h2>
+<p>It&#39;s also common to define properties. To reduce the needed boilerplate code you can add <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">property descriptors</a> directly into the component object. These properties will be defined when the component is added to an entity:</p>
+<pre><code>Crafty.c(<span class="hljs-string">"Square"</span>, {
+    <span class="hljs-attr">required</span>: <span class="hljs-string">"2D, Canvas, Color"</span>,
+
+    <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>.w = <span class="hljs-number">30</span>;
+        <span class="hljs-keyword">this</span>.h = <span class="hljs-number">30</span>;
+    },
+
+    <span class="hljs-comment">// These properties will be defined upon init</span>
+    properties: {
+        <span class="hljs-comment">// public `area` property, used by external code not aware of the implementation</span>
+        area: {
+            <span class="hljs-comment">// setter for the `area` property</span>
+            set: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+                <span class="hljs-comment">// set the entity's width and height to the square root of the new area</span>
+                <span class="hljs-keyword">var</span> sqrt = <span class="hljs-built_in">Math</span>.sqrt(value);
+                <span class="hljs-keyword">this</span>.w = sqrt;
+                <span class="hljs-keyword">this</span>.h = sqrt;
+                <span class="hljs-comment">// avoid "complex" area computations, by caching it for retrieval</span>
+                <span class="hljs-keyword">this</span>._area = value;
+            },
+
+            <span class="hljs-comment">// getter for the `area` property</span>
+            get: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                <span class="hljs-comment">// return the cached area value</span>
+                <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._area;
+            },
+
+            <span class="hljs-comment">// make the property show up in property enumerations</span>
+            enumerable: <span class="hljs-literal">true</span>,
+            <span class="hljs-comment">// property shouldn't be deletable</span>
+            configurable: <span class="hljs-literal">false</span>
+        },
+
+        <span class="hljs-comment">// private `_area` property, serves as a cached value for the area computation</span>
+        _area: {
+            <span class="hljs-comment">// set the initial value to this.w * this.h</span>
+            value: <span class="hljs-number">30</span> * <span class="hljs-number">30</span>,
+            <span class="hljs-comment">// it's a mutable property</span>
+            writable: <span class="hljs-literal">true</span>,
+            <span class="hljs-comment">// hide the property from property enumerations</span>
+            enumerable:<span class="hljs-literal">false</span>,
+            <span class="hljs-comment">// property shouldn't be deletable</span>
+            configurable: <span class="hljs-literal">false</span>
+        }
+    }
+});</code></pre>
+<p>The <code>area</code> property we defined above can be used in the following way, for example:</p>
+<pre><code><span class="hljs-keyword">var</span> sq = Crafty.e(<span class="hljs-string">"Square"</span>);
+Crafty.log(<span class="hljs-string">'Initial area:'</span>, sq.area); <span class="hljs-comment">// logs '900'</span>
+Crafty.log(<span class="hljs-string">'Initial width:'</span>, sq.w); <span class="hljs-comment">// logs '30'</span>
+Crafty.log(<span class="hljs-string">'Initial height:'</span>, sq.h); <span class="hljs-comment">// logs '30'</span>
+
+sq.area = <span class="hljs-number">400</span>;
+Crafty.log(<span class="hljs-string">'New area:'</span>, sq.area); <span class="hljs-comment">// logs '400'</span>
+Crafty.log(<span class="hljs-string">'New width:'</span>, sq.w); <span class="hljs-comment">// logs '20'</span>
+Crafty.log(<span class="hljs-string">'New height:'</span>, sq.h); <span class="hljs-comment">// logs '20'</span></code></pre>
+<p>This example is a bit contrived and doesn&#39;t properly update the area when the entity&#39;s width or height are changed by another piece of code, but showcases some benefits of using properties to hide implementation details. Try to extend this code to properly account for external changes of the entity&#39;s dimensions (hint: listen for <a href="http://craftyjs.com/api/2D.html"><code>Resize</code> events</a>).</p>
 <h2 id="the-nitty-gritty">The nitty gritty</h2>
 <p>Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won&#39;t be further modified.)</p>
 <ul>
