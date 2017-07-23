@@ -28,7 +28,7 @@ All game logic, i.e. anything that changes over time, is ultimately hooked into 
 
 ```
 Crafty.init(400, 400);
-var square = Crafty.e('2D, Canvas, Color');
+var square = Crafty.e('2D, Canvas, Color')
   .attr({x: 10, y: 10, w: 100, h: 100})
   .color('red')
   .bind("UpdateFrame", function(eventData) {
