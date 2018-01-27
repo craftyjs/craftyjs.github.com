@@ -182,10 +182,12 @@ This example is a bit contrived and doesn't properly update the area when the en
 
 Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won't be further modified.)
 
-- First a flag indicating the existence of the component is set
-- Then all properties are copied over from the component's object.  If any already exist, they will be overwritten.
-- If a property is an object or array, it is copied by reference.
-- Finally, the init function of the component object is called.
+- First a flag indicating the existence of the component is set, and the entity is added to a cached list of entities with that component.
+- Then all simple properties and methods are copied over from the component's object.  If any already exist, they will be overwritten. This is a shallow copy: if a property is an object or array, it is copied by reference.
+- If any setters, getters, or other special behavior are defined in the component's `properties` object, they are added by calling `defineProperty`
+- If any handlers are defined in the component's `events` property, they are bound to the entity.
+- The init function of the component object is called.
+- Finally, the `"NewComponent"` event is triggered.
  
 ### The shared object trap
 
