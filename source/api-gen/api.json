@@ -3,7 +3,7 @@
         "file": "src/controls/controls-system.js",
         "startLine": 72,
         "endLine": 87,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -64,7 +64,7 @@
         "file": "src/controls/controls-system.js",
         "startLine": 139,
         "endLine": 169,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -117,7 +117,7 @@
         "file": "src/controls/controls-system.js",
         "startLine": 198,
         "endLine": 209,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -151,7 +151,7 @@
         "file": "src/controls/controls-system.js",
         "startLine": 218,
         "endLine": 244,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -211,7 +211,7 @@
         "file": "src/controls/controls-system.js",
         "startLine": 294,
         "endLine": 305,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -245,7 +245,7 @@
         "file": "src/controls/controls.js",
         "startLine": 3,
         "endLine": 10,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -268,7 +268,7 @@
         "file": "src/controls/controls.js",
         "startLine": 24,
         "endLine": 34,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -294,7 +294,7 @@
         "file": "src/controls/controls.js",
         "startLine": 40,
         "endLine": 50,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -320,7 +320,7 @@
         "file": "src/controls/controls.js",
         "startLine": 56,
         "endLine": 86,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -383,7 +383,7 @@
         "file": "src/controls/controls.js",
         "startLine": 132,
         "endLine": 141,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -400,7 +400,7 @@
         "file": "src/controls/controls.js",
         "startLine": 174,
         "endLine": 202,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -457,7 +457,7 @@
         "file": "src/controls/controls.js",
         "startLine": 208,
         "endLine": 220,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -498,7 +498,7 @@
         "file": "src/controls/controls.js",
         "startLine": 229,
         "endLine": 242,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -527,7 +527,7 @@
         "file": "src/controls/controls.js",
         "startLine": 248,
         "endLine": 261,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -556,7 +556,7 @@
         "file": "src/controls/controls.js",
         "startLine": 269,
         "endLine": 287,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -579,7 +579,7 @@
         "file": "src/controls/controls.js",
         "startLine": 324,
         "endLine": 352,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -636,7 +636,7 @@
         "file": "src/controls/controls.js",
         "startLine": 367,
         "endLine": 384,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -673,7 +673,7 @@
         "file": "src/controls/controls.js",
         "startLine": 400,
         "endLine": 412,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -711,7 +711,7 @@
         "file": "src/controls/controls.js",
         "startLine": 416,
         "endLine": 439,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -735,7 +735,7 @@
         "file": "src/controls/controls.js",
         "startLine": 456,
         "endLine": 465,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -755,7 +755,7 @@
         "file": "src/controls/controls.js",
         "startLine": 476,
         "endLine": 501,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -825,7 +825,7 @@
         "file": "src/controls/controls.js",
         "startLine": 528,
         "endLine": 542,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -862,7 +862,7 @@
         "file": "src/controls/controls.js",
         "startLine": 549,
         "endLine": 562,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -886,7 +886,7 @@
         "file": "src/controls/controls.js",
         "startLine": 569,
         "endLine": 590,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -930,7 +930,7 @@
         "file": "src/controls/controls.js",
         "startLine": 609,
         "endLine": 622,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -954,7 +954,7 @@
         "file": "src/controls/controls.js",
         "startLine": 629,
         "endLine": 642,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -989,7 +989,7 @@
         "file": "src/controls/keyboard.js",
         "startLine": 3,
         "endLine": 30,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1041,7 +1041,7 @@
         "file": "src/controls/keyboard.js",
         "startLine": 40,
         "endLine": 65,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1108,7 +1108,7 @@
         "file": "src/controls/keyboard.js",
         "startLine": 73,
         "endLine": 86,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1135,7 +1135,7 @@
         "file": "src/controls/keyboard.js",
         "startLine": 102,
         "endLine": 131,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1185,7 +1185,7 @@
         "file": "src/controls/keycodes.js",
         "startLine": 5,
         "endLine": 105,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1202,7 +1202,7 @@
         "file": "src/controls/keycodes.js",
         "startLine": 201,
         "endLine": 214,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1219,7 +1219,7 @@
         "file": "src/controls/mouse.js",
         "startLine": 3,
         "endLine": 39,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1278,7 +1278,7 @@
         "file": "src/controls/mouse.js",
         "startLine": 43,
         "endLine": 51,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1301,7 +1301,7 @@
         "file": "src/controls/mouse.js",
         "startLine": 70,
         "endLine": 95,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1368,7 +1368,7 @@
         "file": "src/controls/mouse.js",
         "startLine": 103,
         "endLine": 116,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1395,7 +1395,7 @@
         "file": "src/controls/mouse.js",
         "startLine": 133,
         "endLine": 162,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1445,7 +1445,7 @@
         "file": "src/controls/touch.js",
         "startLine": 3,
         "endLine": 38,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1510,7 +1510,7 @@
         "file": "src/controls/touch.js",
         "startLine": 40,
         "endLine": 58,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1540,7 +1540,7 @@
         "file": "src/controls/touch.js",
         "startLine": 70,
         "endLine": 82,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1566,7 +1566,7 @@
         "file": "src/controls/touch.js",
         "startLine": 96,
         "endLine": 123,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1610,7 +1610,7 @@
         "file": "src/core/animation.js",
         "startLine": 4,
         "endLine": 28,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1643,7 +1643,7 @@
         "file": "src/core/core.js",
         "startLine": 4,
         "endLine": 53,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -1710,7 +1710,7 @@
         "file": "src/core/core.js",
         "startLine": 80,
         "endLine": 91,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -1760,7 +1760,7 @@
         "file": "src/core/core.js",
         "startLine": 213,
         "endLine": 229,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1803,7 +1803,7 @@
         "file": "src/core/core.js",
         "startLine": 237,
         "endLine": 254,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1844,7 +1844,7 @@
         "file": "src/core/core.js",
         "startLine": 259,
         "endLine": 288,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1894,7 +1894,7 @@
         "file": "src/core/core.js",
         "startLine": 344,
         "endLine": 369,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1944,7 +1944,7 @@
         "file": "src/core/core.js",
         "startLine": 407,
         "endLine": 428,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -1991,7 +1991,7 @@
         "file": "src/core/core.js",
         "startLine": 433,
         "endLine": 452,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2035,7 +2035,7 @@
         "file": "src/core/core.js",
         "startLine": 480,
         "endLine": 497,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2070,7 +2070,7 @@
         "file": "src/core/core.js",
         "startLine": 502,
         "endLine": 515,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2103,7 +2103,7 @@
         "file": "src/core/core.js",
         "startLine": 520,
         "endLine": 569,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -2226,7 +2226,7 @@
         "file": "src/core/core.js",
         "startLine": 681,
         "endLine": 690,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2252,7 +2252,7 @@
         "file": "src/core/core.js",
         "startLine": 695,
         "endLine": 715,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2296,7 +2296,7 @@
         "file": "src/core/core.js",
         "startLine": 726,
         "endLine": 762,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2347,7 +2347,7 @@
         "file": "src/core/core.js",
         "startLine": 779,
         "endLine": 792,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2393,7 +2393,7 @@
         "file": "src/core/core.js",
         "startLine": 799,
         "endLine": 812,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2439,7 +2439,7 @@
         "file": "src/core/core.js",
         "startLine": 823,
         "endLine": 838,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2481,7 +2481,7 @@
         "file": "src/core/core.js",
         "startLine": 851,
         "endLine": 869,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2516,7 +2516,7 @@
         "file": "src/core/core.js",
         "startLine": 886,
         "endLine": 909,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2553,7 +2553,7 @@
         "file": "src/core/core.js",
         "startLine": 921,
         "endLine": 949,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2602,7 +2602,7 @@
         "file": "src/core/core.js",
         "startLine": 970,
         "endLine": 980,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2628,7 +2628,7 @@
         "file": "src/core/core.js",
         "startLine": 1000,
         "endLine": 1014,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2669,7 +2669,7 @@
         "file": "src/core/core.js",
         "startLine": 1019,
         "endLine": 1047,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2720,7 +2720,7 @@
         "file": "src/core/core.js",
         "startLine": 1053,
         "endLine": 1060,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2740,7 +2740,7 @@
         "file": "src/core/core.js",
         "startLine": 1079,
         "endLine": 1106,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2795,7 +2795,7 @@
         "file": "src/core/core.js",
         "startLine": 1171,
         "endLine": 1192,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2834,7 +2834,7 @@
         "file": "src/core/core.js",
         "startLine": 1357,
         "endLine": 1379,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -2902,7 +2902,7 @@
         "file": "src/core/core.js",
         "startLine": 1412,
         "endLine": 1426,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -2939,7 +2939,7 @@
         "file": "src/core/core.js",
         "startLine": 1431,
         "endLine": 1444,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -2987,7 +2987,7 @@
         "file": "src/core/core.js",
         "startLine": 1475,
         "endLine": 1496,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -3037,7 +3037,7 @@
         "file": "src/core/core.js",
         "startLine": 1514,
         "endLine": 1526,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3070,7 +3070,7 @@
         "file": "src/core/core.js",
         "startLine": 1531,
         "endLine": 1537,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -3087,7 +3087,7 @@
         "file": "src/core/core.js",
         "startLine": 1615,
         "endLine": 1636,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -3159,7 +3159,7 @@
         "file": "src/core/core.js",
         "startLine": 1660,
         "endLine": 1681,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3254,7 +3254,7 @@
         "file": "src/core/core.js",
         "startLine": 1757,
         "endLine": 1772,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3309,7 +3309,7 @@
         "file": "src/core/core.js",
         "startLine": 1783,
         "endLine": 1792,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3344,7 +3344,7 @@
         "file": "src/core/core.js",
         "startLine": 1812,
         "endLine": 1835,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -3414,7 +3414,7 @@
         "file": "src/core/core.js",
         "startLine": 1854,
         "endLine": 1928,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3474,7 +3474,7 @@
         "file": "src/core/core.js",
         "startLine": 1933,
         "endLine": 1946,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3518,7 +3518,7 @@
         "file": "src/core/core.js",
         "startLine": 1963,
         "endLine": 1977,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3568,7 +3568,7 @@
         "file": "src/core/core.js",
         "startLine": 1986,
         "endLine": 1999,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3617,7 +3617,7 @@
         "file": "src/core/core.js",
         "startLine": 2005,
         "endLine": 2018,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3666,7 +3666,7 @@
         "file": "src/core/core.js",
         "startLine": 2028,
         "endLine": 2055,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3709,7 +3709,7 @@
         "file": "src/core/core.js",
         "startLine": 2061,
         "endLine": 2068,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3733,7 +3733,7 @@
         "file": "src/core/core.js",
         "startLine": 2093,
         "endLine": 2099,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -3750,7 +3750,7 @@
         "file": "src/core/core.js",
         "startLine": 2105,
         "endLine": 2117,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3791,7 +3791,7 @@
         "file": "src/core/core.js",
         "startLine": 2122,
         "endLine": 2134,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3833,7 +3833,7 @@
         "file": "src/core/core.js",
         "startLine": 2141,
         "endLine": 2153,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3873,7 +3873,7 @@
         "file": "src/core/core.js",
         "startLine": 2160,
         "endLine": 2190,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3939,7 +3939,7 @@
         "file": "src/core/core.js",
         "startLine": 2216,
         "endLine": 2258,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -3988,7 +3988,7 @@
         "file": "src/core/extensions.js",
         "startLine": 4,
         "endLine": 10,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4006,7 +4006,7 @@
         "file": "src/core/extensions.js",
         "startLine": 21,
         "endLine": 36,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4027,7 +4027,7 @@
         "file": "src/core/extensions.js",
         "startLine": 39,
         "endLine": 45,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4042,7 +4042,7 @@
         "file": "src/core/extensions.js",
         "startLine": 56,
         "endLine": 62,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4057,7 +4057,7 @@
         "file": "src/core/extensions.js",
         "startLine": 65,
         "endLine": 71,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4072,7 +4072,7 @@
         "file": "src/core/extensions.js",
         "startLine": 80,
         "endLine": 86,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4087,7 +4087,7 @@
         "file": "src/core/extensions.js",
         "startLine": 89,
         "endLine": 95,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4102,7 +4102,7 @@
         "file": "src/core/extensions.js",
         "startLine": 99,
         "endLine": 105,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4117,7 +4117,7 @@
         "file": "src/core/extensions.js",
         "startLine": 108,
         "endLine": 114,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4132,7 +4132,7 @@
         "file": "src/core/extensions.js",
         "startLine": 128,
         "endLine": 134,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4147,7 +4147,7 @@
         "file": "src/core/extensions.js",
         "startLine": 137,
         "endLine": 142,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4162,7 +4162,7 @@
         "file": "src/core/extensions.js",
         "startLine": 145,
         "endLine": 151,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4177,7 +4177,7 @@
         "file": "src/core/loader.js",
         "startLine": 4,
         "endLine": 19,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4209,7 +4209,7 @@
         "file": "src/core/loader.js",
         "startLine": 22,
         "endLine": 56,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -4254,7 +4254,7 @@
         "file": "src/core/loader.js",
         "startLine": 68,
         "endLine": 93,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -4335,7 +4335,7 @@
         "file": "src/core/loader.js",
         "startLine": 108,
         "endLine": 149,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4368,7 +4368,7 @@
         "file": "src/core/loader.js",
         "startLine": 151,
         "endLine": 237,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -4437,7 +4437,7 @@
         "file": "src/core/loader.js",
         "startLine": 368,
         "endLine": 416,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -4482,7 +4482,7 @@
         "file": "src/core/model.js",
         "startLine": 4,
         "endLine": 39,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4534,7 +4534,7 @@
         "file": "src/core/model.js",
         "startLine": 78,
         "endLine": 97,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4558,7 +4558,7 @@
         "file": "src/core/scenes.js",
         "startLine": 8,
         "endLine": 85,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -4655,7 +4655,7 @@
         "file": "src/core/storage.js",
         "startLine": 10,
         "endLine": 18,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4672,7 +4672,7 @@
         "file": "src/core/storage.js",
         "startLine": 19,
         "endLine": 68,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -4780,7 +4780,7 @@
         "file": "src/core/storage.js",
         "startLine": 95,
         "endLine": 113,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -4817,7 +4817,7 @@
         "file": "src/core/systems.js",
         "startLine": 7,
         "endLine": 39,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4921,7 +4921,7 @@
         "file": "src/core/time.js",
         "startLine": 1,
         "endLine": 9,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4938,7 +4938,7 @@
         "file": "src/core/time.js",
         "startLine": 11,
         "endLine": 18,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -4952,7 +4952,7 @@
         "file": "src/core/time.js",
         "startLine": 51,
         "endLine": 93,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5010,7 +5010,7 @@
         "file": "src/core/time.js",
         "startLine": 104,
         "endLine": 126,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5047,7 +5047,7 @@
         "file": "src/core/time.js",
         "startLine": 137,
         "endLine": 159,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5076,7 +5076,7 @@
         "file": "src/core/time.js",
         "startLine": 163,
         "endLine": 189,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5105,7 +5105,7 @@
         "file": "src/core/tween.js",
         "startLine": 4,
         "endLine": 12,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -5134,7 +5134,7 @@
         "file": "src/core/tween.js",
         "startLine": 15,
         "endLine": 22,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5148,7 +5148,7 @@
         "file": "src/core/tween.js",
         "startLine": 55,
         "endLine": 88,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5214,7 +5214,7 @@
         "file": "src/core/tween.js",
         "startLine": 112,
         "endLine": 125,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5255,7 +5255,7 @@
         "file": "src/core/tween.js",
         "startLine": 139,
         "endLine": 147,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5275,7 +5275,7 @@
         "file": "src/core/tween.js",
         "startLine": 152,
         "endLine": 160,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5295,7 +5295,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 4,
         "endLine": 21,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -5338,7 +5338,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 48,
         "endLine": 55,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5362,7 +5362,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 61,
         "endLine": 72,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5395,7 +5395,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 80,
         "endLine": 91,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5428,7 +5428,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 126,
         "endLine": 141,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5451,7 +5451,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 147,
         "endLine": 157,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5479,7 +5479,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 185,
         "endLine": 195,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5504,7 +5504,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 211,
         "endLine": 221,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5529,7 +5529,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 240,
         "endLine": 250,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5552,7 +5552,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 257,
         "endLine": 267,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5580,7 +5580,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 294,
         "endLine": 303,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5604,7 +5604,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 316,
         "endLine": 325,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5628,7 +5628,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 338,
         "endLine": 348,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5652,7 +5652,7 @@
         "file": "src/debug/debug-layer.js",
         "startLine": 361,
         "endLine": 371,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5676,7 +5676,7 @@
         "file": "src/debug/logging.js",
         "startLine": 4,
         "endLine": 14,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5706,7 +5706,7 @@
         "file": "src/debug/logging.js",
         "startLine": 15,
         "endLine": 25,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5736,7 +5736,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 3,
         "endLine": 11,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5753,7 +5753,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 26,
         "endLine": 36,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5782,7 +5782,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 41,
         "endLine": 51,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5811,7 +5811,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 58,
         "endLine": 68,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5840,7 +5840,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 77,
         "endLine": 83,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5855,7 +5855,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 86,
         "endLine": 93,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -5871,7 +5871,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 183,
         "endLine": 201,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5906,7 +5906,7 @@
         "file": "src/graphics/canvas-layer.js",
         "startLine": 243,
         "endLine": 260,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -5941,7 +5941,7 @@
         "file": "src/graphics/canvas.js",
         "startLine": 4,
         "endLine": 22,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -5977,7 +5977,7 @@
         "file": "src/graphics/canvas.js",
         "startLine": 42,
         "endLine": 55,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6033,7 +6033,7 @@
         "file": "src/graphics/color.js",
         "startLine": 7,
         "endLine": 20,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6075,7 +6075,7 @@
         "file": "src/graphics/color.js",
         "startLine": 169,
         "endLine": 175,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6092,7 +6092,7 @@
         "file": "src/graphics/color.js",
         "startLine": 227,
         "endLine": 263,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -6193,7 +6193,7 @@
         "file": "src/graphics/dom-helper.js",
         "startLine": 5,
         "endLine": 11,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6210,7 +6210,7 @@
         "file": "src/graphics/dom-helper.js",
         "startLine": 13,
         "endLine": 23,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6249,7 +6249,7 @@
         "file": "src/graphics/dom-helper.js",
         "startLine": 38,
         "endLine": 49,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6284,7 +6284,7 @@
         "file": "src/graphics/dom-helper.js",
         "startLine": 79,
         "endLine": 97,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6338,7 +6338,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 5,
         "endLine": 11,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6355,7 +6355,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 17,
         "endLine": 24,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6371,7 +6371,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 78,
         "endLine": 86,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6391,7 +6391,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 92,
         "endLine": 103,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6418,7 +6418,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 127,
         "endLine": 137,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6447,7 +6447,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 142,
         "endLine": 152,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6476,7 +6476,7 @@
         "file": "src/graphics/dom-layer.js",
         "startLine": 162,
         "endLine": 172,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6505,7 +6505,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 4,
         "endLine": 10,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6522,7 +6522,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 12,
         "endLine": 17,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6537,7 +6537,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 22,
         "endLine": 28,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6552,7 +6552,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 62,
         "endLine": 70,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6572,7 +6572,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 101,
         "endLine": 113,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -6612,7 +6612,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 124,
         "endLine": 133,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6633,7 +6633,7 @@
         "file": "src/graphics/dom.js",
         "startLine": 226,
         "endLine": 260,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -6702,7 +6702,7 @@
         "file": "src/graphics/drawing.js",
         "startLine": 4,
         "endLine": 21,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6733,7 +6733,7 @@
         "file": "src/graphics/drawing.js",
         "startLine": 26,
         "endLine": 62,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6780,7 +6780,7 @@
         "file": "src/graphics/html.js",
         "startLine": 4,
         "endLine": 12,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6797,7 +6797,7 @@
         "file": "src/graphics/html.js",
         "startLine": 20,
         "endLine": 37,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6834,7 +6834,7 @@
         "file": "src/graphics/html.js",
         "startLine": 44,
         "endLine": 61,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6871,7 +6871,7 @@
         "file": "src/graphics/html.js",
         "startLine": 68,
         "endLine": 85,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -6908,7 +6908,7 @@
         "file": "src/graphics/image.js",
         "startLine": 29,
         "endLine": 43,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -6936,7 +6936,7 @@
         "file": "src/graphics/image.js",
         "startLine": 58,
         "endLine": 92,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -7006,7 +7006,7 @@
         "file": "src/graphics/layers.js",
         "startLine": 118,
         "endLine": 173,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7094,7 +7094,7 @@
         "file": "src/graphics/particles.js",
         "startLine": 8,
         "endLine": 24,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -7140,7 +7140,7 @@
         "file": "src/graphics/particles.js",
         "startLine": 62,
         "endLine": 120,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7177,7 +7177,7 @@
         "file": "src/graphics/particles.js",
         "startLine": 392,
         "endLine": 410,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7206,7 +7206,7 @@
         "file": "src/graphics/particles.js",
         "startLine": 415,
         "endLine": 436,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7235,7 +7235,7 @@
         "file": "src/graphics/renderable.js",
         "startLine": 4,
         "endLine": 11,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -7264,7 +7264,7 @@
         "file": "src/graphics/renderable.js",
         "startLine": 17,
         "endLine": 23,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -7279,7 +7279,7 @@
         "file": "src/graphics/renderable.js",
         "startLine": 26,
         "endLine": 35,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -7294,7 +7294,7 @@
         "file": "src/graphics/renderable.js",
         "startLine": 128,
         "endLine": 143,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -7343,7 +7343,7 @@
         "file": "src/graphics/renderable.js",
         "startLine": 153,
         "endLine": 168,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -7392,7 +7392,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 4,
         "endLine": 29,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -7487,7 +7487,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 56,
         "endLine": 61,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -7501,7 +7501,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 69,
         "endLine": 137,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -7671,7 +7671,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 211,
         "endLine": 243,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7715,7 +7715,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 279,
         "endLine": 288,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7735,7 +7735,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 300,
         "endLine": 308,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7755,7 +7755,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 319,
         "endLine": 329,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7775,7 +7775,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 341,
         "endLine": 354,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7814,7 +7814,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 373,
         "endLine": 393,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7879,7 +7879,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 427,
         "endLine": 439,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7911,7 +7911,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 498,
         "endLine": 515,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7953,7 +7953,7 @@
         "file": "src/graphics/sprite-animation.js",
         "startLine": 522,
         "endLine": 534,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -7993,7 +7993,7 @@
         "file": "src/graphics/sprite.js",
         "startLine": 28,
         "endLine": 81,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8080,7 +8080,7 @@
         "file": "src/graphics/sprite.js",
         "startLine": 170,
         "endLine": 183,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -8116,7 +8116,7 @@
         "file": "src/graphics/sprite.js",
         "startLine": 269,
         "endLine": 299,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8191,7 +8191,7 @@
         "file": "src/graphics/sprite.js",
         "startLine": 301,
         "endLine": 307,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -8206,7 +8206,7 @@
         "file": "src/graphics/sprite.js",
         "startLine": 332,
         "endLine": 352,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8264,7 +8264,7 @@
         "file": "src/graphics/text.js",
         "startLine": 4,
         "endLine": 29,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -8306,7 +8306,7 @@
         "file": "src/graphics/text.js",
         "startLine": 147,
         "endLine": 181,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8369,7 +8369,7 @@
         "file": "src/graphics/text.js",
         "startLine": 200,
         "endLine": 225,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8417,7 +8417,7 @@
         "file": "src/graphics/text.js",
         "startLine": 266,
         "endLine": 290,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8460,7 +8460,7 @@
         "file": "src/graphics/text.js",
         "startLine": 298,
         "endLine": 307,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8488,7 +8488,7 @@
         "file": "src/graphics/text.js",
         "startLine": 316,
         "endLine": 341,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -8556,7 +8556,7 @@
         "file": "src/graphics/text.js",
         "startLine": 368,
         "endLine": 386,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -8596,7 +8596,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 5,
         "endLine": 45,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -8669,7 +8669,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 47,
         "endLine": 56,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -8684,7 +8684,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 60,
         "endLine": 71,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -8699,7 +8699,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 73,
         "endLine": 84,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -8714,7 +8714,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 87,
         "endLine": 98,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -8729,7 +8729,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 102,
         "endLine": 124,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -8759,7 +8759,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 127,
         "endLine": 145,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8803,7 +8803,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 154,
         "endLine": 178,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8845,7 +8845,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 188,
         "endLine": 207,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8903,7 +8903,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 252,
         "endLine": 270,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8954,7 +8954,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 307,
         "endLine": 323,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -8998,7 +8998,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 337,
         "endLine": 358,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9063,7 +9063,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 435,
         "endLine": 458,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9106,7 +9106,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 468,
         "endLine": 481,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9134,7 +9134,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 566,
         "endLine": 584,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9190,7 +9190,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 624,
         "endLine": 630,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9207,7 +9207,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 632,
         "endLine": 638,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9222,7 +9222,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 787,
         "endLine": 798,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9242,7 +9242,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 816,
         "endLine": 827,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -9274,7 +9274,7 @@
         "file": "src/graphics/viewport.js",
         "startLine": 837,
         "endLine": 846,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9302,7 +9302,7 @@
         "file": "src/graphics/webgl-layer.js",
         "startLine": 176,
         "endLine": 182,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9319,7 +9319,7 @@
         "file": "src/graphics/webgl-layer.js",
         "startLine": 186,
         "endLine": 192,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9334,7 +9334,7 @@
         "file": "src/graphics/webgl-layer.js",
         "startLine": 419,
         "endLine": 429,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9363,7 +9363,7 @@
         "file": "src/graphics/webgl-layer.js",
         "startLine": 434,
         "endLine": 444,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9392,7 +9392,7 @@
         "file": "src/graphics/webgl-layer.js",
         "startLine": 450,
         "endLine": 460,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9421,7 +9421,7 @@
         "file": "src/graphics/webgl.js",
         "startLine": 3,
         "endLine": 25,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -9465,7 +9465,7 @@
         "file": "src/graphics/webgl.js",
         "startLine": 28,
         "endLine": 121,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9535,7 +9535,7 @@
         "file": "src/graphics/webgl.js",
         "startLine": 128,
         "endLine": 154,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9591,7 +9591,7 @@
         "file": "src/graphics/webgl.js",
         "startLine": 166,
         "endLine": 172,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9606,7 +9606,7 @@
         "file": "src/graphics/webgl.js",
         "startLine": 199,
         "endLine": 208,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9627,7 +9627,7 @@
         "file": "src/inputs/device.js",
         "startLine": 5,
         "endLine": 11,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9644,7 +9644,7 @@
         "file": "src/inputs/device.js",
         "startLine": 84,
         "endLine": 111,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9681,7 +9681,7 @@
         "file": "src/inputs/device.js",
         "startLine": 125,
         "endLine": 153,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9718,7 +9718,7 @@
         "file": "src/inputs/dom-events.js",
         "startLine": 4,
         "endLine": 39,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9789,7 +9789,7 @@
         "file": "src/inputs/dom-events.js",
         "startLine": 63,
         "endLine": 79,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -9847,7 +9847,7 @@
         "file": "src/inputs/keyboard.js",
         "startLine": 3,
         "endLine": 32,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9888,7 +9888,7 @@
         "file": "src/inputs/keyboard.js",
         "startLine": 72,
         "endLine": 104,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -9948,7 +9948,7 @@
         "file": "src/inputs/mouse.js",
         "startLine": 3,
         "endLine": 97,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10003,7 +10003,7 @@
         "file": "src/inputs/mouse.js",
         "startLine": 150,
         "endLine": 183,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10082,7 +10082,7 @@
         "file": "src/inputs/mouse.js",
         "startLine": 284,
         "endLine": 323,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10182,7 +10182,7 @@
         "file": "src/inputs/mouse.js",
         "startLine": 335,
         "endLine": 346,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10231,7 +10231,7 @@
         "file": "src/inputs/mouse.js",
         "startLine": 382,
         "endLine": 392,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -10257,7 +10257,7 @@
         "file": "src/inputs/mouse.js",
         "startLine": 406,
         "endLine": 416,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -10283,7 +10283,7 @@
         "file": "src/inputs/pointer.js",
         "startLine": 4,
         "endLine": 28,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -10365,7 +10365,7 @@
         "file": "src/inputs/pointer.js",
         "startLine": 81,
         "endLine": 98,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -10413,7 +10413,7 @@
         "file": "src/inputs/pointer.js",
         "startLine": 113,
         "endLine": 124,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10438,7 +10438,7 @@
         "file": "src/inputs/pointer.js",
         "startLine": 147,
         "endLine": 183,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -10519,7 +10519,7 @@
         "file": "src/inputs/pointer.js",
         "startLine": 204,
         "endLine": 215,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10543,8 +10543,8 @@
     {
         "file": "src/inputs/touch.js",
         "startLine": 4,
-        "endLine": 41,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "endLine": 42,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10580,11 +10580,15 @@
             },
             {
                 "type": "raw",
-                "value": "By default, touch events are treated as mouse events and are handled by the `MouseSystem`.\nTo change this behaviour and handle events by the `TouchSystem`, enable multitouch.\n\nIf this is set to true, it is expected that your entities have the `Touch` component instead of the `Mouse` component.\nIf false (default), then only entities with the Mouse component will respond to touch.\nIt's recommended to add the `Button` component instead, which requires the proper component depending on this feature.\n"
+                "value": "By default, touch events are treated as mouse events and are handled by the `MouseSystem`.\nTo change this behaviour and handle events by the `TouchSystem`, enable multitouch.\n\nIf this is set to true, it is expected that your entities have the `Touch` component instead of the `Mouse` component.\nIf false (default), then only entities with the Mouse component will respond to touch.\nFor simple use cases, tt's recommended to add the `Button` component instead, which requires the proper component depending on this feature.\n"
             },
             {
                 "type": "note",
                 "value": "The multitouch feature is currently incompatible with the `Draggable` component and `Crafty.viewport.mouselook`."
+            },
+            {
+                "type": "note",
+                "value": "When multitouch is not enabled, Crafty will cancel touch events when forwarding them to the mouse system."
             },
             {
                 "type": "example",
@@ -10614,9 +10618,9 @@
     },
     {
         "file": "src/inputs/touch.js",
-        "startLine": 115,
-        "endLine": 139,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "startLine": 117,
+        "endLine": 141,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10670,9 +10674,9 @@
     },
     {
         "file": "src/inputs/touch.js",
-        "startLine": 242,
-        "endLine": 296,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "startLine": 244,
+        "endLine": 298,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10774,7 +10778,7 @@
         "file": "src/inputs/util.js",
         "startLine": 49,
         "endLine": 64,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -10816,7 +10820,7 @@
         "file": "src/isometric/diamond-iso.js",
         "startLine": 5,
         "endLine": 13,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10833,7 +10837,7 @@
         "file": "src/isometric/diamond-iso.js",
         "startLine": 34,
         "endLine": 57,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -10911,7 +10915,7 @@
         "file": "src/isometric/diamond-iso.js",
         "startLine": 76,
         "endLine": 96,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -10975,7 +10979,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 5,
         "endLine": 14,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -10992,7 +10996,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 26,
         "endLine": 44,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11035,7 +11039,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 50,
         "endLine": 70,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11099,7 +11103,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 79,
         "endLine": 96,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11148,7 +11152,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 103,
         "endLine": 121,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11197,7 +11201,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 128,
         "endLine": 148,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11252,7 +11256,7 @@
         "file": "src/isometric/isometric.js",
         "startLine": 162,
         "endLine": 183,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11287,7 +11291,7 @@
         "file": "src/sound/sound.js",
         "startLine": 5,
         "endLine": 17,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11304,7 +11308,7 @@
         "file": "src/sound/sound.js",
         "startLine": 54,
         "endLine": 63,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11332,7 +11336,7 @@
         "file": "src/sound/sound.js",
         "startLine": 83,
         "endLine": 96,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11368,7 +11372,7 @@
         "file": "src/sound/sound.js",
         "startLine": 121,
         "endLine": 164,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11438,7 +11442,7 @@
         "file": "src/sound/sound.js",
         "startLine": 198,
         "endLine": 224,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11504,7 +11508,7 @@
         "file": "src/sound/sound.js",
         "startLine": 270,
         "endLine": 277,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11528,7 +11532,7 @@
         "file": "src/sound/sound.js",
         "startLine": 317,
         "endLine": 334,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11565,7 +11569,7 @@
         "file": "src/sound/sound.js",
         "startLine": 362,
         "endLine": 377,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11594,7 +11598,7 @@
         "file": "src/sound/sound.js",
         "startLine": 411,
         "endLine": 426,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11623,7 +11627,7 @@
         "file": "src/sound/sound.js",
         "startLine": 435,
         "endLine": 448,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11652,7 +11656,7 @@
         "file": "src/sound/sound.js",
         "startLine": 452,
         "endLine": 465,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11681,7 +11685,7 @@
         "file": "src/sound/sound.js",
         "startLine": 470,
         "endLine": 485,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11718,7 +11722,7 @@
         "file": "src/sound/sound.js",
         "startLine": 498,
         "endLine": 513,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11755,7 +11759,7 @@
         "file": "src/sound/sound.js",
         "startLine": 525,
         "endLine": 540,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11792,7 +11796,7 @@
         "file": "src/sound/sound.js",
         "startLine": 557,
         "endLine": 573,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -11834,7 +11838,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 9,
         "endLine": 20,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11891,7 +11895,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 22,
         "endLine": 31,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11912,7 +11916,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 33,
         "endLine": 42,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11933,7 +11937,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 44,
         "endLine": 55,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11954,7 +11958,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 57,
         "endLine": 68,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11975,7 +11979,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 71,
         "endLine": 86,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -11996,7 +12000,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 89,
         "endLine": 95,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12011,7 +12015,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 98,
         "endLine": 121,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12033,7 +12037,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 204,
         "endLine": 212,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12054,7 +12058,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 225,
         "endLine": 233,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12075,7 +12079,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 323,
         "endLine": 341,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12153,7 +12157,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 438,
         "endLine": 445,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12173,7 +12177,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 450,
         "endLine": 464,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12235,7 +12239,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 482,
         "endLine": 496,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12297,7 +12301,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 514,
         "endLine": 528,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12359,7 +12363,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 546,
         "endLine": 559,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12396,7 +12400,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 569,
         "endLine": 586,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12439,7 +12443,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 600,
         "endLine": 613,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12474,7 +12478,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 625,
         "endLine": 635,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12509,7 +12513,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 645,
         "endLine": 658,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12558,7 +12562,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 667,
         "endLine": 680,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12587,7 +12591,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 702,
         "endLine": 715,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12616,7 +12620,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 739,
         "endLine": 758,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12644,7 +12648,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 776,
         "endLine": 786,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12672,7 +12676,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 809,
         "endLine": 851,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12757,7 +12761,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 984,
         "endLine": 1008,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12783,7 +12787,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1017,
         "endLine": 1034,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12827,7 +12831,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1048,
         "endLine": 1065,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12871,7 +12875,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1075,
         "endLine": 1090,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12900,7 +12904,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1111,
         "endLine": 1134,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -12949,7 +12953,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1235,
         "endLine": 1253,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -12975,7 +12979,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1271,
         "endLine": 1288,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13019,7 +13023,7 @@
         "file": "src/spatial/2d.js",
         "startLine": 1297,
         "endLine": 1314,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13063,7 +13067,7 @@
         "file": "src/spatial/collision.js",
         "startLine": 6,
         "endLine": 58,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13142,7 +13146,7 @@
         "file": "src/spatial/collision.js",
         "startLine": 171,
         "endLine": 192,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -13192,7 +13196,7 @@
         "file": "src/spatial/collision.js",
         "startLine": 208,
         "endLine": 248,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -13273,7 +13277,7 @@
         "file": "src/spatial/collision.js",
         "startLine": 298,
         "endLine": 315,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13315,8 +13319,8 @@
     {
         "file": "src/spatial/collision.js",
         "startLine": 423,
-        "endLine": 500,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "endLine": 501,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13352,7 +13356,7 @@
                 "contents": [
                     {
                         "type": "raw",
-                        "value": "Resolving collisions with static colliders (walls) for moving entity (player).\n```\nCrafty.e(\"2D, Fourway, Collision, player\")\n      .attr({x: 32, y: 32, w: 32, h: 32})\n      .collision([0, 16, 16, 0, 32, 16, 16, 32])\n      .fourway()\n      .bind('Moved', function(evt) { // after player moved\n        var hitDatas, hitData;\n        if ((hitDatas = this.hit('wall'))) { // check for collision with walls\n          hitData = hitDatas[0]; // resolving collision for just one collider\n          if (hitData.type === 'SAT') { // SAT, advanced collision resolution\n            // move player back by amount of overlap\n            this.x -= hitData.overlap * hitData.nx;\n            this.y -= hitData.overlap * hitData.ny;\n          } else { // MBR, simple collision resolution\n            // move player to position before he moved (on respective axis)\n            this[evt.axis] = evt.oldValue;\n          }\n        }\n      });\n```\n"
+                        "value": "Resolving collisions with static colliders (walls) for moving entity (player).\n```\nCrafty.e(\"2D, Fourway, Collision, player\")\n      .attr({x: 32, y: 32, w: 32, h: 32})\n      .collision([0, 16, 16, 0, 32, 16, 16, 32])\n      .fourway()\n      .bind('Move', function(evt) { // after player moved\n        var hitDatas, hitData;\n        if ((hitDatas = this.hit('wall'))) { // check for collision with walls\n          hitData = hitDatas[0]; // resolving collision for just one collider\n          if (hitData.type === 'SAT') { // SAT, advanced collision resolution\n            // move player back by amount of overlap\n            this.x -= hitData.overlap * hitData.nx;\n            this.y -= hitData.overlap * hitData.ny;\n          } else { // MBR, simple collision resolution\n            // move player to previous position\n            this.x = evt._x;\n            this.y = evt._y;\n          }\n        }\n      });\n```\n"
                     }
                 ]
             },
@@ -13369,9 +13373,9 @@
     },
     {
         "file": "src/spatial/collision.js",
-        "startLine": 551,
-        "endLine": 588,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "startLine": 552,
+        "endLine": 589,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13428,9 +13432,9 @@
     },
     {
         "file": "src/spatial/collision.js",
-        "startLine": 633,
-        "endLine": 677,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "startLine": 634,
+        "endLine": 678,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13489,9 +13493,9 @@
     },
     {
         "file": "src/spatial/collision.js",
-        "startLine": 704,
-        "endLine": 734,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "startLine": 705,
+        "endLine": 735,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13544,9 +13548,9 @@
     },
     {
         "file": "src/spatial/collision.js",
-        "startLine": 767,
-        "endLine": 800,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "startLine": 768,
+        "endLine": 801,
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13601,7 +13605,7 @@
         "file": "src/spatial/math.js",
         "startLine": 4,
         "endLine": 10,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -13618,7 +13622,7 @@
         "file": "src/spatial/math.js",
         "startLine": 12,
         "endLine": 22,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13651,7 +13655,7 @@
         "file": "src/spatial/math.js",
         "startLine": 27,
         "endLine": 39,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13698,7 +13702,7 @@
         "file": "src/spatial/math.js",
         "startLine": 48,
         "endLine": 60,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13745,7 +13749,7 @@
         "file": "src/spatial/math.js",
         "startLine": 70,
         "endLine": 79,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -13778,7 +13782,7 @@
         "file": "src/spatial/math.js",
         "startLine": 84,
         "endLine": 97,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13832,7 +13836,7 @@
         "file": "src/spatial/math.js",
         "startLine": 103,
         "endLine": 116,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13879,7 +13883,7 @@
         "file": "src/spatial/math.js",
         "startLine": 121,
         "endLine": 131,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13912,7 +13916,7 @@
         "file": "src/spatial/math.js",
         "startLine": 139,
         "endLine": 149,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13945,7 +13949,7 @@
         "file": "src/spatial/math.js",
         "startLine": 154,
         "endLine": 164,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -13978,7 +13982,7 @@
         "file": "src/spatial/math.js",
         "startLine": 169,
         "endLine": 180,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -14018,7 +14022,7 @@
         "file": "src/spatial/math.js",
         "startLine": 185,
         "endLine": 196,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -14058,7 +14062,7 @@
         "file": "src/spatial/math.js",
         "startLine": 201,
         "endLine": 214,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -14112,7 +14116,7 @@
         "file": "src/spatial/math.js",
         "startLine": 219,
         "endLine": 231,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -14159,7 +14163,7 @@
         "file": "src/spatial/math.js",
         "startLine": 238,
         "endLine": 266,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14241,7 +14245,7 @@
         "file": "src/spatial/math.js",
         "startLine": 282,
         "endLine": 293,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14275,7 +14279,7 @@
         "file": "src/spatial/math.js",
         "startLine": 300,
         "endLine": 312,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14309,7 +14313,7 @@
         "file": "src/spatial/math.js",
         "startLine": 317,
         "endLine": 328,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14343,7 +14347,7 @@
         "file": "src/spatial/math.js",
         "startLine": 333,
         "endLine": 344,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14370,7 +14374,7 @@
         "file": "src/spatial/math.js",
         "startLine": 349,
         "endLine": 361,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14404,7 +14408,7 @@
         "file": "src/spatial/math.js",
         "startLine": 366,
         "endLine": 381,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14444,7 +14448,7 @@
         "file": "src/spatial/math.js",
         "startLine": 386,
         "endLine": 398,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14478,7 +14482,7 @@
         "file": "src/spatial/math.js",
         "startLine": 405,
         "endLine": 417,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14512,7 +14516,7 @@
         "file": "src/spatial/math.js",
         "startLine": 422,
         "endLine": 434,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14546,7 +14550,7 @@
         "file": "src/spatial/math.js",
         "startLine": 439,
         "endLine": 451,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14580,7 +14584,7 @@
         "file": "src/spatial/math.js",
         "startLine": 457,
         "endLine": 470,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14614,7 +14618,7 @@
         "file": "src/spatial/math.js",
         "startLine": 476,
         "endLine": 488,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14655,7 +14659,7 @@
         "file": "src/spatial/math.js",
         "startLine": 494,
         "endLine": 505,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14682,7 +14686,7 @@
         "file": "src/spatial/math.js",
         "startLine": 510,
         "endLine": 521,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14709,7 +14713,7 @@
         "file": "src/spatial/math.js",
         "startLine": 526,
         "endLine": 538,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14742,7 +14746,7 @@
         "file": "src/spatial/math.js",
         "startLine": 543,
         "endLine": 554,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14776,7 +14780,7 @@
         "file": "src/spatial/math.js",
         "startLine": 561,
         "endLine": 571,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14803,7 +14807,7 @@
         "file": "src/spatial/math.js",
         "startLine": 578,
         "endLine": 589,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14830,7 +14834,7 @@
         "file": "src/spatial/math.js",
         "startLine": 605,
         "endLine": 621,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14889,7 +14893,7 @@
         "file": "src/spatial/math.js",
         "startLine": 632,
         "endLine": 643,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14923,7 +14927,7 @@
         "file": "src/spatial/math.js",
         "startLine": 651,
         "endLine": 667,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -14982,7 +14986,7 @@
         "file": "src/spatial/math.js",
         "startLine": 680,
         "endLine": 691,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15016,7 +15020,7 @@
         "file": "src/spatial/math.js",
         "startLine": 698,
         "endLine": 708,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15043,7 +15047,7 @@
         "file": "src/spatial/math.js",
         "startLine": 713,
         "endLine": 726,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15084,7 +15088,7 @@
         "file": "src/spatial/math.js",
         "startLine": 737,
         "endLine": 753,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15139,7 +15143,7 @@
         "file": "src/spatial/math.js",
         "startLine": 765,
         "endLine": 803,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15249,7 +15253,7 @@
         "file": "src/spatial/math.js",
         "startLine": 830,
         "endLine": 841,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15283,7 +15287,7 @@
         "file": "src/spatial/math.js",
         "startLine": 856,
         "endLine": 866,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15310,7 +15314,7 @@
         "file": "src/spatial/math.js",
         "startLine": 871,
         "endLine": 883,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15344,7 +15348,7 @@
         "file": "src/spatial/math.js",
         "startLine": 897,
         "endLine": 908,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15378,7 +15382,7 @@
         "file": "src/spatial/math.js",
         "startLine": 915,
         "endLine": 925,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15405,7 +15409,7 @@
         "file": "src/spatial/math.js",
         "startLine": 930,
         "endLine": 941,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15438,7 +15442,7 @@
         "file": "src/spatial/math.js",
         "startLine": 966,
         "endLine": 976,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15465,7 +15469,7 @@
         "file": "src/spatial/math.js",
         "startLine": 981,
         "endLine": 992,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15498,7 +15502,7 @@
         "file": "src/spatial/math.js",
         "startLine": 997,
         "endLine": 1008,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15532,7 +15536,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1023,
         "endLine": 1037,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15573,7 +15577,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1050,
         "endLine": 1066,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15632,7 +15636,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1079,
         "endLine": 1090,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15666,7 +15670,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1108,
         "endLine": 1122,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15707,7 +15711,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1137,
         "endLine": 1158,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15798,7 +15802,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1179,
         "endLine": 1189,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15825,7 +15829,7 @@
         "file": "src/spatial/math.js",
         "startLine": 1195,
         "endLine": 1211,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15884,7 +15888,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 62,
         "endLine": 73,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -15927,7 +15931,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 75,
         "endLine": 91,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15951,7 +15955,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 94,
         "endLine": 110,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15975,7 +15979,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 113,
         "endLine": 126,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -15999,7 +16003,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 144,
         "endLine": 152,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16019,7 +16023,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 193,
         "endLine": 205,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -16059,7 +16063,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 207,
         "endLine": 223,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16083,7 +16087,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 226,
         "endLine": 242,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16107,7 +16111,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 245,
         "endLine": 261,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16131,7 +16135,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 264,
         "endLine": 280,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16155,7 +16159,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 283,
         "endLine": 296,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16179,7 +16183,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 299,
         "endLine": 312,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16203,7 +16207,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 336,
         "endLine": 345,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16229,7 +16233,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 354,
         "endLine": 371,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16270,7 +16274,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 376,
         "endLine": 399,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16315,7 +16319,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 405,
         "endLine": 428,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16360,7 +16364,7 @@
         "file": "src/spatial/motion.js",
         "startLine": 433,
         "endLine": 451,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16404,7 +16408,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 3,
         "endLine": 14,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "triggers",
@@ -16447,7 +16451,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 16,
         "endLine": 23,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16462,7 +16466,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 28,
         "endLine": 46,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16486,7 +16490,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 106,
         "endLine": 119,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16520,7 +16524,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 194,
         "endLine": 211,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16553,7 +16557,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 233,
         "endLine": 246,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16577,7 +16581,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 267,
         "endLine": 287,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16614,7 +16618,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 295,
         "endLine": 302,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16634,7 +16638,7 @@
         "file": "src/spatial/platform.js",
         "startLine": 311,
         "endLine": 329,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16671,7 +16675,7 @@
         "file": "src/spatial/rect-manager.js",
         "startLine": 4,
         "endLine": 10,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16688,7 +16692,7 @@
         "file": "src/spatial/rect-manager.js",
         "startLine": 29,
         "endLine": 40,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16728,7 +16732,7 @@
         "file": "src/spatial/rect-manager.js",
         "startLine": 46,
         "endLine": 57,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16761,7 +16765,7 @@
         "file": "src/spatial/rect-manager.js",
         "startLine": 68,
         "endLine": 82,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16789,7 +16793,7 @@
         "file": "src/spatial/rect-manager.js",
         "startLine": 98,
         "endLine": 108,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16817,7 +16821,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 8,
         "endLine": 18,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16840,7 +16844,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 23,
         "endLine": 33,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16868,7 +16872,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 54,
         "endLine": 68,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16914,7 +16918,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 89,
         "endLine": 96,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "raw",
@@ -16937,7 +16941,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 98,
         "endLine": 116,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -16977,7 +16981,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 138,
         "endLine": 166,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -17026,7 +17030,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 197,
         "endLine": 215,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -17072,7 +17076,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 236,
         "endLine": 250,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -17109,7 +17113,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 278,
         "endLine": 292,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -17146,7 +17150,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 331,
         "endLine": 353,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",
@@ -17172,7 +17176,7 @@
         "file": "src/spatial/spatial-grid.js",
         "startLine": 474,
         "endLine": 515,
-        "commit": "9d833a8a33106a11a362da840768a5a3d6a4f362",
+        "commit": "deff7307581e69badb10b3ca08c7d0a6675d80c2",
         "contents": [
             {
                 "type": "method",

@@ -268,10 +268,12 @@ Crafty.log(<span class="hljs-string">'New height:'</span>, sq.h); <span class="h
 <h2 id="the-nitty-gritty">The nitty gritty</h2>
 <p>Sometimes you might need to know exactly how components are added to an entity.  (If the component has previously been added to an entity, it won&#39;t be further modified.)</p>
 <ul>
-<li>First a flag indicating the existence of the component is set</li>
-<li>Then all properties are copied over from the component&#39;s object.  If any already exist, they will be overwritten.</li>
-<li>If a property is an object or array, it is copied by reference.</li>
-<li>Finally, the init function of the component object is called.</li>
+<li>First a flag indicating the existence of the component is set, and the entity is added to a cached list of entities with that component.</li>
+<li>Then all simple properties and methods are copied over from the component&#39;s object.  If any already exist, they will be overwritten. This is a shallow copy: if a property is an object or array, it is copied by reference.</li>
+<li>If any setters, getters, or other special behavior are defined in the component&#39;s <code>properties</code> object, they are added by calling <code>defineProperty</code></li>
+<li>If any handlers are defined in the component&#39;s <code>events</code> property, they are bound to the entity.</li>
+<li>The init function of the component object is called.</li>
+<li>Finally, the <code>&quot;NewComponent&quot;</code> event is triggered.</li>
 </ul>
 <h3 id="the-shared-object-trap">The shared object trap</h3>
 <p>As mentioned above, objects and arrays are copied by reference.  This can cause unexpected behavior if you&#39;re not careful:</p>
