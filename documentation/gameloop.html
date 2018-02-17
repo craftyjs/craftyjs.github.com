@@ -143,7 +143,7 @@
 }</code></pre>
 <p>All game logic, i.e. anything that changes over time, is ultimately hooked into the &quot;UpdateFrame&quot; event.  Many components (such as <a href="/api/Tween.html">&quot;Tween&quot;</a>) exist to simplify this interaction, but to provide custom behavior you&#39;ll probably end up binding entities  directly to this event.  If you want to provide smooth behavior, you should use the <code>dt</code> property to determine how far the game state should advance.  As a simple example, here&#39;s a red square that will move to the right at 10 pixels per second:</p>
 <pre><code>Crafty.init(<span class="hljs-number">400</span>, <span class="hljs-number">400</span>);
-<span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>);
+<span class="hljs-keyword">var</span> square = Crafty.e(<span class="hljs-string">'2D, Canvas, Color'</span>)
   .attr({<span class="hljs-attr">x</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">w</span>: <span class="hljs-number">100</span>, <span class="hljs-attr">h</span>: <span class="hljs-number">100</span>})
   .color(<span class="hljs-string">'red'</span>)
   .bind(<span class="hljs-string">"UpdateFrame"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">eventData</span>) </span>{
