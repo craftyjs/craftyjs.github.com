@@ -14,7 +14,7 @@
     "grunt-contrib-watch": "1.0.0",
     "grunt-link-checker": "0.1.0",
     "highlight.js": "9.7.0",
-    "marked": "0.3.6",
+    "marked": "4.0.10",
     "node-jsx": "0.13.3",
     "react": "15.3.2"
   },
