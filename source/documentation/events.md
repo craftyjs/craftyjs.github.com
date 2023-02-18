@@ -44,7 +44,7 @@ When you trigger the event, a single paramter can be passed as the second argume
 ```
 // Assume that color is an object
 square.bind("ChangeColor", function(color) {
-	this.color(color.r, color,g, color.b);
+	this.color(color.r, color.g, color.b);
 })
 
 // Specify the RGB values corresponding to pink
